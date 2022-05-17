@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: События и сигналы</title>
+<meta content="Concept" name="uma.type">
+<meta content="events_and_signals" name="uma.name">
+<meta content="События и сигналы" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.800598287887014E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.800598287887014E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.800598287887014E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: События и сигналы</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Событие - это существенное изменение обстоятельств, происшедшее в конкретный момент времени в конкретном месте. Сигнал - это разновидность события, представляющая собой явление асинхронного взаимодействия между двумя объектами.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/identify_design_elements_E884AB82.html" guid="{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}">Определение элементов проекта</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_software_architect_DB0BF177.html" guid="{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}">Разработчик архитектуры</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_signal_AD16C912.html" guid="{8CA124DA-A80C-45D7-BC65-BA6B4247FF11}">Сигнал</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_event_741355DE.html" guid="{53AF0AB8-E1A1-45E7-8E4F-AFE2427633C6}">Событие</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    В окружающем нас мире события зачастую происходят одновременно друг с другом и при этом совершенно внезапно. Подобные
+    вещи, "которые случаются", называются событиями.
+</p>
+<p>
+    В терминологии конечных автоматов события моделируют явления взаимодействия, которые могут стать непосредственной
+    причиной изменения состояния. События могут представлять собой сигналы, вызовы, истечения интервалов времени и
+    изменения состояний. События делятся на синхронные и асинхронные.
+</p>
+<p>
+    Сигнал - это разновидность события, представляющая собой явление асинхронного взаимодействия между двумя субъектами.
+</p>
+<h3>
+    <a id="Kinds of events" name="Kinds of events">Виды событий</a>
+</h3>
+<p>
+    События могут быть внешними и внутренними. Внешними называются события, происходящие между системой и ее субъектами.
+    Внутренними называются события, происходящие между объектами системы. Разделяют четыре вида событий: сигналы, вызовы,
+    истечения интервалов времени и изменения состояний.
+</p>
+<h4>
+    <a id="Signals" name="Signals">Сигналы</a>
+</h4>
+<p>
+    Сигнал - это объект, который в асинхронном режиме передается одним объектом и принимается другим. Примерами сигналов
+    могут служить исключительные ситуации.
+</p>
+<p>
+    У сигналов могут быть экземпляры, хотя их очень редко моделируют явно. Сигналы могут применяться в отношениях обобщения
+    для моделирования иерархической структуры событий.
+</p>
+<p>
+    У сигналов могут быть атрибуты и операции. Параметрами сигнала служат его атрибуты.
+</p>
+<p>
+    Сигнал может быть отправлен в форме изменения состояния конечного автомата или в форме отправки сообщения. Сигналы
+    могут также подаваться в ходе выполнения операций. Важная составляющая моделирования классов и интерфейсов заключается
+    в описании сигналов, которые могут подаваться ими во время работы. Взаимосвязь между операцией и событиями, которые она
+    может генерировать, моделируется с помощью отношения зависимости в стереотипе &lt;&lt;send&gt;&gt;.
+</p>
+<h4>
+    <a id="Call events" name="Call events">События вызова</a>
+</h4>
+<p>
+    Если событие сигнала представляет собой подачу сигнала, событие вызова представляет собой вызов операции. В обоих
+    случаях событие может привести к изменению состояния конечного автомата.
+</p>
+<p>
+    Тогда как сигналы представляют собой асинхронные события, вызовы, как правило, являются синхронными. Это значит, что
+    когда объект вызывает операцию в отношении другого объекта, управление передается от отправителя к получателю на все
+    время выполнения операции, а по ее завершении возвращается отправителю. Моделируются вызовы так же, как события
+    сигналов. В обоих случаях событие вместе с параметрами показано в качестве триггера для изменения состояния.
+</p>
+<p>
+    Хотя между сигналами и событиями вызова нет внешних различий, разница будет видна в классе получателя, поскольку в нем
+    будет объявлена операция, применяемая для обработки события вызова. Если речь идет о сигнале, вместо данной операции
+    будет изменение состояния конечного автомата, вызванное сигналом.
+</p>
+<h4>
+    <a id="Time events" name="Time events">События времени и изменений</a>
+</h4>
+<p>
+    Событие времени соответствует истечению определенного интервала времени. События времени применяются для синхронизации
+    зависимых по времени компонентов системы с помощью общих часов. Событие изменения представляет собой изменение
+    состояния системы или выполнение какого-либо условия.
+</p>
+<h3>
+    <a id="sending events" name="sending events">Отправка и получение событий</a>
+</h3>
+<p>
+    События сигналов и вызовов затрагивают как минимум два объекта: отправителя и получателя. Отправка сигнала заключается
+    в том, что отправитель подает сигнал, а затем продолжает работу, не ожидая ответа от получателя. Операция вызова
+    отличается от сигнала тем, что отправитель дожидается ответа от получателя, и только после этого продолжает выполнение
+    работы. Поэтому операции, как правило, применяются для описания "блокирующего" поведения системы (когда система
+    приостанавливает выполнение других операций) в отличие от сигналов, применяемых для описания "неблокирующего" поведения
+    системы.
+</p>
+<p>
+    Отправка сигнала нескольким объектам одновременно называется групповой рассылкой и реализуется в виде отправки сигнала
+    контейнеру, содержащему множество получателей. Отправка сигнала всем объектам системы называется широковещательной
+    рассылкой и реализуется в виде отправки сигнала объекту, представляющему систему в целом. Этот объект "системы", в свою
+    очередь, использует механизм распределения сообщений, обеспечивающий доставку сигнала всем объектам системы.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

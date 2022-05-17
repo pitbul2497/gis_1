@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Справочная таблица: Проектирование класса</title>
+<meta content="Checklist" name="uma.type">
+<meta content="design_class" name="uma.name">
+<meta content="Проектирование класса" name="uma.presentationName">
+<meta content="Checklist" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', true, false, false);
+					
+					//override the subsection text
+					contentPage.subSection.expandAllText = 'Развернуть все элементы';
+					contentPage.subSection.collapseAllText = 'Свернуть все элементы';					
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.1028389988231071E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Справочная таблица: Проектирование класса</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/checklist.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Данная справочная таблица позволяет проверить правильность моделирования класса проекта.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html" guid="{952A9CE9-D5A3-43AC-980D-0B9298F3872E}">Проектирование класса</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_capsule_designer_F3E66EDF.html" guid="{86253FE7-0036-4D14-8BD7-C18CE86A5E14}">Проектировщик капсул</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_checkpoints__for_design_classes" name="XE_checkpoints__for_design_classes"></a><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Элементы справочной таблицы</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableCell">
+<div class="stepHeading"> Общие</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li class="ck">
+            Имя класса дает четкое представление о его предназначении.
+        </li>
+        <li class="ck">
+            Описание класса дает четкое представление о его предназначении.
+        </li>
+        <li class="ck">
+            Класс представляет собой единую хорошо определенную абстракцию.
+        </li>
+        <li class="ck">
+            Все атрибуты и операции класса существенны для выполнения его функций.
+        </li>
+        <li class="ck">
+            Каждый класс соответствует компактному и целостному набору функций.
+        </li>
+        <li class="ck">
+            Функции класса четко определены и сформулированы, и при этом напрямую относятся к предназначению класса.
+        </li>
+        <li class="ck">
+            Все классы относительно полны в себе и практически не зависят от других классов.
+        </li>
+        <li class="ck">
+            Все функции класса описаны на одном уровне абстракции, например, на высоком (уровень приложения) или на низком
+            (уровень реализации), но не на обоих сразу.
+        </li>
+        <li class="ck">
+            У всех классов в рамках одной и той же иерархической структуры наследования есть уникальные атрибуты, операции
+            и взаимосвязи (т.е., они наследуют все общие атрибуты, операции и взаимосвязи).
+        </li>
+        <li class="ck">
+            Спланирован полный жизненный цикл экземпляра класса. Все объекты создаются, используются и удаляются в рамках
+            реализаций одного или нескольких прецедентов.
+        </li>
+        <li class="ck">
+            Класс отвечает требованиям к поведению, указанным в реализациях прецедентов.
+        </li>
+        <li class="ck">
+            Выполнены все требования к классу, изложенные в спецификациях требований.
+        </li>
+        <li class="ck">
+            Требования, предъявляемые к классу (в соответствии с описанием класса и набором объектов на диаграммах
+            последовательностей), совместимы с конечным автоматом класса.
+        </li>
+        <li class="ck">
+            Все функции класса связаны между собой таким образом, что класс не может существовать в системах, в которых
+            используется только подмножество его функций.
+        </li>
+        <li class="ck">
+            Не существует двух классов с одним и тем же предназначением.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Обобщение/специализация </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="margin-left: 2em">
+    <ul>
+        <li class="ck">
+            Иерархическая структура обобщения сбалансирована таким образом, что ни для одного из классов она не слишком
+            мелка и не слишком глубока.
+        </li>
+        <li class="ck">
+            В иерархической структуре наследования отражено явное сходство между классами.
+        </li>
+        <li class="ck">
+            Ни один базовый класс не представляет собой совокупность атрибутов производных классов.
+        </li>
+        <li class="ck">
+            В иерархии наследования нет промежуточных абстрактных классов с ортогональными свойствами. Примером такой
+            ситуации может служить наличие двух копий подкласса на обеих сторонах дерева наследования.
+        </li>
+        <li class="ck">
+            Для передачи общих абстракций проекта используется механизм наследования, т.е. структура классов используется
+            многократно.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Соглашения о присвоении имен </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="margin-left: 2em">
+    <ul>
+        <li class="ck">
+            Имена классов соответствуют их задачам.
+        </li>
+        <li class="ck">
+            Имена классов соответствуют соглашениям о присвоении имен, указанным в рекомендациях по проектированию.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Операции </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="margin-left: 2em">
+    <ul>
+        <li class="ck">
+            Имена всех операций понятны и соответствуют сути операций.
+        </li>
+        <li class="ck">
+            Конечный автомат и набор операций соответствуют друг другу.
+        </li>
+        <li class="ck">
+            Конечный автомат и операции полностью описывают поведение класса.
+        </li>
+        <li class="ck">
+            Параметры всех операций правильны с точки зрения их имен, количества и типов.
+        </li>
+        <li class="ck">
+            Правильно заданы спецификации реализации всех операций, для которых нужны такие спецификации.
+        </li>
+        <li class="ck">
+            Сигнатуры операций соответствуют стандартам используемого языка программирования.
+        </li>
+        <li class="ck">
+            Каждая операция используется в реализации по крайней мере одного прецедента.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Атрибуты </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="margin-left: 2em">
+    <ul>
+        <li class="ck">
+            Все взаимосвязи класса необходимы для выполнения каких-либо операций.
+        </li>
+        <li class="ck">
+            Каждый атрибут соответствует одной и только одной концепции.
+        </li>
+        <li class="ck">
+            Всем атрибутам присвоены понятные имена, четко передающие их назначение.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Взаимосвязи </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="margin-left: 2em">
+    <ul>
+        <li class="ck">
+            Имена ролей аггрегирований и ассоциаций правильно передают характер взаимосвязи между соответствующими
+            классами.
+        </li>
+        <li class="ck">
+            Правильно определена множественность взаимосвязей.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Конечные автоматы </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li class="ck">
+            Конечный автомат максимально прост, но при этом реализует все необходимое поведение.
+        </li>
+        <li class="ck">
+            В конечном автомате нет избыточных состояний и переходов.
+        </li>
+        <li class="ck">
+            Для конечного автомата задан простой и понятный контекст.
+        </li>
+        <li class="ck">
+            Все зависимые объекты видны ссылающемуся на них объекту.
+        </li>
+        <li class="ck">
+            Конечный автомат эффективен и выполняет свою работу с оптимальным балансом времени и ресурсов.
+        </li>
+        <li class="ck">
+            Конечный автомат доступен для понимания.
+        </li>
+        <li style="LIST-STYLE-TYPE: none">
+            <ul>
+                <li class="ck">
+                    Имена состояний и переходов понятны в контексте предметной области системы.
+                </li>
+                <li class="ck">
+                    Имена состояний указывают на то, что происходит или произойдет, а не на то, что уже произошло.
+                </li>
+                <li class="ck">
+                    Имена всех состояний и переходов уникальны в пределах конечного автомата (это не обязательно, но
+                    значительно упрощает отладку).
+                </li>
+                <li class="ck">
+                    Логические группы состояний объединены в составные состояния.
+                </li>
+                <li class="ck">
+                    Для упрощения автомата применяются составные состояния.
+                </li>
+                <li class="ck">
+                    Метки переходов указывают на причины выполнения переходов.
+                </li>
+                <li class="ck">
+                    В переходах состояний нет кода длиннее 25 строк; для упрощения структуры вместо длинного кода
+                    используются функции.
+                </li>
+                <li class="ck">
+                    Максимальный уровень вложенности в конечном автомате не слишком глубок и не затрудняет понимания;
+                    обычно даже для самых сложных поведений достаточно одного-двух уровней.
+                </li>
+            </ul>
+        </li>
+        <li class="ck">
+            Вместо параллельных вложенных состояний используются активные классы. Активные классы в подавляющем большинстве
+            случаев проще и понятнее параллельных вложенных состояний.
+        </li>
+        <li class="reactiveck">
+            В системах реального времен для реализации логических нитей управления применяются капсулы.
+        </li>
+        <li class="ck">
+            Предусмотрены действия в состояниях ошибок и обслуживания.
+        </li>
+        <li class="ck">
+            Вместо расширенных переменных состояния применяются вложенные состояния. В переходах не применяются сторожевые
+            условия, в которых целевое состояние перехода определяется по нескольким переменным.
+        </li>
+        <li class="ck">
+            Конечный автомат не является имитацией блок-схемы.
+        </li>
+        <li class="ck">
+            Конечный автомат не перегружен вложенными автоматами, в которых предусмотрено только одно вложенное состояние.
+            Применение таких автоматов допустимо только в ограниченных количествах и только в качестве временных заготовок
+            для реализации компонентов в будущем.
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

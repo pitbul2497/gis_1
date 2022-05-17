@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Продвижение контрольной версии проекта с помощью Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="promoting_project_baselines" name="uma.name">
+<meta content="Продвижение контрольной версии проекта с помощью Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Продвижение контрольной версии проекта с помощью Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается присвоение уровней продвижения контрольным версиям с помощью унифицированного управления изменениями (UCM) Rational ClearCase.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/promote_baseline_623F1B0E.html" guid="{9139A97B-D458-490D-A9D5-CDBB86968475}">Продвижение контрольных версий</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    В ClearCase контрольные версии UCM обычно представляют собой стабильные конфигурации для компонента.
+</p>
+<p>
+    Контрольным версиям присваиваются уровни продвижения, которые можно использовать для определения качества или степени
+    выполнения работы, представленной контрольной версией. Обычно уровень продвижения указывает уровень тестирования. UCM
+    предоставляет упорядоченный набор уровней продвижения по умолчанию и также поддерживает пользовательские уровни
+    продвижения. Изменение уровня продвижения контрольной версии называется продвижением или понижением контрольной версии.
+</p>
+<p>
+    Рекомендованная контрольная версия - это контрольная версия, утвержденная для общего использования. Рекомендованные
+    контрольные версии используются для операций перебазирования. При перебазировании потока его конфигурация изменяется
+    исходя из рекомендованной контрольной версии целевого потока. Одним из способов применения уровней продвижения является
+    присвоение набору контрольных версий одного уровня продвижения статуса рекомендованных контрольных версий для
+    определенного потока.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Эти процедуры описывают способ изменения уровня продвижения контрольной версии и процедуру присвоения контрольным
+    версиям с определенным уровнем продвижения состояния рекомендованных контрольных версий для потока:
+</p>
+<ol>
+    <li>
+        <a href="#ChangeBaselinePromotionLevel">Изменение уровня продвижения контрольной версии</a>
+    </li>
+    <li>
+        <a href="#SetRecommendedBaselineForStream">Исходя из уровня продвижения, задайте рекомендованную контрольную версию
+        для потока</a>
+    </li>
+</ol>
+<p>
+    <img height="15" alt="значок справочника" src="./../../../core.base_rup/resources/book.gif" width="16" />Дополнительная информация
+    приведена в руководстве <i>IBM Rational ClearCase - руководство по управлению программными проектами</i>.
+</p>
+<h3>
+    1. <a id="ChangeBaselinePromotionLevel" name="ChangeBaselinePromotionLevel">Измените уровень продвижения контрольной
+    версии</a>
+</h3>
+<ol>
+    <li>
+        Выберите поток в обозревателе проектов ClearCase. Выберите <b>Файл &gt; Свойства</b> для отображения окна свойств
+        системы.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Контрольные версии</b>.
+    </li>
+    <li>
+        В поле <b>Компоненты</b> выберите компоненты, контрольные версии которых требуется продвинуть. Контрольные версии
+        компонентов отображаются в поле <b>Контрольные версии</b>. Выберите контрольную версию и щелкните на пункте
+        <b>Свойства</b> для отображения окна свойств контрольной версии.
+    </li>
+    <li>
+        На вкладке <b>Общие</b> щелкните на стрелке вниз в списке Уровень продвижения для отображения всех доступных
+        уровней продвижения. Выберите новый уровень продвижения. Нажмите кнопку <b>OK</b>.
+    </li>
+</ol>
+<h3>
+    2. <a id="SetRecommendedBaselineForStream" name="SetRecommendedBaselineForStream">Исходя из уровня продвижения задайте
+    рекомендованную контрольную версию для потока</a>
+</h3>
+<ul>
+    <li>
+        Выберите <b>Пуск</b> &gt; <b>Программы</b> &gt; <b>Rational Software</b> &gt; <b>Rational ClearCase</b> &gt;
+        <b>Обозреватель проектов</b>.
+    </li>
+    <li>
+        Выберите поток.
+    </li>
+    <li>
+        Выберите <b>Инструменты &gt; Рекомендованные контрольные версии</b> для отображения списка текущих рекомендованных
+        контрольных версий проекта.
+    </li>
+    <li>
+        В области <b>Список поиска</b> выберите уровень продвижения из выпадающего списка.
+    </li>
+    <li>
+        Выберите <b>Список поиска</b> чтобы сделать последние контрольные версии совпадающие с или превышающие
+        выбранныйуровеньпродвижения рекомендованными контрольными версиями. &nbsp;&nbsp;
+    </li>
+    <li>
+        Нажмите <b>OK</b>.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Концепции</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/guidances/concepts/promotion_method_400446FD.html" guid="1.720995905987093E-305">Метод рангов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

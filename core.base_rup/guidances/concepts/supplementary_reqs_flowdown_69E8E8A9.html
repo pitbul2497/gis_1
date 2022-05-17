@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Детализация дополнительных требований</title>
+<meta content="Concept" name="uma.type">
+<meta content="supplementary_reqs_flowdown" name="uma.name">
+<meta content="Детализация дополнительных требований" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_vt06oOM9EdmaZcY4PeqVxA"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_vt06oOM9EdmaZcY4PeqVxA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_vt06oOM9EdmaZcY4PeqVxA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Детализация дополнительных требований</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Детализация дополнительных требований применяется для уточнения нефункциональных требований к элементам анализа (а позднее - проекта).</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/operation_analysis_14743F05.html" guid="_cnJO4N9yEdmvvvV6NEU6eA">Анализ операции</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/operation_design_BF30F48F.html" guid="_JPsAEN90EdmvvvV6NEU6eA">Проектирование операций</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_capsule_designer_F3E66EDF.html" guid="{86253FE7-0036-4D14-8BD7-C18CE86A5E14}">Проектировщик капсул</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Введение
+</h3>
+<p>
+    В процессе анализа архитектор создает начальную диаграмму локальности. Диаграмма локальности содержит совокупность
+    нефункциональных требований к системе, например требований к надежности и пропускной способности, и применяется для
+    анализа таких требований и способов их удовлетворения.
+</p>
+<p>
+    Как правило, разработка сопряжена с планированием пропускной способности, допустимой частоты сбоев и т.п. В результате
+    для каждого элемента локальности создается набор производных дополнительных требований. Эти требования позволяют
+    определить характеристики локальности. Производные требования и характеристики уточняются и пересматриваются в процессе
+    формализации и уточнения подсистем (во всех локальностях).
+</p>
+<p>
+    Дополнительные требования к системе в целом оказывают влияние на содержание подсистем (программное обеспечение,
+    аппаратное обеспечение, персонал), при этом характеристики подсистем и локальностей, в свою очередь, влияют на
+    характеристики системы в целом.
+</p>
+<h3>
+    Измерение качества обслуживания (QoS)
+</h3>
+<p>
+    Качество обслуживания (QoS) - это понятие, охватывающее нефункциональные требования к продукту. В QoS учитывается
+    довольно широкий набор характеристик, включая надежность, простоту обслуживания и простоту эксплуатации продукта, а
+    также его безопасность, зависимость от человеческого фактора и т.д. Вопросами, относящимися к безопасности и другим
+    инженерным вопросам, обычно занимаются эксперты в соответствующих областях. На плечи разработчиков программного
+    обеспечения и системы обычно ложатся следующие задачи:
+</p>
+<ul>
+    <li>
+        Производительность - насколько хорошо система работает с точки зрения быстродействия (пропускная способность, время
+        отклика, удовлетворение требованиям по срокам).
+    </li>
+    <li>
+        Надежность и отказоустойчивость - как долго система может работать безотказно и как она обрабатывает незначительные
+        ошибки. Одна из важнейших характеристик надежности - среднее время бесперебойной работы (MTBF).
+    </li>
+    <li>
+        Простота обслуживания - насколько просто обеспечить постоянную работоспособность системы и много ли усилий нужно
+        прикладывать для диагностики и устранения неполадок. Основной критерий простоты обслуживания - среднее время
+        восстановления работоспособности системы (MTTR).
+    </li>
+</ul>
+<p>
+    Перед построением системы инженеру зачастую приходится полагаться на модели системы для определения альтернативных
+    решений и формулирования нефункциональных требований. Эти модели сравниваются на предмет обеспечения необходимого
+    качества обслуживания (QoS) и стоимости реализации. Изучение альтернативных вариантов для <i>компромиссного выбора</i>
+    - одна из важнейших составляющих разработки всех уровней системы. Качество синтеза потенциальных решений очень сильно
+    зависит от опыта и квалификации архитектора. Анализ этих решений (путем математического моделирования, имитационного
+    моделирования и т.п.) должен быть сравнительно механическим. Однако точность результатов анализа сильно зависит от
+    качества входных данных и точности моделей.
+</p>
+<p>
+    Для упрощения анализа моделей с точки зрения QoS разработан широкий спектр технологий, перечисленных выше. Например,
+    для анализа производительности встроенного программного обеспечения реального времени применяется монотонный анализ
+    пропускной способности [см. Klein, M. H., et al. <i>A Practitioners' Handbook for Real-Time Analysis: Guide to Rate
+    Monotonic Analysis for Real-Time Systems,</i> Kluwer Academic Publishers, 1993], and Failure Mode Effects and
+    Criticality Analysis (FMECA), for hardware failure and safety risk identification and characterization [see Kececioglu,
+    Dimitri, <i>Reliability Engineering Handbook, Vol. 2,</i>&nbsp; <font color="#000000">PTR Prentice Hall</font>, 1991].
+</p>
+<p>
+    Поддержка различных методик анализа в UML реализована на с помощью механизма профилей (см. <i>UML Profile for
+    Schedulability, Performance, and Time Specification</i> и <i>UML Profile for Modeling Quality of Service and Fault
+    Tolerance Characteristics and Mechanisms</i>. Эти профили (их можно загрузить с сайта <a href="http://www.omg.org" target="_blank">www.omg.org</a>) содержат аннотации для моделей UML, позволяющие измерять характеристики моделей и
+    сравнивать их с ожидаемыми величинами с помощью разнообразных инструментов и методик анализа.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

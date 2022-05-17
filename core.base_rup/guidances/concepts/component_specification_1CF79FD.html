@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Спецификация компонента</title>
+<meta content="Concept" name="uma.type">
+<meta content="component_specification" name="uma.name">
+<meta content="Спецификация компонента" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_wfrDwOM8EdmaZcY4PeqVxA"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_wfrDwOM8EdmaZcY4PeqVxA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_wfrDwOM8EdmaZcY4PeqVxA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Спецификация компонента</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Спецификация компонента представляет описание набора определенных компонентов аппаратного и программного обеспечения, составляющих систему.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/operation_design_BF30F48F.html" guid="_JPsAEN90EdmvvvV6NEU6eA">Проектирование операций</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_capsule_designer_F3E66EDF.html" guid="{86253FE7-0036-4D14-8BD7-C18CE86A5E14}">Проектировщик капсул</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Введение
+</h3>
+<p>
+    При переходе с уровня Анализ на уровень Эскиз необходимо определить эскиз компонента аппаратного и программного
+    обеспечения. Эта спецификация на уровне Эскиз состоит из компонентов, которые должны быть развернуты: аппаратное
+    обеспечение, программное обеспечение и исполнители.
+</p>
+<p>
+    Компоненты аппаратного обеспечения определяются с помощью анализа местонахождений, их порожденных параметров и операций
+    базовой подсистемы. С помощью этой информации могут быть выбраны реализации местонахождений на уровне Дескриптора.
+    Диаграммы узла Дескриптора задают компоненты, серверы, рабочие станции, исполнители и так далее, не определяя варианты
+    технологий, реализующих эти компоненты. Рисунок является примером диаграммы узла Дескриптора, которая реализует
+    диаграмму Местонахождение, показанную в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/locality_E2133437.html" guid="_qmDvkOM9EdmaZcY4PeqVxA">Концепция:
+    Местонахождение</a>. Местонахождение реализовано в виде четырех компонентов: шлюза хранилища данных, почтовой системы и
+    двух исполнителей.
+</p>
+<p>
+    Узлы дескриптора наследуют параметры от своих местонахождений в процессе размещения и выделения бюджета.
+</p>
+<p align="center">
+    <img height="448" src="./../../../core.base_rup/guidances/concepts/resources/descnode.gif" alt="Диаграмма, описанная в сопроводительном тексте." width="679"     border="0" />
+</p>
+<p align="center">
+    <!--Add a caption for this figure? -->
+</p>
+<h3>
+    Аппаратное обеспечение
+</h3>
+<p>
+    Компоненты аппаратного обеспечения реализации, т.е. набор фактически развернутого аппаратного обеспечения, определяются
+    с помощью стоимости/производительности/мощности на панели Дескриптор. Фактически, система может иметь несколько
+    конфигураций аппаратного обеспечения для разных соотношений цена/производительность. &nbsp;
+</p>
+<h3>
+    Программное обеспечение
+</h3>
+<p>
+    Компоненты определяются указанием набора классов и последующей компиляцией и сборкой исходного кода, связанного с этими
+    классами, в исполняемые файлы. Компонент программного обеспечения должен отражать ряд моментов:&nbsp;
+</p>
+<ul>
+    <li>
+        Местонахождение — в котором компоненты должны выполняться
+    </li>
+    <li>
+        Хостинг — набор команд процессора и ограничений памяти для выполняемого кода
+    </li>
+    <li>
+        Параллелизм — разделение обработки на разные хосты или участки памяти для обеспечения надежности
+    </li>
+</ul>
+<p>
+    Из этого следует, что информация, необходимая для указания компонентов включает в себя обозрения операций базовых
+    подсистем для местонахождений и их реализованных компонентов аппаратного обеспечения, обозрения выполненных операций
+    для процессов вместе с координацией совместной работы, реализующих операции подсистемы, что составляет набор классов,
+    образующих структуру компонентов.
+</p>
+<p>
+    В первом приближении, предположим, что все классы расположены в одном компоненте, реализуя соотношение один-к-одному
+    между компонентом и подсистемой — по умолчанию это рекомендовано в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html" guid="1.2314266786534317E-305">Рекомендации
+    по рабочему продукту: Подсистема эскиза</a>. Далее, найдем причины для последующего разделения компонента. Если набор
+    классов содержит более одного активного класса, представляющего процесс, тогда разделим по одному активному классу
+    (процессу) на компонент, группируя эти классы по взаимосвязям. Некоторые классы могут быть затем использованы во многих
+    компонентах. Если некоторые из этих классов представляют общее состояние в общем наборе экземпляров, к которым имеют
+    доступ несколько компонентов, то их следует выделить в отдельный компонент. Если общими являются классы без сохранения
+    состояния, то можно выделить их в служебный компонент (функциональный компонент без сохранения состояния), если они
+    функционально связаны. Даже пассивную подсистему (без активных классов) можно разделять далее, например, находя
+    повторно используемые подкомпоненты. Завершим процесс, разделив компоненты по определенным технологиям (таким как
+    платформа J2EE&trade; или Microsoft&reg; .NET), ограничениям памяти (таким как .exe и .dll), ограничениям средств поставки и так
+    далее. &nbsp;
+</p>
+<p>
+    В результате мы получим набор определенных компонентов аппаратного и программного обеспечения, составляющих систему.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Оформление запросов с помощью инструмента Rational ClearQuest</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="work_with_query" name="uma.name">
+<meta content="Оформление запросов с помощью инструмента Rational ClearQuest" name="uma.presentationName">
+<meta content="Tool:rup_clearquest:Rational ClearQuest" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearQuest" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{01D34674-59D2-4758-B057-E62CA610EE26}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{01D34674-59D2-4758-B057-E62CA610EE26}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Оформление запросов с помощью инструмента Rational ClearQuest</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом руководстве приведены инструкции по извлечению информации из базы данных ClearQuest путем оформления запросов с помощью Rational ClearQuest.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearquest_3C7831BD.html" guid="{ED0B771E-CA09-4317-AB43-F88489AA520F}">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/report_on_configuration_status_9ECFA6E8.html" guid="{500A96BD-80F5-4E04-BCAB-CCE48F98639C}">Создание отчета о состоянии конфигурации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    В этом руководстве описаны действия для:
+</p>
+<ul>
+    <li>
+        <a href="#StepNumber1">Оформления и сохранения запросов</a>
+    </li>
+    <li>
+        <a href="#StepNumber2">Просмотра результатов запросов</a>
+    </li>
+    <li>
+        <a href="#StepNumber3">Вывода результатов запросов</a>
+    </li>
+    <li>
+        <a href="#StepNumber4">Печати запросов</a>
+    </li>
+</ul>
+<h3>
+    <a id="StepNumber1" name="StepNumber1">Оформление и сохранение запросов</a>
+</h3>
+<p>
+    Существует множество способов оформления запросов, однако в каждом случае запрос необходимо назвать, определить,
+    выполнить и/или сохранить. При первом использовании базы данных следуйте инструкциям мастера запросов, чтобы выбрать
+    отображаемые поля, а также поля и соответствующие значения для настройки фильтрации запросов. Когда вы познакомитесь с
+    процедурой создания запросов, редактировать фильтры и задавать отображаемые поля можно будет в окне Запрос.
+</p>
+<h4>
+    Этапы работы
+</h4>
+<p>
+    Для оформления запроса с помощью Rational ClearQuest и мастера запросов выполните следующие шаги:
+</p>
+<ol>
+    <li>
+        В меню З<b>апрос</b> включите переключатель для опции <b>Активировать мастер запросов</b>.
+    </li>
+    <li>
+        Выберите <b>Запрос &gt; Оформить запрос</b>. Откроется окно <b>Выбрать тип данных</b>.
+    </li>
+    <li>
+        Выберите тип данных и нажмите <b>OK</b>.
+    </li>
+    <li>
+        В окне <b>Мастер запросов ClearQuest</b> выполните следующие действия: 
+        <ol type="a">
+            <li>
+                В разделе <b>Начать с существующего запроса</b> введите имя запроса, который будет служить шаблоном.
+            </li>
+            <li>
+                Для просмотра списка запросов и выбора запроса, который будет служить шаблоном, нажмите <b>Обзор</b> и
+                затем <b>Да</b>. Рекомендуется выбрать запрос из группы Общие запросы.
+            </li>
+            <li>
+                Для создания пустого запроса с помощью мастера запросов нажмите <b>Далее</b>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        В окне <b>Определить внешний вид запроса</b> выберите поля, которые будут показаны в результатах запроса. Например,
+        если выбрать поля ИД, Состояние и Заголовок, в результатах запроса будут показаны только эти три поля. 
+        <ol type="a" start="a">
+            <li>
+                Дважды щелкните на каждом поле, которое будет показано в результатах запроса. Вобранные поля будут
+                перенесены в таблицу Внешний вид. Таблица Внешний вид содержит следующие столбцы: Поле, Название,
+                Сортировать, Показать и Порядок сортировки.
+            </li>
+            <li>
+                Выберите нужные поля и нажмите <b>Далее</b>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Выберите поля, которые будут служить фильтрами запросов. Фильтры определяют данные, которые будут показаны в
+        результатах запроса. 
+        <ol type="a" start="a">
+            <li>
+                В окне <b>Выбрать поля для фильтрации запроса</b> выберите поля, которые будут служить фильтрами запроса.
+                Дважды щелкните на поле, чтобы переместить его в панель Фильтры.
+            </li>
+            <li>
+                Нажмите кнопку <b>Далее</b>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        На странице мастера запросов Настройка фильтров задайте выражения, которые будут искать указанные действительные
+        значения или диапазон значений. Страница Настройка фильтров разделена на две части: панель Фильтры (слева), где
+        перечислены выбранные поля, и панель Значения (справа), где можно задать значения фильтров.
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ol type="a" start="a">
+            <li>
+                Выберите фильтр, для которого нужно задать значение.
+            </li>
+            <li>
+                В панели Значения (справа) выберите оператор. Список доступных операторов зависит от типа данных для
+                данного поля. Для выполнения оператора, обратного к выбранному оператору, включите переключатель
+                <b>Обратный</b>.
+            </li>
+            <li>
+                Для просмотра списка значений, доступных для данного фильтра, выберите <b>Значения</b>.
+            </li>
+            <li>
+                В окне <b>Значения</b> выберите нужные значения и нажмите <b>OK</b>.
+            </li>
+            <li>
+                Выберите опцию <b>Задать значение</b> и задайте значение для выбранного поля. Повторите этот шаг для
+                каждого поля.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Для завершения процедуры нажмите <b>Выполнить</b>. В результате запросу будет присвоено имя по умолчанию, и он
+        будет выполнен. Появится окно Запрос, где будут указаны результаты.
+    </li>
+    <li>
+        Если вы удовлетворены результатами и хотите выполнить запрос повторно, сохраните его. Для этого выберите <b>Файл
+        &gt; Сохранить</b> или <b>Файл &gt; Сохранить как</b>. Укажите имя и расположение запроса и сохраните его.
+    </li>
+    <li>
+        Для того чтобы аннулировать запрос и закрыть окно Запрос, нажмите <b>Файл &gt; Закрыть</b> и затем <b>Нет</b>.
+    </li>
+</ol>
+<h3>
+    <a id="StepNumber2" name="StepNumber2">Просмотр результатов запроса</a>
+</h3>
+<p>
+    Результаты запроса перечислены на вкладке <b>Результаты</b> в таблице, где указаны те поля, которые вы выбрали при
+    настройке внешнего вида запроса. Данные распределены по вкладкам таблицы Результаты, например, по вкладкам
+    <b>Основные</b>, <b>Анализ</b>, <b>Детализация</b>. В зависимости от настройки ClearQuest поля на вкладах и количество
+    вкладок для каждой записи будут разными.
+</p>
+<h4>
+    Этапы работы
+</h4>
+<p>
+    Для просмотра результатов запроса с помощью Rational ClearQuest выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Щелкните на строке, где указана запись из базы данных.
+    </li>
+    <li>
+        Для получения более подробной информации об этой записи перейдите на соответствующую ссылку.
+    </li>
+</ol>
+<h3>
+    <a id="StepNumber3" name="StepNumber3">Вывод результатов запроса</a>
+</h3>
+<p>
+    Rational ClearQuest сохраняет запросы в одной из двух папок: Частные запросы или Общие запросы. Создаваемые запросы
+    автоматически записываются в папку Частные запросы. Запросы из обеих папок готовы для выполнения. При необходимости их
+    можно настроить для конкретной ситуации.
+</p>
+<h4>
+    Этапы работы
+</h4>
+<p>
+    Для вывода результатов запроса с помощью Rational ClearQuest выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Откройте одну из папок (Частные или Общие запросы).
+    </li>
+    <li>
+        Дважды щелкните на запросе, который нужно выполнить.
+    </li>
+    <li>
+        При необходимости задайте параметры в появившемся окне и нажмите <b>OK</b>.
+    </li>
+</ol>
+<h3>
+    <a id="StepNumber4" name="StepNumber4">Печать результатов запросов</a>
+</h3>
+<p>
+    После выполнения запроса можно напечатать данные, указанные на вкладке <b>Результаты</b>. При необходимости можно
+    добавить верхние и нижние колонтитулы. Формат отчета определяется типом данных и от него зависит, какие поля выводятся
+    в печать.
+</p>
+<h4>
+    Этапы работы
+</h4>
+<p>
+    Для печати результатов запроса с помощью Rational ClearQuest выполните следующие шаги:
+</p>
+<ol>
+    <li>
+        Выполните запрос и перейдите на вкладку <b>Результаты</b>.
+    </li>
+    <li>
+        В таблицы можно добавить верхние и нижние колонтитулы, которые будут выводиться при печати. Для изменения
+        колонтитулов выполните следующие действия: 
+        <ol start="a">
+            <li>
+                Выберите <b>Файл &gt; Колонтитулы</b>.
+            </li>
+            <li>
+                Перейдите на вкладку <b>Верхние колонтитулы</b> и добавьте или отредактируйте верхний колонтитул. Для этого
+                введите текст, который будет показан в соответствующем столбце. Выберите выравнивание по центру, левому или
+                правому краю.
+            </li>
+            <li>
+                Перейдите на вкладку <b>Нижние колонтитулы</b> и отредактируйте нижний колонтитул.
+            </li>
+            <li>
+                Для использования этих же параметров при следующем сеансе работы с Rational ClearQuest, выберите опцию
+                <b>Сохранить параметры в профайл</b>.
+            </li>
+            <li>
+                Нажмите <b>OK</b>.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Нажмите <b>Файл &gt; Печать таблицы</b> или нажмите кнопку <b>Печать</b> на панели инструментов.
+    </li>
+    <li>
+        В окне <b>Печать</b> задайте нужные значения для опций <b>Принтер</b>, <b>Диапазон страниц</b> и <b>Число копий</b>
+        и при необходимости включите переключатель для опции <b>Печать в файл</b>. Нажмите <b>OK</b>.
+    </li>
+</ol><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

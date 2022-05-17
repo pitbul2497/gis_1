@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Диаграмма классов</title>
+<meta content="Guideline" name="uma.type">
+<meta content="class_diagram" name="uma.name">
+<meta content="Диаграмма классов" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.2570304587974485E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.2570304587974485E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.2570304587974485E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Диаграмма классов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">На диаграммах классов показаны классы и их взаимосвязи с другими классами, иллюстрирующие статическую структуру модели объектов. Эта рекомендация указывает ситуации, в которых полезно создание диаграммы классов.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/class_design_98F20FF9.html" guid="{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}">Проектирование классов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_capsule_designer_F3E66EDF.html" guid="{86253FE7-0036-4D14-8BD7-C18CE86A5E14}">Проектировщик капсул</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_class_diagram__guidelines_for" name="XE_class_diagram__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Объяснение</a>
+</h3>
+<p>
+    На диаграммах классов показана статическая структура модели, в частности, то, что в ней существует: классы, их
+    внутренняя структура и их взаимосвязи с другими классами. На диаграммах классов не показана временная информация.
+</p>
+<p>
+    Диаграмма классов представляется в виде совокупности (статических) декларативных элементов модели, таких как классы,
+    пакеты и их взаимосвязи, схематично соединенных друг с другом и с содержимым. Диаграммы классов могут быть организованы
+    в пакеты (и принадлежать пакетам); в этом случае на них отображается лишь то, что существенно в конкретном
+    пакете.<br />
+</p>
+<h3>
+    <a id="Use" name="Use">Использование</a>
+</h3>
+<p>
+    Следующие структуры классов подходят для изображения на диаграммах классов, но не все из них будут использоваться во
+    всех ситуациях.
+</p>
+<ul>
+    <li>
+        Наиболее важные подсистемы проектирования, классы, интерфейсы и их взаимосвязи. Диаграммы этого типа могут
+        функционировать как обзор моделей проектирования и весьма полезны при проверке модели. Эти диаграммы рекомендуется
+        включать в логическое представление архитектуры.
+    </li>
+    <li>
+        Функционально связанные или сцепленные классы.
+    </li>
+    <li>
+        Классы, входящие в один пакет.
+    </li>
+    <li>
+        Важные иерархии агрегирования и обобщения.
+    </li>
+    <li>
+        Важные структуры сущностных классов, включая структуры классов с взаимосвязями ассоциаций, агрегирований и
+        обобщений. Если это возможно, создайте диаграмму классов, содержащую все классы долгоживущих объектов и их
+        взаимосвязи. Такая диаграмма особенно полезна при проверке того, что хранится в системе, и структур хранилищ.
+    </li>
+    <li>
+        Пакеты и их зависимости, возможно иллюстрирующие их укладку.
+    </li>
+    <li>
+        Классы, участвующие в конкретной реализации варианта использования.
+    </li>
+    <li>
+        Отдельный класс, его атрибуты, операции и взаимосвязи с другими классами.
+    </li>
+</ul>
+<p>
+    Каждый класс должен быть представлен хотя бы на одной диаграмме. Иногда вы сможете лучше понять модель, если класс
+    будет показан несколько раз в одном и том же представлении, например, если вы хотите различать объекты класса.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

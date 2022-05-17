@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Тестирование блоков</title>
+<meta content="Guideline" name="uma.type">
+<meta content="unit_test" name="uma.name">
+<meta content="Тестирование блоков" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "9.315724622037552E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "9.315724622037552E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="9.315724622037552E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Тестирование блоков</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Тестирование блоков представляет собой подробное тестирование внутренней структуры модулей программного обеспечения. В этом руководстве обсуждаются методы прозрачного ящика и черного ящика для тестирование блоков.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_developer_test_66FE6BEE.html" guid="{862F3EC5-70C3-4D9C-BF0E-EF93AE1BF936}">Реализация теста разработчика</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_developer_test_44109C5.html" guid="{74C60DFE-7221-45F1-BB8B-922A81C5AA98}">Тест разработчика</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_test__developer_testing__unit_test__guidelines_for" name="XE_test__developer_testing__unit_test__guidelines_for"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    Тестирование блоков реализуется по отношению к самым маленьким доступным для тестирования элементам (блокам)
+    программного обеспечения и включает в себя тестирование внутренней структуры, например, логики и потоков данных, а
+    также функции блоков и наблюдаемые алгоритмы. Разработка и реализация тестов сосредоточены на зависимости внутренней
+    структуры блоков от знаний о реализации блоков (метод прозрачного ящика). Разработка и реализация тестов для проверки
+    наблюдаемых алгоритмов работы и функций блоков не зависит от знания реализации и поэтому известны как метод черного
+    ящика.&nbsp;
+</p>
+<p>
+    Оба метода применяются для разработки и реализации различных типов тестов (см. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/types_of_test_8AB94831.html" guid="1.6037730846300355E-307">Методика: Тип
+    тестов</a>), необходимых для успешного и полного тестирования блоков.&nbsp;
+</p>
+<p>
+    Дополнительная информация о создании вариантов тестирования для тестов блоков приведена в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/test_case_81FD1D9F.html" guid="1.3981505661923931E-304">Методика: Вариант тестирования</a>.
+</p>
+<h4>
+    <a id="WhiteBox_Test" name="WhiteBox_Test">Метод прозрачного ящика</a><a id="XE_unit_test__white-box_test" name="XE_unit_test__white-box_test"></a><a id="XE_test__white-box_test__of_units" name="XE_test__white-box_test__of_units"></a>
+</h4>
+<p>
+    Метод прозрачного ящика следует использовать для проверки внутренней структуры блоков. Теоретически, следует
+    протестировать все возможные пути выполнения кода, однако это возможно только для очень простых блоков. В крайнем
+    случае, следует протестировать все <b>пути от решения до решения</b> (DD-путь) по крайней мере один раз, поскольку
+    затем все операторы будут выполняться по крайней мере один раз. Решение обычно представляет собой оператор if, а
+    DD-путь - это путь между двумя решениями.
+</p>
+<p>
+    Для достижения этого уровня выполнения теста рекомендуется выбирать данные для тестирования таким образом, чтобы каждое
+    решение оценивалось по всем возможным путям.&nbsp;
+</p>
+<p>
+    Используйте инструменты данных о прогоне кода для обнаружения кода, не протестированного методом прозрачного ящика.
+    Тесты на достоверность следует выполнять одновременно с тестированием методом прозрачного ящика.
+</p>
+<p>
+    Дополнительная информация приведена в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/test_case_81FD1D9F.html" guid="1.3981505661923931E-304">Методика: Вариант
+    тестирования</a>&nbsp;
+</p>
+<h4>
+    <a id="BlackBox_Test" name="BlackBox_Test">Метод черного ящика</a><a id="XE_unit_test__black-box_test" name="XE_unit_test__black-box_test"></a><a id="XE_test__black-box_test__of_units" name="XE_test__black-box_test__of_units"></a>
+</h4>
+<p>
+    Целью тестирования методом черного ящика является проверка указанной функции блока и наблюдаемого алгоритма без знаний
+    о том, <b>как</b> в блоке реализуется эта функция и алгоритм. Тесты методом черного ящика сосредоточены и опираются на
+    ввод и вывод блока.
+</p>
+<p>
+    При создании тестов блоков, основанных на методе черного ящика, используются аргументы ввода и вывода операций блока,
+    и/или конечное состояние для оценки. Например, операция может включать алгоритм (требующий два значения в качестве
+    ввода и возвращающий третье значение в качестве вывода), либо инициировать изменение состояния объекта или компонента,
+    например, добавление или удаление записи базы данных. &nbsp;И то, и другое следует протестировать полностью. Для
+    тестирования операции следует создать достаточно вариантов тестирования для проверки следующего:
+</p>
+<blockquote>
+    <ul>
+        <li>
+            для каждого допустимого входного значения операцией возвращается соответствующее значение
+        </li>
+        <li>
+            для каждого недопустимого входного значения операцией возвращается соответствующее значение
+        </li>
+        <li>
+            для каждого допустимого входного состояния наблюдается соответствующее конечное состояние
+        </li>
+        <li>
+            для каждого недопустимого входного состояния наблюдается соответствующее конечное состояние
+        </li>
+    </ul>
+</blockquote>
+<p>
+    Используйте инструменты данных о прогоне кода для обнаружения кода, не протестированного методом прозрачного ящика.
+    Тесты на достоверность следует выполнять одновременно с тестированием методом черного ящика.
+</p>
+<p>
+    Дополнительная информация приведена в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/test_case_81FD1D9F.html" guid="1.3981505661923931E-304">Методика: Вариант
+    тестирования</a>&nbsp;
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

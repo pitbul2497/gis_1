@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Жизненный цикл тестирования</title>
+<meta content="Concept" name="uma.type">
+<meta content="the_lifecycle_of_testing" name="uma.name">
+<meta content="Жизненный цикл тестирования" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_u2yEADIEEdqwaNnSEheSAg", "_yd3EzdnmEdmO6L4XMImrsA", "3.372337174521937E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_yd3EzdnmEdmO6L4XMImrsA", "3.372337174521937E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "3.372337174521937E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "3.372337174521937E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_yd3EzdnmEdmO6L4XMImrsA", "3.372337174521937E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_u2yEADIEEdqwaNnSEheSAg", "_yd3EzdnmEdmO6L4XMImrsA", "3.372337174521937E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="3.372337174521937E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Жизненный цикл тестирования</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Эта рекомендация описывает, как дисциплина тестирования входит в жизненный цикл RUP.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/define_evaluation_mission_DD06E225.html" guid="_6Bt54CGGEdqMcovRzkCQow">Определение задачи оценки</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/define_evaluation_mission_611C79D9.html" guid="{10C2C34C-BF5E-4825-A7DC-5E106EFAA4C5}">Определение цели оценки</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/disciplines/rup_test_discipline_9DFAFB2F.html" guid="_yd3EzdnmEdmO6L4XMImrsA">Тестирование</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_test_lifecycle__introduction_to" name="XE_test_lifecycle__introduction_to"></a><a id="XE_test__lifecycle_of" name="XE_test__lifecycle_of"></a> 
+<p>
+    Разработка программного обеспечения в RUP - это циклический процесс. Жизненный цикл тестирования наилучшим образом
+    реализуется как процесс со многими итерациями. В каждом цикле итераций коллектив разработчиков программного обеспечения
+    создает промежуточную версию компоновки, которая является потенциальным кандидатом для тестирования.
+</p>
+<p>
+    Цели и акценты разработчиков меняются в разных циклах итерации. Согласно этому должны строить свои планы и участники
+    коллектива тестирования. Мы рекомендуем ограничивать до минимума усилия по планированию, а там, где они необходимы,
+    привязывать их точно ко времени, когда они потребуются. Также мы рекомендуем планировать тестирование только для
+    ближайшей итерации.
+</p>
+<p>
+    Для каждой компоновки в тесты будут вноситься добавления и уточнения, и что-то будет удаляться. Некоторые из тестов
+    будут неизменными и будут включаться в комплект тестов, применяемый при тестировании каждой компоновки в жизненном
+    цикле. При таком подходе тесты изменяются и уточняются, как и само программное обеспечение. Нет никакой фиксированной
+    спецификации программного обеспечения, и сами тесты тоже не фиксированы. На рисунке показана схема развития тестов во
+    времени.
+</p>
+<p align="center">
+    <img height="215" alt="Схема итераций тестов" src="./../../../core.base_rup/guidances/concepts/resources/lifec001.gif" width="374" />
+</p>
+<p>
+    Этот подход на основе итераций и архитектура на основе компонентов особенно подчеркивают целесообразность
+    регрессионного тестирования качества продукта для каждого цикла компоновки. Все тесты, разработанные для версии X,
+    являются потенциальными кандидатами для регрессионного тестирования версии X+1, X+2 и т.д. Когда тест повторяется
+    несколько раз, возможно, его следует автоматизировать. Автоматизированное тестирование позволяет выполнять сценарии при
+    повторном тестировании и переключать сотрудников на работу с тестированием новых функций.
+</p>
+<p>
+    Рассмотрим только жизненный цикл тестирования, пока не обращая внимания на остальные части проекта. На рисунке показана
+    структура различных задач дисциплины тестирования в заданной итерации.
+</p>
+<p align="center">
+    <img height="525" alt="Схема итераций тестов" src="./../../../core.base_rup/guidances/concepts/resources/wf_tst.gif" width="266" />
+</p>
+<p>
+    Жизненный цикл следует циклу итераций, согласно которому ведется разработка. Итерация начинается с того, что коллектив
+    тестирования уточняет у руководителя проекта и прочих заинтересованных лиц наиболее важные задачи тестирования будущей
+    версии. В этом участвуют почти все участники тестирования.
+</p>
+<p>
+    Обычно каждая итерация содержит не менее одного цикла тестирования, как показано на рисунке. Очень часто в ходе одной
+    итерации выполняется несколько компоновок, и цикл тестирования связан с этими компоновками. Иногда компоновки могут не
+    включаться в тестирование.
+</p>
+<p>
+    Наряду с общим процессом тестирования часть коллектива тестирования может быть занята поиском новых методик
+    тестирования. Такой подход обеспечивает надежность методик тестирования, особенно в последующих итерациях.
+</p>
+<p align="center">
+    <img height="365" alt="Итерации во времени" src="./../../../core.base_rup/guidances/concepts/resources/lifec003.gif" width="675" />
+</p>
+<p>
+    Жизненный цикл тестирования является частью жизненного цикла программного обеспечения, и они должны быть
+    синхронизированы друг с другом. Проектирование и разработка тестирования может быть столь же сложной и трудоемкой
+    задачей, как и разработка самого программного продукта. Если не выполнить тестирование вместе с первыми выпусками
+    программного обеспечения, то многие неполадки будут обнаруживаться на более поздних стадиях разработки. Часто
+    вследствие этого выпуск продукта откладывается из-за долгого периода исправления ошибок программы, что практические
+    сводит на нет преимущества итеративной разработки.
+</p>
+<p>
+    Даже если планирование тестов и определение задач могут выявить ошибки или просчеты на ранних этапах постановки задач,
+    мы рекомендуем заранее планировать все процедуры тестирования. Помимо уже упомянутой возможности повторного выполнения
+    задач, коллектив тестирования должен очень внимательно относиться к тому, чтобы выступать в роли беспристрастных
+    советников, а не карательных органов в отношении проектирования на ранних этапах. Работа проектировщиков на ранних
+    этапах неизбежно будет содержать ошибки. Если коллектив тестирования будет предъявлять необоснованные требования к
+    качеству этой работы, он рискует быть отторгнутым остальной частью разработчиков.
+</p>
+<p>
+    Неполадки, выявленные в цикле итерации, могут быть устранены в том же цикле или отложены на будущее. Это решение
+    принимает руководитель проекта. Одной из важных задач для коллектива тестирования и руководителя проекта является
+    определение того, насколько выполнены цели итерации, сформулированные в плане итерации. С каждой итерацией выполняется
+    анализ соответствия требованиям. Это непрерывный процесс, и к этому нужно быть готовым.
+</p>
+<p>
+    Выполнение тестов зависит от ряда факторов:
+</p>
+<ul>
+    <li>
+        область приложения
+    </li>
+    <li>
+        бюджет
+    </li>
+    <li>
+        стратегия компании
+    </li>
+    <li>
+        приемлемость рисков
+    </li>
+    <li>
+        персонал
+    </li>
+</ul>
+<p>
+    Затраты на тестирование будут зависеть от того, как выполняется оценка качества и расчет факторов риска в конкретной
+    среде.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

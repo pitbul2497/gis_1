@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Создание отчета о просмотре и состоянии работы с помощью Rational ClearQuest</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="report_review_work_status" name="uma.name">
+<meta content="Создание отчета о просмотре и состоянии работы с помощью Rational ClearQuest" name="uma.presentationName">
+<meta content="Tool:rup_clearquest:Rational ClearQuest" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearQuest" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{35F5A82B-F683-4CF2-9909-47E0E4E59376}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{35F5A82B-F683-4CF2-9909-47E0E4E59376}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Создание отчета о просмотре и состоянии работы с помощью Rational ClearQuest</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Целью этой памятки по инструменту является объяснение применения Rational ClearQuest для просмотра состояния работы.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearquest_3C7831BD.html" guid="{ED0B771E-CA09-4317-AB43-F88489AA520F}">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/confirm_duplicate_or_rejected_cr_8AB600B7.html" guid="{23EFB27B-DADC-483B-BF97-5B05089E3E56}">Подтверждение повторного или отклоненного запроса изменения</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/review_change_request_E7D91346.html" guid="{1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}">Проверка запросов изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/verify_changes_in_release_build_15F355EE.html" guid="{C6DE470A-C26B-41D7-9807-6D3DE566920E}">Проверка изменений в компиляции</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/report_on_configuration_status_9ECFA6E8.html" guid="{500A96BD-80F5-4E04-BCAB-CCE48F98639C}">Создание отчета о состоянии конфигурации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    ClearQuest облегчает пользователям указание в запросе типов записей для выборки из базы данных ClearQuest. Если
+    пользователь выполняет запрос без указания критериев выбора (фильтров), ClearQuest отображает список всех записей из
+    базы данных. Вот некоторые примеры типичных запросов:
+</p>
+<ul>
+    <li>
+        Реализаторы выполняют запрос неполадок, которые им требуется исправить, и просматривают те из них, которые обладают
+        наивысшим приоритетом, расположенные вверху списка.
+    </li>
+    <li>
+        Менеджеры проекта запрашивают записи оп дате их создания для отслеживания состояния работы тестеров.
+    </li>
+    <li>
+        Технические писатели при создании информации о выпуске запрашивают необработанные записи, связанные с проектом.
+    </li>
+</ul>
+<p>
+    ClearQuest выполняет запрос и затем отображает набор результатов. Участник команды изучает таблицу набора результатов и
+    выбирает записи для просмотра, изменения или применения в качестве основы для отчета или диаграммы.
+</p>
+<p>
+    Существует два типа запросов ClearQuest:
+</p>
+<ul>
+    <li>
+        Администраторы ClearQuest создают <b>общие запросы</b> для всех пользователей
+    </li>
+    <li>
+        Пользователь может создать и сохранить <b>частные запросы</b>
+    </li>
+</ul>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+    ClearQuest: <b>Справка &gt; Оглавление и индекс &gt; Работа с запросами</b>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

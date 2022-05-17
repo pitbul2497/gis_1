@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Переход от проектирования к разработке кода</title>
+<meta content="Concept" name="uma.type">
+<meta content="mapping_from_design_to_code" name="uma.name">
+<meta content="Переход от проектирования к разработке кода" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_IY0NkAISEdqTna4sZVFRow", "_yd3ExNnmEdmO6L4XMImrsA", "1.424219730601675E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_yd3ExNnmEdmO6L4XMImrsA", "1.424219730601675E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.424219730601675E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.424219730601675E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_yd3ExNnmEdmO6L4XMImrsA", "1.424219730601675E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_IY0NkAISEdqTna4sZVFRow", "_yd3ExNnmEdmO6L4XMImrsA", "1.424219730601675E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.424219730601675E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Переход от проектирования к разработке кода</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В данном разделе обсуждаются преимущества и недостатки различных способов перехода от проектирования к реализации.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_implementer_D145E819.html" guid="{75501BAA-0CCE-4852-A7B2-B10CA71C002A}">Реализатор</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/disciplines/rup_implementation_discipline_263E22DB.html" guid="_yd3ExNnmEdmO6L4XMImrsA">Реализация</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_code__mapping_from_design" name="XE_code__mapping_from_design"></a> 
+<h3>
+    <b><a id="Introduction" name="Introduction">Введение</a></b>
+</h3>
+<p>
+    Проект должен описывать систему достаточно подробно для того, чтобы ее реализация была однозначной. Определение
+    достаточности зависит от конкретного проекта и конкретной компании.
+</p>
+<p>
+    В некоторых случаях проект напоминает эскиз с минимумом деталей, достаточным для начала реализации проекта (принцип
+    кодирования по эскизу). Степень подробности эскиза зависит от опыта того, кто будет заниматься реализацией, сложности
+    проекта и вероятности его неправильного понимания.
+</p>
+<p>
+    В некоторых случаях проект делается настолько подробным, чтобы код можно было сгенерировать автоматически. Как правило,
+    в таких случаях применяются расширения стандартного языка UML для интеграции с конкретными языками или средами
+    программирования.
+</p>
+<p>
+    Проект также может быть иерархическим, например:
+</p>
+<ul>
+    <li>
+        модель высокого уровня, описывающая общую структуру системы
+    </li>
+    <li>
+        модель спецификаций подсистем с точным описанием необходимых интерфейсов и поведения основных подсистем системы
+    </li>
+    <li>
+        подробные проекты внутреннего содержания подсистем
+    </li>
+</ul>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_development_case_F4260B3A.html" guid="{F071C3D3-7054-457F-8A81-EFA6678CCDE1}">Вариант разработки</a> должен содержать информацию о том, как модель
+    проекта должна быть реализована в конкретном процессе проекта и как она связана с другими моделями и с реализацией.
+    Соответствующие сведения должны быть указаны в <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html" guid="{E5501201-7EE6-4243-AE91-73880FF76FC1}">рекомендациях по конкретному проекту</a>.
+</p>
+<p>
+    Далее в этом разделе описаны преимущества и недостатки различных вариантов связи между проектом и реализацией.
+</p>
+<h3>
+    <b><a id="sketch" name="sketch">Эскиз и код</a></b>
+</h3>
+<p>
+    Один из распространенных подходов к проектированию заключается в создании весьма абстрактного эскиза системы с
+    последующим переходом напрямую к кодированию. Обслуживание модели проекта осуществляется вручную.
+</p>
+<p>
+    В данном подходе каждый класс проекта представляет собой абстракцию нескольких классов уровня кода. Рекомендуется
+    привязать каждый класс проекта к одному "головному" классу, который, в свою очередь, может пользоваться несколькими
+    "вспомогательными" классами для моделирования своего поведения. "Вспомогательные" классы могут применяться для
+    реализации сложных атрибутов и компоновки структур данных, необходимых для реализации. В проекте не моделируются
+    "вспомогательные" классы и моделируются только ключевые атрибуты, взаимосвязи и операции головного класса. Цель такой
+    модели заключается в абстрагировании от деталей, в отношении которых решения может принять реализатор.
+</p>
+<p>
+    Данный подход иногда расширяют и на другие элементы модели проекта. Интерфейсы проекта могут быть описаны на более
+    высоком уровне абстракции, чем интерфейсы уровня кода, и так далее.
+</p>
+<h3>
+    <b><a id="round" name="round">Круговая разработка</a></b>
+</h3>
+<p>
+    В средах круговой разработки модель проекта детализируется до такого уровня, на котором она становится визуальным
+    представлением кода. Код синхронизируется со своим визуальным представлением (с поддержкой со стороны инструментов).
+</p>
+<p>
+    Ниже приведены несколько вариантов представления модели проекта в контексте круговой разработки.
+</p>
+<p>
+    <b><a id="trace" name="trace">Высокоуровневая и подробная модели проекта</a></b><a href="#Top"><img height="20"     alt="В начало страницы" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</p>
+<p>
+    Данный подход предполагает обслуживание двух уровней модели проекта. Каждый элемент высокоуровневой модели представляет
+    собой абстракцию одного или нескольких подробно описанных элементов модели круговой разработки. Например, класс проекта
+    может быть представлен одним "головным" классом и несколькими "вспомогательными" классами, точно так же, как в
+    описанной выше модели с эскизом и кодом. Прослеживаемость взаимосвязей между элементами модели высокоуровневого проекта
+    и элементами модели круговой разработки упрощает поддержание взаимной целостности моделей.
+</p>
+<p>
+    Хотя данный подход позволяет абстрагироваться от незначительных деталей, это достигается ценой дополнительных усилий,
+    которые требуется прикладывать для обеспечения совместимости между моделями.
+</p>
+<p>
+    <b><a id="evolves" name="evolves">Единая эволюционная модель проекта</a></b><a href="#Top"><img height="20"     alt="В начало страницы" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</p>
+<p>
+    В данном подходе используется одна модель проекта. Начальный эскиз элементов проекта постепенно эволюционирует до
+    состояния, когда он становится визуальным представлением кода. Графические элементы, например диаграммы реализации
+    вариантов использования, сначала привязаны к классам эскиза, а в конце разработки - к классам конкретного языка
+    программирования. При этом поддерживаются и высокоуровневые элементы описания проекта:
+</p>
+<ul>
+    <li>
+        диаграммы логической структуры системы
+    </li>
+    <li>
+        спецификации подсистем и компонентов
+    </li>
+    <li>
+        механизмы и шаблоны проекта<br />
+    </li>
+</ul>
+<p>
+    Такая модель удобна простотой ее синхронизации с реализацией.
+</p>
+<h3>
+    <a id="specification" name="specification">Модели реализации и спецификации</a>
+</h3>
+<p>
+    Еще один подход заключается в создании проекта в терминах спецификаций основных подсистем с детализацией до уровня,
+    позволяющего компилировать клиенты.
+</p>
+<p>
+    Подробный проект реализации подсистем можно моделировать и обслуживать отдельно от данной модели спецификаций.
+</p>
+<p>
+    Рекомендации по применению реализаций и спецификаций подсистем приведены в разделе See <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html" guid="1.2314266786534317E-305">Рекомендации по рабочим продуктам: Проектирование подсистем</a>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

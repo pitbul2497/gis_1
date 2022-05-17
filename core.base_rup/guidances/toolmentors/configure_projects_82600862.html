@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Настройка проектов с помощью Rational Administrator</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="configure_projects" name="uma.name">
+<meta content="Настройка проектов с помощью Rational Administrator" name="uma.presentationName">
+<meta content="Tool:rup_administrator:Rational Administrator" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Administrator" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{36723518-DF03-4DB1-97D2-502D74DA8D82}", "{63D2EE2A-A8D2-4A1D-BC41-8D62E9DA7CBF}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{36723518-DF03-4DB1-97D2-502D74DA8D82}", "{63D2EE2A-A8D2-4A1D-BC41-8D62E9DA7CBF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{36723518-DF03-4DB1-97D2-502D74DA8D82}", "{63D2EE2A-A8D2-4A1D-BC41-8D62E9DA7CBF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{36723518-DF03-4DB1-97D2-502D74DA8D82}", "{63D2EE2A-A8D2-4A1D-BC41-8D62E9DA7CBF}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{63D2EE2A-A8D2-4A1D-BC41-8D62E9DA7CBF}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Настройка проектов с помощью Rational Administrator</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение Rational Administrator для настройки проектов Administrator.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_administrator_93C25FC0.html" guid="{36723518-DF03-4DB1-97D2-502D74DA8D82}">Rational Administrator</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/support_development_1443EF07.html" guid="{35936CF9-4B04-402A-9482-07E5CFB45D99}">Разработка справочных материалов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    В Administrator можно создавать проекты Administrator, в которых хранятся сведения о тестировании ПО и разработке. Все
+    компоненты Rational на вашем компьютере обновляют и извлекают данные из одного проекта. Типы данных в проекте
+    Administrator зависят от установленного ПО Rational. &nbsp;
+</p>
+<p>
+    <b><img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /></b> Сведения о проектах
+    Administrator приведены в следующих разделах электронной справки Administrator:
+</p>
+<ul>
+    <li>
+        <i>Что такое проект Rational</i>
+    </li>
+    <li>
+        <i>Компоненты проекта Rational</i>
+    </li>
+    <li>
+        <i>Преимущества проекта Rational</i>
+    </li>
+</ul>
+<p>
+    С помощью Administrator проект Administrator можно также включить для UCM (Унифицированное управление изменениями),
+    являющегося подходом Rational Software для управления изменения в требованиях, моделях разработки, документации,
+    компонентах, тестах, исходном коде и т.п. &nbsp;
+</p>
+<p>
+    <b><img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /></b> Дополнительные
+    сведения о UCM приведены в следующих разделах электронной справки Administrator:
+</p>
+<ul>
+    <li>
+        <i>Что такое UCM?</i>
+    </li>
+    <li>
+        <i>Что такое UCM относительно Rational Administrator</i>
+    </li>
+    <li>
+        <i>Определение необходимости сделать проект доступным для UCM</i>
+    </li>
+</ul>
+<p>
+    Перед настройкой проекта следует создать его. Перед созданием проекта Administrator следует ответить на ключевые
+    вопросы. Если вы планируете сделать проект доступным для UCM, вам также потребуется настроить Rational ClearCase.
+    &nbsp;
+</p>
+<p>
+    <b><img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /></b> Дополнительные
+    сведения о действиях по подготовке и созданию проекта Administrator приведены в следующих разделах электроннй справки
+    Administrator:&nbsp;
+</p>
+<ul>
+    <li>
+        <i>Перед тем, как создать проект</i>
+    </li>
+    <li>
+        <i>Действия по настройке ClearCase</i>
+    </li>
+    <li>
+        <i>Создание проекта Rational Administrator</i>
+    </li>
+</ul>
+<p>
+    При необходимости использовать существующие хранилища, можно преобразовать их в проекты Administrator, чтобы о ни стали
+    доступны для текущей версии Administrator. &nbsp;
+</p>
+<p>
+    <b><img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /></b> Дополнительная
+    информация л преобразовании приведена в следующих разделах электронной справки Administrator:&nbsp;
+</p>
+<ul>
+    <li>
+        <i>Обновление хранилища SQA 6.x</i>
+    </li>
+    <li>
+        <i>Обновление хранилища Rational Test 7.x</i>
+    </li>
+</ul>
+<p>
+    Эта памятка по инстурменту применима для систем с Windows 98/2000/NT 4.0.
+</p>
+<p>
+    Для настройки проекта Administrator выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Decide on data structures">Определите, какие структуры данных Rational вы хотите добавить в
+        проект</a>
+    </li>
+    <li>
+        <a href="#Associate with UCM">Определите, следует ли связать проект Administrator с проектом UCM</a> (если вы
+        еще не сделали этого)
+    </li>
+    <li>
+        <a href="#Bring under config management">Определите, следует ли вызывать проект Rational RequisitePro или
+        хранилище данных Rational Test при данном управлении конфигурацией</a> (если вы еще не сделали этого)
+    </li>
+</ol>
+<h3>
+    1.&nbsp;&nbsp; <a id="Decide on data structures" name="Decide on data structures">Определите какие структуры данных
+    Rational следует добавить в проект</a>
+</h3>
+<p>
+    Можно связать различные структуры данных с проектом Administrator. Структурами данных являются:
+</p>
+<ul>
+    <li>
+        Хранилища данных Rational Test
+    </li>
+    <li>
+        Проекты Rational RequisitePro
+    </li>
+    <li>
+        Базы данных Rational ClearQuest
+    </li>
+    <li>
+        Файлы моделей Rational Rose
+    </li>
+</ul>
+<p>
+    Создать структуры данных можно в Administrator, также можно выбрать существующие структуры данных, за исключением
+    файлов моделей Rose. В Administrator файлы моделей Rose можно только добавлять, но не создавать.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp; Обратитесь к разделу
+    <i>Настройка проекта Rational Administrator</i> электронной справки Administrator.
+</p>
+<h3>
+    2.&nbsp;&nbsp; <a id="Associate with UCM" name="Associate with UCM">Определите, следует ли связать проект Administrator
+    с проектом UCM</a>
+</h3>
+<p>
+    После создания проекта Administrator можно сделать его доступным для UCM, но только если в системе установлен Rational
+    ClearCase. Также можно сделать доступными для UCM ресурсы требований и тестов в проекте, в качестве выполнения
+    изменения свойств проекта.
+</p>
+<p>
+    Обратите внимание, что отключить UCM для проекта, содержащего хранилища данных под управлением UCM, нельзя. Это
+    означает, что нельзя изменить состояние проекта с UCM на проект без UCM, если только хранилища данных тестов и
+    требований не используют UCM.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к разделу
+    <i>Взаимосвязь проекта Rational Administrator с проектом UCM</i> электронной справки Administrator.
+</p>
+<h3>
+    3.&nbsp;&nbsp; <a id="Bring under config management" name="Bring under config management">Определите, следует ли
+    вызывать проект Rational RequisitePro или хранилище данных Rational Test при данном управлении конфигурацией</a>
+</h3>
+<p>
+    Если вы уже создали взаимосвязь между проектом RequisitePro или хранилищем данных тестов и проектом с UCM, но не
+    вызвали их в текущем управлении конфигурацией, вы можете сделать это.
+</p>
+<p>
+    Также, для любого проекта UCM, вязанного с проектом Administrator, будет включена поддержка управления запросов на
+    изменение если вы выберите базу данных ClearQuest в диалоговом окне Настройка проектов.
+</p>
+<p>
+    Однако, если база данных ClearQuest уже связана с проектом UCM, вы не сможете выбрать или создать другую базу данных
+    ClearQuest для связи с проектом Administrator. Для создания или изменения базы данных ClearQuest, связанной с проектом
+    Administrator, следует создать новый проект. База данных ClearQuest предопределяется существующими взаимосвязями с
+    проектом UCM.
+</p>
+<p>
+    В проекте Administrator с UCM можно отменить взаимосвязь проекта RequisitePro или хранилища данных тестов, находящихся
+    под управлением конфигурацией. Обратите внимание, что при удалении проекта RequisitePro или хранилища данных тестов из
+    управления конфигурацией происходит следующее:
+</p>
+<ul>
+    <li>
+        Копируются все файлы проекта RequisitePro и хранилища данных тестов в неуправляемую версиями область
+    </li>
+    <li>
+        Создается взаимосвязь проекта с неуправляемой версиями областью
+    </li>
+</ul>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к разделу
+    <i>Настройка проекта Rational Administrator</i> электронной справки Administrator.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

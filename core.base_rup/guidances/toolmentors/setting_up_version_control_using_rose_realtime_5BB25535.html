@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Настройка управления версиями с помощью Rational Rose RealTime с Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="setting_up_version_control_using_rose_realtime" name="uma.name">
+<meta content="Настройка управления версиями с помощью Rational Rose RealTime с Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_rose_rt:Rational Rose RealTime" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Rose RealTime" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{67B13F47-BD65-4ABD-9F68-E8953008441E}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B3026434-672D-4564-9106-A951C326EBF5}", "{67B13F47-BD65-4ABD-9F68-E8953008441E}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{67B13F47-BD65-4ABD-9F68-E8953008441E}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{67B13F47-BD65-4ABD-9F68-E8953008441E}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B3026434-672D-4564-9106-A951C326EBF5}", "{67B13F47-BD65-4ABD-9F68-E8953008441E}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{67B13F47-BD65-4ABD-9F68-E8953008441E}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{67B13F47-BD65-4ABD-9F68-E8953008441E}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Настройка управления версиями с помощью Rational Rose RealTime с Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке описывается настройка управления версиями в Rational Rose RealTime с Rational ClearCase.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rose_rt_DDC0220E.html" guid="{B3026434-672D-4564-9106-A951C326EBF5}">Rational Rose RealTime</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/make_changes_to_configuration_items_9F1D8304.html" guid="{A56F93A6-DAD6-4453-936D-D7AE4A34D45D}">Внесение изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_tools_FBA37850.html" guid="{78C58888-2969-4A74-BF76-5F77AFA36F9C}">Настройка инструментов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Rational ClearCase использует модель представления в сочетании с виртуальной файловой системой, что позволяет указать
+    линейку версий файлов, с которыми вы хотите работать. После этого Rational Rose RealTime распознает файлы в текущем
+    представлении как будто они хранятся в обычной файловой системе (не ClearCase). Rose RealTime задает набор файлов,
+    составляющих модель, а ClearCase предоставляет версии этих файлов, определяемые спецификацией конфигурации
+    представления.
+</p>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;Дополнительные сведения о
+    применении Rose RealTime с ClearCase приведены в документе <i>Руководство по коллективной разработке в Rational Rose
+    RealTime</i>.
+</p>
+<p>
+    Перед применением ClearCase необходимо настроить вашу рабочую станцию и все прочие рабочие станции, на которых будет
+    применяться ClearCase.
+</p>
+<h4>
+    Предварительное условие: настройка ClearCase
+</h4>
+<h5>
+    Общие рекомендации
+</h5>
+<p>
+    Если вы являетесь пользователем Microsoft Windows NT, не открывайте представления через точку монтирования MVFS или
+    диск M:. Вместо этого воспользуйтесь представлениями через явные монтирования дисков, такие как X:, Y: или Z:. Это
+    улучшит прерывания и устранит зависимости от имен представлений.
+</p>
+<h5>
+    Интеграция UCM
+</h5>
+<p>
+    Интеграция UCM позволяет присвоить операции ревизиям из наборов инструментов при работе с UCM VOB. Кроме того, можно
+    перебазировать, доставить и выполнить обозреватель проектов в Rose RealTime.
+</p>
+<h5>
+    Представления моментальных копий
+</h5>
+<p>
+    В ClearCase можно запустить обновление представления моментальной копии из Rose RealTime. Представление моментальной
+    копии содержит структуру каталогов исходных файлов.
+</p>
+<p>
+    Применять представления моментальных копий рекомендуется при наличии следующих условий:
+</p>
+<ul>
+    <li>
+        Ваш компьютер не поддерживает динамические представления.
+    </li>
+    <li>
+        Необходимо оптимизировать производительность компоновки для достижения внутренних скоростей компоновки.
+    </li>
+    <li>
+        Необходимо работать с исходными файлами под управлением ClearCase при отключении от сети, содержащей VOB, или при
+        подключении к сети периодически.
+    </li>
+    <li>
+        Необходимо обратиться к представлению с компьютера, не являющегося хостом ClearCase.
+    </li>
+    <li>
+        Ваш проект не использует контроль и аннулирование компоновки ClearCase.
+    </li>
+</ul>
+<h5>
+    Настройка рабочей станции Rational ClearCase
+</h5>
+<p>
+    Все рабочие станции, которые будут обращаться к VOB или представлению, должны быть настроены для использования
+    ClearCase. Для Windows NT/2000 к ним относятся все рабочие станции, используемые для разработки. Для UNIX к ним
+    относятся все системы, являющиеся серверами представлений.
+</p>
+<p>
+    Кроме того, все системы, выполняющие роль серверов представлений для представлений ClearCase, используемых Rose
+    RealTime, должны быть настроены для ClearCase. При использовании ClearCase MultiSite вам потребуется проделать это на
+    всех системах, в которых скопированы VOB, содержащие Rose. Определите, какие системы являются серверами представлений,
+    можно введя следующую команду в командной строке:
+</p>
+<blockquote>
+<pre>
+ cleartool lsview
+</pre>
+</blockquote>
+<p>
+    Второй элемент в каждой строке вывода указывает имя системы, в которой выполняется сервер представлений. Например, если
+    в выводе команды lsview вы увидите следующую строку:
+</p>
+<blockquote>
+<pre>
+ myview mymachinevwsmyview.vws
+</pre>
+</blockquote>
+<p>
+    то "mymachine" будет представлять имя системы, в которой существует сервер представления myview.
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;Дополнительные сведения
+    можно получить у администратора ClearCase или в документации по инструментам управления исходным кодом в книге
+    <i>Rational Rose RealTime - руководство по коллективной разработке</i>.
+</p>
+<h5>
+    Исходная установка
+</h5>
+<p>
+    Следующие действия применимы если вы работаете над моделью, уже находящейся под управлением исходным кодом в VOB.
+    Дополнительная информация приведена в документации по администрированию управления исходным кодом в книге <i>Rational
+    Rose RealTime - руководство по коллективной разработке</i>.
+</p>
+<ol>
+    <li>
+        Создайте представление интегратора чтобы спецификации конфигурации отображались следующим образом:
+    </li>
+</ol>
+<blockquote>
+    <blockquote>
+<pre>
+ <b>
+element * CHECKEDOUT</b><br />
+
+ <b>
+element * /main/LATEST</b>
+</pre>
+    </blockquote>
+</blockquote>
+<ol start="2">
+    <li>
+        Создайте метки проекта чтобы задать различное выравнивание. Примерами значимых меток являются:
+    </li>
+</ol>
+<blockquote>
+    <ul>
+        <li>
+            TC_BASELINE_0 - для представления исходного состояния проекта
+        </li>
+        <li>
+            TC_BUILDFILES - для указания версий элемента, добавляемых в следующую автоматическую компиляцию
+        </li>
+        <li>
+            TC_LATEST_STABLE - для определения последнего стабильного выравнивания ветви интеграции
+        </li>
+    </ul>
+</blockquote>
+<ol start="3">
+    <li>
+        Создайте исходное выравнивание и примените метку к VOB. Примером исходного выравнивания может быть:
+    </li>
+</ol>
+<blockquote>
+    <blockquote>
+<pre>
+ <b>
+[x:dev]cleartool mklabel -recurse TC_BASELINE_0 dev</b>
+</pre>
+    </blockquote>
+</blockquote>
+<ol start="4">
+    <li>
+        Создайте шаблон представления разработчика чтобы проверить создание всех спецификаций конфигурации из общей базы.
+        Это обеспечит согласованность и управляемый доступ к модели и облегчит применение выравнивания и частных
+        ветвей.<br />
+        <br />
+         Существует две основные функции, выполняемые разработчиками, обзор и разработка. Для каждой из них требуется своя
+        спецификация конфигурации.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;Информация о правилах шаблонов
+    приведена в сведениях об исходной установке в <i>Rational Rose RealTime - руководство по коллективной разработке</i>.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Для применения ClearCase из Rose RealTime выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Control appropriate model elements as units">Управляйте соответствующими элементами модели как
+        блоками</a>
+    </li>
+    <li>
+        <a href="#Create a local work area">Создайте локальную рабочую область</a>
+    </li>
+    <li>
+        <a href="#Save a model to the work area">Сохраните модель в рабочей области</a>
+    </li>
+    <li>
+        <a href="#Configure the workspace source control options">Настройте опции управления исходным кодом
+        рабочей области</a>
+    </li>
+    <li>
+        <a href="#Add the model to source control">Добавьте модель к управлению исходным кодом</a>
+    </li>
+    <li>
+        <a href="#Make the default workspace available to project members">Сделайте рабочую область по
+        умолчанию доступной для всех участников проекта</a>
+    </li>
+    <li>
+        <a href="#Use view templates">Используйте шаблоны представлений</a>
+    </li>
+    <li>
+        <a href="#ClearCase entities">Сущности ClearCase</a>
+    </li>
+    <li>
+        <a href="#Automate builds">Автоматизируйте компиляцию</a>
+    </li>
+    <li>
+        <a href="#Developer process">Процесс разработки</a>
+    </li>
+    <li>
+        <a href="#Integration Process">Процесс интеграции</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="Control appropriate model elements as units" name="Control appropriate model elements as units">Управляйте
+    соответствующими элементами модели как блоками</a>
+</h3>
+<p>
+    Определите уровень дискретности, необходимый для проекта и среды коллективной разработки на текущем этапе. Проделайте
+    это совместно с архитектором проекта.
+</p>
+<h3>
+    2. <a id="Create a local work area" name="Create a local work area">Создайте локальную рабочую область</a>
+</h3>
+<p>
+    Вам потребуется создать локальную рабочую область для сохранения моделей в ClearCase. Все разработчики, обращающиеся к
+    файлам Rose RealTime в VOB должны использовать собственные выделенные представления.
+</p>
+<h3>
+    3. <a id="Save a model to the work area" name="Save a model to the work area">Сохраните модель в рабочей области</a>
+</h3>
+<p>
+    Прежде, чем поместить модель под управление исходным кодом следует сохранить ее в локальной рабочей области. Сохраните
+    модель в каталоге, связанном с хранилищем управления исходным кодом.
+</p>
+<h3>
+    4. <a id="Configure the workspace source control options" name="Configure the workspace source control options">Настройте опции управления исходным кодом</a>
+</h3>
+<p>
+    Для включения управления исходным кодом задайте соответствующие параметры, описанные в основах управления исходным
+    кодом в книге <i>Rational Rose RealTime - руководство по коллективной разработке</i>.
+</p>
+<h3>
+    5. <a id="Add the model to source control" name="Add the model to source control">Добавьте модель к управлению исходным
+    кодом</a>
+</h3>
+<p>
+    Самым простым способом добавить все применимые блоки к управлению исходным кодом является инструмент <b>Отправить все
+    изменения в управление исходным кодом</b>. Дополнительные сведения приведены в описании администрирования управления
+    исходным кодом в книге <i>Rational Rose RealTime - руководство по коллективной разработке</i>.
+</p>
+<h3>
+    6. <a id="Make the default workspace available to project members" name="Make the default workspace available to project members">Сделайте рабочую область по умолчанию доступной для
+    участников проекта</a>
+</h3>
+<p>
+    Файл рабочей области (.rtwks) содержит сведения, общие для всех пользователей, работающих над проектом. После
+    изначальной настройки параметров в рабочей области они вряд ли будут изменены в дальнейшем. Все разработчики проекта
+    должны использовать одинаковые копии файла рабочей области. По этой причине может потребоваться поместить этот файл под
+    управление исходным кодом, чтобы всем пользователям проекта была доступна одна фиксированная версия. Rational Rose
+    RealTime не предоставляет явной поддержки для добавления или изъятия этого файла.
+</p>
+<p>
+    После того, как менеджер управления исходным кодом добавит модель под управление исходным кодом, рабочая область будет
+    вручную добавлена с помощью инструмента управления исходным кодом. Прочие пользователи должны затем извлекать рабочую
+    область как часть исходного обновления локальной рабочей области. Это гарантирует, что все участники команды используют
+    одинаковые параметры управления исходным кодом для проекта.
+</p>
+<h3>
+    7. <a id="Use view templates" name="Use view templates">Используйте шаблоны представлений</a>
+</h3>
+<p>
+    Шаблоны представлений используются для обеспечения использования разработчиками общей базы для спецификаций
+    конфигурации представления для облегчения работы с частными ветвями. Шаблон представления задает ветвь интеграции для
+    работы, перечисляет помеченные контрольные точки, которые можно использовать для базирования частных ветвей, и содержит
+    шаблон спецификации конфигурации, который можно заполнить дополнительными правилами спецификаций конфигурации.
+</p>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;Дополнительные сведения приведены
+    в описании параллельной разработки в Rational ClearCase в книге <i>Rational Rose RealTime - руководство коллективной
+    разработки</i>.
+</p>
+<h3>
+    8. <a id="ClearCase entities" name="ClearCase entities">Сущности ClearCase</a>
+</h3>
+<p>
+    Можно создать представления, шаблоны представлений и метки для облегчения выполнения функций Rational ClearCase. См.
+    сведения о параллельной разработке ClearCase в <i>Rational Rose RealTime - руководство по коллективной разработке</i>.
+</p>
+<h3>
+    9. <a id="Automate builds" name="Automate builds">Автоматизация компиляции</a>
+</h3>
+<p>
+    Для предоставления возможности избирательного выбора версий файлов, включаемых в компоновку, компоновщик выбирает все
+    версии, помеченные меткой компоновки TC_BUILDFILES. Это обеспечивает гибкость при изменении точных версий, добавляемых
+    в компоновку. Например, если последняя версия файла содержит не компилируемый код, то следует пометить предыдущую
+    версию.
+</p>
+<p>
+    Компоновка состоит из следующих этапов:
+</p>
+<ol>
+    <li>
+        Пометить файлы компоновки.
+    </li>
+    <li>
+        Выполнить компоновку.
+    </li>
+    <li>
+        При успешном завершении компоновки:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Создайте новую метку выравнивания и примените версии файла компоновки.
+            </li>
+            <li>
+                Примените TC_LATEST_STABLE для компоновки версий файлов.
+            </li>
+            <li>
+                Сделайте новое выравнивание доступным разработчикам.
+            </li>
+        </ul>
+    </li>
+</ol>
+<h3>
+    10. <a id="Developer process" name="Developer process">Процесс разработки</a>
+</h3>
+<p>
+    Все операции разработки выполняются одним разработчиком и в частной ветви, конкретной для операции. Для каждого
+    разработчика требуется собственное представление. Представление основано на точке ветвления в ветви интеграции,
+    определенной меткой компоновки.<br />
+    <br />
+     Следует выбрать уникальное имя ветви, идентифицирующее выполняемую работу, например:
+</p>
+<blockquote>
+<pre>
+ paulz_timing
+</pre>
+</blockquote>
+<p>
+    Правила спецификации конфигурации представления настраиваются для автоматического изъятия и ветвления файлов из точки
+    ветвления в частную ветвь. Точно также, созданные при разработке операции немедленно ветвятся в частную ветвь.
+</p>
+<p>
+    Так как ветвь скрыт от остальных разработчиков, пользователь может добавить дополняющие изменения в ветвь. Когда
+    разработчик удовлетворен выполнением изменений и их готовностью к интеграции, от сообщает интегратору о том, что все
+    изменения в частной ветви готовы к интеграции.
+</p>
+<p>
+    Помещая частные ветви разработчиков вне меток, соответствующих версиям, используемым автоматической компиляцией, все
+    разработчики могут повторно использовать большинство результатов компиляции в виде добавляемых производных объектов.
+    Это существенно снижает объем компиляции, необходимой каждому разработчику при внесении изменений.
+</p>
+<h3>
+    11. <a id="Integration Process" name="Integration Process">Процесс интеграции</a>
+</h3>
+<p>
+    Все операции разработки должны в конце-концов быть объединены в ветвь интеграции. ClearCase предлагает несколько
+    инструментов для выполнения этого слияния. Команда <b>cleartool findmerge</b> позволяет объединить все изменения из
+    ветви в другую ветвь. Из представления интеграции можно выполнить следующие команды:
+</p>
+<blockquote>
+<pre>
+ cleartool findmerge dev -all -fversion .../paulz_timing/LATEST -merge
+</pre>
+</blockquote>
+<p>
+    Также пользователя Windows NT могут воспользоваться ClearCase Merge Manager для выполнения того же объединения.
+</p>
+<p>
+    Оба эти метода объединят версии каталогов и изменения в файлах моделей с помощью Rose RealTime Model Integrator.
+    Выполнив объединение интегратор должен загрузить модель в Rose RealTime и проверить отсутствие ошибок слияния. При
+    успешной загрузке модели изменения следует добавить с помощью пункта меню <b>Инструменты -&gt; Управление исходным
+    кодом -&gt; Отправить все изменения в управление исходным кодом</b>.<br />
+</p>
+<p>
+    Для интеграции серии операций разработки:
+</p>
+<ol>
+    <li>
+        Загрузите модель из представления интегратора.
+    </li>
+    <li>
+        Выполните слияние, как описано выше.
+    </li>
+    <li>
+        Выберите в меню пункт <b>Инструменты -&gt; Управление исходным кодом -&gt; Синхронизировать всю модель</b>. При
+        этом будут перезагружены все файлы, измененные в ходе объединения.
+    </li>
+    <li>
+        Убедитесь, что различия слияния допустимы.
+    </li>
+    <li>
+        С помощью пункта меню <b>Инструменты -&gt; Управление исходным кодом -&gt; Отправить все изменения в управление
+        исходным кодом</b> примите изменения и добавьте их в управление исходным кодом.
+    </li>
+    <li>
+        Повторите действия 2-5 для всех операций, требующих интеграции.
+    </li>
+</ol><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

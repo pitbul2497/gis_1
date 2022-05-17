@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Идеи тестов для вызовов методов</title>
+<meta content="Guideline" name="uma.type">
+<meta content="test_ideas_for_method_calls" name="uma.name">
+<meta content="Идеи тестов для вызовов методов" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.418859682485385E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.418859682485385E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.418859682485385E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Идеи тестов для вызовов методов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Идеи тестов опираются на вероятные сбои программного обеспечения и способы обнаружения этих сбоев. Эта рекомендация описывает способ выявления участков кода, где не проверяется результат вызова метода.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_test_ideas_list_2A0F8E03.html" guid="{45219F27-0F84-4FD5-A7BC-73C19226303B}">Тест - Список идей</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_test__developer_testing__test_ideas__for_method_calls" name="XE_test__developer_testing__test_ideas__for_method_calls"></a><a id="XE_design__developer_testing__test_ideas__for_method_calls" name="XE_design__developer_testing__test_ideas__for_method_calls"></a><a id="XE_test-ideas__for_method_calls" name="XE_test-ideas__for_method_calls"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    Ниже приведен фрагмент ошибочного кода:
+</p>
+<blockquote>
+<pre>
+File file = new File(stringName);
+file.delete();
+</pre>
+</blockquote>
+<p>
+    Ошибка состоит в том, что вызов <font size="+0">File.delete</font> может быть не выполнен, но код не проверяет это.
+    Исправить это можно следующим образом (код выделен курсивом):
+</p>
+<blockquote>
+<pre>
+File file = new File(stringName);
+<font color="#ff0000">
+<i>
+<b>
+if (</b></i></font>file.delete()<font color="#ff0000">
+<i>
+<b>
+== false) {...}</b></i></font>
+</pre>
+</blockquote>
+<p>
+    Эта рекомендация описывает способ выявления участков кода, где не проверяется результат вызова метода. Обратите
+    внимание, что при этом считается, что метод дает правильные результаты при любых входных данных. Это также должно
+    тестироваться, но создание тестов для вызываемого метода - это отдельная задача. В ваши обязанности не входит
+    тестирование <font size="+0">File.delete</font>.)
+</p>
+<p>
+    Основная идея состоит в том, что следует протестировать <i>отличные, необработанные, значимые результаты</i> вызова
+    метода. Для того чтобы определить этот термин, сначала рассмотрим, что такое <i>результат</i>. При выполнении метода в
+    мире что-то меняется. Некоторые примеры приведены ниже:
+</p>
+<ul>
+    <li>
+        Стеку среды выполнения могут быть переданы возвращаемые значения.
+    </li>
+    <li>
+        Может возникнуть исключительная ситуация.
+    </li>
+    <li>
+        Может измениться глобальная переменная.
+    </li>
+    <li>
+        Может обновиться запись в базе данных.
+    </li>
+    <li>
+        Могут быть отправлены данные по сети.
+    </li>
+    <li>
+        Может быть записано сообщение в стандартный поток вывода.
+    </li>
+</ul>
+<p>
+    Рассмотрим, что означает <i>значимые</i>, опять на примерах.
+</p>
+<ul>
+    <li>
+        Предположим, что вызов метода приводит к записи сообщения в стандартный поток вывода. Это "изменяет состояние
+        мира", но не может влиять на дальнейшее выполнение программы. Вывод на печать или его отсутствие не влияет на
+        выполнение кода.
+    </li>
+    <li>
+        Если метод возвращает true в случае успешного выполнения или false при ошибке, то скорее всего программа
+        разветвится согласно этому результату. Поэтому возвращаемое значение - значимое.
+    </li>
+    <li>
+        Если метод обновляет запись базы данных, которая потом применяется в коде, то результат (обновление записи) будет
+        значимым.
+    </li>
+</ul>
+<p>
+    Разница между значимым и незначимым не всегда однозначна. Метод <font size="+0">print</font> может приводить к
+    выделению ресурсов для буфера, и это может быть значимым. Бывают ситуации, когда изъян возникает вследствие того, как и
+    когда выделяются буферы. Это возможно, чаще всего маловероятно.
+</p>
+<p>
+    Метод может возвращать самые разные результаты, но не все из них будут <i>отличными</i>. Рассмотрим метод, который
+    записывает байты на диск. Он может возвращать отрицательное число в случае ошибки, в противном случае он возвращает
+    число записанных байт (которое может быть меньше запрошенного). Все разные варианты сводятся к трем основным:
+</p>
+<ul>
+    <li>
+        отрицательное число
+    </li>
+    <li>
+        записано байт ровно столько, сколько запрошено
+    </li>
+    <li>
+        записано байт меньше, чем запрошено.
+    </li>
+</ul>
+<p>
+    Все отрицательные значения объединяются в одну группу, потому что большинство программ не будет их различать. Все они
+    (сколько бы вариантов ни было) будут считаться ошибкой. Если код должен записать 500 байт, то ему все равно, записано
+    34 или 340, так или иначе, для оставшихся байт запись нужно повторить. Если, скажем, для 0 должно быть выполнено другое
+    действие, то это выделит еще один отличный результат.
+</p>
+<p>
+    Остается объяснить последний термин в определении. В данной методике тестирования нас не интересуют результаты, которые
+    уже были <i>обработаны</i>. Рассмотрим код:
+</p>
+<blockquote>
+<pre>
+File file = new File(stringName);
+if (file.delete() == false) {...}
+</pre>
+</blockquote>
+<p>
+    Два отличные результата - это true и false. Код их обрабатывает. Правильно ли он это делает, проверяют идеи тестов,
+    описанные в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/test_ideas_for_booleans_and_boundaries_74AE938C.html" guid="1.8659406802663404E-305">Рекомендация по рабочему продукту: идеи тестов для булевских выражений и граничных
+    условий</a>. Эта методика посвящена отличным результатам, которые не обрабатываются специальным кодом. Это может иметь
+    место по двум причинам: вы посчитали различие незначимым, или просто его не заметили. Пример первого случая:
+</p>
+<blockquote>
+<pre>
+result = m.method();
+switch (result) {
+    case FAIL:
+    case CRASH:
+       ...
+       break;
+    case DEFER:
+       ...
+       break;
+    default:
+       ...
+       break;
+}
+</pre>
+</blockquote>
+<p>
+    <font size="+0">FAIL</font> <font size="+0">CRASH</font> обрабатываются одним и тем же кодом. Может оказаться, что
+    проверять эти два варианта следует отдельно. Ниже приведен фрагмент кода, в котором различие не было замечено:
+</p>
+<blockquote>
+<pre>
+result = s.shutdown();
+if (result == PANIC) {
+   ...
+} else {
+   // готово. Выключить реактор.
+   ...
+} 
+</pre>
+</blockquote>
+<p>
+    Оказывается, что при выключении может быть еще один значимый результат: <font size="+0">RETRY</font>. Написанный код
+    считает, что этот вариант относится к успешному выполнению, что скорее всего ошибочно.
+</p>
+<h3>
+    <a id="FindingTestIdeas" name="FindingTestIdeas">Поиск идей тестов</a>
+</h3>
+<p>
+    Итак, ваша задача - найти ранее не замеченные значимые отличные результаты. Это кажется невозможным: как можно
+    посчитать значимым то, что ранее было посчитано незначимым?
+</p>
+<p>
+    Ответ состоит в том, что при тестировании голова работает иначе, чем при программировании, и могут возникнуть новые
+    идеи. <i>Можно</i> подвергнуть сомнению свои собственные идеи при методическом просмотре кода, вызываемых методов,
+    проверке документации и обдумывании. Опишем возможные варианты.
+</p>
+<h4>
+    "Невероятные" случаи
+</h4>
+<p>
+    Часто кажется, что какая-либо ошибка возникнуть не может. Проверьте, так ли это.
+</p>
+<p>
+    В этом примере код на Java обрабатывает временные файлы в Unix.
+</p>
+<blockquote>
+<pre>
+File file = new File("tempfile");
+FileOutputStream s;
+try {
+    // открыть временный файл.
+    s = new FileOutputStream(file);
+} catch (IOException e) {...}
+// удалить временный файл
+file.delete();
+</pre>
+</blockquote>
+<p>
+    Цель его состоит в том, чтобы временные файлы всегда удалялись, независимо от того, как заканчивает работу программа.
+    Это достигается тем, что после создания временного файла он будет удален. В Unix удаленный файл будет удален
+    операционной системой в любом случае после завершения процесса. Беспечный программист Unix может полениться написать
+    код, проверяющий, был ли удален файл. Раз файл был успешно создан, он будет и удален.
+</p>
+<p>
+    Этот прием не сработает в Windows. Файл не будет удален, потому что он открыт. Обнаружить этот факт сложно: в августе
+    2000 в документации Java не были перечислены ситуации, в которых <font size="+0">delete</font> может не сработать,
+    такая возможность лишь упоминалась. Но "в режиме тестирования" программист может заметить такую возможность. Поскольку
+    код должен работать везде, то программист обратится к специалисту в Windows и спросит, когда <font     size="+0">File.delete</font> и обнаружит, что в Windows все будет плохо.
+</p>
+<h4>
+    "Незначимые" случаи
+</h4>
+<p>
+    Другая возможность не заметить ошибку - посчитать ее несущественной. В Java <font size="+0">Comparator</font> содержит
+    метод <font size="+0">compare</font> , который возвращает число &lt;0, 0 или &gt;0. Это три различных варианта. В
+    следующем коде два из них смешаны в одну кучу:
+</p>
+<blockquote>
+<pre>
+void allCheck(Comparator c) {
+   ...
+   if (c.compare(o1, o2) &lt;= 0) {
+      ...
+   } else {
+      ...
+   }
+</pre>
+</blockquote>
+<p>
+    Это может быть ошибкой. Для того чтобы обнаружить это, следует проверить два случая отдельно, даже если кажется, что
+    они одинаковые. Протестируйте свои представления. Если блок <font size="+0">then</font> в <font size="+0">if</font>
+    выполняется несколько раз, почему бы не прогнать код с данными, когда результат меньше нуля и когда он равен нулю?
+</p>
+<h4>
+    Необрабатываемые исключительные ситуации
+</h4>
+<p>
+    Исключительные ситуации являются различными результатами. Рассмотрим код:
+</p>
+<blockquote>
+<pre>
+void process(Reader r) {
+   ...
+   try {
+      ...
+      int c = r.read();
+      ...
+   } catch (IOException e) {
+      ...
+   }
+}
+</pre>
+</blockquote>
+<p>
+    Вы ожидаете, что код обработчика правильно работает с ошибкой чтения. Но предположим, что исключительная ситуация явным
+    образом не обрабатывается. Вместо этого она передается далее по ходу выполнения. На Java это выглядит так:
+</p>
+<blockquote>
+<pre>
+void process(Reader r) <font color="#ff0000">
+<i>
+<b>
+throws IOException</b></i></font> {
+    ...
+    int c = r.read();
+    ...
+}
+</pre>
+</blockquote>
+<p>
+    В этой методике рекомендуется протестировать этот случай, <i>даже если</i> код явным образом его не обрабатывает.
+    Почему? Из-за такого рода ошибки:
+</p>
+<blockquote>
+<pre>
+void process(Reader r) throws IOException {
+    ...
+    <font color="#ff0000">
+<i>
+<b>
+Tracker.hold(this);</b></i></font>
+    ...
+    int c = r.read();
+    ...
+    <font color="#ff0000">
+<i>
+<b>
+Tracker.release(this);</b></i></font>
+    ...
+}
+</pre>
+</blockquote>
+<p>
+    Здесь код влияет на глобальное состояние посредством <font size="+0">Tracker.hold</font>). Если генерируется
+    исключительная ситуация, то <font size="+0">Tracker.release</font> не будет вызван вообще.
+</p>
+<p>
+    Обратите внимание, что отсутствие вызова метода release может не привести ни к каким очевидным последствиям. Неполадка
+    возникнет только после повторного вызова <font size="+0">process</font> когда попытка <font     size="+0">заблокировать</font> объект повторно не будет успешной. Такие ошибки хорошо описаны в статье <a href="http://www.testingcraft.com/stobie-exceptions.pdf" target="_blank">"Testing for Exceptions"</a>. &nbsp; (<a href="http://www.adobe.com/products/acrobat/alternate.html" target="_blank">Получить Adobe Reader</a>))
+</p>
+<h3>
+    <a id="UndiscoveredFaults" name="UndiscoveredFaults">Необнаруженные ошибки</a>
+</h3>
+<p>
+    Эта методика не позволяет устранить все ошибки, связанные с вызовом методов. Есть такие ошибки, для которых она
+    малопригодна.
+</p>
+<h4>
+    Неверные аргументы
+</h4>
+<p>
+    Рассмотрим две строки кода на C. Первая из них ошибочная, а вторая - правильная.
+</p>
+<blockquote>
+<pre>
+... strncmp(s1, s2, strlen(s1)) ...
+... strncmp(s1, s2, strlen(<font color="#ff0000">
+<i>
+<b>
+s2</b></i></font>)) ...
+</pre>
+</blockquote>
+<p>
+    <font size="+0">strncmp</font> сравнивает две строки и возвращает отрицательное число, если первая меньше, чем вторая
+    (в том смысле, что она идет раньше второй в словаре). Она возвращает "0", если строки равны. Она возвращает
+    положительное число, если первая больше второй. Однако при этом сравниваются только символы, число которых задается
+    третьим аргументом. Ошибка состоит в том, что для сравнения используется длина первой строки вместо второй.
+</p>
+<p>
+    В этом случае требуется три теста для трех вариантов возвращаемых значений. Ниже они перечислены:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    s1
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    s2
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    ожидаемый результат
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    фактический результат
+                </th>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    "a"
+                </td>
+                <td align="middle" width="25%">
+                    "bbb"
+                </td>
+                <td align="middle" width="25%">
+                    &lt;0
+                </td>
+                <td align="middle" width="25%">
+                    &lt;0
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    "bbb"
+                </td>
+                <td align="middle" width="25%">
+                    "a"
+                </td>
+                <td align="middle" width="25%">
+                    &gt;0
+                </td>
+                <td align="middle" width="25%">
+                    &gt;0
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    "foo"
+                </td>
+                <td align="middle" width="25%">
+                    "foo"
+                </td>
+                <td align="middle" width="25%">
+                    =0
+                </td>
+                <td align="middle" width="25%">
+                    =0
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Ошибка не может быть обнаружена, потому что в этой методике невозможно <i>принудительно</i> задать третий аргумент. Нам
+    нужен такой тестовый набор:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    <b>s1</b>
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    <b>s2</b>
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    <b>ожидаемый результат</b>
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    <b>фактический результат</b>
+                </th>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    "foo"
+                </td>
+                <td align="middle" width="25%">
+                    "foo<font color="#ff0000"><i><b>d</b></i></font>"
+                </td>
+                <td align="middle" width="25%">
+                    <font color="#ff0000"><i><b>&lt;0</b></i></font>
+                </td>
+                <td align="middle" width="25%">
+                    =0
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Хотя для обнаружения таких ошибок существуют свои методики, они редко применяются на практике. Лучше сосредоточить
+    усилия на более широком круге тестов, позволяющих выявить много типов ошибок (в надежде на то, что и эта ошибка будет
+    так или иначе обнаружена).
+</p>
+<h4>
+    Нечеткие результаты
+</h4>
+<p>
+    Эта опасность подстерегает вас при кодировании и тестировании методов одного за другим. Пример - рассмотрим два метода.
+    Первый из них, <font size="+0">connect</font>, предназначен для установления соединения по сети:
+</p>
+<blockquote>
+<pre>
+void connect() {
+   ...
+   Integer portNumber = serverPortFromUser();
+   if (portNumber == null) {
+      // показать сообщение о неверном номере порта
+      return;
+   }
+</pre>
+</blockquote>
+<p>
+    Для получения номера порта он вызывает <code>serverPortFromUser</code>. Этот метод возвращает два отличающихся
+    значения. Он возвращает номер порта, указанного пользователем, если этот порт допустим (1000 или более). В противном
+    случае он возвращает null. Если возвращается null, то код выдает сообщение об ошибке и завершает работу.
+</p>
+<p>
+    При тестировании <font size="+0">connect</font> работал без ошибок: если номер порта был правильный, то соединение
+    устанавливалось, для неверного порта показывалось сообщение об ошибке.
+</p>
+<p>
+    Код для <font size="+0">serverPortFromUser</font> чуть более сложный. Сначала в всплывающем окне запрашивается строка,
+    и окно имеет кнопки OK и Отмена. В зависимости от действий пользователя возможны четыре варианта:
+</p>
+<ol>
+    <li>
+        Если пользователь вводит правильное число, возвращается это число.
+    </li>
+    <li>
+        Если номер меньше 1000, то возвращается null, и показывается сообщение о неверном номере порта.
+    </li>
+    <li>
+        Если номер указан в неверном формате, возвращается null и показывается сообщение о неверном номере порта.
+    </li>
+    <li>
+        Если пользователь нажимает кнопку Отмена, возвращается null.
+    </li>
+</ol>
+<p>
+    Это код также работает правильно.
+</p>
+<p>
+    Однако два фрагмента кода вместе уже работают неверно: пользователь нажимает кнопку Отмена и видит сообщение о
+    недопустимом номере порта. Все фрагменты кода делают то, что должны, но общий результат неверен. Все было
+    протестировано, но ошибка не была обнаружена.
+</p>
+<p>
+    Проблема состоит в том, что <font size="+0">null</font> здесь представляет два разных <i>исхода</i> ("неверное
+    значение" и "отмену пользователем"). Ничего в этой методике не побуждает вас обнаружить эту неполадку в проектировании
+    <font size="+0">serverPortFromUser</font>.
+</p>
+<p>
+    Тестирование сможет помочь в решении проблемы. При тестировании <font size="+0">serverPortFromUser</font> как такового
+    можно обнаружить, что код возвращает правильное значение во всех четырех вариантах ситуации, но при этом утрачивается
+    контекст. Вместо этого следует протестировать <font size="+0">connect</font>. В четырех вариантах будут протестированы
+    оба метода совместно:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    ввод
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    ожидаемый результат
+                </th>
+                <th scope="col" align="middle" width="25%" bgcolor="#c0c0c0">
+                    задуманный процесс
+                </th>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    пользователь вводит "1000"
+                </td>
+                <td align="middle" width="25%">
+                    открывается соединение с портом 1000
+                </td>
+                <td align="middle" width="25%">
+                    <font size="+0">serverPortFromUser</font> возвращает используемый номер.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align="center">
+                        пользователь вводит "999"
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        сообщение о недопустимом номере порта
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        <font size="+0">serverPortFromUser</font> возвращает null, и показывается окно
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    <p align="center">
+                        пользователь вводит "i99"
+                    </p>
+                </td>
+                <td align="middle" width="25%">
+                    сообщение о недопустимом номере порта
+                </td>
+                <td align="middle" width="25%">
+                    <font size="+0">serverPortFromUser</font> возвращает null, и показывается окно
+                </td>
+            </tr>
+            <tr>
+                <td align="middle" width="25%">
+                    пользователь нажимает кнопку Отмена
+                </td>
+                <td align="middle" width="25%">
+                    должен быть отменен процесс подключения
+                </td>
+                <td align="middle" width="25%">
+                    <font size="+0"><i>serverPortFromUser</i></font> <i>возвращает null, что-то здесь не так...</i>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Часто в таком комплексном тестировании в более широком контексте обнаруживаются неполадки, которые не удается выявить в
+    частичных тестах. Также предварительные соображения позволяют обнаружить неполадку и до запуска теста. В любом случае,
+    она будет обнаружена при тестировании.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

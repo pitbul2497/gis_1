@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Импорт зависимостей при проектировании</title>
+<meta content="Guideline" name="uma.type">
+<meta content="import_dependency_in_design" name="uma.name">
+<meta content="Импорт зависимостей при проектировании" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "5.099920218485599E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "5.099920218485599E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="5.099920218485599E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Импорт зависимостей при проектировании</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Импорт зависимостей - это отношение между пакетами. В этой рекомендации описано данное отношение.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_import-dependency_in_design__guidelines_for" name="XE_import-dependency_in_design__guidelines_for"></a><a id="XE_design_package__organizing_using_import-dependency" name="XE_design_package__organizing_using_import-dependency"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Объяснение</a>
+</h3>
+<p>
+    Импорт зависимостей между пакетами - важный аспект формирования структуры модели объекта. Один пакет зависит от
+    другого, если любой из его классов обладает отношениями, которые можно перенести на классы из второго пакета. Для
+    установления таких зависимостей применяется импорт зависимостей из одного пакета в другой пакет, от которого зависит
+    первый.
+</p>
+<p class="picturecenter" align="center">
+    <img height="284"     alt="Диаграмма, иллюстрирующая отношения между элементами компонент и оператор, сигнал и принтер, покупатель и депозит."      src="./../../../core.base_rup/guidances/guidelines/resources/md_andi2.gif" width="385" />
+</p>
+<p class="picturetext">
+    Зависимости между пакетами выражаются в виде импорта зависимостей.
+</p>
+<h3>
+    <a id="XE_layering__organizing_design_packages_using_import_dependency" name="XE_layering__organizing_design_packages_using_import_dependency"></a><a id="XE_import-dependency_in_design__organizing_packages_with" name="XE_import-dependency_in_design__organizing_packages_with"></a><a id="Use" name="Use">Использование</a>
+</h3>
+<p>
+    Ниже приведены рекомендации по установлению импорта зависимостей:
+</p>
+<ul>
+    <li>
+        Прежде чем начать работу с моделью объекта, создайте схемы зависимостей, чтобы опираться на них в процессе работы.
+    </li>
+    <li>
+        После создания модели заносите зависимости в эти схемы. Для этого обновите импорт зависимостей в модели объекта.
+    </li>
+    <li>
+        Если вы разделили модель на пакеты на ранних этапах, с помощью импорта зависимостей укажите, где эти зависимости
+        можно установить.
+    </li>
+    <li>
+        Зависимости между пакетами влияют на удобство изменения системы. Модель объекта будет проще изменять, если:
+    </li>
+    <li>
+        Установите внешние зависимости для минимального количества классов пакета. Если зависимости будут установлены для
+        слишком большого числа классов, пакет будет перегружен, и его нужно будет разделить на два более мелких пакета.
+    </li>
+    <li>
+        Рекомендуется, чтобы каждый пакет зависел от небольшого числа других пакетов.
+    </li>
+    <li>
+        Тестируйте каждый пакет отдельно. Это означает, что необходимо протестировать пакет путем моделирования того
+        пакета, от которого он зависит. Другие пакеты не должны быть полностью или почти полностью реализованы. При
+        тестировании пакетов по отдельности будет проще осуществлять разработку и обслуживание системы для каждого пакета.
+    </li>
+    <li>
+        Располагайте основные компоненты модели объекта в отдельных пакетах, от которых зависят другие пакеты. При наличии
+        пакетов с компонентами модели объекта строго контролируйте процесс выпуска, потому что некоторые части системы
+        могут зависеть от изменений в этих пакетах.
+    </li>
+</ul>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    Предположим, в механизме по переработке отходов вы обнаруживаете общие свойства классов <b>Панель Клиент</b> и
+    <b>Панель Оператор</b>. Эти две общие функции вы объединяете в новый класс <b>Панель</b> и помещаете его в пакет
+    <b>Панели</b>. Для использования этих функций другие два класса могут ссылаться на новый класс. Поскольку классы
+    принадлежат к двум отдельным пакетам, эти пакеты будут зависеть от нового пакета. Такое упрощение структуры
+    подразумевает, что эти общие функции должны выполняться только в одном месте.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

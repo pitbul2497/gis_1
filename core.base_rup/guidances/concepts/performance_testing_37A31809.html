@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Тестирование производительности</title>
+<meta content="Concept" name="uma.type">
+<meta content="performance_testing" name="uma.name">
+<meta content="Тестирование производительности" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "8.027577129450698E-306"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "8.027577129450698E-306"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="8.027577129450698E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Тестирование производительности</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Тестирование производительности представляет собой класс тестов, применяемых для количественного измерения характеристик объекта системы, связанных с производительностью, включая продолжительность выполнения процедур, время отклика, надежность и другие параметры.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_test_analyst_4637F9F0.html" guid="{8728060F-9DAD-42AD-B0B6-668C9AEA531D}">Аналитик</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_workload_analysis_model_E86A32FF.html" guid="{008164B1-3AC3-47E8-9F93-EE4C36B58A97}">Модель анализа нагрузки</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/test_and_evaluate_4D17BD6A.html" guid="{93B7D625-C83A-4EFB-9772-B88F2EB02CE2}">Тестирование и оценка</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/test_and_evaluate_712368C6.html" guid="_kKwQ0DUSEdqNn71iifr4xw">Тестирование и оценка</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/test_and_evaluate_883E3A46.html" guid="_D1clqUdWEdqMoerwwyqMKQ">Тестирование и оценка</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_performance_test__introduction_to" name="XE_performance_test__introduction_to"></a> 
+<p>
+    Тестирование производительности представляет собой класс тестов, применяемых для количественного измерения
+    характеристик объекта системы, связанных с производительностью, включая продолжительность выполнения процедур, время
+    отклика, надежность и другие параметры. На протяжении жизненного цикла разработки программного обеспечения (SDLC)
+    применяются различные типа тестов производительности, уделяющие внимание различным аспектам производительности объекта
+    тестирования.
+</p>
+<p>
+    На начальных итерациях главная задача тестирования производительности заключается в идентификации и устранении узких
+    мест архитектуры. На этапе построения реализуются и выполняются дополнительные тесты, необходимые для доводки
+    программного обеспечения и среды (оптимизации ресурсов и времени отклика) и проверки способности приложений и системы
+    справиться с высокой нагрузкой, включая большое количество транзакций, клиентов и (или) объемов данных.
+</p>
+<p>
+    Различают следующие типы тестов производительности:
+</p>
+<ul>
+    <li>
+        <b>Сравнительные тесты быстродействия:</b> данные тесты применяются для измерения быстродействия нового или
+        неизученного приложения в соответствии с определенным стандартом, например, путем сравнения с другим программным
+        обеспечением или результатами тестирования других систем.
+    </li>
+    <li>
+        <b>Тест параллельной обработки:</b> проверка способности объекта тестирования справиться с большим количеством
+        запросов субъектов, направленных на один и тот же тип ресурсов (записи данных, память и т.д.).
+    </li>
+    <li>
+        <b>Профилирование производительности:</b> проверка того, удовлетворительна ли производительность объекта
+        тестирования, в различных конфигурациях при постоянных характеристиках среды.
+    </li>
+    <li>
+        <b>Тест нагрузки:</b> проверка того, приемлема ли производительность объекта тестирования в различных условиях
+        (например, с различным количеством пользователей, количеством транзакций и т.д.) в одной и той же конфигурации.
+    </li>
+    <li>
+        <b>Тест отказоустойчивости:</b> проверка способности объекта тестирования адаптировать свое поведение к нештатным и
+        нестандартным ситуациям, например, при недостатке ресурсов и работе с очень большим количеством пользователей.
+    </li>
+</ul>
+<p>
+    Оценка производительности обычно проводится сразу на нескольких уровнях вместе с <i>представителем пользователя</i>.
+</p>
+<ul>
+    <li>
+        На первом уровне анализа производительности определяются результаты для отдельного субъекта или экземпляра варианта
+        использования, а затем эти результаты сравниваются с результатами выполнения других тесто. Например, можно измерить
+        производительность отдельно взятого субъекта на отдельно взятом варианте использования в момент, когда в объекте
+        тестирования не выполняются другие операции, а затем сравнить полученные результаты с несколькими другими тестами,
+        в которые был вовлечен тот же субъект или вариант использования. Анализ первого уровня позволяет выявлять
+        тенденции, которые могут служить признаками конкуренции за системные ресурсы. Конкуренция за ресурсы снижает
+        надежность заключений, сделанных на основании результатов тестирования.
+    </li>
+    <li>
+        На втором уровне выполняется анализ общей статистики и фактических значений для конкретных субъектов и вариантов
+        использования, а также анализируются поведение и производительность объекта тестирования. Среди прочих показателей
+        рассчитываются стандартные отклонения и процентные распределения времени отклика, по которым можно судить о
+        стабильности реакции системы на запросы различных субъектов.
+    </li>
+    <li>
+        Третий уровень анализа применяется для определения причин и величины снижения производительности. Данный подробный
+        анализ проводится на основании низкоуровневых данных с применением статистических функций, позволяющих делать
+        заключения по выборкам данных. Подробный анализ позволяет сформулировать объективные количественные критерии
+        принятия решений, однако он занимает больше времени и требует знания основ статистики.
+    </li>
+</ul>
+<p>
+    В подробном анализе выделяется <i>статистическая значимость</i> - величина, позволяющая оценить, насколько колебания
+    производительности системны и насколько они вызваны случайными факторами. Идея заключается в том, что на
+    фундаментальном уровне все события носят вероятностный характер. Статистическое тестирование позволяет определить,
+    существуют ли системные колебания, которые нельзя объяснить вероятностным характером событий.
+</p>
+<p>
+    Дополнительные сведения об отчетах о тестировании производительности приведены в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/key_measures_of_test_62253EE4.html" guid="5.312818155786224E-305">Технология: Ключевые показатели тестирования</a>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

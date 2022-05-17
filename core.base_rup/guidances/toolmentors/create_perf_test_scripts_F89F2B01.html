@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Создание сценария автоматического тестирования производительности с помощью Rational Robot</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_perf_test_scripts" name="uma.name">
+<meta content="Создание сценария автоматического тестирования производительности с помощью Rational Robot" name="uma.presentationName">
+<meta content="Tool:rup_robot:Rational Robot" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Robot" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{1A26E508-8140-4241-865E-0A2A5BCAEFFF}", "{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{1A26E508-8140-4241-865E-0A2A5BCAEFFF}", "{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{1A26E508-8140-4241-865E-0A2A5BCAEFFF}", "{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{1A26E508-8140-4241-865E-0A2A5BCAEFFF}", "{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{1A26E508-8140-4241-865E-0A2A5BCAEFFF}", "{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{1A26E508-8140-4241-865E-0A2A5BCAEFFF}", "{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{DEBC41D9-6B28-40CE-BD55-4888609A46FA}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Создание сценария автоматического тестирования производительности с помощью Rational Robot</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке описано как использовать Rational Robot для записи сценария автоматической проверки производительности для тестирования.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_robot_26C85D92.html" guid="{1A26E508-8140-4241-865E-0A2A5BCAEFFF}">Rational Robot</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p class="MsoNormal">
+    Зачастую сценарии тестирования производительности созданиются с помощью записи в Robot. При записи сценария
+    виртуального пользователя, взаимодействия с тестируемым приложением активируют связь по определенному протоколу между
+    клиентом и сервером. Робот записывает эту связь и абстрагирует ее в тестовые сценарии на языке VU после завершения
+    записи сеанса.
+</p>
+<p class="MsoNormal">
+    Затем тестовый комплект производительности в TestManager выполняет несколько экземпляров этого сценария для применения
+    нагрузки на тестируемую систему.
+</p>
+<p class="MsoNormal">
+    Эта памятка по инструменту применима к Windows 98/ME/XP/2000 и NT 4.0.
+</p>
+<h4>
+    Этапы работы с инструментами
+</h4>
+<p>
+    Для записи виртуального пользовательского сценария с помощью Robot выполните следующие действия:&nbsp;&nbsp;&nbsp;
+</p>
+<ol type="1">
+    <li>
+        <a href="#Start recording the virtual user script">Начните запись виртуального пользовательского
+        сценария</a>
+    </li>
+    <li>
+        <a href="#Insert timers, blocks, comments, and synchronization points">Вставьте таймеры, блоки,
+        комментарии и точки синхронизации</a>
+    </li>
+    <li>
+        <a href="#Split script or end session recording">Разбейте сценарий или завершите запись сеанса</a>
+    </li>
+    <li>
+        <a href="#Edit the virtual user test script, if necessary">При необходимости измените виртуальный
+        пользовательский тестовый сценарий</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="Start recording the virtual user script" name="Start recording the virtual user script">Начните запись
+    виртуального пользовательского сценария</a>
+</h3>
+<p>
+    При записи сценария виртуального пользователя, взаимодействия с тестируемым приложением активируют связь по
+    определенному протоколу между клиентом и сервером. Робот запишет эту связь и использует ее для создания сценария после
+    завершения сеанса записи.
+</p>
+<ol>
+    <li>
+        Подготовьте тестовую среду, настроив опции записи виртуального пользователя. См. раздел "Настройка опций записи" в
+        руководстве <i>Rational Robot - руководство пользователя</i>.
+    </li>
+    <li>
+        Нажмите кнопку <b>Записать сценарий виртуального пользователя</b> на панели инструментов Robot. &nbsp;
+    </li>
+    <li>
+        Введите имя сеанса (до 40 символов).
+    </li>
+    <li>
+        Нажмите lick <b>OK</b> чтобы начать запись.
+    </li>
+    <li>
+        Окно Robot будет свернуто (применяется по умолчанию) и появится &nbsp;плавающая панель инструментов <b>Запись
+        сеанса</b>. С помощью этой панели инструментов можно остановить запись или разбить сценарии и обновить окно Robot.
+        С помощью панели инструментов <b>Вставка сеанса</b> можно &nbsp;вставить такие функции как таймеры, блоки,
+        комментарии или точки синхронизации в сценарий. Также с ее помощью можно запустить приложение. &nbsp;
+    </li>
+    <li>
+        В диалоговом окне Запустить приложение укажите исполняемый файл. Это должен быть исполняемый файл
+        приложения-клиента. Для запуска Web-приложений воспользуйтесь браузером для доступа к Web-сайту.
+    </li>
+    <li>
+        Нажмите кнопку <b>OK</b> для запуска приложения-клиента.
+    </li>
+    <li>
+        Начните работу с приложением в рамках теста. Обмен данными между клиентом и сервером при этом будет записан.
+    </li>
+</ol>
+<h3>
+    2. <a id="Insert timers, blocks, comments, and synchronization points" name="Insert timers, blocks, comments, and synchronization points">Вставьте таймеры, блоки, комментарии и точки
+    синхронизации</a>
+</h3>
+<p>
+    При записи сеанса виртуального пользователя можно вставить таймеры, блоки, комментарии и точки синхронизации. Нажмите
+    кнопку <b>Показать вставку сеансов</b> на панели инструментов <b>Запись сеанса</b> и затем нажмите <b><i>одну</i></b>
+    из следующих кнопок:
+</p>
+<ul>
+    <li>
+        <b>Запустить таймер</b>: откроется диалоговое окно запуска таймера, в котором можно указать имя таймера.
+        &nbsp;Введите его и нажмите <b>OK</b> или выйдите из окна с помощью кнопки <b>Отмена</b>.<br />
+    </li>
+    <li>
+        <b>Остановить таймер</b>: откроется диалоговое окно остановки таймера, в котором можно указать имя таймера.
+        &nbsp;Введите его и нажмите <b>OK</b> или выйдите из окна с помощью кнопки <b>Отмена</b>. &nbsp;
+    </li>
+</ul>
+<blockquote>
+    <p>
+        Таймер является "скобкой" вокруг набора взаимодействий клиент-сервер. После выполнения тестового набора
+        производительности в TestManager время выполнения каждого таймера показано в отчетах Производительность и отклик.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <b>Комментарии</b>: появится диалоговое окно Комментарии и вы сможете добавить комментарии для сценария. Введите
+        комментарий и нажмите <b>OK</b> либо выйдите из окна с помощью кнопки <b>Отмена</b>. &nbsp;Комментарии представляют
+        собой текст внутри сценария. Они помогают понять сценарий, но не оказывают влияния не его выполнение.<br />
+    </li>
+    <li>
+        <b>Точка синхронизации</b>: появится окно в котором можно указать имя точки синхронизации, которую &nbsp;требуется
+        добавить к сценарию. Введите его и нажмите <b>OK</b> или выйдите из окна с помощью кнопки <b>Отмена</b>.
+        &nbsp;Точка синхронизации является компонентом сценария, позволяющим при выполнении сценария осуществлять
+        координацию действий &nbsp;нескольких виртуальных тестеров.<br />
+    </li>
+    <li>
+        <b>Запустить блок</b>: в этом окне можно указать блок, запускаемый в сценарии. &nbsp;Введите его и нажмите
+        <b>OK</b> или выйдите из окна с помощью кнопки <b>Отмена</b>.<br />
+    </li>
+    <li>
+        <b>Остановить блок</b>: в этом окне будет показано имя текущего блока. &nbsp;<br />
+         Нажмите <b>OK</b> или <b>Cancel</b> для выхода из окна.
+    </li>
+</ul>
+<blockquote>
+    <p>
+        Как и таймер, блок является скобкой вокруг набора взаимодействий клиент-сервер. &nbsp;В отличие от таймера, блок не
+        содержит время обдумывания исходного пользователя. Кроме того, &nbsp;перед всеми идентификаторами команд в блоке
+        ставится в качестве приставки имя блока (тогда как в таймере перед идентификаторами команд ставится имя сценария).
+    </p>
+</blockquote>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделам электронной справки по Robot:&nbsp;
+</p>
+<ul>
+    <li>
+        <i>Создание нового комплекта</i>
+    </li>
+    <li>
+        <i>Вставка комментариев в сценарий</i>
+    </li>
+    <li>
+        <i>Вставка блока в сценарий</i>
+    </li>
+    <li>
+        <i>Вставка таймера во время записи виртуального пользователя</i>
+    </li>
+    <li>
+        <i>Вставка точки синхронизации во время записи</i>
+    </li>
+</ul>(ВО всех диалоговых окнах вставки функции в сценарий виртуального пользователя содержится кнопка Справка для вызова
+электронной справки по Robot). 
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;&nbsp; Обратитесь к разделу
+    <i>Добавление функции к сценариям</i> книги <i>Rational Robot - руководство пользователя</i>. &nbsp;
+</p>
+<h3>
+    3. <a id="Split script or end session recording" name="Split script or end session recording">Разбейте сценарий или
+    завершите запись сеанса</a>
+</h3>
+<p>
+    Завершив выполнение теста или логического блока пользовательских действий, можно разбить сценарий или завершить запись
+    сеанса. &nbsp;
+</p>
+<p>
+    Разбиение сеанса означает, что все записанное с последнего разбиения сеанса (или начала сеанса) представляет логический
+    блок, например, вход в базу данных или изменение определенной записи; например, обновление пользовательской информации
+    в приложении управления пользовательскими отношениями.
+</p>
+<ol>
+    <li>
+        Для разбиения сценария выполните следующие действия:
+    </li>
+</ol>
+<ul>
+    <li>
+        <p>
+            Нажмите кнопку <b>Разбить сценарий</b> на панели инструментов <b>Запись сеанса</b>. &nbsp;
+        </p>
+    </li>
+    <li>
+        <p>
+            Введите имя сценария виртуального пользователя (до 40 символов) для записанного действия.
+        </p>
+    </li>
+</ul>
+<ol start="2">
+    <li>
+        Для остановки записи сеанса выполните следующие действия:
+    </li>
+</ol>
+<ul>
+    <li>
+        Нажмите кнопку <b>Остановить запись</b> на панели инструментов <b>Запись сеанса</b>. &nbsp;
+    </li>
+    <li>
+        Введите имя сценария виртуального пользователя (до 40 символов).
+    </li>
+    <li>
+        Для изменения опций записи нажмите кнопку <b>Опции</b>. При завершении нажмите кнопку <b>OK</b>.
+    </li>
+    <li>
+        В зависимости от заданных ранее параметров записи виртуального пользователя генератор создает &nbsp;сценарий
+        (автоматическая фильтрация) или предлагает вам выбрать протокол и связи &nbsp;клиент-сервер (ручная фильтрация),
+        используемые для создания &nbsp;сценария виртуального пользователя.
+    </li>
+</ul>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;&nbsp; Обратитесь к главе
+    <i>Запись сеансов - Выбор протокола для добавления в сценарий</i> в книге <i>Rational Robot - руководство
+    пользователя</i>.
+</p>
+<h3>
+    4. <a id="Edit the virtual user test script, if necessary" name="Edit the virtual user test script, if necessary">При
+    необходимости измените тестовый сценарий виртуального пользователя</a>
+</h3>
+<p>
+    Изменить существующие сценарии вручную можно изменив текст сценария следующим образом:
+</p>
+<ul type="disc">
+    <li>
+        Отредактируйте текст сценария (удалите строки, переместите текст и т.п.).
+    </li>
+    <li>
+        Добавьте новое пользовательское действие в существующий сценарий (добавляет общую переменную или функцию).
+    </li>
+    <li>
+        Добавьте новую функцию в существующий сценарий (добавьте таймеры, блоки, комментарии и т.п.).
+    </li>
+</ul>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к разделу
+    <i>Справочник по языку виртуального пользователя</i> электронной справки Robot.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

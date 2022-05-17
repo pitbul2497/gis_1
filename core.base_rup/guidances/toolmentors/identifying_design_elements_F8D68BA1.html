@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Идентификация элементов разработки с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="identifying_design_elements" name="uma.name">
+<meta content="Идентификация элементов разработки с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{E6727D13-BE7B-4025-AD39-ECD6FA074D73}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Идентификация элементов разработки с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В это памятке по инструменту описывается выполнение элементов идентификации разработки с помощью Rational XDE Developer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/identify_design_elements_E884AB82.html" guid="{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}">Определение элементов проекта</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор&nbsp;
+</h3>
+<p>
+    Эта памятка по инструменту поддерживает элементы идентификации разработки с Rational XDE Developer - Java Platform
+    Edition. &nbsp;&nbsp;
+</p>
+<ul>
+    <li>
+        Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения определенных задач.
+    </li>
+    <li>
+        Ссылки на разделы электронной справки XDE помечены с помощью значка <img alt="справочника"         src="./../../../core.base_rup/resources/helpbook.gif" />.
+    </li>
+    <li>
+        В памятке описаны следующие действия для вариантов, разрабатываемых в текущей итерации:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <a href="#Identify and Specify Events">Идентификация событий и сигналов</a>
+            </li>
+            <li>
+                <a href="#Identify Classes, Active Classes and Subsystems">Идентификация классов, активных
+                классов и подсистем</a>
+            </li>
+            <li>
+                <a href="#Identify Interfaces">Идентификация интерфейсов подсистем</a>
+            </li>
+            <li>
+                <a href="#Identify Capsule Protocols">Идентификация протоколов капсулы</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Значимые для архитектуры элементы разработки могут быть задокументированы в отдельной логической панели, возникающей
+    после идентификации элементов разработки. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+</p>
+<h3>
+    <a id="Identify and Specify Events" name="Identify and Specify Events">Идентификация событий и сигналов</a>
+</h3>
+<p>
+    Параметры событий следует захватить для выполнения идентификации элементов разработки, обрабатывающих их. Захватить эту
+    информацию можно неформально, например, в отдельном документе, а не как часть модели Rational XDE.
+</p>
+<p>
+    События асинхронной связи можно смоделировать как сигналы для выражения данных, которые они несут, или для выражения
+    взаимосвязей между сигналами, например, как взаимосвязь обобщения. Следующие подэтапы описывают моделирование сигналов:
+</p>
+<ol>
+    <li>
+        Создайте при необходимости диаграмму классов. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление диаграмм</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); -->.
+    </li>
+    <li>
+        Добавьте сигналы. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление форм к
+        диаграммам</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.
+    </li>
+    <li>
+        Добавьте краткое описание для каждого элемента разработки. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+    <li>
+        Добавьте взаимосвязь обобщения между сигналами, если это применимо. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей обобщений</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_genrlztn_relshp"); -->.
+    </li>
+</ol>
+<p>
+    Дополнительные сведения о диаграммах классов приведены в справочнике <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами классов</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_w_class_dgms"); -->.
+    Дополнительные сведения о сигналах приведены в разделе <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Сигналы</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_c_signals"); -->.
+</p>
+<h3>
+    <a id="Identify Classes, Active Classes and Subsystems" name="Identify Classes, Active Classes and Subsystems">Идентификация классов, активных классов и подсистем</a>
+</h3>
+<p>
+    Элементы разработки обычно создаются одним из следующих трех способов:
+</p>
+<ul>
+    <li>
+        моделирование (добавлением к диаграмме классов)
+    </li>
+    <li>
+        развертывание шаблона
+    </li>
+    <li>
+        кодирование и обратный инжиниринг
+    </li>
+</ul>
+<p>
+    Эти подходы описаны более подробно в следующих разделах.
+</p>
+<h4>
+    Развертывание шаблона
+</h4>
+<p>
+    С помощью шаблонов разработки можно определить элементы разработки. Справочник: <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Реализация шаблонов подстановки</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_o_rat_xde_pttrn"); -->
+</p>
+<p>
+    Определите шаблоны кандидатов, которые могут пригодиться. См. следующие разделы электронной справки Rational XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Применение группы из четырех примеров
+        шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_t_apply_gang_four_smpl_pttrn"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Сохранение и извлечение шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_o_stor_retriev_pttrn"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Библиотеки шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_o_pttrn_lib"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Импорт шаблонов из RAS</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_c_imp_pttrn_assets"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Импорт и экспорт библиотек шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_c_imp_exp_pttrn_libs"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Применение шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","(ea_o_apply_pttrn"); -->
+    </li>
+</ul>
+<h4>
+    Моделирование
+</h4>
+<p>
+    Создайте диаграммы классов в модели разработки для захвата элементов разработки. Если вы решите поддерживать классы
+    анализа, может потребоваться установить зависимости трассируемости с классами анализа.
+</p>
+<ol>
+    <li>
+        Создайте при необходимости диаграмму классов. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление диаграмм</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); -->.
+    </li>
+    <li>
+        Добавьте подсистему и классы. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление
+        форм к диаграммам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.
+    </li>
+    <li>
+        Добавьте краткое описание для каждого элемента разработки. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+    <li>
+        (необязательно) Добавьте трассируемость к классам анализа. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей абстракции</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_abstrctn_relshp"); -->.
+    </li>
+    <li>
+        Организуйте элементы разработки в пакетах. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Группировка элементов моделей в пакетах</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_group_mod_ele_package"); -->. Также
+        см. информационный бюллетень <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+    </li>
+</ol>
+<p>
+    Дополнительные сведения о диаграммах классов приведены в справочнике <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами классов</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_w_class_dgms"); -->.
+</p><!-- begin - wsw -->
+<p>
+    Дополнительные сведения о моделировании Java приведены в следующих разделах электронной справки Rational XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Знакомство с моделированием Java</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","j_o_code_mdl_interact"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование элементов Java</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","j_o_mod_jelem"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование JavaBeans</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","j_o_mdlng_jbeans"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование EJB</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_o_mod_ejbs"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование свойств EJB</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_o_mod_ejb_properties"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование сервлетов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_o_mdlng_srvlts"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование страниц JavaServer</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","wm_o_jsp"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Разработка документов HTML</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"wm","wm_o_devhtmldocs"); -->
+    </li>
+</ul><!-- end - wsw -->
+<h4>
+    Кодирование и обратный инжиниринг
+</h4>
+<p>
+    Еще одним подходом является создание наброска эскиза с помощью кода, выполнение обратного инжиниринга для него для
+    создания модели структурной реализации, и перемещение этих классов в диаграммы модели разработки. Преобразование класса
+    разработки в класс определенной реализации имеет следующие преимущества:
+</p>
+<ul>
+    <li>
+        В качестве возможной альтернативы можно использовать редактор кода для создания набросков интерфейсов, методов и
+        атрибутов с помощью обратного инжиниринга для отражения этих элементов в модели.
+    </li>
+    <li>
+        Можно выполнить обратный инжиниринг для существующих ресурсов кода и добавить их в модели разработки.
+    </li>
+    <li>
+        Для выбранных элементов можно создать прототипы для проверки комплексной концепции, с помощью оборотного
+        инжиниринга можно поддерживать эти прототипы согласованными с моделью разработки.
+    </li>
+</ul><!-- begin - wsw -->
+<p>
+    Можно создать EJB с помощью шаблонов J2EE в Rational XDE. См. следующие разделы электронной справки Rational XDE:
+</p>
+<table cellspacing="2" cellpadding="2" border="1">
+    <tbody>
+        <tr>
+            <th valign="top" align="left">
+                To
+            </th>
+            <th valign="top" align="left">
+                См.
+            </th>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте EJB
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание EJB</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_c_ejb_creation"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте сущностный объект BMP
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание сущностных объектов
+                    BMP</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_create_bmp_entitybean"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте сущностный объект CMP 1.1
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание сущностного объекта CMP
+                    1.1</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_create_cmp11_entitybean"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте сущностный объект CMP 2.0
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание сущностного объекта CMP
+                    2.0</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_create_cmp20_entitybean"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Задайте основной ключ EJB
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление основных ключей к
+                    сущностным объектам</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_specify_primary_key"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Добавьте поле к сущностному объекту CMP
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление управляемых
+                    контейнером полей к сущностным объектам</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_add_cmfields_entity_beans"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте сеансовый объект с сохранением состояния
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание сущностных объектов с
+                    сохранением состояния</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_stateful_sessionbean"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте сеансовый объект без сохранения состояния
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание сущностных объектов без
+                    сохранения состояния</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_stateless_sessionbean"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте управляемый сообщениями объект
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание управляемых сообщениями
+                    объектов</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_message_driven_beans"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте EJB из существующего класса Java
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание EJB из существующих
+                    классов</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_create_ejb_existing"); -->
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <p>
+                    Создайте файл описания EJB (без развертывания)
+                </p>
+            </td>
+            <td valign="top">
+                <p>
+                    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание файлов описания EJB</i> 
+                    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_create_gen_depl_descr"); -->
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><!-- end - wsw -->
+<p>
+    Дополнительные сведения приведены в следующих разделах электронной справки Rational XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами классов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_w_class_dgms"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование приложений Java и
+        Web-приложений</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","j_o_java_mdling"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование элементов Java</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","j_o_mod_jelem"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование EJB</i> <!-- end - wsw -->
+    </li>
+</ul>
+<h3>
+    <a id="Identify Interfaces" name="Identify Interfaces">Определение интерфейсов подсистемы</a>
+</h3><!-- begin - wsw -->
+<p>
+    Следующие действия применимы к крупномасштабным подсистемам (крупнее отдельных EJB):
+</p>
+<ol>
+    <li>
+        Для каждой подсистемы определите набор интерфейсов кандидатов. Добавьте интерфейсы в существующую диаграмму классов
+        или создайте при необходимости новые диаграммы классов. (См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление форм к диаграмме</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.)&nbsp; 
+        <!-- begin - wsw -->Убедитесь, что вы используете вкладку Java в наборе инструментов, а не набор инструментов UML
+        для добавления элементов, связанных с Java. &nbsp; <!-- end - wsw -->
+    </li>
+    <li>
+        Добавьте зависимости интерфейсов. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей зависимости</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_depend_relshp"); -->.
+    </li>
+    <li>
+        Привяжите подсистемы к интерфейсам, добавив взаимосвязь реализации от подсистемы к интерфейсу. См. <img         alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей реализации</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_realztn_relshp"); -->.
+    </li>
+    <li>
+        Задокументируйте интерфейс, добавив нужное поведение. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+    <li>
+        Добавьте методы к интерфейсу. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление
+        операций к классификаторам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_oper_clssfr"); -->.
+    </li>
+    <li>
+        Добавьте описание для каждой операции. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+    <li>
+        Добавьте параметры к каждому методу. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление параметров к операциям</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_param_op"); -->.
+    </li>
+    <li>
+        Организуйте интерфейсы в пакетах. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Группировка элементов моделей в пакетах</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_group_mod_ele_package"); -->.
+    </li>
+</ol><!-- begin - wsw -->
+<p>
+    Для EJB применимы следующие действия:
+</p>
+<ol>
+    <li>
+        Интерфейсы EJB создаются при создании EJB, отдельное создание интерфейсов EJB не требуется.
+    </li>
+    <li>
+        Добавьте зависимости интерфейсов. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей зависимости</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_depend_relshp"); -->.
+    </li>
+    <li>
+        Добавьте методы к интерфейсам. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление
+        методов к EJB</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_t_add_ejb_meths"); -->.
+    </li>
+    <li>
+        Добавьте описание для каждой операции. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+    <li>
+        Добавьте параметры к каждой операции. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление параметров к операциям</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_param_op"); -->.
+    </li>
+</ol>
+<h3 class="reactive">
+    <a id="Identify Capsule Protocols" name="Identify Capsule Protocols">Определите протоколы капсул</a>&nbsp; если это
+    применимо<br />
+</h3>
+<p class="reactive">
+    Моделирование капсул и протоколов не поддерживается в XDE.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

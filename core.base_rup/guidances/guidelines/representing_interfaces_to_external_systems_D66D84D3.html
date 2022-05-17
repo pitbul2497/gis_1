@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Интерфейсы внешних систем</title>
+<meta content="Guideline" name="uma.type">
+<meta content="representing_interfaces_to_external_systems" name="uma.name">
+<meta content="Интерфейсы внешних систем" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "8.174741286550944E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "8.174741286550944E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="8.174741286550944E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Интерфейсы внешних систем</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Введение в интерфейсы между системами.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_interface_9816B54F.html" guid="{C6938487-1DAA-4F6A-B3BC-CB99165F0680}">Интерфейс</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_external_units__representing_interfaces_to_external_units" name="XE_external_units__representing_interfaces_to_external_units"></a><a id="XE_class__representing_interfaces_to_external_systems" name="XE_class__representing_interfaces_to_external_systems"></a> 
+<p>
+    При взаимодействии нескольких различных систем в <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/use_case_analysis_A6990185.html" guid="{28014615-A62F-452D-B821-30C7CAB0EC44}">анализе
+    вариантов использования</a> будут присутствовать один или несколько граничащих классов, описывающих протокол для него.
+    В роли внешней системы может выступать что угодно, от программного до аппаратного обеспечения, которое будет
+    использоваться настоящей системой, например: принтеры, терминалы, устройства аварийной сигнализации, сенсоры. Для
+    каждой из таких систем будет иметься класс, выступающий посредником между настоящей и внешней&nbsp;системой.
+</p>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    Банкомат должен быть связываться с банком для проверки номера кредитной карты и пароля, и доступны ли запрошенная сумма
+    для данного клиента. Т.к. банковская сеть является внешней системой (с точки зрения банкомата), для ее представления в
+    анализе вариантов использования будет использоваться <b>граничащий</b> класс.
+</p>
+<p>
+    Если интерфейсы простые и четкие, то для представления внешней системы может быть достаточно одного класса. Однако,
+    часто интерфейсы слишком сложные и требуют целого набора классов для корректного представления. Более того, одни и те
+    же интерфейсы между системами часто широко используются в разных приложениях. Как результат, во многих случаях для
+    моделирования интерфейсов системам больше подходит подсистема.
+</p>
+<p>
+    Использование подсистемы позволяет делать интерфейсы определенными и устойчивыми, сохраняя при этом уровень детализации
+    низким не смотря на развитие определения интерфейсов.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Представление процессов</title>
+<meta content="Concept" name="uma.type">
+<meta content="process_view" name="uma.name">
+<meta content="Представление процессов" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.45284088262517E-306"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.45284088262517E-306"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="6.45284088262517E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Представление процессов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Представлением процессов называется архитектурное представление, иллюстрирующее декомпозицию системы на процессы, включая соответствие между классами и подсистемами, с одной стороны, и процессами и нитями, с другой стороны.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Документ архитектуры программного обеспечения</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Для иллюстрирования структуры и организации системы с точки зрения процессов применяется архитектурное представление,
+    называющееся <b>представлением процессов</b>. <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/termdefinitions/process_68E308B4.html" guid="_yQ5m2NnmEdmO6L4XMImrsA">Процессами</a> и <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/termdefinitions/thread_CD09F29.html" guid="_yYpNkNnmEdmO6L4XMImrsA">нитями</a>, с другой
+    стороны. Представление процессов уточняется в ходе каждой итерации. Как указано в публикации [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#BOO98" guid="7.755968586980351E-308">BOO98</a>], "В UML статические и динамические аспекты этого представления иллюстрируются
+    с помощью тех же диаграмм, что применяются в представлении проекта, т.е. диаграмм классов, диаграмм взаимодействия,
+    диаграмм операций и диаграмм состояний, но с акцентом на активных классах, представляющих соответствующие нити и
+    процессы". При разработке дерева процессов и работе с ним важную роль играют такие обстоятельства, как особенности
+    параллельного выполнения, время отклика, наличие узких мест, пропускная способность, отказоустойчивость и
+    расширяемость.
+</p>
+<p>
+    Для реализации параллелизма не обязательно нужна поддержка параллелизма в операционной системе - например, можно
+    воспользоваться специальным планировщиком или другой аналогичной инфраструктурой. В подобных случаях параллелизм
+    стимулируется на уровне инфраструктуры, а не на уровне операционной системы. При необходимости для обеспечения этого
+    различия могут применяться и другие стереотипы (помимо стандартных нитей и процессов). Например, в языке
+    программирования Ada предусмотрена собственная модель параллелизма на основе задач Ada, и среда выполнения Ada должна
+    обеспечить параллелизм независимо от того, есть ли его поддержка в операционной системе.
+</p>В системах реального времени Rational Unified Process рекомендуется применять <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_capsule_FC4A34FD.html" guid="{4423FCE1-FF59-4C8E-A6C4-AA4B13CB3250}">Капсулы</a> для
+представления активных классов в дереве процессов. Капсулы имеют строгую семантику для упрощения моделирования
+параллелизма: 
+<ul class="reactive">
+    <li>
+        В них применяется асинхронный обмен данными через <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_capsule_FC4A34FD.html#Ports" guid="{4423FCE1-FF59-4C8E-A6C4-AA4B13CB3250}">порты</a> по стандартным <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_protocol_BEB5FBE1.html" guid="{6E4F4D6F-2934-432C-9335-5537B795F67F}">протоколам</a>.
+    </li>
+    <li>
+        Для обработки сообщений в них применяется семантика выполнения до завершения.
+    </li>
+    <li>
+        В них инкапсулированы пассивные объекты (это гарантирует отсутствие конфликтов между нитями).
+    </li>
+</ul>
+<p align="center">
+    <img height="403" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/tasks/resources/proc3.gif" width="574" />
+</p>
+<p class="picturetext">
+    Представление процессов применяется для моделирования структуры процессов системы.
+</p>
+<p>
+    Предусмотрены еще четыре представления: <b>представление вариантов использования</b> (используется в потоке операций
+    управления требованиями), а также <b>логическое представление</b>, <b>представление развертывания</b> и
+    <b>представление реализации</b>, используемые в потоке операций анализа, проектирования и реализации.
+</p>
+<p>
+    Подробную информацию об архитектурных представлениях можно найти в <b>документе по архитектуре программного
+    обеспечения</b>. Для иллюстрирования особых аспектов архитектуры программного обеспечения можно создавать и другие
+    представления, например представление защиты.
+</p>
+<p>
+    По сути архитектурные представления можно считать абстракциями или упрощенными вариантами модели, в которых
+    первоочередное внимание уделяется важнейшим характеристикам. Архитектура - это важный инструмент повышения качества
+    всех моделей, создаваемых в процессе разработки системы.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

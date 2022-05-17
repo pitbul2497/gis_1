@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Структуризация модели прецедента с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="structuring_the_use_case_model_rup_xde_uc" name="uma.name">
+<meta content="Структуризация модели прецедента с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D0259E78-EE08-4DBC-93AF-F056054B4A05}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{D0259E78-EE08-4DBC-93AF-F056054B4A05}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Структуризация модели прецедента с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается выполнения структуризации модели прецедента с помощью Rational XDE Developer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_use_case_model_93D8F44.html" guid="{F7D9D038-B184-43CC-9353-15BA154F87B5}">Создайте структуру модели вариантов использования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top" msnavigation="msnavigation"></a> 
+<h3>
+    Обзор&nbsp;
+</h3>
+<p>
+    Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения задачи. Ссылки на разделы электронной
+    справки Rational XDE&trade; помечены <img height="16" alt="значками справочников" src="./../../../core.base_rup/resources/helpbook.gif"     width="16" />.
+</p>
+<p>
+    В этой памятке предполагается, что модель варианта, заполненная субъектами и вариантами, уже была создана согласно
+    инструкциям, описанным в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/finding_actors_and_use_cases_rup_xde_uc_A5B7A9F7.html" guid="{0F9F340D-52D9-4054-A26E-9D557BB10203}">Памятке по инструменту: поиск субъектов и вариантов с помощью Rational
+    XDE</a>.
+</p>
+<p>
+    Эта памятка по инструменту состоит из следующих действий:
+</p>
+<ul>
+    <li>
+        <a href="#Identify Common Requirements">Идентификация общих требований</a>
+    </li>
+    <li>
+        <a href="#Establish Include-Relationships Between Use Cases">Установка взаимоотношений добавления между
+        вариантами</a>
+    </li>
+    <li>
+        <a href="#Establish Extend-Relationships Between Use Cases">Установка взаимоотношений расширения между
+        вариантами</a>
+    </li>
+    <li>
+        <a href="#Establish Generalizations Between Use Cases">Установка обобщений между вариантами</a>
+    </li>
+    <li>
+        <a href="#Establish Generalizations Between Actors">Установка обобщений между субъектами</a>
+    </li>
+    <li>
+        <a href="#Evaluate Your Results">Вычисление результатов</a>
+    </li>
+</ul>
+<h3>
+    <a id="Identify Common Requirements" name="Identify Common Requirements">Идентификация общих требований</a>&nbsp;
+</h3>
+<p>
+    Общее использование вариантов достигается за счет добавления взаимоотношений между существующими вариантами или
+    создания новых вариантов.Для этого выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Откройте модель прецедентов.
+    </li>
+    <li>
+        Перейдите к пакету, содержащему варианты. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Rational XDE&trade; Рекомендации по структуре модели</a>.
+    </li>
+    <li>
+        В <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/finding_actors_and_use_cases_rup_xde_uc_A5B7A9F7.html" guid="{0F9F340D-52D9-4054-A26E-9D557BB10203}">Памятке по инструменту: поиск субъектов и вариантов с помощью
+        Rational XDE</a> создавалась диаграмма вариантов, содержащая все варианты и субъекты.Перейдите к диаграмме.
+    </li>
+    <li>
+        Выполните рефакторинг для варианта, создав при необходимости новый. Процедура создания нового варианта с помощью
+        Rational XDE описана в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/finding_actors_and_use_cases_rup_xde_uc_A5B7A9F7.html" guid="{0F9F340D-52D9-4054-A26E-9D557BB10203}">Памятке по инструменту: поиск субъектов и вариантов с помощью
+        Rational XDE</a>. Создание подробного описания этих новых вариантов описано в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/detailing_a_use_case_rup_xde_uc_38C499A4.html" guid="{7F834229-4568-48CB-B107-3488E8AA2CAA}">Памятке по инструменту: создание подробного описания варианта с
+        помощью Rational XDE</a>.
+    </li>
+    <li>
+        Добавьте взаимоотношения между вариантами. В следующих разделах описывается добавление всех типов взаимоотношений.
+    </li>
+    <li>
+        Опишите все взаимоотношения. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" />
+        <i>Документирование элементов модели</i> <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem");   -->.
+    </li>
+</ol>
+<p>
+    Создайте дополнительные диаграммы прецедентов и запакуйте их при необходимости, чтобы упростить управление. Справочник:
+    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление диаграмм</i> 
+    <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm");   --><img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Группировка элементов модели в пакетах</i> 
+    <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_group_mod_ele_package");   -->.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Работа с диаграммами прецедентов</i>
+    <!--//ReferenceHelpTopic(topicTitle,"rs","rs_o_work_u_c_dgm");   -->.
+</p>
+<h3>
+    <a id="Establish Include-Relationships Between Use Cases" name="Establish Include-Relationships Between Use Cases">Установка взаимоотношений добавления между вариантами</a>
+</h3>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление взаимосвязей
+    добавления</i> <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_add_include_relshp");   -->.
+</p>
+<h3>
+    <a id="Establish Extend-Relationships Between Use Cases" name="Establish Extend-Relationships Between Use Cases">Установка взаимоотношений расширения между вариантами</a>
+</h3>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление взаимосвязей
+    расширения</i> <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_add_extend_relshp");   -->
+</p>
+<h3>
+    <a id="Establish Generalizations Between Use Cases" name="Establish Generalizations Between Use Cases">Установка
+    обобщений между вариантами</a>
+</h3>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление взаимосвязей
+    обобщения</i> <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_add_genrlztn_relshp");   -->
+</p>
+<h3>
+    <a id="Establish Generalizations Between Actors" name="Establish Generalizations Between Actors">Установка обобщений
+    между субъектами</a>
+</h3>
+<ol>
+    <li>
+        Откройте модель прецедентов.
+    </li>
+    <li>
+        Перейдите к пакету, содержащему субъекты. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+    </li>
+    <li>
+        В <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/finding_actors_and_use_cases_rup_xde_uc_A5B7A9F7.html" guid="{0F9F340D-52D9-4054-A26E-9D557BB10203}">Памятке по инструменту: поиск субъектов и вариантов с помощью
+        Rational XDE</a> создается диаграмма для захвата всех субъектов.Откройте эту диаграмму.
+    </li>
+    <li>
+        Выполните рефакторинг существующих субъектов и создайте новые при необходимости. Процедура создания субъектов
+        описана в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/finding_actors_and_use_cases_rup_xde_uc_A5B7A9F7.html" guid="{0F9F340D-52D9-4054-A26E-9D557BB10203}">Памятке по инструменту: поиск субъектов и вариантов с помощью
+        Rational XDE</a>.
+    </li>
+    <li>
+        Добавьте обобщения между субъектами. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" />
+        <i>Добавление взаимосвязей обобщений</i> 
+        <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_add_genrlztn_relshp");   -->.
+    </li>
+    <li>
+        При необходимости опишите все взаимосвязи обобщения. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Документирование элементов модели</i> 
+        <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem");   -->.
+    </li>
+</ol>
+<p>
+    Дополнительная информация приведена в разделе <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" />
+    <i>Работа с диаграммами прецедентов</i> <!--//ReferenceHelpTopic(topicTitle,"rs","rs_o_work_u_c_dgm");   -->.
+</p>
+<h3>
+    <a id="Evaluate Your Results" name="Evaluate Your Results">Вычисление результатов</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

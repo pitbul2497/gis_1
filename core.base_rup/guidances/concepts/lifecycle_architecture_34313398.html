@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Веха архитектуры жизненного цикла</title>
+<meta content="Concept" name="uma.type">
+<meta content="lifecycle_architecture" name="uma.name">
+<meta content="Веха архитектуры жизненного цикла" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_PEpmMCVuEdqSZ9OimJ-AzA", "_-kFhcCVuEdqSZ9OimJ-AzA", "_7z-fYCVwEdqSZ9OimJ-AzA"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_7z-fYCVwEdqSZ9OimJ-AzA"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_7z-fYCVwEdqSZ9OimJ-AzA"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_PEpmMCVuEdqSZ9OimJ-AzA", "_-kFhcCVuEdqSZ9OimJ-AzA", "_7z-fYCVwEdqSZ9OimJ-AzA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_7z-fYCVwEdqSZ9OimJ-AzA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Веха архитектуры жизненного цикла</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В данном разделе обсуждаются критерии оценки вехи архитектуры жизненного цикла в конце этапа уточнения. Кроме того, в этом разделе приведены описания ключевых артефактов.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_lifecycle_architecture_milestone" name="XE_lifecycle_architecture_milestone"></a><a id="XE_milestone__lifecycle_architecture" name="XE_milestone__lifecycle_architecture"></a><a id="XE_phase__milestones__lifecycle_architecture" name="XE_phase__milestones__lifecycle_architecture"></a> 
+<p>
+    В конце этапа уточнения находится вторая важная веха - <b>веха архитектуры жизненного цикла</b>. На этом этапе
+    выполняется проверка подробного содержания и целей системы, целесообразности выбора архитектуры и устранения основных
+    рисков.
+</p>
+<h4>
+    Критерии оценки
+</h4>
+<ul>
+    <li>
+        Стабильность требований к продукту и видение продукта.
+    </li>
+    <li>
+        Стабильность архитектуры.
+    </li>
+    <li>
+        Проверка ключевых подходов к тестированию и оценке дала положительные результаты.
+    </li>
+    <li>
+        Тестирование и оценка исполняемых прототипов подтвердили, что основные риски приняты во внимание и учтены.
+    </li>
+    <li>
+        Планы итераций этапа построения достаточно подробны и точны для продолжения работы.
+    </li>
+    <li>
+        Планы итераций этапа построения подкреплены надежными оценками.
+    </li>
+    <li>
+        Все заинтересованные лица полагают, что в контексте текущей архитектуры текущее видение реалистично, если для
+        реализации системы будет применяться текущий план.
+    </li>
+    <li>
+        Расхождение фактических и запланированных расходов на проект находится в приемлемом диапазоне.
+    </li>
+</ul>
+<p>
+    Если проект не удается довести до этой важной вехи, он может быть прерван или пересмотрен в существенной части.
+</p>
+<h4>
+    <a id="Artifacts" name="Artifacts">Артефакты</a>
+</h4>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th width="40%">
+                    Основные артефакты (в порядке важности)
+                </th>
+                <th width="60%">
+                    Состояние на момент прохождения вехи
+                </th>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/prototypes_9D1E67A.html" guid="6.334848481235948E-305">Прототипы</a>
+                </td>
+                <td width="60%">
+                    Для проверки важнейших функций и существенных для архитектуры сценариев были созданы один или несколько
+                    рабочих прототипов архитектуры. См. примечание ниже в отношении <a href="#The Role of Prototyping">важности создания прототипов</a>.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_risk_list_B87674CA.html" guid="{32D7C484-2FAF-4442-8DA0-6D474B91A9DD}">Перечень рисков</a>
+                </td>
+                <td width="60%">
+                    Обновлен и проверен. Новые риски, как правило, относятся к группе архитектурных рисков и связаны с
+                    удовлетворением нефункциональных требований.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_development_process_A6449790.html" guid="{345D1811-317B-47EC-AC9D-10E1072A7D68}">Процесс разработки</a>
+                </td>
+                <td width="60%">
+                    <p>
+                        Процесс разработки, включая рекомендации и шаблоны для конкретного проекта, был уточнен с учетом
+                        первых результатов разработки и стал достаточно подробным для перехода к этапу конструирования.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_development_infrastructure_21BD206E.html" guid="{A40A3A6E-A090-46B4-B2FE-5F1AC36F010B}">Инфраструктура разработки</a>
+                </td>
+                <td width="60%">
+                    <p>
+                        Среда разработки подготовлена и содержит все необходимые инструменты и средства поддержки
+                        автоматизации.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Документация по архитектуре программного обеспечения</a>
+                </td>
+                <td width="60%">
+                    Создана контрольная версия, которая содержит подробное описание значимых для архитектуры вариантов
+                    использования (представление вариантов использования), перечень ключевых механизмов и элементов проекта
+                    (логическое представление), а также определения представления процессов и представления развертывания
+                    (см. <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_deployment_model_57DF1DF5.html" guid="{5981B6BE-2FD1-4984-AA94-2F7428439BA6}">Рабочий продукт: Представление развертывания</a>), если
+                    создается распределенная система или система с элементами параллелизма.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проекта</a> (и все входящие в нее артефакты)
+                </td>
+                <td width="60%">
+                    Создана контрольная версия. Определена реализация вариантов использования для значимых для архитектуры
+                    сценариев; необходимое поведение распределено по элементам проекта. Исследованы необходимые компоненты
+                    и приняты взвешенные решения о их разработке, приобретении или повторном использовании из предыдущих
+                    проектов. В результате появилась возможность объективно оценить стоимость и продолжительность этапа
+                    построения. Выбранные компоненты интегрируются и проверяются на соответствие основным сценариям. Опыт,
+                    полученный в ходе выполнения этих операций, может послужить основанием для коррекции архитектуры,
+                    рассмотрения альтернативных проектов или повторного анализа требований.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Модель данных</a>
+                </td>
+                <td width="60%">
+                    Создана контрольная версия. Основные элементы модели данных (важные объекты, взаимосвязи, таблицы)
+                    определены и проверены.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_implementation_model_5858DB65.html" guid="{157E9B67-C619-410D-A927-F2CD217BF8FE}">Модель реализации</a> (и все входящие в нее артефакты,
+                    включая <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_implementation_element_49BB163E.html" guid="{E1E0DDA3-914F-4CC1-9D0A-ED4B8E8BBA89}">элементы реализации</a>)
+                </td>
+                <td width="60%">
+                    Созданы начальная структура и прототипы основных компонентов
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_vision_2D6D6F1.html" guid="{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}">Видение</a>
+                </td>
+                <td width="60%">
+                    Уточнено с учетом новой информации, появившейся на данном этапе. Обеспечение единого понимания
+                    важнейших вариантов, от которых зависят ключевые решения при планировании проекта и разработке
+                    архитектуры.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_project_plan_D89CA030.html" guid="{D77D6716-B167-4643-A4B6-6F76C7769A80}">План разработки программного обеспечения</a>
+                </td>
+                <td width="60%">
+                    Обновлен и расширен, охватывает этап построения и поставки.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_iteration_plan_623AFF7F.html" guid="{97269E0F-CDF3-448D-A732-DF39D099BDDD}">План повтора</a>
+                </td>
+                <td width="60%">
+                    Создан и проверен план итераций этапа построения.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html" guid="{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}">Модель вариантов использования</a> (<a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_actor_1F9CE9.html" guid="{0EEBBA43-F5C6-4594-9F06-65D99F7556DF}">субъекты</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_usecase_A5D30E62.html" guid="{B1526BC5-E346-42CB-A08A-3C0D7F382407}">варианты использования</a>)
+                </td>
+                <td width="60%">
+                    Модель вариантов использования (завершена примерно на 80%) - по итогам опроса по модели вариантов
+                    использования определены все варианты использования, все субъекты и <b>большинство</b> описаний
+                    вариантов использования (охват требований).
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html" guid="{B16C2941-791C-44E6-B353-354109B5C9DE}">Дополнительные спецификации</a>
+                </td>
+                <td width="60%">
+                    Задокументированы и проверены вспомогательные требования и нефункциональные требования.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_test_suite_DA8938D2.html" guid="{33DE37A2-ECFE-483B-934B-629F5802F87C}">Тестовый набор</a> ("проверка дымом")
+                </td>
+                <td width="60%">
+                    Реализованы и успешно выполнены тесты, направленные на проверку стабильности всех компиляций выпуска,
+                    созданных на этапе уточнения.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_test_automation_architecture_650DD06A.html" guid="{B5B77528-E14B-43CA-BC73-D64A90A17E2D}">Архитектура автоматизации тестирования</a>
+                </td>
+                <td width="60%">
+                    Совокупность механизмов и ключевых элементов программного обеспечения, с помощью которых реализованы
+                    фундаментальные характеристики системы автоматизации тестирования.
+                </td>
+            </tr>
+            <!-- <tr>               <td width="40%"><a href="./../../../core.base_rup/workproducts/rup_test_plan_53712941.html" class="elementLinkWithUserText" guid="{B95CA9FA-A00E-4C6C-AA16-133297812CC0}">Test Plan</a></td>               <td width="60%">A governing test plan that outlines the high-level test and evaluation strategy for the life of the project.</td>             </tr> -->
+            <tr>
+                <td align="middle" width="40%">
+                    <b>Необязательные артефакты</b>
+                </td>
+                <td align="middle" width="60%">
+                    <b>Состояние на момент прохождения вехи</b>
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_business_case_56F408EB.html" guid="{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}">Экономическое обоснование проекта</a>
+                </td>
+                <td width="60%">
+                    Уточнено, если в ходе исследования архитектуры были выявлены обстоятельства, которые привели к
+                    изменению фундаментальных предположений относительно проекта.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_model_76C3B70C.html" guid="{98EA224C-36F6-46E6-AB36-2999382B58B3}">Модель анализа</a>
+                </td>
+                <td width="60%">
+                    Может быть разработана в качестве формального артефакта, зачастую не подлежит формальному обслуживанию
+                    и постепенно эволюционирует в раннюю версию модели проекта.
+                </td>
+            </tr>
+            <tr>
+                <td width="40%">
+                    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_support_material_F6EEF661.html" guid="{84C28309-4BB7-4243-8760-1B40C537A175}">Материалы поддержки пользователей</a>
+                </td>
+                <td width="60%">
+                    Руководства пользователей и другие учебные материалы. Предварительные черновики, основанные на
+                    вариантах использования. &nbsp; Могут потребоваться, если в системе уделяется серьезное внимание
+                    пользовательскому интерфейсу.
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<h4>
+    <a id="The Role of Prototyping" name="The Role of Prototyping">Роль прототипов</a>
+</h4>
+<p>
+    Rational Unified Process дает архитектору программного обеспечения и руководителю проекта свободу создания нескольких
+    типов прототипов (см. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/prototypes_9D1E67A.html" guid="6.334848481235948E-305">Концепция:
+    Прототипы</a>) в рамках стратегии снижения рисков. Некоторые прототипы создаются исключительно в исследовательских
+    целях и со временем отбрасываются. Однако вполне может быть так (особенно если речь идет о больших системах и системах,
+    не имеющих аналогов), что процесс создания архитектуры сведется к разработке нескольких эволюционных прототипов,
+    охватывающих различные аспекты проекта, и к концу этапа уточнения эти прототипы образуют интегрированную стабильную
+    архитектурную базу. Однако не следует воспринимать это как рекомендацию разработать к концу этапа уточнения набор
+    фрагментов архитектуры, не нуждающихся в интеграции.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

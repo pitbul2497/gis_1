@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Установка процесса запроса изменения с помощью Rational ClearQuest</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="establish_cr_process" name="uma.name">
+<meta content="Установка процесса запроса изменения с помощью Rational ClearQuest" name="uma.presentationName">
+<meta content="Tool:rup_clearquest:Rational ClearQuest" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearQuest" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{E4642FD8-78AE-4DC9-9497-5BCD7428E099}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Установка процесса запроса изменения с помощью Rational ClearQuest</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описано применение Rational ClearQuest&amp; для установки процесса запроса изменения.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearquest_3C7831BD.html" guid="{ED0B771E-CA09-4317-AB43-F88489AA520F}">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/establish_project_change_control_process_159A3B7A.html" guid="{0A40D5A0-2119-4D42-9B35-72D9B42BB4FA}">Реализация процесса управления изменениями</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    ClearQuest является системой управления запросами изменений (CRM) для динамического и интерактивного процесса
+    разработки ПО. С помощью ClearQuest можно управлять всеми типами действий изменения, связанными с разработкой ПО,
+    включая запросы расширения, отчеты о дефектах и изменение документации.
+</p>
+<p>
+    Применение ClearQuest не ограничивается отслеживанием неполадок. ClearQuest Designer является инструментом
+    администрирования для настройки схем ClearQuest для определенных потребностей вашей фирмы. Администратор задает тип
+    информации, отправляемой, получаемой и просматриваемой в отчетах и диаграммах пользователем. Администратор также
+    определяет какие пользователи какие действия могут выполнять над записями.
+</p>
+<p>
+    От использования ClearQuest выигрывают все члены вашей команды разработчиков:
+</p>
+<ul>
+    <li>
+        Инженеры разработки смогут уделить больше времени написанию кода и меньше времени идентификации выполнимым
+        сообщениям.
+    </li>
+    <li>
+        Инженеры тестирования смогут легче определять источник, состояние и решение всех запросов изменений.
+    </li>
+    <li>
+        Руководители и администраторы проекта смогут быстро узнавать о состоянии проектов с помощью подробных настраиваемых
+        отчетов.
+    </li>
+    <li>
+        Удаленные члены команды смогут принимать участие в коллективной работе с помощью ClearQuest Web.
+    </li>
+</ul>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Настройка ClearQuest для создания процесса управления запросом изменения с помощью ClearQuest Designer состоит из
+    четырех этапов.
+</p>
+<ol>
+    <li>
+        <a href="#CreateAndModifySchemasAndForms">Создайте и измените схемы</a>
+    </li>
+    <li>
+        <a href="#CreateAndModifyDatabases">Создайте и измените базы данных</a>
+    </li>
+    <li>
+        <a href="#AddUsersGroupsAndUserPermissions">Добавление пользователей и групп пользователей</a>
+    </li>
+    <li>
+        <a href="#CreateAndModifyHookCode">Создайте и измените код перехватчика</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="CreateAndModifySchemasAndForms" name="CreateAndModifySchemasAndForms">Создайте и измените схемы</a> <a href="#Top"><img height="20" alt="в начало страницы" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Добавляет формы для отправки данных пользователями и изменения записей
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+    ClearQuest Designer <b>Справка &gt; Содержание и указатель</b>:
+</p>
+<ul>
+    <li>
+        <b>Работа со схемами ClearQuest</b>
+    </li>
+    <li>
+        <b>Настройка схемы</b>
+    </li>
+    <li>
+        <b>Работа с формами</b>
+    </li>
+</ul>
+<h3>
+    2. <a id="CreateAndModifyDatabases" name="CreateAndModifyDatabases">Создайте и измените базы данных</a>
+</h3>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+    ClearQuest Designer <b>Справка &gt; Содержание и указатель</b>:
+</p>
+<ul>
+    <li>
+        <b>Управление базами данных</b>
+    </li>
+    <li>
+        <b>Работа со схемами ClearQuest</b>
+    </li>
+</ul>
+<h3>
+    3. <a id="AddUsersGroupsAndUserPermissions" name="AddUsersGroupsAndUserPermissions">Добавление пользователей и групп
+    пользователей, настройка и изменение разрешений для пользователей и групп</a>
+</h3>
+<p>
+    Добавляет параметры и изменяет разрешения для пользователей и групп
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+    ClearQuest Designer <b>Справка &gt; Содержание и указатель</b>:
+</p>
+<ul>
+    <li>
+        <b>Применение защиты в Rational ClearQuest</b>
+    </li>
+    <li>
+        <b>Контролируемый пользователь</b>
+    </li>
+</ul>
+<h3>
+    4. <a id="CreateAndModifyHookCode" name="CreateAndModifyHookCode">Создайте и измените код перехватчика</a>
+</h3>
+<p>
+    Добавляет дополнительные функции в ClearQuest разрешает взаимодействиям с внешними приложениями вызывать действия за
+    пределами ClearQuest.
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+    ClearQuest Designer <b>Справка &gt; Содержание и указатель</b>:
+</p>
+<ul>
+    <li>
+        <b>Применение перехватчиков для настройки потока операций</b>
+    </li>
+    <li>
+        <b>Примеры перехватчиков</b>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

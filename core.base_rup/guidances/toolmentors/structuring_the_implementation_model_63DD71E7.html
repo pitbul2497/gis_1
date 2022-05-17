@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Структуризация модели реализации с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="structuring_the_implementation_model" name="uma.name">
+<meta content="Структуризация модели реализации с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{ED12F411-0BE2-4A9D-AF41-07329966116F}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{ED12F411-0BE2-4A9D-AF41-07329966116F}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Структуризация модели реализации с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается выполнения структуризации модели реализации с помощью Rational XDE Developer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html" guid="{35272424-8A0A-4DDD-BA74-C91B80A8D046}">Создание структуры модели реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения задачи. Ссылки на разделы электронной
+    справки Rational XDE&trade; помечены <img height="16" alt="значками справочников" src="./../../../core.base_rup/resources/helpbook.gif"     width="16" />.
+</p>
+<p>
+    В этой памятке по инструменту подразумевается, что вы задали структуру верхнего уровня модели реализации, как описано в
+    <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a>. Действия этой памятки допускают
+    уточнение этой исходной структуры.
+</p>
+<p>
+    В этой памятке по инструменту выполняются следующие шаги:
+</p>
+<ul>
+    <li>
+        <a href="#Establish the Implementation Model Structure">Установите структуру модели реализации</a>
+    </li>
+    <li>
+        <a href="#Adjust Subsystems">Настройте подсистемы реализации</a>
+    </li>
+    <li>
+        <a href="#Define Imports for Each Subsystem">Задайте импорт для каждой подсистемы реализации</a>
+    </li>
+    <li>
+        <a href="#Decide how to treat executable programs (and other derived objects)">Решите как
+        обрабатывать исполняемые объекты (и прочие производные объекты)</a>
+    </li>
+    <li>
+        <a href="#Decide how to treat test assets">Решите как обрабатывать тестовые ресурсы</a>
+    </li>
+    <li>
+        <a href="#Update the Implementation View">Обновите представление реализации</a>
+    </li>
+    <li>
+        <a href="#Evaluate the implementation model">Вычислите модель реализации</a>
+    </li>
+</ul>
+<h3>
+    <a id="Establish the Implementation Model Structure" name="Establish the Implementation Model Structure">Установите
+    структуру модели реализации</a>
+</h3>
+<p>
+    При идентификации подсистем реализации они доступны для моделирования в виде пакетов на диаграммах компонентов для
+    отображения зависимостей между подсистемами. Эти диаграммы задают <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/implementation_view_E373E3B6.html" guid="4.693519701160983E-305">Представление
+    реализации</a>. Для его создания выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Перейдите к модели и пакету, в котором будут находиться подсистемы реализации. (В <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a> это модель поддержки интеграции).
+    </li>
+    <li>
+        Создайте диаграмму компонента, содержащую обзор подсистем реализации. См. раздел <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление диаграмм</i>. 
+        <!--<script language=javascript>ReferenceHelpTopic("Adding Diagrams","rs","rs_t_add_dgm");</script>   -->
+    </li>
+    <li>
+        Создайте пакет для каждой подсистемы диаграммы. (См. раздел <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление форм к диаграммам)</i>. &nbsp; 
+        <!--<script language=javascript>ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); </script>   -->Обратите
+        внимание, что конкретная поддержка подсистем реализации в Rational XDE отсутствует, поэтому данная диаграмма
+        является простым рисунком.
+    </li>
+    <li>
+        (необязательно) Если взаимосвязь этих подсистем реализации с проектами и/или элементами в различных моделях кода
+        неочевидна, можно создать диаграмму трассируемости к элементам эскиза. См. раздел <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление диаграмм</i>. 
+        <!--<script language=javascript>ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm");  </script>     -->
+    </li>
+</ol>
+<p>
+    Модели кода всех проектов должны быть структурированы согласно <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациям по структуре модели Rational XDE</a>. См. раздел <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Группировка элементов модели в пакетах.
+    &nbsp;</i> &nbsp; 
+    <!--<script language=javascript>ReferenceHelpTopic(topicTitle,"rs","rs_t_group_mod_ele_package"); </script>          -->Также
+    можно создать каталоги в файловой системе и пакеты в коде, и синхронизировать для создания соответствующих пакетов в
+    модели. <!-- end - vsnet -->
+</p>
+<h3>
+    <a id="Adjust Subsystems" name="Adjust Subsystems">Настройте подсистемы реализации</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="Define Imports for Each Subsystem" name="Define Imports for Each Subsystem">Задайте импорт для каждой подсистемы
+    реализации</a>
+</h3>
+<p>
+    Захватите зависимости импорта на диаграмме компонентов представления реализации, созданной ранее. См. раздел &nbsp;<img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление взаимосвязей зависимостей</i>.
+    &nbsp; 
+    <!--<script language=javascript>ReferenceHelpTopic(topicTitle,"rs","rs_t_add_depend_relshp");</script>           -->Обратите
+    внимание, что эти зависимости предоставляют лишь рекомендации для разработчиков. Rational XDE не выполняет внедрение
+    или проверку.
+</p>
+<p>
+    Импорт проекта должен совпадать с этими зависимостями.
+</p><!-- begin - wsw -->
+<p>
+    Чтобы задать и изменить импорт файлов JAR извне проекта, выберите на панели инструментов пункт <b>Окно</b>, затем
+    <b>Свойства</b> и <b>Java, упорядочить импорт</b>.
+</p>Импорт извне проекта называется справочными моделями. См. раздел <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Справочные модели</i>. 
+<!--<script language=javascript>ReferenceHelpTopic(topicTitle,"vs/modeling_code","vs_c_ref_models"); </script>      -->
+<!-- end - vsnet -->
+<h3>
+    <a id="Decide how to treat executable programs (and other derived objects)" name="Decide how to treat executable programs (and other derived objects)">Решите как обрабатывать исполняемые объекты
+    (и прочие производные объекты)</a>
+</h3>
+<p>
+    Исполняемые и прочие развертываемые файлы можно смоделировать как компоненты UML. См. раздел Развертывание модели
+    поддержки в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a>. Для моделирования этих файлов
+    выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Перейдите к модели и пакету, в котором будут содержаться эти файлы. (В <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a> это модель поддержки
+        развертывания).
+    </li>
+    <li>
+        Создайте диаграмму компонентов. См. &nbsp;<img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление диаграмм</i>. 
+        <!--<script language=javascript>ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); </script>      -->
+    </li>
+    <li>
+        Добавьте все исполняемые программы и прочие развертываемые файлы (смоделированные как компоненты UML). &nbsp;См.
+        раздел <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Добавление форм к
+        диаграммам.</i> <!--//ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm");               -->
+    </li>
+    <li>
+        Упорядочьте их в пакеты (как описано в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a>). См. раздел <img         alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Группировка элементов модели в
+        пакетах</i>. 
+        <!--<script language=javascript>ReferenceHelpTopic(topicTitle,"rs","rs_t_group_mod_ele_package");</script>  -->
+    </li>
+</ol>
+<p>
+    Обратите внимание на отсутствие поддержки циклического инжиниринга для выполняемых программ, поэтому данная модель
+    должна обслуживаться вручную.
+</p>
+<h3>
+    <a id="Decide how to treat test assets" name="Decide how to treat test assets">Решите как обрабатывать тестовые
+    ресурсы</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="Update the Implementation View" name="Update the Implementation View">Обновите представление реализации</a>
+</h3>
+<p>
+    При наличии отдельного логического представления, необходимо также обслуживать его. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+</p>
+<h3>
+    <a id="Evaluate the implementation model" name="Evaluate the implementation model">Вычислите модель
+    реализации</a><br />
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

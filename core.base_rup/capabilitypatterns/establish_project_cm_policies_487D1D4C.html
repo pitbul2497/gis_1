@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Дескриптор задачи: Реализация стратегий управления конфигурацией (CM)</title>
+<meta content="TaskDescriptor" name="uma.type">
+<meta content="establish_project_cm_policies" name="uma.name">
+<meta content="Реализация стратегий управления конфигурацией (CM)" name="uma.presentationName">
+<meta content="_RH-VkEodEdqrjq4i3fchvA" name="uma.guid">
+<meta content="TaskDescriptor" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ActivityTreeTable.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ProcessElementPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/processElementData.js"></script><script language="JavaScript" type="text/javascript">
+					var defaultQueryStr = '?proc={C85C9CC0-AD92-46C9-85BA-4C0672D6571E}&path={C85C9CC0-AD92-46C9-85BA-4C0672D6571E},{043594BF-28ED-41EF-8C55-FBD65551D0CA},_RH-VkEodEdqrjq4i3fchvA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, true, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_RH-VkEodEdqrjq4i3fchvA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Дескриптор задачи: Реализация стратегий управления конфигурацией (CM)</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/taskdes_lg_dgm32.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой задаче приведены инструкции по разработке принципов управления конфигурацией. Сюда относятся принципы идентификации конфигурации, создания контрольных версий, архивирования и требования к отчетам о конфигурации.</td>
+</tr>
+<tr>
+<td>На основе задачи метода: <a href="./../../core.base_rup/tasks/establish_project_cm_policies_6B9785AC.html" guid="{E45B1CBF-29EB-431E-9417-F40E45BBAFD1}">Реализация стратегий управления конфигурацией (CM)</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Главный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_configuration_manager_5AA186AB.html" guid="_CaMcVxi2Edq_uI8xTPML6g">Администратор конфигурации</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительно:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Помощь:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_project_plan_8B71C47C.html" guid="_CaMcUhi2Edq_uI8xTPML6g">План разработки программного обеспечения</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_cm_plan_960FA48C.html" guid="_CaMcUxi2Edq_uI8xTPML6g">План управления конфигурацией</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_development_process_531AFD5C.html" guid="_RH-VkUodEdqrjq4i3fchvA">Процесс разработки</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Внешний:
+								</span>
+<ul>
+<li>Нет</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="3" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_cm_plan_960FA48C.html" guid="_CaMcUxi2Edq_uI8xTPML6g">План управления конфигурацией</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableCell">
+<div class="stepHeading"> Определите принципы идентификации конфигурации</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineConfigurationIdentificationPractices" name="DefineConfigurationIdentificationPractices"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <b>Цель:</b>&nbsp; Присвоить идентификаторы рабочим продуктам и поместить эти продукты в
+                    хранилища&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Памятки по инструментам:</b> <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/toolmentors/creating_baselines_EFAE6E4.html" guid="{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}">Создание контрольных версий с помощью Rational
+                    ClearCase</a>&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Идентификация конфигурации - важнейший аспект управления конфигурацией. Согласно определению Института инженеров по
+    электротехнике и радиоэлектронике идентификация конфигурации - это "элемент управления конфигурацией, состоящий в
+    выборе компонентов конфигурации системы и записи их функциональных и физических характеристик в технической
+    документации". В рамках управления конфигурацией программного обеспечения идентификация конфигурации позволяет просто и
+    быстро находить и определять нужную версию любого рабочего продукта проекта. Неэффективная система идентификации
+    конфигурации может обернуться потерей времени и низким качеством продукта.
+</p>
+<p>
+    Идентификаторы указывают на версию рабочего продукта. Рабочие продукты, формирующие версию подсистемы, можно
+    идентифицировать вместе или по отдельности по номеру версии и идентификатору. Поэтому идентификаторы удобно
+    использовать повторно или для указания исходной версии рабочих продуктов.
+</p>
+<p>
+    Ниже приведен пример способа записи идентификаторов рабочих продуктов и путей в <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/concepts/product_directory_structure_293B0B00.html" guid="3.654568680407835E-305">структуре
+    каталогов продукта</a>.
+</p>
+<p align="center">
+    &lt;система&gt;[&lt;A&gt;]_[&lt;подсистема&gt;]_[&lt;A&gt;]_[R|A|B]&lt;X&gt;[.&lt;Y&gt;.&lt;Z&gt;][.BL&lt;#&gt;]
+</p>
+<p>
+    &lt;система&gt; определяет систему
+</p>
+<blockquote>
+    <p>
+        &lt;A&gt; обозначает трехбуквенный акроним (TLA!). Используется для различных видов рабочих продуктов, участвующих
+        в создании системы. Например,
+    </p>
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" align="center" bordercolorlight="#808080"     border="1">
+        <tbody>
+            <tr>
+                <th scope="row" width="13%">
+                    PLN&nbsp;
+                </th>
+                <td width="87%">
+                    Планы проекта&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    REQ&nbsp;
+                </th>
+                <td width="87%">
+                    Файлы требований&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    USC&nbsp;
+                </th>
+                <td width="87%">
+                    Варианты использования&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    MOD&nbsp;
+                </th>
+                <td width="87%">
+                    Файлы модели&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    SRC&nbsp;
+                </th>
+                <td width="87%">
+                    Файлы с исходным кодом&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th width="13%">
+                    INT&nbsp;
+                </th>
+                <td width="87%">
+                    Общие интерфейсы&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    TST&nbsp;
+                </th>
+                <td width="87%">
+                    Тестовые сценарии и результаты тестирования&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    DOC&nbsp;
+                </th>
+                <td width="87%">
+                    Документация (информация о пользователе, информация о выпуске)&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="13%">
+                    BIN&nbsp;
+                </th>
+                <td width="87%">
+                    Исполняемые файлы&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</blockquote>
+<p>
+    &lt;подсистема&gt; определяет каждую подсистему
+</p>
+<blockquote>
+    <p>
+        &lt;A&gt; обозначает трехбуквенный акроним для различных видов рабочих продуктов, участвующих в создании
+        подсистемы. См. приведенную выше таблицу.
+    </p>
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" align="center" bordercolorlight="#808080"     border="1">
+        <tbody>
+            <tr>
+                <th scope="row" width="19%">
+                    R|A|B&nbsp;
+                </th>
+                <td width="81%">
+                    Обозначают альфа-версию или бета-версию&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    &lt;X&gt;&nbsp;
+                </th>
+                <td width="81%">
+                    Целое число, обозначает основную версию (например, 1)&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    &lt;Y&gt;&nbsp;
+                </th>
+                <td width="81%">
+                    Целое число (указывается при необходимости), обозначает промежуточную версию&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    &lt;Z&gt;&nbsp;
+                </th>
+                <td width="81%">
+                    Целое число (указывается при необходимости), обозначает дополнительную версию (программы по
+                    исправлению, порты и т.п.) &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    BL&nbsp;
+                </th>
+                <td width="81%">
+                    Обозначает базовый уровень (внутренняя версия)&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    #&nbsp;
+                </th>
+                <td width="81%">
+                    Целое число, обозначает внутренние версии&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</blockquote>
+<p>
+    Некоторые примеры приведены ниже:
+</p>
+<blockquote>
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" align="center" bordercolorlight="#808080"     border="1">
+        <tbody>
+            <tr>
+                <th scope="row" width="19%">
+                    T2K_R1.0&nbsp;
+                </th>
+                <td width="81%">
+                    Версия 1 системы Thorn 2000&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    T2K_GUI_R2.0.BL5&nbsp;
+                </th>
+                <td width="81%">
+                    Внутренний выпуск графического интерфейса, подготовленный для версии 2&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    T2K_B1.1&nbsp;
+                </th>
+                <td width="81%">
+                    Бета-версия 1.1 системы Thorn 2000&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    T2K_R2.0.BL16&nbsp;
+                </th>
+                <td width="81%">
+                    Внутренняя контрольная версия #16 системы Thorn 2000, предназначенная для создания версии 2&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" width="19%">
+                    T2K_R1.0.5&nbsp;
+                </th>
+                <td width="81%">
+                    Обслуживающий выпуск системы Thorn 2000&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</blockquote></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определите принципы создания контрольных версий</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineBaseliningPractices" name="DefineBaseliningPractices"></a> 
+<p>
+    Контрольная версия предоставляет точку отсчета и моментальную копию рабочего продукта. <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/concepts/baselining_88B2C018.html" guid="4.4540149642001026E-305">Концепция: Создание контрольных версий</a> содержит информацию о том, на каких стадиях
+    проекта нужно создавать контрольные версии. В этом шаге приведены указания по созданию контрольных версий.
+</p>
+<p>
+    Контрольные версии определяют фиксированные наборы версий файлов и каталогов и создаются при прохождении определенных
+    вех проекта. Контрольные версии можно создавать как для отдельных подсистем, так и для всей системы. Контрольным
+    версиям нужно присваивать идентификаторы в соответствии с инструкциями, описанными в предыдущем шаге (Определить способ
+    идентификации рабочих продуктов).
+</p>
+<p>
+    Контрольные версии различаются, если вы создаете:
+</p>
+<ul>
+    <li>
+        Контрольную версию подсистем со всеми версиями измененных файлов и каталогов подсистем.
+    </li>
+</ul>
+<ul>
+    <li>
+        Контрольную версию системы с одной версией всех файлов и каталогов всех подсистем.
+    </li>
+</ul>
+<p>
+    Для упрощения работы с версиями рекомендуется создавать контрольные версии системы при прохождении больших и малых вех
+    проекта, а контрольные версии подсистем - чаще или по мере необходимости. Также рекомендуется создавать контрольную
+    версию подсистемы, если было изменено более 30% ее элементов.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определите принципы архивирования</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineArchivingPractices" name="DefineArchivingPractices"></a> 
+<p>
+    Цель этого шага - занести в каталоги и поместить в хранилища компоненты программного обеспечения и связанные файлы
+    (основные документы) и создать для них резервные копии. Архивы необходимы на случай повторного использования
+    компонентов или возникновения нештатных ситуаций. Архивы необходимо создавать регулярно при прохождении больших и малых
+    вех проекта.
+</p>
+<p>
+    При создании архивных идентификаторов можно следовать рекомендациям из шага "Определить способ идентификации рабочих
+    продуктов". При сохранении определенных видов программ может потребоваться дополнительная информация. Например:
+</p>
+<table style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"  cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" align="center" bordercolorlight="#808080" border="1">
+    <tbody>
+        <tr>
+            <th scope="row" width="40%">
+                Серийный номер&nbsp;
+            </th>
+            <td width="60%">
+                123456789&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" width="40%">
+                Объем&nbsp;
+            </th>
+            <td width="60%">
+                1 из 3&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" width="40%">
+                Ячейка&nbsp;
+            </th>
+            <td width="60%">
+                B5&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" width="40%">
+                Дата помещения в архив&nbsp;
+            </th>
+            <td width="60%">
+                21 июня 1999 г.&nbsp;
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    Для упрощения работы над выпуском и для повторного использования информации о продукте ее нужно заносить в базу данных.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определите требования к отчетам о статусе конфигурации</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineConfigurationStatusReportingRequirements" name="DefineConfigurationStatusReportingRequirements"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%">
+                    <b>Цель</b>
+                </td>
+                <td width="95%">
+                    Изменения - хороший показатель состояния и направления развития проекта. Цель этого шага - определение
+                    руководителем проекта, какие данные об изменениях проекта необходимо сообщать, кто и как часто это
+                    должен делать. &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Шаги:</b> 
+                    <ul>
+                        <li>
+                            <a href="#SelectChangeRequestBasedReports">Выбрать отчеты, основанные на запросах изменений</a>
+                        </li>
+                        <li>
+                            <a href="#DefineReportingFrequency">Определить частоту составления отчетов</a>
+                        </li>
+                    </ul>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Памятки по инструментам:</b> 
+                    <ul>
+                        <li>
+                            <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/toolmentors/view_defect_history_E065C8BA.html" guid="{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}">Просмотр хронологии неполадки с помощью Rational
+                            ClearQuest</a>
+                        </li>
+                        <li>
+                            <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/toolmentors/view_history_of_requirement_5A843E1D.html" guid="{9D4EA8B0-AB27-4B4F-9571-938469E24D7A}">Просмотр хронологии требований с помощью Rational
+                            RequisitePro</a>
+                        </li>
+                    </ul>&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/concepts/configuration_status_reporting_D9BE6657.html" guid="1.0480756258268436E-305">Отчеты о статусе конфигурации</a> содержит описание источников создания отчетов о
+    состоянии конфигурации.
+</p>
+<h4>
+    <a id="SelectChangeRequestBasedReports" name="SelectChangeRequestBasedReports">Выбрать отчеты, основанные на запросах
+    изменений</a> <a href="#DefineConfigurationStatusReportingRequirements"><img height="20" alt="Начало страницы"     src="./../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h4>
+<p>
+    На этом шаге выберите отчеты, которые можно составить на основе <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_change_request_F2E6419.html" guid="{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}">запросов
+    изменений</a>. Существует множество полезных отчетов, основанных на запросах изменений.
+</p>
+<p>
+    В категории "развитие" в отчетах можно указывать данные о количестве <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_change_request_F2E6419.html" guid="{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}">запросов
+    изменений</a>, поданных за определенный промежуток времени (неделя или месяц), в соответствии со стадиями их развития и
+    основываясь на следующих критериях:
+</p>
+<ul>
+    <li>
+        Подан
+    </li>
+    <li>
+        Выполняется
+    </li>
+    <li>
+        Реализован
+    </li>
+    <li>
+        Важность
+    </li>
+</ul>
+<p>
+    Перечисление неполадок по их состоянию позволяет определить, насколько близок проект к завершению. Например, если
+    большое количество неполадок уже устранено, то проект находится ближе к завершению, чем если запросы об их устранении
+    только поданы.
+</p>
+<p>
+    В категории "распределение" отчеты помогают ответить на следующие примерные вопросы:
+</p>
+<ul>
+    <li>
+        Кто занимается поиском неполадок, каких видов неполадок и на каких стадиях проекта?
+    </li>
+    <li>
+        Кому поручено устранение неполадок?
+    </li>
+    <li>
+        Сколько неполадок обнаружено в результатах работы конкретного специалиста?
+    </li>
+    <li>
+        Насколько серьезны эти неполадки?
+    </li>
+    <li>
+        В чем состоят коренные причины неполадок?
+    </li>
+    <li>
+        Когда устраняются эти неполадки?
+    </li>
+    <li>
+        Сколько всего неполадок?
+    </li>
+    <li>
+        Насколько серьезны эти неполадки?
+    </li>
+</ul>
+<p>
+    Эти показатели можно использовать для анализа нагрузки, определения, кто работает над самыми важными неполадками и как
+    быстро неполадки устраняются.
+</p>
+<p>
+    В категории "тенденция" отчеты помогают ответить на следующие примерные вопросы:
+</p>
+<ul>
+    <li>
+        Сколько неполадок возникло сегодня, за эту неделю, за этот месяц?
+    </li>
+    <li>
+        Сколько неполадок устранили сегодня, за эту неделю, за этот месяц?
+    </li>
+</ul>
+<p>
+    Эту информацию можно использовать для оценки уровня устранения неполадок и определения эффективности работы
+    специалистов.
+</p>
+<h4>
+    <a id="DefineReportingFrequency" name="DefineReportingFrequency">Определить частоту составления отчетов</a> <a href="#DefineConfigurationStatusReportingRequirements"><img height="20" alt="Начало страницы"     src="./../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h4>
+<p>
+    Для эффективного использования отчетов при принятии решений необходимо следить, чтобы отчеты приходили с установленной
+    частотой. Можно установить следующую частоту составления отчетов:
+</p>
+<ul>
+    <li>
+        Ежедневно - вряд ли потребуется составлять отчеты настолько часто
+    </li>
+    <li>
+        Еженедельно - для следующих категорий отчетов: тенденции, распределение, вычисления и компиляция
+    </li>
+    <li>
+        Ежемесячно - для следующих категорий отчетов: тенденции, распределение, вычисления и компиляция
+    </li>
+    <li>
+        При каждой итерации - для следующих категорий отчетов: тенденции, распределение, вычисления, компиляция, описание
+        версии
+    </li>
+    <li>
+        На каждом этапе - для следующих категорий отчетов: тенденции, распределение, вычисление, проверки, компиляция,
+        описание версии
+    </li>
+    <li>
+        По завершении проекта - для следующих категорий отчетов - тенденции, распределение, вычисления, проверки,
+        компиляция, описание версии
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Свойства</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Несколько вхождений" abbr="Несколько вхождений">Несколько вхождений</th><td align="left" class="sectionTableCell" headers="property_Несколько вхождений"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Управляется событиями" abbr="Управляется событиями">Управляется событиями</th><td align="left" class="sectionTableCell" headers="property_Управляется событиями"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Выполняющийся" abbr="Выполняющийся">Выполняющийся</th><td align="left" class="sectionTableCell" headers="property_Выполняющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Необязательный" abbr="Необязательный">Необязательный</th><td align="left" class="sectionTableCell" headers="property_Необязательный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Запланированный" abbr="Запланированный">Запланированный</th><td align="left" class="sectionTableCell" headers="property_Запланированный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Повторяющийся" abbr="Повторяющийся">Повторяющийся</th><td align="left" class="sectionTableCell" headers="property_Повторяющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

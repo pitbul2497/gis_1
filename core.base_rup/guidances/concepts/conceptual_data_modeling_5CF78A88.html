@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Концептуальное моделирование данных</title>
+<meta content="Concept" name="uma.type">
+<meta content="conceptual_data_modeling" name="uma.name">
+<meta content="Концептуальное моделирование данных" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "7.217811033438091E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "7.217811033438091E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="7.217811033438091E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Концептуальное моделирование данных</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Концептуальная модель данных изображает важные сущности и их взаимосвязи для того чтобы исследовать концепции домена вместе с заинтересованными лицами, которые определяют границы задач, решаемых системой.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/database_design_8552DD3.html" guid="{2E74A414-49F5-4F27-BFCB-AA2DAC675F58}">Проектирование базы данных</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_database_designer_524DC34F.html" guid="{87EE3BF5-17CA-4211-BD3D-32F361E58550}">Проектировщик базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="Concepts: Conceptual Data Modeling" name="Concepts: Conceptual Data Modeling"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    Как указано в &nbsp;[<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#NBG01" guid="7.755968586980351E-308"><font     color="#ff0000">NBG01</font></a>], концептуальное моделирование данных - это первоначальный этап разработки проекта
+    постоянных данных и хранилища постоянных данных для системы. &nbsp;Во многих случаях постоянные данные для системы
+    управляются системой управления реляционной базой данных (RDBMS). Бизнес сущности и системные сущности, определенные на
+    концептуальном уровне в бизнес моделях и системных требованиях будут развиты с помощью задач анализа вариантов
+    использования, проекта вариантов использования и проекта базы данных в детальный проект физических таблиц, которые
+    будут применены в системе управления реляционной базой данных.&nbsp; Обратите внимание, что концептуальная модель
+    данных, обсуждаемая в этом документе - это не отдельный рабочий продукт. Она состоит из смешанных представлений
+    информации, содержащейся в рабочих продуктах Бизнес моделирование, Требования и Дисциплины анализа и проекта, которые
+    связаны с <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Моделью данных</a>. &nbsp;
+</p>
+<p>
+    Развитие <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Модели данных</a> обычно включает три общие этапа.
+</p>
+<ul>
+    <li>
+        <b>Концептуальный</b> - этот этап подразумевает идентификацию ключевых бизнес сущностей и системных сущностей и их
+        взаимосвязей, которые определяют границы задач, решаемых системой. Эти ключевые бизнес сущности и системные
+        сущности определяются с помощью элементов моделирования профайла UML для бизнес моделирования, включенного в модель
+        бизнес анализа и элементов модели <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_class_DAF7CE03.html" guid="{1E20603F-A5B8-42D5-BDBC-69DCE9C0FCDB}">Класс анализа</a> в модели анализа.
+    </li>
+    <li>
+        <b>Логический</b> - этот этап подразумевает детализацию ключевых бизнес сущностей и системных сущностей в более
+        детальные логические сущности. Эти логические сущности и их взаимосвязи могут быть дополнительно определены в
+        логической модели данных с помощью элементов моделирования профайла UML для проекта базы данных, как описано в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/data_model_80FB2539.html" guid="3.4196799396281445E-306">руководстве Модель данных</a>. Эта дополнительная Логическая модель является частью
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">рабочего продукта Модель данных</a> и не является отдельным рабочим
+        продуктом.
+    </li>
+    <li>
+        <b>Физический</b> - этот этап подразумевает преобразование проектов логических классов в детальные и
+        оптимизированные проекты физических таблиц баз данных. &nbsp;Физическая этап также включает размещение проектов
+        таблиц баз данных в табличном пространстве и в компоненте базы данных в проекте хранилища базы данных.
+    </li>
+</ul>
+<p>
+    Задача проектирования базы данных распространяется на весь жизненный цикл разработки приложения и первая задача
+    проектирования может начаться в течение <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/inception_D506BCB4.html" guid="_vyZOwCVuEdqSZ9OimJ-AzA">начального
+    этапа</a>.&nbsp; Для проектов, которые используют бизнес моделирования для описания бизнес контекста приложений,
+    проектирование базы данных может начаться на концептуальном уровне вместе с идентификацией бизнес субъектов и бизнес
+    вариантов выбора в модели бизнес вариантов выбора, а также бизнес исполнителей и бизнес сущностей в модели бизнес
+    анализа. &nbsp; Для проектов, которые не используют бизнес моделирование, проектирование базы данных может начаться на
+    концептуальном уровне вместе с идентификацией системных субъектов и системных вариантов выбора в модели системных
+    вариантов выбора и идентификацией <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_class_DAF7CE03.html" guid="{1E20603F-A5B8-42D5-BDBC-69DCE9C0FCDB}">классов анализа</a> в <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_model_76C3B70C.html" guid="{98EA224C-36F6-46E6-AB36-2999382B58B3}">модели анализа</a> из реализаций вариантов выбора.
+</p>
+<p>
+    Изображение ниже показывает набор элементов концептуальной модели данных, которые находятся в бизнес модели, модели
+    требований и модели анализа.
+</p>
+<p align="center">
+    <img height="433" alt="Диаграмма, описанная в содержании." src="./../../../core.base_rup/guidances/concepts/resources/co_concdatmd1.gif" width="704" border="0" />
+</p>
+<p>
+    Следующий раздел описывает элементы бизнес моделей, модели вариантов использования и модели анализа, которые могут
+    использоваться для определения начальной концептуальной модели данных для постоянных данных в системе.
+</p>
+<h3>
+    <a id="Conceptual Data Model Elements" name="Conceptual Data Model Elements"></a>Элементы концептуального моделирования
+    данных
+</h3>
+<h4>
+    <a id="Business Models" name="Business Models"></a>Бизнес модели
+</h4>
+<p>
+    <b><u>Бизнес модели вариантов использования</u></b>
+</p>
+<p>
+    Бизнес модели вариантов использования состоят из бизнес субъектов и бизнес вариантов использования. &nbsp;Бизнес
+    варианты использования представляют ключевые бизнес-процессы, используемые для определения контекста для
+    разрабатываемой системы. &nbsp;Бизнес-субъекты представляют ключевые внешние сущности, которые взаимодействуют с
+    бизнесом посредством Бизнес вариантов использования. &nbsp;Изображение ниже показывает простой пример бизнес модели
+    вариантов использования для приложения онлайнового аукциона.
+</p><br />
+<br />
+<p align="center">
+    <img height="109" alt="Диаграмма описывается в содержании." src="./../../../core.base_rup/guidances/concepts/resources/co_concdatmd2.gif" width="529" border="0" />
+</p>
+<p>
+    Бизнес-субъекты - это кандидаты для концептуальной модели данных, т.к. они являются значимыми сущностями с точки зрения
+    проблемы места в системе. &nbsp; В примере выше бизнес-субъекты покупатель и продавец - это сущности, для которых
+    приложение онлайнового аукциона должно хранить информацию.
+</p>
+<p>
+    <b><u>Модель анализа бизнеса</u></b>
+</p>
+<p>
+    Модель анализа бизнеса содержит классы, которые моделируют бизнес-исполнителей и бизнес-сущности, определенные в
+    анализе потока операций в бизнес варианте использования. Бизнес-исполнители представляют участвующих исполнителей,
+    которые выполняют действия потока операций. &nbsp; Бизнес-сущности - это то, что бизнес-исполнители используют или
+    производят в потоке операций. &nbsp;Во многих случаях бизнес-сущности представляют типы информации, которые которые
+    система должна хранить постоянно. &nbsp;
+</p>
+<p>
+    Изображение ниже показывает пример схемы связей, изображающей бизнес-исполнителей бизнес-сущности в одном из сценариев
+    бизнес варианта использования, названном "Предоставить онлайновый аукцион".
+</p>
+<p align="center">
+    <img height="465" alt="Диаграмма описывается в содержании." src="./../../../core.base_rup/guidances/concepts/resources/co_concdatmd3.gif" width="624" border="0" />
+</p>
+<p>
+    В этом упрощенном примере администратор аукциона представляет роль бизнес-исполнителя, которая, возможно, будет
+    выполнена самой системой управления онлайнового аукциона. &nbsp;Объекты аукцион и элементы аукциона - это
+    бизнес-сущности, используемые или производимые исполнителем - администратором аукциона, выступающим агентом
+    бизнес-субъектов - продавца и покупателя. &nbsp; С точки зрения проектирования базы данных, бизнес-сущности аукцион и
+    элементы аукциона - это кандидаты для концептуальной модели данных. &nbsp;
+</p>
+<h4>
+    <a id="Requirements and Analysis Models" name="Requirements and Analysis Models"></a>Модель Требования и Модель анализа
+</h4>
+<p>
+    В проектах, в которых не выполняется бизнес-моделирование, модели Требования (системные варианты использования) и
+    Анализ содержат элементы моделей, которые могут быть использованы для разработки первичной концептуальной модели
+    данных. &nbsp; В проектах, в которых используется бизнес-моделирование, бизнес-сущности и взаимосвязи, определенные в
+    модели бизнес-анализа, проясняются и детализируются в модели Анализ как классы сущностей. &nbsp;&nbsp;
+</p>
+<p>
+    <u><b>Системная модель вариантов использования</b></u>
+</p>
+<p>
+    Системная модель вариантов использования содержит системные субъекты и системные варианты использования, которые
+    определяют первичное взаимодействие пользователей с системой. Системные варианты использования определяют
+    функциональные требования к системе.
+</p>
+<p>
+    С точки зрения концептуальной модели данных, системные субъекты представляют сущности, внешние по отношению к системе,
+    для которых возможно требуется хранить данные в системе. Это важно в случаях, когда системные субъекты - это внешняя
+    система, предоставляющая и/или получающая данные от разрабатываемой системы. &nbsp; Системные субъекты могут
+    происходить из бизнес-субъектов в бизнес-модели варианта использования и бизнес-исполнителей в модели бизнес-анализа.
+    &nbsp;
+</p>
+<p>
+    Изображение ниже показывает бизнес-модель варианта использования для системы онлайнового аукциона. &nbsp;В этой модели
+    бизнес-субъекты - покупатель и продавец происходят из общего бизнес-субъекта пользователя. Системный субъект - Бюро
+    службы кредитов был добавлен для платежей через внешнюю сущность. &nbsp;Этот системный субъект - еще один кандидат для
+    концептуальной модели данных.
+</p><br />
+<br />
+<p align="center">
+    <img height="552" alt="Диаграмма описывается в содержании." src="./../../../core.base_rup/guidances/concepts/resources/co_concdatmd4.gif" width="732" border="0" />
+</p><br align="center" />
+<br />
+<p>
+    <u><b>Модель анализа</b></u>
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_model_76C3B70C.html" guid="{98EA224C-36F6-46E6-AB36-2999382B58B3}">Модель анализа</a> содержит <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_class_DAF7CE03.html" guid="{1E20603F-A5B8-42D5-BDBC-69DCE9C0FCDB}">Классы анализа</a>, определенные в реализациях вариантов использования
+    для системного варианта использования. Типы классов анализа, которые являются первичной целью концептуального
+    моделирования данных - это классы анализа сущностей. Как определяется в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/analysis_class_7E97273E.html" guid="2.2738948033145062E-306">руководстве по
+    классам анализа</a>, классы анализа сущностей представляют информацию, управляемую системой, которую необходимо хранить
+    на постоянной основе. &nbsp;Классы анализа сущностей и их взаимосвязи образуют основу первичной модели данных для
+    приложения. &nbsp;
+</p>
+<p>
+    Концептуальные классы анализа сущностей в модели анализа могут быть прояснены и детализированы в логических классах
+    постоянного проекта в модели проекта. &nbsp;Эти классы проекта представляют таблицы - кандидаты в модели данных.
+    &nbsp;Атрибуты классов и столбцы - кандидаты для таблиц также представляют ключи к ним. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/forward-engineering_relational_databases_53C0441E.html" guid="5.250868507423771E-305">Рекомендации: Прямая разработка реляционных баз данных</a> для описания, как элементы в
+    модели проекта могут быть размещены в элементах модели данных.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.appliedis.com" target="_blank"><img alt="значок Applied Information Sciences"                 src="./../../../core.base_rup/guidances/supportingmaterials/resources/appliedis.gif" border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.appliedis.com" target="_blank">Applied Information Sciences</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

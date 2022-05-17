@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Компоновка Web-приложений на UML</title>
+<meta content="Guideline" name="uma.type">
+<meta content="building_web_applications_with_the_uml" name="uma.name">
+<meta content="Компоновка Web-приложений на UML" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.559124609104376E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.559124609104376E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Компоновка Web-приложений на UML</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой рекомендации рассмотрен следующий этап анализа варианта использования, позволяющий приступить к проектированию Web-приложений.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html" guid="{952A9CE9-D5A3-43AC-980D-0B9298F3872E}">Проектирование класса</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="References" name="References">Справочники</a>
+</h3>
+<p>
+    Следующие книги и документы служат справочниками по этим рекомендациям:
+</p>
+<ul>
+    <li>
+        <i>Building Web Applications with UML</i>, автор Jim Conallen [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html" guid="7.755968586980351E-308">CONA99</a>]
+    </li>
+    <li>
+        &nbsp;<a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/modeling_web_application_architectures_with_uml_54011136.html" guid="_TACPgEWgEdqT6eCCQuiftQ"><u><font color="#0000ff">Whitepaper: Modeling Web Application Architectures with
+        UML</font></u></a>
+    </li>
+</ul>
+<h3>
+    <a id="Elaborate on Use-Case Analysis" name="Elaborate on Use-Case Analysis">Проведение анализа варианта
+    использования</a>
+</h3>
+<p>
+    По сравнению с разделом <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/use_case_analysis_A6990185.html" guid="{28014615-A62F-452D-B821-30C7CAB0EC44}">Задача: анализ варианта использования</a>, здесь пограничные классы более
+    сконцентрированы и предназначены для единственной цели. Объекты из этих классов живут недолго, и любым клиентским
+    состоянием (на Web-страницах) необходимо управлять явно с помощью специальных механизмов. Например, страницы Microsoft
+    Active Server используют "cookie" в качестве индексного указателя на карту состояний всех текущих активных клиентов.
+</p>
+<p>
+    Кроме того, когда вы читаете спецификацию варианта использования, действуют следующие правила:&nbsp;
+</p>
+<ul>
+    <li>
+        Любое упоминание Web-страницы преобразуется в пограничный класс. &nbsp;
+    </li>
+    <li>
+        Любое упоминание гиперссылки преобразуется в ассоциацию, ведущую из пограничного класса в другой пограничный или
+        управляющий класс. &nbsp;
+    </li>
+    <li>
+        Глаголы или описания процессов, как правило, отображаются в управляющие классы. &nbsp;
+    </li>
+    <li>
+        Существительные отображаются в сущностные классы. &nbsp;
+    </li>
+</ul>
+<p>
+    Пограничный класс, через который инициализируются связь, обращается к управляющему классу. Управляющий класс обычно не
+    отвечает через тот же экземпляр этого пограничного класса.
+</p>
+<h3>
+    <a id="Using Interaction Diagrams" name="Using Interaction Diagrams">Работа с диаграммами взаимодействия</a>
+</h3>
+<p>
+    По мере прохождения анализа варианта использования сценарии можно описывать с помощью диаграмм последовательности. Это
+    помогает сверять существующие объекты анализа со сценарием варианта использования. Обнаруженные объекты анализа, не
+    участвующие ни в каких сценариях, считаются подозрительными и должны быть обработаны заново. Проблема здесь в том, что
+    в случае слишком подробного изучения диаграммы становятся громоздкими и неуправляемыми. Во избежание этого
+    концентрируйте свое внимание на коротких отдельных сценариях и включайте лишь пограничные и главные сущностные и
+    управляющие объекты.
+</p>
+<p>
+    Помните, что в Web-приложениях время жизни пограничных объектов ограничено. Несмотря на это, экземпляры пограничного
+    класса могут создаваться несколько раз во время выполнения сценария, что означает, что из одного и того же класса на
+    диаграмме создаются несколько пограничных объектов.
+</p>
+<p>
+    Субъект на диаграмме последовательности на уровне анализа взаимодействует с пограничным объектом. От субъекта к
+    пограничному объекту отправляется навигационное сообщение.
+</p>
+<h3>
+    <a id="Creating Initial Design Classes" name="Creating Initial Design Classes">Создание начальных классов
+    проектирования</a>
+</h3>
+<h4>
+    Создание начального пограничного класса
+</h4>
+<p>
+    Пограничный класс можно отобразить в класс клиентской страницы.
+</p>
+<p>
+    Если пограничный класс включает входную информацию, то обычно его связывают с формой (или Web-формой) посредством
+    агрегирования. Форму можно смоделировать как вложенный класс клиентской страницы, поскольку весь его жизненный цикл
+    контролируется клиентской страницей. У форм всегда есть взаимосвязь передачи на выполнение с серверной страницей,
+    обрабатывающей значения формы; в итоге возвращается новая клиентская страница.
+</p>
+<p>
+    Если пользовательскому интерфейсу требуется некоторое динамическое поведение на клиенте, то простейший способ добиться
+    этого - воспользоваться динамическим HTML на клиенте. В модели проектирования это обычно выглядит как операции на
+    клиентской странице. Операции на клиентской странице отображаются непосредственно в сценарные функции Java. Атрибуты
+    страницы Java отображаются непосредственно в переменные области действия страницы. Обработчики событий динамического
+    HTML захватываются как значения с тегами.
+</p>
+<p>
+    Если поведение пользовательского интерфейса очень сложное, то рекомендуется связать аплет с пограничным классом,
+    используя агрегирование.
+</p>
+<p>
+    Если архитектура основана на распределенной системе объектов (такой как RMI, IIOP или DCOM), то клиентская страница
+    может переадресовывать интерфейсы к компонентам, контактирующим непосредственно с сервером через RMI, IIOP или DCOM, в
+    обход HTTP. Такие типы взаимосвязей обычно имеют стереотипы &lt;&lt;rmi&gt;&gt;, &lt;&lt;iiop&gt;&gt; или
+    &lt;&lt;dcom&gt;&gt;, чтобы указать проектировщику все области, через которые будут проходить сетевые данные, обозначая
+    тем самым возможные узкие места.
+</p>
+<h4>
+    Создание начального сущностного класса
+</h4>
+<p>
+    При проектировании Web-приложения единственное отличие в случае сущностных классов заключается в том, что, если объект
+    находится в области действия клиентской страницы, то сущностный объект будет отображен в сценарный объект Java.
+</p>
+<h4>
+    Создание начального управляющего класса
+</h4>
+<p>
+    Управляющие классы отображаются в серверные страницы. Контроллеры выражают и координируют бизнес-логику, а также
+    координируют другую логику. Они обычно находятся на сервере. Многие управляющие объекты отвечают за компоновку
+    клиентских страниц (в сущности, их главным выводом является HTML). Управляющие объекты могут взаимодействовать с
+    серверными ресурсами, например базами данных, компонентами среднего уровня, мониторами транзакций и т.п. &nbsp;
+</p>
+<p>
+    Управляющие классы обычно отображаются в серверные сценарные Web-страницы (активные серверные страницы, серверные
+    страницы Java).
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

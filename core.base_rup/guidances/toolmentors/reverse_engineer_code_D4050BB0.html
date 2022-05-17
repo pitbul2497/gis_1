@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Обратный инжиниринг кода с помощью Rational Rose</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="reverse_engineer_code" name="uma.name">
+<meta content="Обратный инжиниринг кода с помощью Rational Rose" name="uma.presentationName">
+<meta content="Tool:rup_rose_classic:Rational Rose" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Rose" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{D674D96E-1A37-48D1-B120-6145C9802E3E}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{D674D96E-1A37-48D1-B120-6145C9802E3E}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{D674D96E-1A37-48D1-B120-6145C9802E3E}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{D674D96E-1A37-48D1-B120-6145C9802E3E}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{D674D96E-1A37-48D1-B120-6145C9802E3E}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Обратный инжиниринг кода с помощью Rational Rose</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается возможность Rational Rose выполнять обратный инжиниринг различных типов элементов в модель Rose.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rose_classic_20F2524D.html" guid="{06FB737B-5D74-4C3B-98F4-36153CFB2E34}">Rational Rose</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/incorporate_design_elements_D3C582B5.html" guid="{5C647173-4E32-4594-96A9-2548B47722FA}">Объединение существующих структурных элементов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/identify_design_elements_E884AB82.html" guid="{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}">Определение элементов проекта</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    В этой памятке по инструменту описывается возможность Rational Rose выполнять обратный инжиниринг различных типов
+    элементов в модель Rose, включая такие разнообразные элементы, как исходный код и двоичный код, библиотеки типов,
+    Web-элементы, &nbsp; XML DTD и схемы баз данных.
+</p>
+<p>
+    Обратный инжиниринг является процессом изучения существующего ресурса, восстановление сведений о его проекте и
+    использование этой информации для создания или обновления модели, представляющей логическую структуру проекта. Он
+    позволяет повторно использовать элементы, общие для нескольких моделей или систем. Он также позволяет итерационно
+    разрабатывать (циклически) систему с помощью анализа и проектирования в Rational Rose, создавая исходный код из модели,
+    разрабатывая исходный код и выполняя затем обратный инжиниринг исходного кода обратно в модель Rose.
+</p>
+<p>
+    Следующие встраиваемые модули Rational Rose содержат функции обратного инжиниринга:
+</p>
+<ul>
+    <li>
+        <a href="#Visual C">Visual C++</a>
+    </li>
+    <li>
+        <a href="#Visual Basic">Visual Basic</a>
+    </li>
+    <li>
+        <a href="#Type Library Importer">Импортер библиотеки типов</a>
+    </li>
+    <li>
+        <a href="#ANSI C">ANSI C++</a>
+    </li>
+    <li>
+        <a href="#Rose J (Java)">Rose J (Java)</a>
+    </li>
+    <li>
+        <a href="#CORBA">CORBA</a>
+    </li>
+    <li>
+        <a href="#XML DTD">XML DTD</a>
+    </li>
+    <li>
+        <a href="#Web Modeler">Web-проектировщик</a>
+    </li>
+    <li>
+        <a href="#Data Modeler">Проектировщик данных</a>
+    </li>
+</ul>
+<h3>
+    <a id="Visual C++" name="Visual C++">Visual C++</a>
+</h3>
+<p>
+    Rational Rose Visual C++ позволяет выполнять обратный инжиниринг исходного кода Visual C++. Он содержит следующие
+    функции:&nbsp;
+</p>
+<ul>
+    <li>
+        Полный обратный инжиниринг общих конструкций языка Visual C++, таких как взаимосвязи, определения типов,
+        перечисления, схемы сообщение/объект/COM, конструкторов и деструкторов&nbsp;
+    </li>
+    <li>
+        Поддержка с помощью диалоговых окон обратного инжиниринга кода для элементов Visual C++
+    </li>
+    <li>
+        Режим автоматической синхронизации для автоматического обновления кода или модели при их изменении.
+    </li>
+    <li>
+        Интеграция с Microsoft Visual Studio, включая файлы IDL
+    </li>
+    <li>
+        Поддержка классов шаблонов Visual C++ и пользовательских шаблонов кода
+    </li>
+</ul>
+<h3>
+    &nbsp;<a id="Visual Basic" name="Visual Basic">Visual Basic</a>
+</h3>
+<p>
+    Тесно интегрированный со средой Microsoft Visual Basic 6.0, встраиваемый модуль Rational Rose Visual Basic Language
+    Support позволяет обновлять и в последующем разрабатывать модель Rose из изменений исходного кода Visual Basic.
+    Расширяемые и настраиваемые инструменты на базе диалоговых окон помогают вам в выполнении обновления модели при
+    изменении исходного кода.
+</p>
+<p>
+    К этим функциям относятся:
+</p>
+<ul>
+    <li>
+        Обновление элементов модели из изменений в соответствующих проектах исходного кода.
+    </li>
+    <li>
+        Режим синхронизации для обновления элементов модели при удалении исходного кода.
+    </li>
+    <li>
+        Импорт библиотек типов в модель&nbsp;
+    </li>
+    <li>
+        Возможность автоматизации и расширения циклического инжиниринга с помощью расширяемости Rose Visual Studio RTE
+    </li>
+</ul>
+<h3>
+    <a id="Type Library Importer" name="Type Library Importer">Импортер библиотеки типов</a>
+</h3>
+<p>
+    Импортер библиотеки типов в Rational Rose позволяет импортировать библиотеку типов из компонента COM (файлов .dll,
+    .exe, .ocx, .olb и .tlb) в модель Rose. Библиотека типов представлена в виде компонента и в виде логического пакета в
+    модели. Логический пакет содержит элементы библиотеки типов, заданные информацией типа импортируемого компонента COM,
+    такого как интерфейсы, со-классы и т.д. Каждый элемент представлен классом.
+</p>
+<p>
+    Импортируя библиотеки типов в модель можно показать как классы в модели используют, реализуют или зависят от классов и
+    интерфейсов в других компонентах COM, вне зависимости от языка их реализации. К функциям импортера библиотек типов
+    относятся следующие:
+</p>
+<ul>
+    <li>
+        Диалоговое поддержка управления импортером библиотек типов
+    </li>
+    <li>
+        Режим быстрого импортирования для импорта заменителей классов и режим полного импорта для импорта классов со всеми
+        операциями и свойствами
+    </li>
+    <li>
+        Представление библиотек типов в обозревателе объектов или в программе просмотра OLE/COM в Visual Studio
+    </li>
+    <li>
+        Возможность расширения и настройки импорта библиотеки типов с помощью запуска импортера библиотеки типов из
+        сценария или программы с помощью расширяемости Rose Visual Studio RTE
+    </li>
+</ul>
+<p>
+    <img height="16" alt="значок справочника" hspace="0" src="./../../../core.base_rup/resources/helpbook.gif" width="16" border="0" />Способ
+    применения библиотеки типов зависит от языка программирования. Для получения дополнительной информации обратитесь к
+    электронной справке Rational Rose и к документации по используемому встраиваемому модулю языка.
+</p>
+<h3>
+    &nbsp;<a id="ANSI C++" name="ANSI C++">ANSI C++</a>
+</h3>
+<p>
+    Встраиваемый модуль Rational Rose ANSI C++ позволяет выполнить обратный инжиниринг исходного кода в модель Rose. ANSI
+    C++ поддерживает обратный инжиниринг в пустую модель, в которой создаются новые элементы модели, и обратный инжиниринг
+    в существующую модель, в которой элементы модели изменяются согласно коду. Он поддерживает:&nbsp;
+</p>
+<ul>
+    <li>
+        Поддержку разработки модели от анализа до проектировки
+    </li>
+    <li>
+        Поддержку языка C++ без ограничений компилятором C++ одного поставщика
+    </li>
+    <li>
+        Круговой инжиниринг, синхронизирующий модели и создаваемый код C++ между несколькими итерациями
+    </li>
+    <li>
+        Внесенные в код изменения возвращаются обратно в модель при выполнении обратного инжиниринга
+    </li>
+    <li>
+        Проектирование, моделирование и визуализация всех конструкций C++, включая классы, шаблоны, пространства имен,
+        наследуемости и функции элементов класса.
+    </li>
+    <li>
+        Поддержка крупных систем
+    </li>
+</ul>
+<h3>
+    <a id="Rose J (Java)" name="Rose J (Java)">Rose J (Java)</a>
+</h3>
+<p>
+    Rational Rose J позволяет выполнять обратный инжиниринг существующих элементов Java в модель Rose. К этим элементам
+    относятся:
+</p>
+<ul>
+    <li>
+        Исходные файлы (файлы .java)
+    </li>
+    <li>
+        Файлы байт-кода (файлы .class)
+    </li>
+    <li>
+        Файлы архивов Java (файлы .zip, .cab, .jar и .war)
+    </li>
+    <li>
+        EJB Java
+    </li>
+    <li>
+        Сервлеты Java
+    </li>
+</ul>
+<p>
+    Rational Rose J также поддерживает интеграцию с IBM's VisualAge for Java.
+</p>
+<h3>
+    <a id="CORBA" name="CORBA">CORBA</a>&nbsp;
+</h3>
+<p>
+    Rational Rose CORBA позволяет выполнять обратный инжиниринг совместимого с CORBA кода IDL в модели Rose. Все файлы .idl
+    с выполненным обратным инжинирингом становятся компонентами и помещаются в представление компонента модели.
+</p>
+<p>
+    При выполнении обратного инжиниринга для кода IDL, для которого ранее был выполнен прямой инжиниринг (то есть, код
+    созданный из элементов модели CORBA), элементы исходной модели остаются неизменными, за исключением того, что новая
+    информация или изменения, внесенные в код IDL, переносятся обратно в модель. Исключением из этого правила являются
+    особые случаи конструкций Rational Rose, используемые только для одноразового прямого инжиниринга.
+</p>
+<h3>
+    &nbsp;<a id="XML DTD" name="XML DTD">XML DTD</a>
+</h3>
+<p>
+    Rational Rose XML DTD (определение типа документа eXtensible Markup Language) выполняет прямой инжиниринг XML DTD
+    (файла .dtd) для создания диаграммы классов Rose, отображающей структуру, элементы и взаимоотношения в DTD. Можно
+    добавить и удалить элементы XML DTD и изменить взаимоотношения между элементами на диаграмме классов, созданной
+    процессом обратного инжиниринга. Воспользовавшись программой проверки синтаксиса Rose XML DTD для проверки XML можно
+    создавать новый DTD из диаграммы класса Rose.
+</p>
+<p>
+    Rational Rose XML DTD предоставляет стереотипные классы, которые можно использовать для моделирования и создания XML
+    DTD.
+</p>
+<h3>
+    <a id="Web Modeler" name="Web Modeler">Web-проектировщик</a>
+</h3>
+<p>
+    Rational Rose Web Modeler обрабатывает файлы Active Server Page (ASP), Java Server Page (JSP) и HTML в Web-приложении,
+    создавая модель web-приложения с помощью классов стереотипов, представляющих клиентские страницы, серверные страницы и
+    формы HTML. Можно изменить модель Web-приложения создать файлы .asp, .jsp, .html и .htm с помощью Web Modeler.
+</p>
+<h3>
+    <a id="Data Modeler" name="Data Modeler">Проектировщик данных</a>
+</h3>
+<p>
+    Rational Rose Data Modeler позволяют проектировщику баз данных и разработчику ПО передавать требования с помощью одного
+    инструмента. Будучи проектировщиком или разработчиком баз данных, с помощью Rose Data Modeler можно смоделировать или
+    спроектировать базу данных с помощью обратного инжиниринга существующей схемы базы данных или сценария DDL.
+</p>
+<p>
+    С помощью мастера обратного инжиниринга проектировщика данных Rational Rose можно создать сценарий DDL или схему базы
+    данных для стандартной базы данных ANSI&nbsp; SQL 92 или следующих DBMS:
+</p>
+<ul>
+    <li>
+        DB2 DBMS версий MVS и UDB
+    </li>
+    <li>
+        Oracle DBMS&nbsp;
+    </li>
+    <li>
+        SQL Server DBMS&nbsp;
+    </li>
+    <li>
+        Sybase Adaptive Server&nbsp;
+    </li>
+</ul>
+<p>
+    Мастер обратного инжиниринга считывает схему базы данных или файл DDL и создает диаграмму модели данных, содержащую
+    имена всех заключенных в кавычки идентификационных сущностей. В зависимости от DBMS, мастер обратного инжиниринга Rose
+    Data Modeler моделирует таблицы, &nbsp;взаимосвязи между таблицами, хранимые процедуры, индексы и триггеры в диаграмме
+    модели данных.
+</p>
+<p>
+    На диаграмме модели данных можно добавить таблицы, задать взаимоотношения, индексы и домены, применить третью обычную
+    форму к элементам, затем преобразовать модель данных в модель объекта или выполнить прямой инжиниринг модели данных для
+    создания сценария DDL или схемы базы данных. &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

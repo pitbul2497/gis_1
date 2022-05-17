@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Обновление рабочей области проекта с помощью Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="updating_your_project_workarea" name="uma.name">
+<meta content="Обновление рабочей области проекта с помощью Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{12294137-8815-4CC8-B79E-09BE5046C6D8}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{12294137-8815-4CC8-B79E-09BE5046C6D8}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Обновление рабочей области проекта с помощью Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается обновление рабочих областей разработки при добавлении работы, которая была интегрирована, протестирована и одобрена для общего использования с Rational ClearCase.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/update_workspace_59C1448.html" guid="{D6FFB987-F032-4B65-9290-2A501FBB9FF8}">Обновите рабочую область</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    На следующей диаграмме показан поток операций UCM. Затемненные области описаны в этой памятке.
+</p>
+<p>
+    <img height="129" alt="Диаграмма потока операций UCM" src="./../../../core.base_rup/guidances/toolmentors/resources/wflow_rebase.gif" width="332" border="0" />
+</p>В модели UCM операции (работа) доставляется от нескольких источников и является интегрированной и упорядоченной в
+контрольные версии. Обычно контрольные версии проходят через цикл тестирования и исправления ошибок, пока не будет
+достигнут удовлетворительный уровень стабильности. Когда контрольная версия достигнет этого уровня, менеджер проекта
+присвоит ей статус рекомендованной контрольной версии для потока. 
+<p align="left">
+    Для работы с набором версий в рекомендованной контрольной версии перебазируйте рабочую область разработки. Для
+    минимизации объема необходимых слияний при разработке операций, перебазируйте рабочую область разработки для каждой
+    новой рекомендованной контрольной версии по мере их выхода.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>Операция перебазирования включает в себя следующие задачи: 
+<ol>
+    <li>
+        <a href="#Prepare your development view">Подготовка представления разработки</a>
+    </li>
+    <li>
+        <a href="#Start the rebase operation">Запуск операции перебазирования</a>
+    </li>
+    <li>
+        <a href="#Merge files">Слияние файлов</a>
+    </li>
+    <li>
+        <a href="#Test your development work area">Тестирование рабочей области разработки</a>
+    </li>
+    <li>
+        <a href="#Complete the rebase operation">Завершение операции перебазирования</a>
+    </li>
+</ol>
+<p>
+    <b><img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /></b> Обратитесь к
+    следующим разделам электронной справки ClearCase для получения дополнительных сведений об этапах процедуры:&nbsp;
+</p>
+<ul>
+    <li>
+        <i>Сравнение файлов, каталогов и версий</i>
+    </li>
+    <li>
+        <i>Слияние файлов, каталогов и версий</i>
+    </li>
+</ul>
+<h3>
+    1.&nbsp;<a id="Prepare your development view" name="Prepare your development view">Подготовьте представление
+    разработки</a>
+</h3>
+<ol>
+    <li>
+        Добавьте всю работу перед началом операции перебазирования. ClearCase обновляет только добавленные фалы и каталоги.
+        Утилита ClearCase <b>Найти изъятые</b> позволяет обнаружить все изъятые версии в представлении.
+    </li>
+    <li>
+        Перейдите к рабочей области разработки. В левой панели щелкните правой кнопкой мыши на каталоге <b>view</b> и
+        выберите <b>ClearCase &gt; Найти изъятые</b>.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="15" nosave="nosave" /> Обратитесь к
+    разделу <i>Поиск изъятых элементов</i> в электронной справке ClearCase для получения подробных сведений о поиске
+    изъятой работы.
+</p>
+<h3>
+    2.&nbsp;<a id="Start the rebase operation" name="Start the rebase operation">Запустите операцию перебазирования</a>
+</h3>
+<ol>
+    <li>
+        Вызовите операцию перебазирования из представления, прикрепленного к потоку разработки. &nbsp;
+    </li>
+    <li>
+        В диалоговом окне Просмотр потока будут показаны рекомендованные контрольные версии проекта для перебазирования.
+        После начала операции перебазирования она выполнит слияние файлов и сообщит вам о конфликтах файлов, которые
+        необходимо решить вручную. &nbsp;
+    </li>
+</ol>
+<p>
+    <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="15" nosave="nosave" /> Обратитесь к
+    разделу &nbsp;<i>Для начала операции перебазирования</i> электронной справки по ClearCase для получения подробных
+    сведений о данной процедуре.
+</p>
+<h3>
+    3.&nbsp;<a id="Merge files" name="Merge files">Объединить файлы</a>&nbsp;
+</h3>
+<ol>
+    <li>
+        ClearCase объединяет работу в потоке разработки с работой в потоке интеграции, выполняя обычные слияния
+        автоматически. &nbsp;&nbsp;
+    </li>
+    <li>
+        При обнаружении необычных конфликтов слияния операция перебазирования запускает утилиту <b>DiffMerge</b> и
+        предлагает вам устранить конфликты. &nbsp;
+    </li>
+</ol>
+<p>
+    <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="15" /> Обратитесь к разделу
+    <i>Слияние файлов, каталогов и версий</i> электронной справки ClearCase для получения подробных сведений об описанных в
+    этой процедуре этапах.
+</p>
+<h3>
+    4.&nbsp;<a id="Test your development work area" name="Test your development work area">Протестируйте рабочую область
+    разработки</a>
+</h3>
+<ol>
+    <li>
+        Создайте и протестируйте исходные файлы в представлении разработки для проверки успешной компиляции не доставленных
+        операций с версиями контрольной версии. &nbsp;
+    </li>
+    <li>
+        После перебазирования создайте и протестируйте исходные файлы в представлении разработки для проверки успешной
+        компиляции не доставленных операций с версиями контрольной версии.
+    </li>
+</ol>
+<h3>
+    5.&nbsp;<a id="Complete the rebase operation" name="Complete the rebase operation">Выполните операцию
+    перебазирования</a>&nbsp;
+</h3>
+<p>
+    Завершение операции перебазирования состоит из двух задач: добавление и слияние результатов и изменение состояние
+    операции на "выполнено". &nbsp;
+</p>
+<ol>
+    <li>
+        Протестировав работу нажмите кнопку <b>Выполнить</b> в окне Состояние Rebase. &nbsp;
+    </li>
+    <li>
+        ClearCase проверяет изъятые версии в представлении разработки и сообщает потоку разработки о выполнении операции
+        перебазирования.
+    </li>
+    <li>
+        Для закрытия окна нажмите кнопку <b>Закрыть</b>.
+    </li>
+</ol>
+<p>
+    <img height="15" alt="Значок книги" hspace="0" src="./../../../core.base_rup/resources/book.gif" width="16" border="0" /> Дополнительное
+    описание каждого шага приведено в разделе "Перебазирование рабочей области" в руководстве ClearCase <i>Разработка
+    ПО</i>. &nbsp;
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

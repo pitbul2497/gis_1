@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Просмотр хронологии изъяна с помощью Rational ClearQuest</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="view_defect_history" name="uma.name">
+<meta content="Просмотр хронологии изъяна с помощью Rational ClearQuest" name="uma.presentationName">
+<meta content="Tool:rup_clearquest:Rational ClearQuest" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearQuest" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{EBE5DDD3-53FB-4FAD-B57A-CCC29F497ACF}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Просмотр хронологии изъяна с помощью Rational ClearQuest</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Эта памятка по работе с инструментом указывает, каким образом администратор Rational ClearQuest может включить управляющий элемент хронологии в форму изъянов ClearQuest.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearquest_3C7831BD.html" guid="{ED0B771E-CA09-4317-AB43-F88489AA520F}">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/review_change_request_E7D91346.html" guid="{1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}">Проверка запросов изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/verify_changes_in_release_build_15F355EE.html" guid="{C6DE470A-C26B-41D7-9807-6D3DE566920E}">Проверка изменений в компиляции</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/conduct_review_1D8A70F8.html" guid="{01C0BC09-C421-438A-B4C4-351C46A244C9}">Провести проверку</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/report_on_configuration_status_9ECFA6E8.html" guid="{500A96BD-80F5-4E04-BCAB-CCE48F98639C}">Создание отчета о состоянии конфигурации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_change_request_process__viewing_historical_data__tool_mentor_for" name="XE_change_request_process__viewing_historical_data__tool_mentor_for"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Эта памятка по работе с инструментом указывает, каким образом администратор Rational ClearQuest может включить
+    управляющий элемент хронологии, позволяющий пользователям ClearQuest просматривать и отслеживать хронологию изъянов, в
+    форму изъянов ClearQuest.
+</p>
+<p>
+    В течение своего жизненного цикла записи проходят этапы от передачи на обработку до окончания обработки. В ClearQuest
+    каждый этап этого жизненного цикла называется "состоянием", а каждый переход от одного состояния к другому -
+    "изменением состояния".
+</p>
+<p>
+    При работе с клиентом ClearQuest вы можете просматривать хронологию записи. Эта хронология содержит дату выполнения
+    действий (например, перехода к другому состоянию или внесения модификаций), имя пользователя, название действия, старое
+    состояние и новое состояние.
+</p>
+<h3>
+    1.&nbsp; Просмотр хронологии изъяна
+</h3>
+<p>
+    Администратор Rational ClearQuest может настроить в схеме ClearQuest отображение хронологии записей.
+</p>
+<p>
+    <b><img height="16" alt="Pначок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /></b> См. электронную
+    справку по Проектировщику ClearQuest: <b>Справка &gt; Содержимое и предметный указатель &gt; Работа со схемами
+    &gt;</b>.
+</p>
+<p>
+    Команда Просмотреть хронологию показывает изменения в состоянии записи и даты внесения изменений. Содержимое окна
+    Просмотреть хронологию предназначено только для чтения.
+</p>
+<p>
+    Для просмотра хронологии записи выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Запустите запрос, выдающий нужную запись.
+    </li>
+    <li>
+        На вкладке Набор результатов выберите запись.
+    </li>
+    <li>
+        В строке меню выберите <b>Просмотреть &gt; Хронология</b>.
+    </li>
+    <li>
+        Закройте окно, нажав <img height="14" alt="Значок Закрыто" src="./../../../core.base_rup/guidances/toolmentors/resources/closed.jpg" width="16" />.
+    </li>
+</ol>
+<h3>
+    2.&nbsp; Добавление управляющего элемента хронологии в форму записей ClearQuest
+</h3>
+<p>
+    Проектировщик ClearQuest позволяет администратору ClearQuest создавать собственные формы для передачи на обработку,
+    просмотра и изменения записей. &nbsp;
+</p>
+<p>
+    <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку по
+    Проектировщику ClearQuest: <b>Справка &gt; Содержимое и предметный указатель &gt; Работа с формами записей</b>.
+</p>
+<p>
+    Администратор ClearQuest может включить управляющий элемент хронологии в форму, чтобы видеть изменения состояния
+    записи.
+</p>
+<ol>
+    <li>
+        Изымите схему&nbsp;
+    </li>
+</ol>
+<blockquote>
+    <p>
+        <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+        по Проектировщику ClearQuest: <b>Справка &gt; Содержимое и предметный указатель &gt; Работа со схемами &gt; Изъятие
+        схемы</b>.
+    </p>
+</blockquote>
+<ol start="2">
+    <li>
+        Добавьте управляющий элемент хронологии в форму&nbsp;
+    </li>
+</ol>
+<blockquote>
+    <p>
+        <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+        по Проектировщику ClearQuest: <b>Справка &gt; Содержимое и предметный указатель &gt; Работа с формами &gt; Создание
+        и изменение форм &gt; Работа с управляющими элементами форм &gt; Добавление управляющих элементов в форму</b>.
+    </p>
+</blockquote>
+<ol start="3">
+    <li>
+        Верните схему&nbsp;
+    </li>
+</ol>
+<blockquote>
+    <p>
+        <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+        по Проектировщику ClearQuest, разделы:
+    </p>
+    <ul>
+        <li>
+            <b>&gt; Содержимое и предметный указатель &gt; Работа со схемами &gt; Возврат схемы&nbsp;</b>
+        </li>
+        <li>
+            <b>&gt; Содержимое и предметный указатель &gt; Работа со схемами &gt; Проверка изменений схемы</b>
+        </li>
+    </ul>
+</blockquote>
+<ol start="4">
+    <li>
+        Обновите базы данных&nbsp;
+    </li>
+</ol>
+<blockquote>
+    <p>
+        <img height="16" alt="Значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> См. электронную справку
+        по Проектировщику ClearQuest: <b>Справка &gt; Содержимое и предметный указатель &gt; Управление базами данных</b>.
+    </p>
+</blockquote><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

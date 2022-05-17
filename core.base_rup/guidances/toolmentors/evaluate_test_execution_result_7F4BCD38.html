@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Анализ сбоев втестов с помощью Rational TestManager и TestFactory</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="evaluate_test_execution_result" name="uma.name">
+<meta content="Анализ сбоев втестов с помощью Rational TestManager и TestFactory" name="uma.presentationName">
+<meta content="Tool:rup_test_factory:Rational TestFactory" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational TestFactory" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{037E5AB9-7DC1-4CDB-8395-A2647F5A7F24}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{037E5AB9-7DC1-4CDB-8395-A2647F5A7F24}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{037E5AB9-7DC1-4CDB-8395-A2647F5A7F24}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{037E5AB9-7DC1-4CDB-8395-A2647F5A7F24}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Анализ сбоев втестов с помощью Rational TestManager и TestFactory</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение Rational TestManager, Rational Robot и Rational TestFactory для анализа автоматически создаваемых тестовых сценариев, обнаруживающих ошибки.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_test_factory_3EDA2115.html" guid="{FBA5098E-2CA8-483D-814D-DE3E876426B1}">Rational TestFactory</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_test_failure_7E42EE55.html" guid="{EA0E3D2C-F87E-49CA-8832-F791886D5741}">Анализ ошибки при тестировании</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_runtime_behavior_B2DD7652.html" guid="{5131A5BB-5B95-499E-A68B-788A2F0957C3}">Анализ поведения среды выполнения</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/determine_test_results_630C9EC9.html" guid="{74E51E86-ECAB-4A61-9A88-FD358EE6F2B1}">Определение результатов тестирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Эта памятка по инструменту применима для систем с Windows 98/2000/NT 4.0.
+</p>
+<p>
+    Для применения Rational TestFactory, Rational Robot и Rational TestManager для анализа автоматически создаваемых
+    тестовых сценариев выполните одно из или оба следующих действия:
+</p>
+<ul>
+    <li>
+        <a href="#Analyze defect script">Анализ тестового сценария, обнаружившего неполадку</a>
+    </li>
+    <li>
+        <a href="#Analyze UAW script">Анализ тестового сценария, обнаружившего непредвиденное активное окно</a>
+    </li>
+</ul>
+<h3>
+    1.&nbsp; <a id="Analyze defect script" name="Analyze defect script">Анализ тестового сценария, обнаружившего
+    неполадку</a>
+</h3>
+<p>
+    Как описано в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/generate_test_scripts_71EF254E.html" guid="{19F8AE86-E40A-42F5-8B81-673C306F5C35}">Памятке по инструменту: реализация генерирования тестовых сценариев с
+    помощью Rational Test Factory</a>, Пилот - это инструмент Rational TestFactory, автоматически создающий тестовые
+    сценарии. Для каждой найденной неполадки Пилот создает "сценарий неполадки", содержащий операторы тестового сценария,
+    вызывавшие неполадку.
+</p>
+<p>
+    Когда Пилот находит неполадки при работе, обнаруживший неполадку тестовый сценарий помещается в отдельную папку
+    "Найденные неполадки" в каталоге run. С помощью Rational TestManager можно просмотреть протокол выполнения тестового
+    сценария, обнаружившего неполадки.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Обратитесь к разделу
+    <i>Просмотр протокола для выполнения сценария</i> электронной справки Rational TestFactory.
+</p>
+<h3>
+    2.&nbsp; <a id="Analyze UAW script" name="Analyze UAW script">Проанализируйте тестовый сценарий, обнаруживший
+    непредвиденное &nbsp;активное окно</a>
+</h3>
+<p>
+    При создании тестового сценария Пилот может обнаружить "непредвиденное активное окно" (UAW) - окно, отражающее
+    несогласованность между объектами UI на схеме приложения и управляющими элементами тестируемого приложения (AUT).
+    Непредвиденное активное окно может быть обнаружено из-за одного или двух условий:
+</p>
+<ul>
+    <li>
+        AUT содержит окно, для которого отсутствует соответствующий объект UI на схеме приложения. Типичным примером может
+        стать окно сообщения, не охваченное преобразованием.
+    </li>
+    <li>
+        Объект UI в схеме приложений представляет окно, больше не находящееся в AUT.
+    </li>
+</ul>
+<p>
+    При обнаружении непредвиденно активного окна Пило создает "сценарий UAW" и помещает его в папку run Пилота. Сценарий
+    UAW можно воспроизвести в Rational Robot, а затем использовать Robot и Rational TestManager для определения причины
+    возникновения непредвиденного активного окна. Найдя причину в Rational TestFactory при последующих запусках Пилота
+    данное непредвиденное активное окно обнаруживаться не будет.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp; Обратитесь к следующим
+    разделами электронной справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Найдите причину возникновения непредвиденного активного окна</i>
+    </li>
+    <li>
+        <i>Устраните непредвиденное активное окно</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

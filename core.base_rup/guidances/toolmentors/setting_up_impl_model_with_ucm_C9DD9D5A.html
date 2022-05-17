@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Настройка модели реализации с помощью UCM Using Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="setting_up_impl_model_with_ucm" name="uma.name">
+<meta content="Настройка модели реализации с помощью UCM Using Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{10964F4E-39B2-4D34-9A75-3B6360B47C2B}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Настройка модели реализации с помощью UCM Using Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В той памятке по инструменту описывается настройка среды управления конфигурацией с помощью Rational ClearCase Unified Change Management (UCM).</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/write_cm_plan_9BAE9ACA.html" guid="{63B1E843-8F9D-41E4-9A33-5E0F648F8159}">Написание плана управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_cm_environment_78ABEDF9.html" guid="{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}">Настройка среды управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html" guid="{35272424-8A0A-4DDD-BA74-C91B80A8D046}">Создание структуры модели реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    На следующей диаграмме показан поток операций для управления проектами UCM. Затемненные области описаны в этой памятке.
+</p>
+<p>
+    <img height="163" alt="Диаграмма потока операций UCM" src="./../../../core.base_rup/guidances/toolmentors/resources/wflow_create_proj.gif" width="536" border="0" />
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows. &nbsp;Она содержит описание функций, доступны в полной версии
+    ClearCase.
+</p>
+<h4>
+    Терминология
+</h4>
+<p>
+    Терминология в RUP и &nbsp;ClearCase слега отличается. Ниже приведено разъяснение связанной с инструментами
+    терминологии.
+</p>
+<ul>
+    <li>
+        <b>Деятельность</b>: Деятельность в ClearCase аналогична <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_work_order_CFBC805B.html" guid="{18DB40A1-6272-467A-AC68-B2C4BE1DCD6C}">Порядку обработки</a> в RUP. &nbsp;Не путайте этот термин с
+        концепцией <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/termdefinitions/activity_1D028230.html" guid="_yoVhMB_IEdq6CKKKq4D7YA">Определение термина: операция</a> в RUP.
+    </li>
+    <li>
+        <b>Управление конфигурацией</b>: в ClearCase термин управление конфигурацией относится к управлению версиями и
+        компоновками. RUP использует определения IEEE и ISO для <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/termdefinitions/configuration_management_ECFE6290.html" guid="_yEPD19nmEdmO6L4XMImrsA">Определения термина: управление конфигурацией</a>&nbsp; (CM), содержащего также и
+        управление изменениями, являющееся частью CM. &nbsp;
+    </li>
+    <li>
+        <b>Управление конфигурацией и изменениями</b>: в ClearCase Rational ClearQuest управление конфигурацией и
+        изменениями схоже с определением RUP <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/termdefinitions/configuration_management_ECFE6290.html" guid="_yEPD19nmEdmO6L4XMImrsA">Определение термина: управление конфигурацией</a>. &nbsp;RUP использует эти термины
+        как синонимы.
+    </li>
+    <li>
+        <b>Проект</b>: Проект в ClearCase схож с определением <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_project_repository_E3932821.html" guid="{A99B1686-7BD7-43B3-9A7F-7DB18A10F4B2}">Хранилища проекта</a> в RUP.
+    </li>
+</ul>
+<h4>
+    Этапы работы с инструментами
+</h4>
+<p>
+    Для настройки проекта UCM:
+</p>
+<ol>
+    <li>
+        <a href="#1">Создайте хранилище для хранения сведений проекта</a>
+    </li>
+    <li>
+        <a href="#2">Создайте компоненты, содержащие набор файлов, над которыми трудятся разработчики.</a>
+    </li>
+    <li>
+        <a href="#3">Создайте контрольные версии, идентифицирующие версии файлов, с которым разработчики приступили к
+        работе</a>
+    </li>
+    <li>
+        <a href="#4">Создайте проект UCM</a><br />
+         &nbsp;
+    </li>
+</ol>
+<h3>
+    1.&nbsp;<a id="1" name="1">Создайте хранилище для хранения сведений о проекте</a>
+</h3>
+<p>
+    Для проектов ClearCase требуется VOB проекта (PVOB), использующийся для хранения объектов UCM и связанной информации.
+</p>
+<ol>
+    <li>
+        Для запуска мастера создания VOB выберите на панели задач Windows кнопку <b>Пуск &gt; Программы &gt; Rational
+        Software &gt; Rational ClearCase &gt; Администрирование &gt; Создать VOB</b>.
+    </li>
+    <li>
+        В первом открывшемся окне отметьте переключатель <b>Данные проекта UCM</b>. &nbsp;
+    </li>
+    <li>
+        Выберите <b>Справку</b>, содержащую рекомендации по выполнению мастера. &nbsp;&nbsp;
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Обратитесь к разделу
+    <i>Мастер создания VOB</i> электронной справки ClearCase для получения подробной информации. &nbsp;&nbsp;
+</p>
+<h3>
+    2.&nbsp;<a id="2" name="2">Создайте компоненты</a> <a id="2" name="2">, содержащие набор файлов над которыми работают
+    разработчики</a>
+</h3>
+<p>
+    Компоненты используются для группировки набора связанных элементов каталогов и файлов в проекте UCM. Обычно разработка,
+    интеграция и выпуск элементов выполняется для элементов, составляющих компонент. Проект может содержать несколько
+    компонентов, о не меньше одного. Проекты могут иметь общие компоненты.
+</p>
+<p>
+    Создать компонент можно с помощью мастера создания VOB:
+</p>
+<ol>
+    <li>
+        Нажмите кнопку <b>Пуск &gt; Программы &gt; Администрирование Rational ClearCase &gt; Создать VOB</b>.&nbsp;
+    </li>
+    <li>
+        В первом шаге мастера отметьте переключатель <b>Создать VOB как компонент UCM</b>. Новый VOB может быть использован
+        проектами UCM в качестве компонента. &nbsp;
+    </li>
+</ol>
+<p>
+    Также можно перенести существующие данные, хранящиеся в VOB, в проекты UCM, преобразовав существующие VOB в компоненты:
+</p>
+<ol>
+    <li>
+        Перейдите к обозревателю проектов ClearCase Project Explorer. На панели инструментов Windows выберите <b>Пуск &gt;
+        Программы &gt; Rational Software &gt; Rational ClearCase &gt; Обозреватель проектов</b>.
+    </li>
+    <li>
+        Выберите корневой каталог PVOB.&nbsp;
+    </li>
+    <li>
+        Выберите <b>Инструменты</b> &gt; <b>Импортировать VOB</b>. Откроется окно импорта VOB. В списке доступных VOB
+        выберите VOB для преобразования в компонент. &nbsp;
+    </li>
+    <li>
+        Для перемещения VOB в список <b>VOB для импорта</b> нажмите кнопку <b>Добавить</b>. &nbsp;&nbsp;
+    </li>
+    <li>
+        После завершения нажмите кнопку <b>Импорт</b>.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" /> См. раздел "Создание компонентов" в
+    руководстве ClearCase <i>Управление проектами</i>.
+</p>
+<h3>
+    3.&nbsp;<a id="3" name="3">Создайте контрольные версии&nbsp;</a>, идентифицирующие версии файлов, с которыми
+    разработчики приступили к работе.
+</h3>
+<p>
+    Контрольные версии идентифицируют все элементы компонента, представляя стабильную исходную конфигурацию для начала
+    работы. Их применение необходимо для модели UCM для доступа к файлам и каталогам компонента.
+</p>
+<p>
+    При создании компонентов ClearCase с нуля, они создаются в исходной контрольной версии.
+</p>
+<p>
+    При преобразовании ClearCase VOB в компонент можно создать контрольные версии из существующих помеченных версий.
+    Проверьте, помечена ли последние стабильные версии. Если то не так, необходимо создать тип метки и применить его к
+    версиям, которые планируется добавить в проект.
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> Дополнительная информация
+    приведена в разделе <i>Применение мастера добавления метки</i> электронной справки ClearCase.
+</p>
+<p>
+    Для создания контрольной версии из набора версий, идентифицированных типом метки, выполните следующие действия:
+</p>
+<ol>
+    <li>
+        В обозревателе проектов ClearCase выберите корневую папку PVOB. Выберите <b>Инструменты</b> &gt; <b>Импорт
+        меток</b>. Появится мастер импорта меток.
+    </li>
+    <li>
+        В списке <b>Доступные компоненты</b> выберите компонент, содержащий метку, из которой требуется создать контрольную
+        версию.
+    </li>
+</ol>
+<blockquote>
+    <ul>
+        <li>
+            Для перемещения компонента в список <b>Выбранные компоненты</b> нажмите кнопку <b>Добавить</b>.
+        </li>
+        <li>
+            Завершив, нажмите кнопку <b>Далее</b>. &nbsp;
+        </li>
+    </ul>
+</blockquote>
+<ol start="3">
+    <li>
+        В шаге 2 мастера импорта меток выберите тип метки для импорта. Введите имя контрольной версии, которую требуется
+        создать для версий, определенных данным типом метки. Выберите уровень продвижения контрольной версии. Нажмите
+        <b>Готово</b>.
+    </li>
+</ol>
+<p>
+    В этой процедуре создается одна из контрольных версий основы проекта, идентифицирующая версии файлов, с которыми
+    разработчики приступили к работе.
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Обратитесь к разделу
+    <i>Создание и управление контрольными версиями</i> электронной справки ClearCase.
+</p>
+<h3>
+    4.&nbsp;<a id="4" name="4">Создайте проект UCM</a>
+</h3>
+<p>
+    После создания VOB проекта и компонентов, которыми вы будете пользоваться, можно приступать к созданию проекта UCM. Для
+    этого следует задать имя проекта и обозначить компоненты проекта и контрольные версии для проекта. ClearCase
+    предоставляет мастер создания нового проекта, облегчающий выполнение этой процедуры.
+</p>
+<ol>
+    <li>
+        В обозревателе проектов ClearCase выберите корневую папку PVOB. Выберите во всплывающем меню пункт <b>Создать
+        проект</b> для запуска мастера.
+    </li>
+    <li>
+        Следуйте предложенным мастером инструкциям. для получения справки по любому действию нажмите кнопку <b>Справка</b>.
+    </li>
+    <li>
+        В шаге 3 мастера, добавление контрольных версий компонента для применения в данном проекте, укажите контрольные
+        версии, созданные в описанной ранее <a href="#3">процедуре 3</a>.
+    </li>
+    <li>
+        В последующих двух этапах мастера вас попросят ввести подробные сведения о конфигурации для проекта, включая
+        стратегии разработки и включение проекта для работы с базой данных запросов изменений Rational. Конфигурацию можно
+        настроить для определенных потребностей вашего проекта. Подробное описание всех доступных опций приведено в
+        электронной справке.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> Обзор этой процедуры
+    приведен в следующих разделах электронной справки ClearCase:
+</p>
+<ul>
+    <li>
+        <i>Поток операция для создания проектов&nbsp;</i>
+    </li>
+    <li>
+        <i>Мастер создания проекта</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

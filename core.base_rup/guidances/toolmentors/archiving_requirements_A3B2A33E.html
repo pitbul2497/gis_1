@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Архивирование требований с помощью Rational RequisitePro</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="archiving_requirements" name="uma.name">
+<meta content="Архивирование требований с помощью Rational RequisitePro" name="uma.presentationName">
+<meta content="Tool:rup_requisite_pro:Rational RequisitePro" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational RequisitePro" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{1AA3B210-5979-4E05-8A08-A436B38997B0}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{1AA3B210-5979-4E05-8A08-A436B38997B0}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{1AA3B210-5979-4E05-8A08-A436B38997B0}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{1AA3B210-5979-4E05-8A08-A436B38997B0}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Архивирование требований с помощью Rational RequisitePro</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описано архивирование требований с помощью команд архивирования Rational RequisitePro.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_requisite_pro_593FD397.html" guid="{887DBA0C-5761-494D-862D-5956F1C51BF7}">Rational RequisitePro</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_cm_environment_78ABEDF9.html" guid="{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}">Настройка среды управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/support_development_1443EF07.html" guid="{35936CF9-4B04-402A-9482-07E5CFB45D99}">Разработка справочных материалов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Необходимо сохранять требования проекта на определенных вехах для создания резервных копий. RequisitePro позволяет
+    создавать моментальные копии проектов требований и хранить из в Rational ClearCase&reg; либо просто в виде архивов
+    RequisitePro, сохраняя копию продуктов работы проекта в архивном каталоге.
+</p>
+<p>
+    Для архивирования проектов RequisitePro можно использовать различные инструменты управления кофигурацией, такие как
+    Intersolv PVCS&reg; или Microsoft&reg; Visual SourceSafe. Если ваш проект использует базу данных Microsoft&reg; Access, вначале
+    выполните команду RequisitePro Archive для создания файла архива, затем заархивируйте этот файл с помощью инструмента
+    управления конфигурацией. Не забудьте добавить в архив документацию проекта. При архивации проекта, использующего
+    межпроектную функцию трассировки, не забудьте добавить в архив все связанные проекты, чтобы заархивированный проект был
+    полным.
+</p>
+<p>
+    Проект RequisitePro состоит из проекта требований Rational и набора документов, содержащих требования. Требования можно
+    создать непосредственно на панели проекта или в документе Microsoft&reg; Word в RequisitePro. Все документы, содержащие
+    требования, указаны в соответствующе проекте RequisitePro, обслуживающем эти требования. Архив проекта RequisitePro
+    содержит проект требований Rational и все документы, содержащие требования.
+</p>
+<p>
+    <b>Примечание:</b> Информация о создании контрольной версии проекта RequisitePro приведена в памятке по инструменту <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/baseline_requirements_C387B42A.html" guid="{CC4BC013-6917-468D-A3DC-0E696FB9DB7A}">Контрольные версии проекта Rational RequisitePro</a>.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Для архивирования проекта с помощью RequisitePro выберите одну из следующих опций:
+</p>
+<ol>
+    <li>
+        <a href="#Archive a RequisitePro project as a RequisitePro archive">Архивировать проект RequisitePro
+        в виде архива RequisitePro</a>
+    </li>
+    <li>
+        <a href="#Archive a RequisitePro project in ClearCase">Архивировать проект RequisitePro в ClearCase</a>
+    </li>
+    <li>
+        <a href="#VSS">Архивировать проект RequisitePro с помощью базы данных предприятия</a>
+    </li>
+</ol>
+<h4>
+    1. <a id="Archive a RequisitePro project as a RequisitePro archive" name="Archive a RequisitePro project as a RequisitePro archive">Архивировать проект RequisitePro в виде архива
+    RequisitePro</a>
+</h4>
+<p>
+    При архивации проекта RequisitePro в виде архива RequisitePro вы просто создаете копию всех файлов проекта в заданном
+    пользователем каталоге. С помощью этой опции можно архивировать проекты RequisitePro с помощью систем управления
+    конфигурациями, напрямую не поддерживаемых в RequisitePro.
+</p>
+<p>
+    Для архивации проекта RequisitePro в виде архива RequisitePro выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Выберите <b>Файл &gt; Администрирование проекта &gt; Архивировать &gt; Архив RequisitePro</b>. Откроется диалоговое
+        окно Архивировать проект.
+    </li>
+    <li>
+        Выберите каталог, в котором нужно сохранить резервную копию. Нажмите кнопку <b>Обзор</b> чтобы открыть окно выбора
+        папки. Перейдите в нужный каталог, выберите папку и нажмите кнопку <b>OK</b> для возврата к диалоговому окну
+        архивации проекта.
+    </li>
+    <li>
+        Для добавления нового подкаталога в существующий путь щелкните в конце поля <b>Каталог</b>, добавьте обратную косую
+        черту (\) и впишите имя нового подкаталога.
+    </li>
+    <li>
+        Для применения номера ревизии к документам требований выберите переключатель <b>РАспространить на все
+        документы</b>.<br />
+         <b>Примечание:</b> Если защита включена необходимо наличие доступа к структуре проекта для распространения номера
+        ревизии. Также необходимо эксклюзивно открыть проект.
+    </li>
+    <li>
+        Необязательные шаги: задайте новый номер ревизии для проекта и укажите имя заархивированной версии в поле <b>Метка
+        версии</b> и описание в поле <b>Изменить описание</b>.
+    </li>
+    <li>
+        Нажмите <b>OK</b>.
+    </li>
+</ol>
+<p>
+    Чтобы обратиться к этому архиву в будущем просто добавьте заархивированный проект в список проектов RequisitePro:
+</p>
+<ol>
+    <li>
+        Выберите <b>Файл &gt; Открыть проект</b>. Откроется диалоговое окно Открыть проект.
+    </li>
+    <li>
+        Нажмите кнопку <b>Д</b><b>обавить</b>. Выберите заархивированный проект в указанном каталоге архивов.
+    </li>
+    <li>
+        Нажмите <b>Открыть</b> и <b>OK</b>. Теперь заархивированный проект станет доступным в RequisitePro.
+    </li>
+</ol>
+<h4>
+    Дополнительная информация
+</h4>
+<p>
+    <b><img height="16" alt="значок справки" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" /></b>Обратитесь к разделу
+    <i>Архивирование проектов с помощью команды RequisitePro Archive</i> (Индекс: архивирование&gt;с помощью команды
+    Archive) электронной справки RequisitePro.
+</p>
+<h4>
+    2. <a id="Archive a RequisitePro project in ClearCase" name="Archive a RequisitePro project in ClearCase">Архивация
+    проекта RequisitePro в ClearCase</a>
+</h4>
+<p>
+    Для архивации проекта Rational RequisitePro в Rational ClearCase выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Выберите <b>Инструменты</b> &gt; <b>Опции</b>.
+    </li>
+    <li>
+        В поле <b>Панель ClearCase</b> укажите расположение целевой Versioned Object Base (VOB) (диск, имя панели, имя vob,
+        каталог). Путь должен начинаться с буквы диска. Для используемых для совместной работы дисков используется
+        соглашение об именах. Это действие задает панель, в которую будут скопированы документы и база данных RequisitePro
+        при архивации проекта.
+    </li>
+    <li>
+        Нажмите <b>OK</b> для сохранения записи и закрытия окна Опции.
+    </li>
+    <li>
+        Выберите <b>Файл &gt; Администрирование проекта &gt; Архивировать &gt; Rational ClearCase</b>. Откроется окно
+        архивации с помощью ClearCase.
+    </li>
+    <li>
+        Выберите каталог, в котором нужно сохранить резервную копию. Нажмите кнопку <b>Обзор</b> чтобы открыть окно выбора
+        папки. Перейдите в нужный каталог, выберите папку и нажмите кнопку <b>OK</b>. Вы вернетесь к окну Архивация с
+        помощью ClearCase.
+    </li>
+    <li>
+        Для добавления нового подкаталога в существующий путь щелкните в конце поля <b>Каталог</b>, добавьте обратную косую
+        черту (\) и впишите имя нового подкаталога.
+    </li>
+    <li>
+        Следующие шаги являются необязательными: 
+        <ul>
+            <li>
+                Укажите новый номер ревизии для проекта.
+            </li>
+            <li>
+                Примените номер ревизии к документам требований, выбрав переключатель <b>Распространить на все
+                документы</b>. <b>Примечание:</b> Если защита включена необходимо наличие доступа к структуре проекта для
+                распространения номера ревизии. Также необходимо эксклюзивно открыть проект.
+            </li>
+            <li>
+                Укажите имя заархивированной версии в текстовом поле <b>Метка версии</b> и введите описание в поле
+                <b>Изменить описание</b>.
+            </li>
+        </ul>
+    </li>
+</ol>
+<h4>
+    Дополнительная информация
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" />Обратитесь к разделу <i>Архивация
+    проекта с помощью Rational ClearCase</i> (Индекс: архивация&gt;с помощью ClearCase) электронной справки RequisitePro.
+</p>
+<h4>
+    3. <a id="VSS" name="VSS">Архивация проекта RequisitePro с помощью базы данных предприятия</a>
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" />Подробные инструкции по архивации
+    проектов RequisitePro, использующих базу данных Oracle или Microsoft SQL Server приведены в разделе <i>Архивация
+    проекта базы данных предприятия</i> (Индекс: архивация&gt;баз данных предприятия) электронной справки RequisitePro.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

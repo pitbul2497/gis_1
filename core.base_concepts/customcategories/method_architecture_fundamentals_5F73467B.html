@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Основные сведения об архитектуре методов</title>
+<meta content="CustomCategory" name="uma.type">
+<meta content="method_architecture_fundamentals" name="uma.name">
+<meta content="Основные сведения об архитектуре методов" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_uDU1oASEEdq61bDkWg1SXw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Основные сведения об архитектуре методов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../core.base_concepts/customcategories/resources/concept_dgm32.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом разделе обсуждаются основные принципы, концепции и абстракции архитектуры UMA. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Материалы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_concepts/guidances/concepts/introduction_to_uma_931F5B93.html" guid="_94_eoO8LEdmKSqa_gSYthg">Ключевые возможности архитектуры UMA</a>
+</li>
+<li>
+<a href="./../../core.base_concepts/guidances/concepts/uma_vs_rup_45521141.html" guid="_SZDtIEdjEdqBmOmOgjH2IQ">UMA и метамодель RUP 2003</a>
+</li>
+<li>
+<a href="./../../core.base_concepts/customcategories/method_concepts_179C5639.html" guid="_WfL28BTMEdqrUt4zetC1gg">Концепции наполнения методов</a>
+</li>
+<li>
+<a href="./../../core.base_concepts/customcategories/guidance_BE65A47D.html" guid="_xy2SAAIsEdqEutyfYo0quQ">Рекомендации</a>
+</li>
+<li>
+<a href="./../../core.base_concepts/customcategories/process_concepts_2FEF92F.html" guid="_AtM0gBTQEdqrUt4zetC1gg">Концепции процесса</a>
+</li>
+<li>
+<a href="./../../core.base_concepts/customcategories/organizational_concepts_290C000C.html" guid="_Tp3S0BTQEdqrUt4zetC1gg">Концепции систематизации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Что такое UMA?
+</h3>
+<p>
+    Архитектура UMA (Unified Method Architecture) представляет собой метамодель разработки процессов, в которой определены
+    схема и терминология представления методов в форме их процессов и наполнения. Дополнительные сведения об этом приведены
+    в разделе <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/introduction_to_uma_931F5B93.html" guid="_94_eoO8LEdmKSqa_gSYthg">Концепция: Ключевые возможности архитектуры UMA</a>.&nbsp;
+</p>
+<h3>
+    Фундаментальные принципы UMA
+</h3>
+<p>
+    Архитектура UMA основана на следующих основных&nbsp;принципах&nbsp;разделения:
+</p>
+<ul>
+    <li>
+        Разделение базового наполнения методов и применения этого наполнения в процессах
+    </li>
+    <li>
+        Определение необязательного механизма расширения методов при работе с крупными хранилищами методов и процессов
+    </li>
+    <li>
+        Упаковка и настройка наполнения методов, процессов и модулей в библиотеках методов
+    </li>
+    <li>
+        Разделение полей рекомендуемых методов и описания указаний
+    </li>
+    <li>
+        Разделение семантических элементов и их записи в диаграммах процессов
+    </li>
+</ul>
+<h3>
+    Основные элементы UMA
+</h3>
+<p>
+    Главный принцип архитектуры UMA заключается в отделении многоразового базового наполнения методов от применения этих
+    методов в процессах. Практически все элементы&nbsp;UMA существуют в рамках этой парадигмы.
+</p>
+<p>
+    В архитектуре UMA многоразовое базовое наполнение методов отделено от применения этого наполнения в конкретных
+    приложениях. &nbsp; Наполнение метода содержит информацию о результирующем продукте, необходимых навыках и пошаговых
+    инструкциях по достижению конкретных целей разработки независимо от расположения этих элементов в жизненном цикле
+    разработки. &nbsp; Процессы представляют собой упорядоченные последовательности элементов методов, настраиваемые для
+    конкретных типов проектов. Например, в рамках проекта по разработке программного продукта с нуля могут быть
+    предусмотрены операции "разработка видения" или "проектирование вариантов", схожие с аналогичными операциями в проекте
+    расширения функциональных возможностей существующей системы. &nbsp;Однако данные задачи могут выполняться в этих
+    проектах в разные моменты времени, и основное внимание в них может уделяться разным вещам. Кроме того, разных проектах
+    эти задачи могут выполняться в разных вариациях.
+</p>
+<p>
+    На следующем рисунке наполнение метода и процесс представлены в двух разных измерениях для иллюстрации различий между
+    ними:
+</p>
+<ul>
+    <li>
+        В наполнении метода сформулированы правила выполнения определенной задачи. Эти правила разделены на несколько
+        категорий, называемых дисциплинами. &nbsp; Дисциплины представляют собой совокупности задач (не показаны на
+        рисунке) с пошаговыми инструкциями по достижению конкретных результатов в рамках разработки программного
+        обеспечения. &nbsp;
+    </li>
+    <li>
+        В процессах используются ссылки на задачи в наполнении метода. Эти ссылки объединяются в структуры и потоки
+        операций, на основе которых создаются экземпляры процессов, которым предоставляются ресурсы для обработки ввода и
+        вывода в виде реальных продуктов работы.<br />
+    </li>
+</ul>
+<p align="center">
+    <img alt="Диаграмма, на которой показано разделение наполнения методов и процессов в метамодели UMA"     src="./../../core.base_concepts/guidances/concepts/resources/uma_hump.jpg" border="0" />
+</p>
+<p class="picturetext" align="center">
+    Наполнение метода и<br />
+     его применение в процессе.
+</p>
+<p>
+    Отделение наполнения методов от процессов реализовано на уровне ключевых концепций UMA, как показано на следующем
+    рисунке. &nbsp; Метод (или окружение метода) состоит из наполнения, описанного в терминах продуктов работы, ролей,
+    задач и категорий, и процессов, описанных в терминах операций, шаблонов возможностей и процессов поставки.
+</p>
+<p align="center">
+    <img alt="Диаграмма, на которой проиллюстрировано указание в качестве точки пересечения наполнения методов и процессов"     src="./../../core.base_concepts/guidances/concepts/resources/uma_m_vs_p.gif" />
+</p>
+<p align="center">
+    Обзор позиционирования основных концепций UMA в зависимости от того, что они представляют: наполнение методов или
+    процессы
+</p>
+<p class="picturetext" align="left">
+    Предусмотрены следующие <a class="elementLinkWithUserText" href="./../../core.base_concepts/customcategories/method_concepts_179C5639.html" guid="_WfL28BTMEdqrUt4zetC1gg">элементы
+    наполнения методов</a>:&nbsp;
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/work_product_18CEEF8D.html" guid="4.804531471620803E-306">Продукт работы</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/role_BBD6A3E6.html" guid="1.1609745730665898E-304">Роль</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/task_86A4917F.html" guid="7.624729048911575E-305">Задача</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<p class="picturetext" align="left">
+    Предусмотрены следующие ключевые <a class="elementLinkWithUserText" href="./../../core.base_concepts/customcategories/process_concepts_2FEF92F.html" guid="_AtM0gBTQEdqrUt4zetC1gg">элементы
+    процессов</a>:&nbsp;
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/activity_417F8F65.html" guid="3.132140065969088E-305">Операция</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/capability_pattern_ECA78A86.html" guid="1.7072348895114264E-305">Шаблон возможностей</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html" guid="_EhgqwO8MEdmKSqa_gSYthg">Процесс поставки</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<p class="picturetext" align="left">
+    <a class="elementLinkWithUserText" href="./../../core.base_concepts/customcategories/guidance_BE65A47D.html" guid="_xy2SAAIsEdqEutyfYo0quQ">Указания</a> &nbsp;могут принимать различные формы:
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/checklist_8F23FAF6.html" guid="_2vVuUBT9EdqrUt4zetC1gg">Справочная таблица</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/concept_730F83A0.html" guid="_8wobABUAEdqrUt4zetC1gg">Концепция</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/example_F2AB11A0.html" guid="_dCG-UBUBEdqrUt4zetC1gg">Пример</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/guideline_AB6E733A.html" guid="_IAwkEBUEEdqrUt4zetC1gg">Рекомендация</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/practice_F5A1093C.html" guid="_szl6EBUBEdqrUt4zetC1gg">Порядок</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/report_5257BA11.html" guid="_x2sAgBUBEdqrUt4zetC1gg">Отчет</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/reusable_asset_110C96CB.html" guid="_20bs4BUBEdqrUt4zetC1gg">Многоразовый ресурс</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/roadmap_CBF52CCA.html" guid="_JCQbIBnXEdqYreeU3jqaDQ">Путеводитель</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/supporting_material_8F9B4FF.html" guid="_80XPABUBEdqrUt4zetC1gg">Справочные материалы</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/template_1C6123B9.html" guid="_G_UnIBUCEdqrUt4zetC1gg">Шаблон</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/term_definition_4520F2C6.html" guid="_Z45fwBUDEdqrUt4zetC1gg">Определение термина</a>
+            </div>
+        </li>
+        <li>
+            <div class="picturetext" align="left">
+                <a class="elementLinkWithUserText" href="./../../core.base_concepts/guidances/concepts/tool_mentor_10D3617F.html" guid="1.0762105093945226E-304"><font face="Arial, Helvetica, sans-serif">Памятка по инструменту</font></a>
+            </div>
+        </li>
+    </ul>
+</div></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2005&nbsp;Все права защищены
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

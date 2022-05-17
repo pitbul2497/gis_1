@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Настройка проекта с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="setting_up_for_a_project" name="uma.name">
+<meta content="Настройка проекта с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{1EE5423F-50CD-4676-B4DF-AA3982065F97}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{1EE5423F-50CD-4676-B4DF-AA3982065F97}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{1EE5423F-50CD-4676-B4DF-AA3982065F97}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{1EE5423F-50CD-4676-B4DF-AA3982065F97}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{1EE5423F-50CD-4676-B4DF-AA3982065F97}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Настройка проекта с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается настройка среды моделирования Rational XDE для проекта.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/support_development_1443EF07.html" guid="{35936CF9-4B04-402A-9482-07E5CFB45D99}">Разработка справочных материалов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Настройка XDE для проекта означает закладку фундамента, позволяющего участникам команда разработчиков одновременно
+    трудиться над одной моделью. Для разработки сложных систем группам аналитиков, архитекторов и разработчиков необходимо
+    иметь возможность просматривать и оценивать ход разработки глобально, при этом одновременно работая над своими
+    фрагментами проекта. Для успешного управления средой, в которой несколько участников команды имеют различные права
+    доступа к одной модели, требуется:
+</p>
+<ul>
+    <li>
+        Формулирование рабочей стратегии для управления деятельностью команды.
+    </li>
+    <li>
+        Наличие инструментов, поддерживающих эту стратегию.
+    </li>
+</ul>
+<p>
+    Следующие действия позволяют задать эту основу:
+</p>
+<ul>
+    <li>
+        <a href="#Tailor XDE Templates and Defaults">Настройте шаблоны и значения по умолчанию XDE</a>
+        (необязательно)
+    </li>
+    <li>
+        <a href="#Create Project and Models">Создайте проекты и модели XDE</a>
+    </li>
+    <li>
+        <a href="#Create and Describe an Activity State in the Diagram">Разбейте модели XDE на управляемые
+        блоки</a>
+    </li>
+</ul>
+<h3>
+    <a id="Tailor XDE Templates and Defaults" name="Tailor XDE Templates and Defaults"></a>Настройте шаблоны и значения по
+    умолчанию XDE (необязательно)
+</h3>
+<p>
+    В последующих шагах будут созданы модели XDE с помощью стандартных шаблонов, содержащих базовые структуры пакетов,
+    отвечающие <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациям по структуре модели Rational XDE</a>.
+</p>
+<p>
+    При необходимости можно создать собственные специализированные шаблоны. Rational XDE позволяет задать свойства и опции,
+    такие как шрифты, цвета, стили линий, опции хранения файлов, способы представления стереотипов и прочих сведений, а
+    также применяемые профайлы.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Настройка и управление средой
+    моделирования.</i> <!--  //ReferenceHelpTopic(topicTitle,"rs","rs_o_set_model_environ");  .-->
+</p>
+<h3>
+    <a id="Create Project and Models" name="Create Project and Models"></a>Создайте проекты XDE и модели XDE
+</h3>
+<p>
+    Термин "проект" в основном используется в RUP для ссылки на весь процесс разработки программного обеспечения.
+</p>
+<p>
+    <!-- begin - vsnet -->В Microsoft .NET процесс разработки ПО называется "решением". Решение состоит из одного или
+    нескольких проектов XDE (а точнее из проектов .NET), содержащих модели XDE, исходный код и прочие поля. 
+    <!-- end - vsnet -->
+</p>
+<p>
+    В Java Platform Edition весь процесс разработки ПО называется "приложением". Приложение J2EE состоит из одного или
+    нескольких проектов XDE, содержащих модели XDE, исходный код и прочие файлы.
+</p>
+<p>
+    Точно так же, продукты работы "модели" в RUP являются концептуальными продуктами работы, которые могут состоять из
+    нескольких моделей XDE, связывающих несколько проектов XDE.
+</p>
+<p>
+    Создайте проекты XDE, указанные в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a>, выполнив действия, описанные в
+    документе <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание проектов</i>. 
+    <!--     //ReferenceHelpTopic(topicTitle,"gs","gs_t_creating_projects");  . -->
+</p>
+<p>
+    Добавьте дополнительные модели к проекту при необходимости, выполнив действия, описанные в документе <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание моделей</i>&nbsp; 
+    <!--      //ReferenceHelpTopic(topicTitle,"gs","gs_t_create_new_mdl");  -->, используя в качестве инструкции <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Настройка и управление средой
+    моделирования.</i> <!-- //ReferenceHelpTopic(topicTitle,"rs","rs_o_set_model_environ");  . -->
+</p>
+<h3>
+    <a id="Create and Describe an Activity State in the Diagram" name="Create and Describe an Activity State in the Diagram"></a>Разбиение моделей XDE на управляемые блоки
+</h3>
+<p>
+    XDE поддерживает разбиение модели XDE на управляемые блоки, позволяя разделить модель XDE на отдельные файлы,
+    называемые <b>управляемые блоки</b>.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с моделями под управлением
+    источником</i>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Обратный инжиниринг баз данных с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="reverse_engineering_db" name="uma.name">
+<meta content="Обратный инжиниринг баз данных с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{8F40AECA-8AAA-4409-81F0-BFB7B6BECDBC}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{8F40AECA-8AAA-4409-81F0-BFB7B6BECDBC}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{8F40AECA-8AAA-4409-81F0-BFB7B6BECDBC}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{8F40AECA-8AAA-4409-81F0-BFB7B6BECDBC}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{8F40AECA-8AAA-4409-81F0-BFB7B6BECDBC}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Обратный инжиниринг баз данных с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение обратного инжиниринга в программном инструменте Rational XDE Developer для создания модели данных из существующей схемы базы данных или файла сценария DDL.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/database_design_8552DD3.html" guid="{2E74A414-49F5-4F27-BFCB-AA2DAC675F58}">Проектирование базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_XDE_Developer-Java_Platform__Reverse_Engineering_Databases" name="XE_XDE_Developer-Java_Platform__Reverse_Engineering_Databases"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    В этой памятке по инструменту описывается применение обратного инжиниринга в программном инструменте Rational XDE
+    Developer для создания модели данных из существующей схемы базы данных или файла сценария DDL.
+</p>
+<p>
+    В этой памятке по инструменту выполняются следующие шаги:
+</p>
+<ul>
+    <li>
+        <a href="#Reverse Engineering a Database">Обратный инжиниринг базы данных</a>
+    </li>
+    <li>
+        <a href="#Transform">Преобразование таблиц в классы</a> &lt;необязательно&gt;
+    </li>
+    <li>
+        <a href="#Manage Changes to Model and Database">Управление изменениями в модели и базе данных</a>
+    </li>
+</ul>
+<h3>
+    <a id="Reverse Engineering a Database" name="Reverse Engineering a Database">Обратный инжиниринг базы данных</a>
+</h3>
+<p>
+    В Rational XDE можно создать модель физического проекта базы данных с помощью обратного инжиниринга базы данных или
+    файла Data Definition Language (DDL). Справочник: <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание моделей данных с помощью обратного инжиниринга</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_gen_dm_re"); -->.
+</p>
+<p>
+    Запустить процесс обратного инжиниринга можно с помощью <b>Мастера обратного инжиниринга</b> моделирования данных
+    Rational XDE. &nbsp; (См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Обратный инжиниринг DDL
+    или баз данных</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_re_ddl_db"); -->.)
+    Мастер обратного инжиниринга считывает схему базы данных или DDL и создает:
+</p>
+<ul>
+    <li>
+        Пакет, содержащий таблицы, столбцы, ограничения, взаимоотношения, хранимые процедуры и представления. См. <img         alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Проектирование моделей данных</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_bld_dm"); -->.
+    </li>
+    <li>
+        Пакет содержащий домены. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Домены</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_dom"); -->.
+    </li>
+    <li>
+        Базу данных с взаимоотношениями реализации для всех таблиц. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Взаимоотношения реализации в моделировании данных</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_realization_dm"); -->.
+    </li>
+</ul>
+<p>
+    Для выполнения обратного инжиниринга базы данных Rational XDE должен иметь возможность установить соединение с базой
+    данных. &nbsp;(См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Подключение к системам
+    управления базами данных</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_connect_dbms"); -->.)&nbsp;Обратите
+    внимание, что результаты процесса обратного инжиниринга могут различаться в зависимости от DBMS.
+</p>
+<p>
+    Обратитесь к следующим разделам для получения подробных сведений об обратном инжиниринге баз данных для определенной
+    DBMS:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Обратный инжиниринг баз данных Oracle</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_re_oracle_db"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Обратный инжиниринг баз данных SQL Server</i>
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_re_sqlsrv_db"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Обратный инжиниринг баз данных Sybase</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_re_sybase_db"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Обратный инжиниринг баз данных DB2</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_re_db2_db"); -->
+    </li>
+</ul>
+<p>
+    Дополнительные сведения об установке соединения с базой данных для определенной DBMS обратитесь к следующим разделам
+    электронной справки Rational XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Соединения с базой данных Oracle</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_oracle_db_connect"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Соединения с базой данных SQL Server</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_sqlsrv_db_connect"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Соединения с базой данных Sybase</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_sybase_db_connect"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Соединения с базой данных DB2</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_db2_db_connect"); -->
+    </li>
+</ul>
+<h3>
+    <a id="Transform" name="Transform">Преобразование таблиц в классы&lt;необязательно&gt;</a>
+</h3>
+<p>
+    После выполнения обратного инжиниринга базы данных для создания модели физического проекта базы данных можно при
+    необходимости преобразовать таблицы в классы, которые станут частью логического проекта базы данных в модели проекта
+    или в отдельной логической модели данных. (См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Логическая модель данных</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_logical_dm"); -->.) Вы можете
+    преобразовать одну или все таблицы, содержащиеся в пакете или реализованные базой данных. (См. <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Преобразование таблиц в классы</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_transf_tbl_clss"); -->.) Пакет должен
+    содержать все элементы взаимоотношений, преобразующие взаимоотношение в логическую модель данных.
+</p>
+<p>
+    Дополнительные сведения о проектировании и моделировании базы данных приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/database_design_51B0B5D9.html" guid="{A7B13419-14D8-4C55-B98C-497B2E17CC73}">Памятке по инструменту: проектирование и моделирование баз данных в
+    Rational XDE</a>.
+</p>
+<p>
+    Дополнительные сведения о процессе преобразования таблиц в классы приведены в следующих разделах электронной справки
+    Rational XDE:
+</p>
+<ul type="square">
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Преобразование таблиц в классы</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_tbl_clss_transf"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Привязка преобразований таблиц в классы</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_r_tbl_transf_map"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Преобразование таблиц в классы</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_transf_tbl_clss_ejb"); -->
+    </li>
+</ul>
+<h3>
+    <a id="Manage Changes to Model and Database" name="Manage Changes to Model and Database">Управление изменениями в
+    модели и базе данных</a>
+</h3>
+<p>
+    После создания модели данных с помощью процесса обратного инжиниринга обновления модели данных и базы данных должны
+    быть проконтролированы и управляемы. &nbsp;Rational XDE содержит функцию Сравнить и синхронизировать для помощи
+    разработчику базы данных в управлении изменениями. (См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Сравнение и синхронизация в моделировании данных</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_gen_dm_cmpsync"); -->, <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/managing_db_ACA9AB6E.html" guid="{3B09E5BE-4AC8-4206-B9D8-4F85D36B9C75}">Памятка по инструменту: управление базами данных в Rational XDE</a>). При
+    периодическом обратном инжиниринге рекомендуется использовать функцию сравнения и синхронизации, так как применение
+    процесса обратного инжиниринга несколько раз для одной модели может привести к созданию копий таблиц и взаимоотношений
+    в модели данных.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.appliedis.com" target="_blank"><img alt="значок Applied Information Sciences"                 src="./../../../core.base_rup/guidances/supportingmaterials/resources/appliedis.gif" border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.appliedis.com" target="_blank">Applied Information Sciences</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

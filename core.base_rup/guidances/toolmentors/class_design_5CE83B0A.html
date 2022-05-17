@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Проектирование классов с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="class_design" name="uma.name">
+<meta content="Проектирование классов с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D1C3F9B8-8EE3-4AF6-8E7B-0653AF1F2936}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D1C3F9B8-8EE3-4AF6-8E7B-0653AF1F2936}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D1C3F9B8-8EE3-4AF6-8E7B-0653AF1F2936}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{D1C3F9B8-8EE3-4AF6-8E7B-0653AF1F2936}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{D1C3F9B8-8EE3-4AF6-8E7B-0653AF1F2936}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Проектирование классов с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описано выполнение проектирования классов с помощью Rational XDE Developer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/class_design_98F20FF9.html" guid="{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}">Проектирование классов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Эта памятка по инструменту поддерживает выполнение разраотки класса с помощью Rational XDE Developer - Java Platform
+    Edition.
+</p>
+<p>
+    При выполнении упражнений из этой памятки подразумевается, что была создана структурированная <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель эскиза</a> в ходе выполнения <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/architectural_analysis_2B9BE03.html" guid="{8CB48402-D4C5-4E17-BB33-507315CB1BBF}">Задачи:
+    анализ архитектуры</a> после выполнения действий, описанных в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/performing_architectural_analysis_65CE30FC.html" guid="{08B5477D-97F9-4EEB-AA59-A109128B5CA1}">Памятке по инструменту: выполнение анализа архитектуры с помощью Rational
+    XDE</a>.
+</p>
+<ul>
+    <li>
+        Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения определенных задач.
+    </li>
+    <li>
+        Ссылки на разделы электронной справки XDE помечены с помощью значка <img alt="справочника"         src="./../../../core.base_rup/resources/helpbook.gif" />.
+    </li>
+    <li>
+        В этой памятке по инструменту выполняются следующие шаги:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <a href="#Use Design Patterns and Mechanisms">Применение шаблонов и механизмов разработки</a>
+            </li>
+            <li>
+                <a href="#Create Initial Design Classes">Создание исходных классов разработки</a>
+            </li>
+            <li>
+                <a href="#Define Persistent Classes">Определение постоянных классов</a>
+            </li>
+            <li>
+                <a href="#Define Class Visibility">Определение области видимости классов</a>
+            </li>
+            <li>
+                <a href="#Define Operations">Определение операций</a>
+            </li>
+            <li>
+                <a href="#Define Methods">Определение методов</a>
+            </li>
+            <li>
+                <a href="#Define States">Определение состояний</a>
+            </li>
+            <li>
+                <a href="#Define Attributes">Определение атрибутов</a>
+            </li>
+            <li>
+                <a href="#Define Dependencies">Определение зависимостей</a>
+            </li>
+            <li>
+                <a href="#Define Associations">Определение ассоциаций</a>
+            </li>
+            <li>
+                <a href="#Define Generalizations">Определение обобщений</a>
+            </li>
+            <li>
+                <a href="#Resolve Use-Case Collisions">Обработка конфликтов прецедентов</a>
+            </li>
+            <li>
+                <a href="#Handle Non-Functional Requirements">Обработка нефункциональных требований в общем</a>
+            </li>
+            <li>
+                <a href="#Evaluate Your Results">Вычисление результатов</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    <a id="Use Design Patterns and Mechanisms" name="Use Design Patterns and Mechanisms">Применение эскизов и механизмов
+    разработки</a>
+</h3>
+<p>
+    Применение шаблонов и/или механизмов является эффективным при выполнении множества последующих этапов, описанных в
+    данной памятке (добавление новых классов, операций, атрибутов и взаимосвязей), но если при этом будут соблюдаться
+    правила, заданные шаблоном или механизмом.
+</p>
+<p>
+    Дополнительные сведения о применении шаблонов: <!-- end - wsw -->
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Применение шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_o_apply_pttrn"); -->
+    </li>
+</ul>
+<h3>
+    <a id="Create Initial Design Classes" name="Create Initial Design Classes"></a>Создание исходных классов разработки
+</h3>
+<ol>
+    <li>
+        Добавьте диаграмму классов к модели. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление диаграмм</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); -->.
+    </li>
+    <li>
+        Добавьте к диаграмме классов классы разработки. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление форм к диаграммам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.
+    </li>
+    <li>
+        Задокументируйте все классы. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+</ol>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами классов</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_w_class_dgms"); -->.
+</p>
+<h3>
+    <a id="Define Persistent Classes" name="Define Persistent Classes">Определение постоянных классов</a>
+</h3>
+<p>
+    Класс можно пометить как постоянный. Справочник: <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение постоянности</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_persistence"); -->.
+</p><!-- begin - wsw -->
+<p>
+    При разработке J2EE постоянство обычно применяется с помощью сущностных EJB. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/identifying_design_elements_F8D68BA1.html" guid="{E6727D13-BE7B-4025-AD39-ECD6FA074D73}">Памятку по инструменту: определение элементов разработки с помощью
+    XDE</a>.
+</p>
+<h3>
+    О<a id="Define Class Visibility" name="Define Class Visibility">пределение области видимости</a>
+</h3>
+<p>
+    Для каждого класса следует задать область видимости класса в пакете, в котором он хранится.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение области видимости</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_visibility"); -->.
+</p>
+<h3>
+    <a id="Define Operations" name="Define Operations">Определение операций</a>
+</h3>
+<ol>
+    <li>
+        Добавьте операции ко всем классам. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление операций к классификаторам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_oper_clssfr"); -->.
+    </li>
+    <li>
+        Добавьте параметры к операциям. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление параметров к операциям</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_param_op"); -->.
+    </li>
+    <li>
+        Укажите область видимости операций. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение областей видимости</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_visibility"); -->.
+    </li>
+</ol>
+<p>
+    Справочник: <img alt="helpbook icon" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление и изменение атрибутов и
+    операций в классификаторах</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_add_mod_atts_ops"); -->.
+</p>
+<h3>
+    <a id="Define Methods" name="Define Methods"></a>Определение методов
+</h3>
+<p>
+    К описанию операций можно добавить описание реализации операции.
+</p>
+<p>
+    Для описания метода можно при необходимости использовать диаграмму последовательности. См. раздел электронной справки
+    по XDE <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документация элементов модели</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами взаимодействия
+    (последовательности)</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_inter_dgm"); -->.
+</p>
+<h3>
+    Определение состояний<a id="Define States" name="Define States"></a>
+</h3>
+<p>
+    Можно при необходимости использовать конечный автомат.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами состояния</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_statechart_dgms"); -->.
+</p>
+<h3>
+    <a id="Define Attributes" name="Define Attributes">Определение атрибутов</a><a id="Define Attributes and Relationships" name="Define Attributes and Relationships"></a>
+</h3>
+<ol>
+    <li>
+        Определите атрибуты. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Атрибуты</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_c_attibutes"); -->.
+    </li>
+    <li>
+        Добавьте атрибуты к классификаторам. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление атрибутов к классификаторам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_attributes_clssfr"); -->.
+    </li>
+    <li>
+        Укажите область видимости. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение
+        области видимости</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_visibility"); -->.
+    </li>
+</ol>
+<h3>
+    <a id="Define Dependencies" name="Define Dependencies">Определение зависимостей</a>
+</h3>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей
+    зависимостей</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_depend_relshp"); -->.
+</p>
+<h3>
+    <a id="Define Associations" name="Define Associations">Определение ассоциаций</a>
+</h3>
+<ol>
+    <li>
+        Добавьте взаимосвязи ассоциаций. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей ассоциаций</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_assoc_rels"); -->.
+    </li>
+    <li>
+        Укажите тип каждой ассоциации. См. <img alt="Значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение типов взаимосвязей ассоциаций</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_kinds_assoc"); -->.
+    </li>
+</ol>
+<h3>
+    <a id="Define Generalizations" name="Define Generalizations">Определение обобщений</a>
+</h3>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей обобщения</i>
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_genrlztn_relshp"); -->.
+</p>
+<h3>
+    <a id="Resolve Use-Case Collisions" name="Resolve Use-Case Collisions">Обработка конфликтов прецедентов</a>
+</h3>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение типа параллелизма для
+    операций</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_type_cncrrncy_op"); -->.
+</p>
+<h3>
+    <a id="Handle Non-Functional Requirements" name="Handle Non-Functional Requirements">Обработка нефункциональных
+    требований</a> в общем
+</h3>
+<p>
+    Нефункциональные требования зачастую заставляют класс наследовать определенные механизмы разработки с помощью
+    кооперации и шаблонов. Зачастую применения компонента достаточно для выполнения нефункциональных требований. (См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/identifying_design_elements_F8D68BA1.html" guid="{E6727D13-BE7B-4025-AD39-ECD6FA074D73}">Памятка по инструменту: определение элементов разработки с помощью
+    Rational XDE</a>).
+</p>
+<p>
+    Справочник:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Разработка на основе шаблонов J2EE</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"j","jee_c_j2ee_pattrns"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Применение шаблонов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"ea","ea_o_apply_pttrn"); -->
+    </li>
+</ul>
+<h3>
+    <a id="Evaluate Your Results" name="Evaluate Your Results"></a>Вычисление результатов
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

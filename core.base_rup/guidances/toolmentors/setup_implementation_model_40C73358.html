@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Настройка модели реализации с помощью Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="setup_implementation_model" name="uma.name">
+<meta content="Настройка модели реализации с помощью Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Настройка модели реализации с помощью Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается настройка каталога модели реализации с помощью Rational ClearCase.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/write_cm_plan_9BAE9ACA.html" guid="{63B1E843-8F9D-41E4-9A33-5E0F648F8159}">Написание плана управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_cm_environment_78ABEDF9.html" guid="{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}">Настройка среды управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html" guid="{35272424-8A0A-4DDD-BA74-C91B80A8D046}">Создание структуры модели реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Терминология
+</h3>
+<p>
+    Между терминологией RUP &nbsp;и ClearCase имеются некоторые различия. Следующие определения связанных с инструментами
+    терминов помогут вам разобраться в различиях.
+</p>
+<ul>
+    <li>
+        <b>Управление конфигурацией</b>: в контексте ClearCase использование термина Управление конфигурацией означает
+        управление версиями и компоновками. В RUP используются определения IEEE и ISO для <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/termdefinitions/configuration_management_ECFE6290.html" guid="_yEPD19nmEdmO6L4XMImrsA">управления конфигурацией</a> (CM), также содержащей управление изменениями как часть
+        CM.
+    </li>
+    <li>
+        <b>Управление конфигурацией и изменениями</b>: в ClearCase и Rational ClearQuest управление конфигурацией и
+        изменениями является синонимом определения управления конфигурацией в RUP. В RUP эти термины используются как
+        синонимы.
+    </li>
+    <li>
+        <b>Проект</b>: проект ClearCase является аналогом <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_project_repository_E3932821.html" guid="{A99B1686-7BD7-43B3-9A7F-7DB18A10F4B2}">Хранилища проекта</a> в RUP.
+    </li>
+</ul>
+<h3>
+    Обзор
+</h3>
+<p>
+    В этой памятке по инструменту описывается создание структуры в среде разработки для упорядочивания и хранения продуктов
+    работы элемента конфигурации, связанного с реализацией и доставкой программного продукта. Физическое представление
+    подсистем в среде разработки задает "структуру каталога продукта" и, соответственно, модель реализации программного
+    обеспечения.
+</p>
+<p>
+    Перед тем, как начать пользоваться ClearCase, важно понимать, будете ли вы использовать ClearCase Unified Change
+    Management (UCM), отдельную модель применения или базовый ClearCase, предоставляющий набор инструментов. используемых
+    для создания прочих моделей применения.
+</p>
+<p>
+    В этой памятке по инструменту рассматриваются задачи как для ClearCase UCM, так и для базовой версии ClearCase, тог да
+    как все прочие памятки по ClearCase, представленные в RUP, используют модель UCM.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<h4>
+    <a id="ToolSteps" name="ToolSteps">Этапы работы с инструментом</a>
+</h4>
+<p>
+    Чтобы задать модель реализации в Rational ClearCase:
+</p>
+<ol>
+    <li>
+        <a href="#CreateClearcaseVOBs">Создайте хранилища управления конфигурацией (CM) (ClearCase VOB)</a>.
+    </li>
+    <li>
+        <a href="#ImportExistingAssetsIntoVOBs">Импортируйте существующие файлы и каталоги в эти VOB</a>.
+    </li>
+    <li>
+        <a href="#CreateAdminVOBForGlobalTypes">(Необязательно) Создайте административный VOB для хранения определений
+        объектов глобальных типов</a>.
+    </li>
+</ol>
+<h3>
+    1.&nbsp;<a id="CreateClearcaseVOBs" name="CreateClearcaseVOBs">Создайте хранилища управления конфигурацией (CM)
+    (ClearCase VOB)</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам памятки" src="./../../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h3>
+<p>
+    Базы объектов с версиями (VOB) используются для хранения версий файлов, каталогов и прочих объектов. Они служат
+    хранилищами для информации об управлении конфигурацией. Обычно VOB создаются для представления подсистем, заданных
+    архитектурой.
+</p>
+<p>
+    Для запуска мастера создания VOB (для каждого этапа мастера доступна контекстная справка):
+</p>
+<ol>
+    <li>
+        На панели задач <b>Windows</b> выберите <b>Пуск &gt; Программы &gt; Rational Software &gt; Rational ClearCase &gt;
+        Администрирование &gt; Создать VOB</b>.
+    </li>
+    <li>
+        Откроется <b>Мастер создания VOB</b>. Следуйте инструкциям для создания ClearCase VOB. Прежде чем начать полезно
+        узнать о соглашениях об именах VOB, используемых в вашей системе или проекте, и уточнит ь место расположения для
+        хранения VOB.
+    </li>
+    <li>
+        В оставшихся шагах мастера выполните следующие действия:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Задайте имя VOB и укажите, должен ли он быть компонентом UCM или VOB проекта (PVOB).
+            </li>
+            <li>
+                Укажите место хранения VOB.
+            </li>
+            <li>
+                Выберите <b>Опции</b>.
+            </li>
+        </ul>
+    </li>
+</ol>
+<p>
+    &nbsp;<img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Подробные
+    сведения о создании VOB приведены в электронной справке мастера создания VOB ClearCase.
+</p>
+<p>
+    &nbsp;<img height="15" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;Обзор настройки VOB
+    приведен в главе "Настройка VOB ClearCase" в руководстве ClearCase <i>Руководство администратора</i>.
+</p>
+<h3>
+    2.&nbsp;<a id="ImportExistingAssetsIntoVOBs" name="ImportExistingAssetsIntoVOBs">Импортируйте существующие файлы и
+    каталоги в VOB</a> <a href="#ToolSteps"><img height="20" alt="Перейти к описанию действия инструмента"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Работая в представлении ClearCase, созданном для проекта, создайте нужную структуру каталогов верхнего уровня в VOB и
+    скопируйте существующие файлы и каталоги во все VOB для создания исходного набора элементов конфигурации
+    разработки&nbsp; (элементов Rational ClearCase).
+</p>
+<ol>
+    <li>
+        В обозревателе ClearCase Explorer выберите каталоги и файлы для импорта. &nbsp;
+    </li>
+    <li>
+        Щелкните правой кнопкой мыши для вызова меню и выберите в нем <b>Добавить к управлению исходным кодом</b>. Будут
+        созданы элементы ClearCase для всех выделенных объектов.
+    </li>
+</ol>
+<p>
+    &nbsp;<img height="15" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp;Сведения об импорте больших
+    объемов файлов приведены в описании команды <b>clearimport</b> в руководстве ClearCase <i>Справочник команд</i>.
+</p>
+<h3>
+    3.&nbsp;<a id="CreateAdminVOBForGlobalTypes" name="CreateAdminVOBForGlobalTypes">(Необязательно) Создайте
+    административный VOB для хранения определений объектов глобального типа</a> <a href="#ToolSteps"><img height="20"     alt="Перейти к описанию этапов памятки" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    При необходимости можно создать административный VOB для хранения определений объектов глобального типа. Создайте
+    административный VOB для хранения определений объектов глобального типа, используемых в определении контрольных версий
+    подсистем.
+</p>
+<p>
+    Для создания административного VOB запустите мастер создания VOB, описанный ранее в <a href="#CreateClearcaseVOBs">Шаге
+    1</a> и следуйте инструкциям.
+</p>
+<p>
+    &nbsp;<img height="15" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />&nbsp; Дополнительные сведения о
+    работе с административными VOB приведены в разделе "Применение административных VOB и глобальных типов" в руководстве
+    ClearCase <i>Руководство администратора</i>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

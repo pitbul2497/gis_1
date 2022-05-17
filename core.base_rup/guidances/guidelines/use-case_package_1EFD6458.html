@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Пакет вариантов использования</title>
+<meta content="Guideline" name="uma.type">
+<meta content="use-case_package" name="uma.name">
+<meta content="Пакет вариантов использования" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "9.871865834975133E-306"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="9.871865834975133E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Пакет вариантов использования</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Пакет вариантов использования - это часть модели вариантов использования, состоящая из полунезависимого набора тесно связанных вариантов использования. Данная рекомендация объясняет, в каких случаях модель вариантов использования полезно разбить на пакеты вариантов использования.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_usecase_package_A96DDE65.html" guid="{102E424E-98DE-4F54-B1A0-8F8FD54D6BEE}">Пакет вариантов использования</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_use_case_model_93D8F44.html" guid="{F7D9D038-B184-43CC-9353-15BA154F87B5}">Создайте структуру модели вариантов использования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_use-case_package__guidelines_for" name="XE_use-case_package__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Объяснение</a>
+</h3>
+<p>
+    Модель, структурированная в виде более мелких блоков, более проста для понимания. Гораздо легче показать отношения
+    между основными частями модели, если их можно выразить в терминах пакетов. Пакетом может быть или пакет верхнего уровня
+    модели, или стереотип <b>пакета вариантов использования</b>. Можно предоставить заказчику возможность самому решить,
+    каким образом структурировать основные части модели.
+</p>
+<ul>
+    <li>
+        Если в модели вариантов использования есть множество вариантов использования и субъектов, то для ее дальнейшего
+        структурирования можно применять пакеты вариантов использования. Пакет вариантов использования содержит несколько
+        субъектов, вариантов использования, их отношения и другие пакеты; следовательно, может существовать несколько
+        уровней пакетов вариантов использования (пакеты внутри пакетов).
+    </li>
+    <li>
+        Пакет верхнего уровня содержит все пакеты вариантов использования верхнего уровня, все субъекты верхнего уровня и
+        все варианты использования верхнего уровня.
+    </li>
+</ul>
+<h3>
+    <a id="Use" name="Use">Использование</a>
+</h3>
+<p>
+    Для разбиения модели вариантов использования на пакеты вариантов использования есть несколько причин:
+</p>
+<ul>
+    <li>
+        Пакеты вариантов позволяют отразить порядок, конфигурацию или единицы поставки в законченной системе.
+    </li>
+    <li>
+        В зависимости от распределения ресурсов и компетентности различных групп разработчиков может возникнуть
+        необходимость распределить проект между различными группами, находящимися в разных местах. Некоторые пакеты могут
+        быть удобны для группы, некоторые - для одного сотрудника, что делает их эффективным средством разработки.
+        Обязательно определите различную ответственность за каждый пакет, так чтобы разработка могла выполняться
+        параллельно.
+    </li>
+    <li>
+        Пакеты позволяют создать структуру модели вариантов использования, которая отражает типы пользователей. Многие
+        требования о внесении изменений исходят от пользователей. Применение пакетов вариантов использования гарантирует,
+        что изменения, исходящие от конкретного типа пользователей, затронут только те части системы, которые соответствуют
+        этому типу пользователей.
+    </li>
+    <li>
+        В некоторых приложениях определенная информация должна быть доступна только нескольким лицам. Пакеты вариантов
+        использования позволяют сохранить секретность в тех областях, где это необходимо.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

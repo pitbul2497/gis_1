@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Дескриптор задачи: Определение критериев пригодности к тестированию</title>
+<meta content="TaskDescriptor" name="uma.type">
+<meta content="define_testability_elements" name="uma.name">
+<meta content="Определение критериев пригодности к тестированию" name="uma.presentationName">
+<meta content="_meY8sEohEdqrjq4i3fchvA" name="uma.guid">
+<meta content="TaskDescriptor" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ActivityTreeTable.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ProcessElementPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/processElementData.js"></script><script language="JavaScript" type="text/javascript">
+					var defaultQueryStr = '?proc={35359DDF-6361-43E5-8B1B-18D204DA8CFF}&path={35359DDF-6361-43E5-8B1B-18D204DA8CFF},{7BD514AF-19F9-408F-8279-309BD153C157},_meY8sEohEdqrjq4i3fchvA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, true, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_meY8sEohEdqrjq4i3fchvA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Дескриптор задачи: Определение критериев пригодности к тестированию</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/taskdes_lg_dgm32.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой задаче описан способ определения элементов, которые поддерживают и позволяют тестирование.</td>
+</tr>
+<tr>
+<td>На основе задачи метода: <a href="./../../core.base_rup/tasks/define_testability_elements_B792858D.html" guid="{CDA7EC1B-2D50-46BE-A3BA-C621EAF22D84}">Установка критериев пригодности к тестированию</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Главный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_designer_911E8755.html" guid="_CTmsIRi2Edq_uI8xTPML6g">Разработчик тестов</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительно:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Помощь:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_design_model_812064DA.html" guid="_melJ8EohEdqrjq4i3fchvA">Модель проекта</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_strategy_7FB79B6B.html" guid="_CTmsIhi2Edq_uI8xTPML6g">Стратегия тестирования</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_automation_architecture_55B06974.html" guid="_CTmsJRi2Edq_uI8xTPML6g">Архитектура автоматизации тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_data_FA46B83.html" guid="_CTmsKBi2Edq_uI8xTPML6g">Данные теста</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_interface_98C82FC1.html" guid="_CTmsMBi2Edq_uI8xTPML6g">Интерфейс</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_workload_analysis_model_4EE75D9A.html" guid="_CTmsJxi2Edq_uI8xTPML6g">Модель анализа нагрузки</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_deployment_model_44497D8A.html" guid="_CTmsJhi2Edq_uI8xTPML6g">Модель развертывания</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_implementation_model_D80B21D8.html" guid="_CTmsLxi2Edq_uI8xTPML6g">Модель реализации</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_use_case_realization_CD6D41C8.html" guid="_CTmsLhi2Edq_uI8xTPML6g">Реализация прецедента</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_interface_specification_D4364DA2.html" guid="_CTmsLBi2Edq_uI8xTPML6g">Спецификации интерфейса тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_case_DED42DB2.html" guid="_CTmsLRi2Edq_uI8xTPML6g">Тестовый набор</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Внешний:
+								</span>
+<ul>
+<li>Нет</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="3" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_automation_architecture_55B06974.html" guid="_CTmsJRi2Edq_uI8xTPML6g">Архитектура автоматизации тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_design_A3660FD1.html" guid="_CTmsMRi2Edq_uI8xTPML6g">Проект тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_interface_specification_D4364DA2.html" guid="_CTmsLBi2Edq_uI8xTPML6g">Спецификации интерфейса тестирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableCell">
+<div class="stepHeading"> Для каждого требуемого целевого элемента теста, идентифицируйте взаимосвязи с механизмами тестирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="IdentifyTargetMechanismItems" name="IdentifyTargetMechanismItems"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Добиться понимания поддержки механизма тестирования, необходимой для целевых элементов теста.
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Для каждого элемента целевого теста просмотрите список механизмов тестирования и идентифицируйте те из них, которые
+    могут предоставить поддержку. Проанализируйте, в какой степени выбранные механизмы тестирования могут предоставить
+    полное тестовое решение, и как они могут быть адаптированы для этого. Если не найдено ни одного кандидата или требуются
+    значительные усилия для адаптации, определите новые механизмы тестирования и попытайтесь найти баланс между
+    специфичностью и универсальностью.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Идентифицируйте динамические элементы и события системы </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="IdentifyDynamicElementsEvents" name="IdentifyDynamicElementsEvents"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Добиться понимания динамических аспектов системы. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+    Используя доступные требования к программному обеспечению и информацию о проекте идентифицируйте динамические элементы
+    и события системы. С помощью моделей варианта использования, проекта, реализации и развертывания можно идентифицировать
+    соответствующие элементы, такие как классы управления, процессы, нити и события. Начать поиск можно с классов, имеющих
+    стереотип &lt;&lt;control&gt;&gt;, реализаций вариантов использования и элементов, описанных в архитектурном
+    представлении процесса или модели реализации со стереотипом &lt;&lt;process&gt;&gt; или &lt;&lt;thread&gt;&gt;.
+</div>
+<p>
+    В соответствии с ограничениями, налагаемыми средой тестирования, определите требования.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определение грани системы и интерфейсов </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="IdentifyBoundariesAndInterfaces" name="IdentifyBoundariesAndInterfaces"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Достичь понимания того, какие обязанности лежат на системе, играющей роль обслуживающей системы, и какие
+                она имеет зависимости в качестве клиента. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Полезно также исследовать группу Интерфейсы системы, особенно те, которые относятся к субъектам, внешним по отношению к
+    границам системы. С помощью Моделей проекта и реализации найдите элементы, имеющие стереотип &lt;&lt;interface&gt;&gt;.
+    Также рассмотрите модели на предмет наличия классов стереотипа &lt;&lt;boundary&gt;&gt;.
+</p>
+<p>
+    Тестировщику полезно исследовать эти системные границы, для того чтобы понять, какие ожидания имеются у связанных
+    систем - и клиента, и обслуживающей системы. Это даст всестороннее понимание того, что необходимо для проверки
+    интерфейсов, и какая требуется инфраструктура для тестирования и возможной имитации этих интерфейсов.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определение элементов инфраструктуры тестирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="IdentifyTestInfrastructure" name="IdentifyTestInfrastructure"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%">
+                    <b>Цель:</b>&nbsp;
+                </td>
+                <td width="95%">
+                    Определить основные элементы для требуемого тестирования. &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Для успешного итерационного тестирования важно определить и обеспечить подходящую инфраструктуру. Без соответствующей
+    инфраструктуры тестирование быстро становится непригодным и безосновательным. Хотя инфраструктура тестирования очевидно
+    является более важной для автоматического тестирования, она также важна и для тестирования вручную.
+</p>
+<p>
+    Рассмотрите динамические элементы и события в системе. Как они зависят от реализации отдельных тестов? Найдите
+    возможность устранить зависимости между отдельными тестами, чтобы управлять ими посредством общих точек управления на
+    косвенном уровне. Обычно зависимости можно найти в областях навигации тестирования, использования данных тестирования и
+    изменениях состояния системы.
+</p>
+<p>
+    Используя собранную информацию, продумайте, какие требования будут обуславливать инфраструктуру тестирования, и какие
+    средства необходимы для успешного проведения тестирования.
+</p>
+<p>
+    <b>Подразделы:</b>
+</p>
+<ul>
+    <li>
+        <a href="#FacilitateCommonScenarios">Создание общих сценариев тестов</a>
+    </li>
+    <li>
+        <a href="#FacilitateTestDataDependencies">Создание взаимозависимости тестовых данных</a>
+    </li>
+    <li>
+        <a href="#FacilitateTestStateDependencies">Создание взаимозависимости состояний тестов</a>
+    </li>
+    <li>
+        <a href="#FacilitateDerivedTestDataValues">Создание производных значений тестовых данных</a>
+    </li>
+    <li>
+        <a href="#FacilitateCommonNavigationPaths">Создание общих путей навигации теста</a>
+    </li>
+</ul>
+<h4>
+    <a id="FacilitateCommonScenarios" name="FacilitateCommonScenarios">Создание общих сценариев тестов</a> <a href="#IdentifyTestInfrastructure"><img height="20" alt="К началу страницы" src="./../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h4>
+<p>
+    Некоторые тесты имеют общую структуру сценария и процедуру, следующую за ними, но одна процедура должна выполняться
+    много раз для разных целевых элементов теста. Для автоматического тестирования полезно создать общие сценарии тестов
+    или служебные функции, которые могут быть использованы в разных контекстах для эффективного выполнения этих общих
+    сценариев. Это позволит легко изменять сценарий теста. В качестве примеров можно привести проведение тестирования
+    стандартных границ для соответствующих классов элементов интерфейса и проверку соответствия элементов пользовательского
+    интерфейса стандартам дизайна.
+</p>
+<h4>
+    <a id="FacilitateTestDataDependencies" name="FacilitateTestDataDependencies">Создание взаимозависимости тестовых
+    данных</a> <a href="#IdentifyTestInfrastructure"><img height="20" alt="К началу страницы"     src="./../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h4>
+<p>
+    При проведении тестов в данной конфигурации среды тестирования могут возникнуть конфликты используемых данных. Такая
+    проблема возникает, когда среда используется несколькими тестировщиками. Рассмотрите возможность использования
+    тестирования, управляемого данными, при котором значения данных тестов не связаны с использующими их сценариями, и их
+    можно легко собрать и изменить. Это обеспечивает два ключевых преимущества. Во-первых, тестовые данные видны всем
+    тестировщикам, что позволяет избежать потенциальных конфликтов используемых данных, и во-вторых, позволяет изменять все
+    тестовые данные при необходимости.
+</p>
+<h4>
+    <a id="FacilitateTestStateDependencies" name="FacilitateTestStateDependencies">Создание взаимозависимости состояний
+    тестов</a> <a href="#IdentifyTestInfrastructure"><img height="20" alt="К началу страницы"     src="./../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h4>
+<p>
+    Для большинства тестов требуется, чтобы перед их выполнением система находилась в определенном состоянии, а после
+    выполнения они должны возвращать систему в известное состояние. Среди обычных зависимостей находятся права доступа
+    (функция или данные), динамические или контекстно-зависимые данные (например, системные даты, номера заказов, параметры
+    ИД пользователя и т.д.), сроки действия данных (например, пароли защиты, сроки годности продуктов и т.д.). Некоторые
+    тесты сильно зависят друг от друга. Например, один тест может создавать уникальный номер заказа, а последующему тесту
+    может понадобиться его использовать.
+</p>
+<p>
+    Обычное решение состоит в том, чтобы для последовательности зависимых тестов использовать наборы тестов в правильном
+    порядке состояний системы. Наборы тестов могут быть затем связаны с подходящим восстановлением системы и утилитами
+    установки. Для автоматического тестирования можно применять централизованное хранение динамических системных данных и
+    использовать переменные со сценариями тестов, которые ссылаются на централизованную информацию.
+</p>
+<h4>
+    <a id="FacilitateDerivedTestDataValues" name="FacilitateDerivedTestDataValues">Создание производных значений тестовых
+    данных</a> <a href="#IdentifyTestInfrastructure"><img height="20" alt="К началу страницы"     src="./../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h4>
+<p>
+    Иногда тестам необходимо вычислить или получить соответствующие значения данных из одного или нескольких аспектов
+    динамического состояния системы. Это применяется для значений тестовых данных как входа, так и ожидаемого результата.
+    Разработайте утилиты, которые вычисляют производные значения данных, упрощая выполнение теста и уменьшая возможные
+    погрешности, возникающие из-за человеческих ошибок. Там, где это возможно, разработайте эти утилиты так, чтобы они
+    могли применяться как для автоматического тестирования, так и для тестирования вручную.
+</p>
+<h4>
+    <a id="FacilitateCommonNavigationPaths" name="FacilitateCommonNavigationPaths">Создание общих путей навигации теста</a>
+    <a href="#IdentifyTestInfrastructure"><img height="20" alt="К началу страницы" src="./../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h4>
+<p>
+    Для автоматизации тестирования необходимо выделить общие последовательности навигации и реализовать их с помощью
+    централизованных вспомогательных функций или сценариев тестов. Эти общие последовательности навигации могут быть затем
+    повторно использованы во многих местах, предоставляя возможность их централизованного изменения в случае необходимости.
+    Они помогают просто осуществлять навигацию приложения из одной точки в другую. Обычно они сами не выполняют никаких
+    тестов, кроме тех, которые проверяют их начальное и конечное состояния.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определение потребностей проекта, связанных с тестированием </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="IdentifyTestDesignNeeds" name="IdentifyTestDesignNeeds"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Определить потребности тестовой дисциплины, которые наложат потенциальные ограничения на процесс
+                проектирования программного обеспечения, архитектуру программного обеспечения и соответствующие проект и
+                реализацию. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Особенно там, где требуется автоматическое тестирование, необходимо наложить некоторые ограничения и на способ
+    разработки программного обеспечения, и на архитектуру и проект программного обеспечения. Важно не создать чрезмерных
+    препятствий в основной работе коллектива разработки программного обеспечения, и, в то же время, обеспечить возможность
+    тестировщикам выполнять необходимые тесты. Информация о представлении потребностей тестировщиков для коллектива
+    разработчиков и поиске рабочего решения, удовлетворяющего всем дисциплинам, находится в разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/tasks/obtain_testability_commitment_90A71C20.html" guid="{4052BFA5-036E-4BBE-B344-4BF5D81A4DD6}">Задача: Обеспечение пригодности к тестированию</a>.
+</p>
+<p>
+    Используя собранную информацию, продумайте, какие требования следует наложить на процесс разработки для обеспечения
+    тестирования.
+</p>
+<p>
+    <b>Подразделы:</b>
+</p>
+<ul>
+    <li>
+        <a href="#IdentifyDesignTestInterfaces">Определение интерфейсов теста</a>
+    </li>
+    <li>
+        <a href="#IdentifyDesignInbuiltTests">Определение встроенных функций теста</a>
+    </li>
+    <li>
+        <a href="#IdentifyDesignTestConstraints">Определение ограничений проекта теста</a>
+    </li>
+</ul>
+<h4>
+    <a id="IdentifyDesignTestInterfaces" name="IdentifyDesignTestInterfaces">Определение интерфейсов теста</a> <a href="#IdentifyTestDesignNeeds"><img src="./../../core.base_rup/resources/top.gif" alt="К началу страницы" border="0" width="26"     height="20" /></a>
+</h4>
+<p>
+    Рассмотрите определенные интерфейсы. Существуют ли дополнительные требования, необходимые для тестирования, которые
+    должны быть включены в проект и последующую реализацию программного обеспечения? В некоторых случаях, специально для
+    тестирования потребуются дополнительные интерфейсы, дополнительные режимы работы существующих интерфейсов или
+    измененные сигнатуры сообщений (изменения во входных и выходных параметрах).
+</p>
+<p>
+    Определите ограничения и зависимости процесса тестирования в связи с целевыми средами разработки (собранные в
+    конфигурациях среды тестирования) и самого расписания разработки. Эти зависимости могут вынуждать применение заглушек
+    для имитации элементов недоступной среды, требовать слишком много ресурсов для проведения тестирования, или
+    предоставлять возможность раннего тестирования компонентов частично завершенной системы.
+</p>
+<h4>
+    <a id="IdentifyDesignInbuiltTests" name="IdentifyDesignInbuiltTests">Определение встроенных функций теста</a> <a href="#IdentifyTestDesignNeeds"><img src="./../../core.base_rup/resources/top.gif" alt="К началу страницы" border="0" width="26"     height="20" /></a>
+</h4>
+<p>
+    Некоторые тесты являются потенциально полезными, но требуют слишком больших затрат для реализации их в виде истинных
+    черных ящиков. Кроме того, в средах высокой надежности важно иметь возможность производить тестирование и находить
+    ошибки как можно быстрее. В этих случаях может оказаться полезным встраивать тесты непосредственно в само исполняемое
+    программное обеспечение.
+</p>
+<p>
+    Существуют разные подходы для осуществления этого. Чаще всего, в программное обеспечение встраиваются тесты
+    самопроверки, и оно выполняет избыточные циклы обработки для проверки своей целостности, или диагностические процедуры,
+    которые выполняются при получении специального сообщения, или когда система настроена на выполнение диагностики.
+</p>
+<h4>
+    <a id="IdentifyDesignTestConstraints" name="IdentifyDesignTestConstraints">Определение ограничений проекта теста</a> <a href="#IdentifyTestDesignNeeds"><img src="./../../core.base_rup/resources/top.gif" alt="К началу страницы" border="0" width="26"     height="20" /></a>
+</h4>
+<p>
+    Разработчики могут или включить тестирование в проект и реализацию, или запретить его. Иногда такой выбор неизбежен,
+    однако существует много других маленьких решений, особенно в отношении реализации, которые минимально влияют на
+    коллектив разработчиков, но существенно затрагивают тестировщиков.
+</p>
+<p>
+    Нужно рассмотреть следующее: использование стандартных общепризнанных протоколов связи; использование компонентов
+    реализации пользовательского интерфейса, которые могут быть распознаны средствами автоматического тестирования;
+    соответствие правилам проекта пользовательского интерфейса, включающим в себя именование элементов; совместимое
+    использование соглашений о навигации по пользовательскому интерфейсу.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определение требований для обеспечения пригодности программного обеспечения к тестированию </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineSoftwareTestability" name="DefineSoftwareTestability"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Задать требования к функциям программного обеспечения, необходимые для поддержки реализации и выполнения
+                тестов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    С помощью результата выполненной в предыдущей задаче работы, определите требования и ограничения проекта и реализации
+    программного обеспечения, относящиеся к тестированию.<br />
+    <br />
+    Важно четко объяснить коллективу разработчиков причины, по которым требуется встраивать в программное обеспечение
+    тестовые компоненты. Основные причины, как правило, попадают в одну из следующих категорий:
+</p>
+<ul>
+    <li>
+        Необходимость реализовать тесты, как автоматические, так и диалоговые, с помощью предоставления интерфейса между
+        ними и целевым элементом теста. Это обычно лучше всего подходит для автоматического тестирования при попытке
+        преодолеть ограничения средств автоматического тестирования и получить доступ ко вводу и выводу приложения.
+    </li>
+    <li>
+        Необходимость включить встроенное само-тестирование в само разрабатываемое программное обеспечение.
+    </li>
+    <li>
+        Необходимость отделить целевые элементы теста от остальной разрабатываемой системы.
+    </li>
+</ul>
+<p>
+    Тестовые компоненты, встроенные в программное обеспечение, должны обеспечивать баланс между их ценностью и усилиями,
+    необходимыми для их реализации. В качестве примеров встроенных тестовых компонентов можно привести создание протокола
+    контроля, функции само-диагностики и интерфейсы для запроса значений внутренних переменных.
+</p>
+<p>
+    Тестовая функциональность также часто применяется при интеграции, когда требуется обеспечить заглушки для компонентов
+    иди подсистем, которые еще не реализованы или не объединены. Существует два основных стиля реализации заглушек:
+</p>
+<ul>
+    <li>
+        Фиктивные заглушки и драйвера, которые не имеют другой функциональности, кроме предоставления заданного значения
+        (или значений) или в качестве входа, или в качестве возврата.
+    </li>
+    <li>
+        Более развитые заглушки и драйвера, которые могут имитировать некоторое поведение.
+    </li>
+</ul>
+<p>
+    Этот второй стиль заглушки также обеспечивает мощные средства изоляции компонентов и групп компонентов от остальной
+    системы, предоставляя гибкость в реализации и выполнении тестов. Как и для тестовых компонентов, должен существовать
+    баланс между ценностью сложной заглушки и усилиями, необходимыми для ее реализации. Этот второй стиль следует
+    использовать осмотрительно, во-первых, потому что он требует больше ресурсов для реализации, и во-вторых, потому что
+    легко упустить существование такой заглушки и забыть ее удалить.
+</p>
+<p>
+    Напишите полученные данные или непосредственно в терминах специфичных для тестирования требований к моделям проекта и
+    реализации, или с помощью одной или нескольких спецификаций интерфейса тестирования.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определение инфраструктуры тестирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineSoftwareTestability" name="DefineSoftwareTestability"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Задать требования к инфраструктуре тестирования, необходимые для поддержки реализации и выполнения тестов.
+                &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    С помощью результата выполненной в предыдущей задаче работы, определите инфраструктуру тестирования, которая требуется
+    для его реализации и выполнения.
+</p>
+<p>
+    Помните, что вы определяете компоненты реализации инфраструктуры. Главная цель - это определить различные части
+    решения, которое ее реализует.
+</p>
+<p>
+    <b>Подразделы:</b>
+</p>
+<ul>
+    <li>
+        <a href="#AutomationInfrastructureElements">Элементы автоматического тестирования</a>
+    </li>
+    <li>
+        <a href="#ManualInfrastructureElements">Элементы тестирования вручную</a>
+    </li>
+</ul>
+<h4>
+    <a id="AutomationInfrastructureElements" name="AutomationInfrastructureElements">Элементы автоматического
+    тестирования</a> <a href="#DefineSoftwareTestability"><img src="./../../core.base_rup/resources/top.gif" alt="К началу страницы"     border="0" width="26" height="20" /></a>
+</h4>
+<p>
+    Ключевыми требованиями или компонентами инфраструктуры автоматического тестирования являются:
+</p>
+<ul>
+    <li>
+        Модель навигации: обычно используются метод полного обхода, сегментированный или гибридный методы. Можно также
+        применить структуру Действие-Слово или таблицы навигации экрана.
+    </li>
+    <li>
+        Доступ к внешним данным: метод доступа ко внешним данным из теста .
+    </li>
+    <li>
+        Отчет об ошибках и их устранение: общие процедуры обработки ошибок и оболочки выполнения Набора тестов.
+    </li>
+    <li>
+        Профайлы доступа и защиты: ИД пользователей для выполнения автоматического тестирования.
+    </li>
+    <li>
+        Возможность для программного обеспечения выполнять само-тестирование.
+    </li>
+</ul>
+<p>
+    Запишите свои решения в виде определений в разделах реализации Архитектуры автоматического тестирования, в указании к
+    процессу одной или нескольких Рекомендаций по тестированию или в Сценариях тестирования, Наборах тестов или
+    вспомогательных процедурах тестовой библиотеки. Более подробная информация находится в разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_test_automation_architecture_650DD06A.html" guid="{B5B77528-E14B-43CA-BC73-D64A90A17E2D}">Рабочий продукт: Архитектура автоматического тестирования</a>.
+</p>
+<h4>
+    <a id="ManualInfrastructureElements" name="ManualInfrastructureElements">Элементы тестирования вручную</a> <a href="#DefineSoftwareTestability"><img src="./../../core.base_rup/resources/top.gif" alt="К началу страницы" border="0"     width="26" height="20" /></a>
+</h4>
+<p>
+    Ключевыми требованиями или компонентами инфраструктуры тестирования вручную являются:
+</p>
+<ul>
+    <li>
+        Хранилище тестовых данных: общее хранилище для определения тестовых данных.
+    </li>
+    <li>
+        Восстановление: метод восстановления известного состояния конфигурации среды тестирования.
+    </li>
+    <li>
+        Необходимость отделить целевые элементы теста от остальной разрабатываемой системы.
+    </li>
+</ul>
+<p>
+    Запишите свои решения в виде указаний к процессу в одном или нескольких <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html" guid="{E5501201-7EE6-4243-AE91-73880FF76FC1}">Рабочий продукт: Рекомендации, относящиеся к проекту</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Оценка и проверка результатов </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="EvaluateResults" name="EvaluateResults"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Убедиться в том, что задача правильно выполнена, и что получены приемлемые рабочие продукты. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Теперь, когда работа выполнена, стоит проверить, имела ли она достаточную пользу, или вы просто потратили кучу бумаги.
+    Вы должны оценить, имела ли ваша работа подходящее качество, достаточно ли она завершена для того, чтобы быть полезной
+    тем членам коллектива, которые впоследствии будут использовать ее в своей работе. Там, где это возможно, применяйте
+    справочные таблицы, предоставленные в RUP для проверки качества и полноты работы.
+</p>
+<p>
+    Позвольте тем, кто будет впоследствии использовать вашу работу, участвовать в просмотре промежуточных вариантов.
+    Делайте это, пока еще есть достаточно времени для удовлетворения их пожеланий. Необходимо также оценить свою работу по
+    отношению к ключевым входным рабочим продуктам, чтобы убедиться в том, что они точно и в достаточной мере представлены.
+    Может быть полезным, чтобы автор входного рабочего продукта просмотрел вашу работу.
+</p>
+<p>
+    Помните, что RUP - это итерационный процесс и во многих случаях рабочие продукты развиваются с течением времени.
+    Поэтому, не всегда необходимо (а часто даже приводит к обратным результатам) полностью формировать рабочий продукт,
+    который будет использоваться только частично или не будет использоваться совсем в работе, которая непосредственно
+    следует за этой. Причина этого состоит в том, что существует высокая вероятность изменения ситуации вокруг рабочего
+    продукта до его использования, что приводит к потерянным напрасно усилиям и дорогостоящей переработке. Также избегайте
+    ошибки тратить слишком много времени на представление в ущерб содержимому. В средах тех проектов, в которых
+    представление имеет важность и экономическое значение при их сдаче, можно использовать административный ресурс для
+    выполнения задач представления.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Свойства</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Несколько вхождений" abbr="Несколько вхождений">Несколько вхождений</th><td align="left" class="sectionTableCell" headers="property_Несколько вхождений"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Управляется событиями" abbr="Управляется событиями">Управляется событиями</th><td align="left" class="sectionTableCell" headers="property_Управляется событиями"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Выполняющийся" abbr="Выполняющийся">Выполняющийся</th><td align="left" class="sectionTableCell" headers="property_Выполняющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Необязательный" abbr="Необязательный">Необязательный</th><td align="left" class="sectionTableCell" headers="property_Необязательный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Запланированный" abbr="Запланированный">Запланированный</th><td align="left" class="sectionTableCell" headers="property_Запланированный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Повторяющийся" abbr="Повторяющийся">Повторяющийся</th><td align="left" class="sectionTableCell" headers="property_Повторяющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Разработка с использованием активных объектов в Rational Rose RealTime</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="designing_with_active_objects" name="uma.name">
+<meta content="Разработка с использованием активных объектов в Rational Rose RealTime" name="uma.presentationName">
+<meta content="Tool:rup_rose_rt:Rational Rose RealTime" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Rose RealTime" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{8A0A5BB3-5CBC-4A38-BFD2-4A21CA5FF833}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B3026434-672D-4564-9106-A951C326EBF5}", "{8A0A5BB3-5CBC-4A38-BFD2-4A21CA5FF833}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{8A0A5BB3-5CBC-4A38-BFD2-4A21CA5FF833}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{8A0A5BB3-5CBC-4A38-BFD2-4A21CA5FF833}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Разработка с использованием активных объектов в Rational Rose RealTime</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описываются компоненты активных объектов и объясняется как выполняется разработка с активными компонентами в Rational Rose RealTime.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rose_rt_DDC0220E.html" guid="{B3026434-672D-4564-9106-A951C326EBF5}">Rational Rose RealTime</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/capsule_design_BF66E39A.html" guid="{F13C1161-7F17-45E3-A8B7-03944A1FA6E4}">Проектирование капсул</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Активный объект состоит из капсул с протоколами и портами.
+</p>
+<p>
+    Капсулы являются инкапсулированными объектами, использующими связь с помощью сообщений с другими капсулами через
+    объекты портов. Капсулы могут содержать другие капсулы. Структура капсул может содержать прочие капсулы, являющиеся
+    ролями капсул.
+</p>
+<p>
+    Набор сообщений, которыми обмениваются два объекта, соответствует шаблону связи, называемому протоколом. Фактически это
+    контрактный договор, определяющий допустимые типы сообщений для обмена между участниками протокола.
+</p>
+<p>
+    Одним из способов задать поведение объекта является диаграмма состояний. Она показывает последовательность состояний,
+    через которые проходит объект или взаимодействие во время жизненного цикла в ответ на получаемые сообщения, вместе со
+    своими ответами и действиями.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Для разработки активных объектов в Rational Rose RealTime выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Create a capsule role">Создайте роль капсулы</a>
+    </li>
+    <li>
+        <a href="#Create ports and bind to protocols">Создайте порты и привяжите к протоколам</a>
+    </li>
+    <li>
+        <a href="#Define a capsule state machine">Задайте конечный автомат капсулы</a>
+    </li>
+    <li>
+        <a href="#Define states and substates">Задайте состояния и подстостояния</a>
+    </li>
+    <li>
+        <a href="#Define state transitions">Задайте переходы состояний</a>
+    </li>
+    <li>
+        <a href="#Define attributes on classes">Задайте атрибуты классов</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="Create a capsule role" name="Create a capsule role">Создайте роль капсулы</a>
+</h3>
+<p>
+    Капсулы создаются на логической панели браузера моделей.
+</p>
+<ol>
+    <li>
+        Выберите в панели инструментов инструмент <b>Роль капсулы</b>.
+    </li>
+    <li>
+        Поместите курсор в расположение вставки роли капсулы и щелкните левой кнопкой мыши.
+    </li>
+    <li>
+        Выберите в выпадающем списке капсулу, связанную с новой ролью капсулы.
+    </li>
+    <li>
+        Задайте роли капсулы подходящее имя.
+    </li>
+    <li>
+        Повторите описанные выше действия для всех создаваемых ролей.
+    </li>
+</ol>
+<h3>
+    2. <a id="Create ports and bind to protocols" name="Create ports and bind to protocols">Создайте порты и привяжите к
+    протоколам</a>
+</h3>
+<ol>
+    <li>
+        Выберите капсулу в браузере моделей или на диаграмме классов.
+    </li>
+    <li>
+        Разверните элементы капсулы в браузере или щелкните правой кнопкой мыши на капсуле на диаграмме классов чтобы
+        открыть диаграмму структуры капсулы.
+    </li>
+    <li>
+        С помощью инструмента <b>Порт</b> из панели инструментов поместите порт на диаграмму структуры капсулы. Порт можно
+        поместить на границу капсулы или внутрь большой прямоугольной области.
+    </li>
+    <li>
+        Задайте имя порта.
+    </li>
+    <li>
+        Выберите протокол из списка или создайте новый.
+    </li>
+    <li>
+        Щелкните правой кнопкой на порте и выберите окно Спецификация порта.
+    </li>
+    <li>
+        В диалоговом окне Спецификация порта измените протокол, укажите, подключен или нет порт и укажите, является ли порт
+        парным.
+    </li>
+</ol>
+<h3>
+    3. <a id="Define a capsule state machine" name="Define a capsule state machine">Задайте конечный автомат капсулы</a>
+</h3>
+<ol>
+    <li>
+        Выберите капсулу в браузере моделей или на диаграмме классов.
+    </li>
+    <li>
+        Разверните элементы капсулы в браузере или щелкните правой кнопкой мыши на капсуле на диаграмме классов чтобы
+        открыть диаграмму состояния капсулы.
+    </li>
+    <li>
+        В помощью панели инструментов <b>Диаграммы состояния</b> поместите состояния и переходы в диаграмму состояний.
+    </li>
+</ol>
+<h3>
+    4. <a id="Define states and substates" name="Define states and substates">Задайте состояния и подсостояния</a>
+</h3>
+<ol>
+    <li>
+        Найдите капсулу для которой обновляется поведение. Капсулы можно найти с помощью браузера моделей или на диаграмме
+        классов.
+    </li>
+    <li>
+        Щелкните правой кнопкой на капсуле чтобы открыть диаграмму состояний. Откроется диаграмма в редакторе диаграммы
+        состояний.
+    </li>
+    <li>
+        С помощью инструмента <b>Состояние</b> из панели инструментов переместите новое состояние на диаграмму. Проделайте
+        это для каждого создаваемого состояния.
+    </li>
+    <li>
+        Присвойте каждому состоянию соответствующее имя.
+    </li>
+    <li>
+        Дважды щелкните на состоянии, для которого создаются подстостояния. Откроется новая диаграмма состояний, в которой
+        можно будет добавить подсостояния.
+    </li>
+    <li>
+        С помощью вкладки внизу окна выберите уровень состояния, к которому нужно вернуться.
+    </li>
+</ol>
+<p>
+    <b>Примечание</b>: также можно добавить состояния через область Навигатор в редакторе диаграмм состояний.
+</p>
+<h3>
+    5. <a id="Define state transitions" name="Define state transitions">Задайте переходы состояний</a>
+</h3>
+<h4>
+    Добавьте исходный переход
+</h4>
+<ol>
+    <li>
+        Щелкните на исходной точке в диаграмме и переместите переход поверх целевого состояния. Исходная точка - это черный
+        кружок, отображаемый в верхнем левом углу диаграммы.
+    </li>
+    <li>
+        Задайте для перехода подходящее имя если не хотите использовать имя по умолчанию. Исходному переходу по умолчанию
+        присвоено имя Исходный. Можно изменить это имя, выбрав метку и введя новое имя. Исходный переход автоматически
+        вызывается при выполнении во время создания экземпляра капсулы. При создании капсулы запускается код действия,
+        связанного с исходным переходом.
+    </li>
+</ol>
+<h4>
+    Добавить переходы
+</h4>
+<ol>
+    <li>
+        Выберите инструмент перехода из панели инструментов и нарисуйте переход из исходного состояния в целевое.
+    </li>
+    <li>
+        Задайте для перехода подходящее имя или примите указанное по умолчанию.
+    </li>
+</ol>
+<h4>
+    Добавление кода к конечным автоматам
+</h4>
+<p>
+    Можно добавить код C, C++ или Java в виде действий для переходов, точек выбора и входа/выхода состояния на диаграммах
+    состояния капсул для выполнения при запуске. В создаваемый код для модели добавляется только код, добавленный в
+    диаграммы состояния капсул. Подробные действия протокола или диаграммы состояния класса данных не добавляются в
+    создаваемый код для этих классов.
+</p>
+<h4>
+    Добавьте триггеры
+</h4>
+<p>
+    Прежде, чем можно будет задать триггер для перехода, следует выбрать порт для получения триггера.
+</p>
+<ol>
+    <li>
+        Дважды щелкните на переходе чтобы открыть диалоговое окно Спецификации перехода. &nbsp;
+    </li>
+    <li>
+        Перейдите на вкладку <b>Триггер</b>.
+    </li>
+    <li>
+        Наведите курсор на область списка портов, щелкните правой кнопкой мыши и выберите в меню пункт <b>Вставить</b>.
+    </li>
+    <li>
+        В области Порт выберите порт для получения триггера.
+    </li>
+    <li>
+        В области Сигнал выберите сигнал порта, вызывающий событие триггера.
+    </li>
+    <li>
+        Нажмите кнопку <b>OK</b> чтобы закрыть окна.
+    </li>
+</ol>
+<h4>
+    Добавьте код к переходу
+</h4>
+<p>
+    Теперь, когда все исходные элементы находятся на своих местах (исходное состояние, исходный переход и порты) необходимо
+    добавить подробный код к исходному переходу, а также к переходу состояний нужно добавить состояния. Код будет выполнен
+    при запуске исходного перехода во время выполнения модели или при получении триггера при переходе из состояния в
+    состояние.
+</p>
+<ol>
+    <li>
+        Дважды щелкните на переходе чтобы открыть диалоговое окно Спецификации перехода.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Действия</b> для отображения окна с кодом.
+    </li>
+    <li>
+        Добавьте код, выполняемый при переходе.
+    </li>
+    <li>
+        Нажмите кнопку <b>OK</b> чтобы закрыть открытое диалоговое окно.
+    </li>
+</ol>
+<p>
+    <b>Примечание</b>: добавлять открывающую и закрывающую скобку '{`, `}' не нужно. Они будут добавлены автоматически
+    генератором кода.
+</p>
+<h3>
+    6. <a id="Define attributes on classes" name="Define attributes on classes">Задайте атрибуты классов</a>
+</h3>
+<ol>
+    <li>
+        Откройте диалоговое окно Спецификация капсулы дважды щелкнув на капсуле в браузере или выбрав капсулу на диаграмме
+        и указав <b>Открыть спецификацию</b> во всплывающем меню.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Атрибуты</b> в спецификации капсулы.
+    </li>
+    <li>
+        Наведя курсор на открытую область вкладки щелкните правой кнопкой и выберите пункт <b>Вставить</b>.
+    </li>
+    <li>
+        Измените имя с NewAttribute1 на что-то более осмысленное и нажмите клавишу ENTER.
+    </li>
+    <li>
+        Дважды щелкните на новом атрибуте чтобы открыть диалоговое окно Спецификации атрибута.
+    </li>
+    <li>
+        В окне Спецификация атрибута задайте тип атрибута и исходное значение.
+    </li>
+</ol><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

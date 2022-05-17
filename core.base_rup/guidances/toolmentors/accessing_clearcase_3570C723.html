@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Доступ к Rational ClearCase из Rational Rose</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="accessing_clearcase" name="uma.name">
+<meta content="Доступ к Rational ClearCase из Rational Rose" name="uma.presentationName">
+<meta content="Tool:rup_rose_classic:Rational Rose" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Rose" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{B67E317F-3C7C-4377-9F44-E9B38321C3F1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{B67E317F-3C7C-4377-9F44-E9B38321C3F1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{B67E317F-3C7C-4377-9F44-E9B38321C3F1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{06FB737B-5D74-4C3B-98F4-36153CFB2E34}", "{B67E317F-3C7C-4377-9F44-E9B38321C3F1}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{B67E317F-3C7C-4377-9F44-E9B38321C3F1}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Доступ к Rational ClearCase из Rational Rose</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В данной памятке по инструменту описан процесс применения встраиваемого модуля Rational Rose ClearCase для доступа к Rational ClearCase для управления изменениями в файлах модели Rose и их создаваемых файлах исходного кода.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rose_classic_20F2524D.html" guid="{06FB737B-5D74-4C3B-98F4-36153CFB2E34}">Rational Rose</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/make_changes_to_configuration_items_9F1D8304.html" guid="{A56F93A6-DAD6-4453-936D-D7AE4A34D45D}">Внесение изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/deliver_changes_8A8C78F4.html" guid="{B1FB20EA-CDF6-4F7B-BF65-22CFBF38CDC6}">Доставка изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/update_workspace_59C1448.html" guid="{D6FFB987-F032-4B65-9290-2A501FBB9FF8}">Обновите рабочую область</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/promote_baseline_623F1B0E.html" guid="{9139A97B-D458-490D-A9D5-CDBB86968475}">Продвижение контрольных версий</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/create_integration_workspace_791B9994.html" guid="{85EC2AE2-FEAF-4DAE-B633-A4D97A9136D2}">Создайте рабочие области интеграции</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/create_baseline_30FA138.html" guid="{F8256B31-5CE3-49C0-9DC2-ECB57DD48867}">Создание контрольных версий</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/create_development_workspace_25C973CF.html" guid="{99C2684A-E22A-4DF3-9A66-A204F67F868B}">Создание рабочей области разработки</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html" guid="{35272424-8A0A-4DDD-BA74-C91B80A8D046}">Создание структуры модели реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Встраиваемый модуль Rational Rose ClearCase обеспечивает интеграцию Rational ClearCase и Rational Rose. С помощью этого
+    встраиваемого модуля можно обращаться ко многим функциям ClearCase из Rational Rose, что облегчает и делает более
+    удобным настройку и обеспечение управления изменениями и исходным кодом для файлов моделей Rose и некоторыми типами
+    создаваемых Rose исходных файлов.
+</p>
+<p>
+    К файлам Rational Rose относятся файлы моделей (.mdl), файлы и управляемые блоки (.cat, .sub, .prc, .prp), а также
+    исходные файлы, создаваемые из классов и компонентов ANSI C++ или Rose C++.
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения о
+    файлах Rose приведены в разделе <b>Управляемые блоки</b> электронной справки Rational Rose.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Для успешной работы с Rational ClearCase из Rational Rose необходимо активировать встраиваемый модуль Rose ClearCase в
+    диспетчере встраиваемых модулей Rose. После этого вы сможете выполнить следующие задачи ClearCase из Rose:
+</p>
+<ol>
+    <li>
+        <a href="#Create and manage the Rose development environment">Создавать и управлять средой разработки
+        Rose</a>
+    </li>
+    <li>
+        <a href="#Add Rose files to ClearCase version control">Добавлять файлы Rational Rose к управлению
+        версиями Rational ClearCase</a>
+    </li>
+    <li>
+        <a href="#Check out and check in Rose files">Добавлять и изымать файлы Rational Rose</a>
+    </li>
+    <li>
+        <a href="#View ClearCase information about Rose files">Просматривать сведения Rational ClearCase о файлах
+        Rational Rose</a>
+    </li>
+    <li>
+        <a href="#Deliver Rose files to the integration stream">Доставлять файлы Rational Rose в поток
+        интеграции</a>
+    </li>
+    <li>
+        <a href="#Update a work area from the integration stream">Обновлять рабочую область из потока
+        интеграции</a>
+    </li>
+</ol>
+<h4>
+    1. <a id="Create and manage the Rose development environment" name="Create and manage the Rose development environment">Создавать и управлять средой разработки Rational Rose</a>
+</h4>
+<p>
+    С помощью меню Rational Rose ClearCase можно выполнять многие задачи, необходимые для создания и управления средой
+    разработки Rose из Rose:
+</p>
+<ul>
+    <li>
+        С помощью опции <b>Запустить обзор управления версиями</b> можно просмотреть сведения ClearCase и получить доступ к
+        командам среды ClearCase, включая команды для работы с VOB, панелями, ветвями, потоками и проектами.
+    </li>
+    <li>
+        С помощью опции <b>Обзор проектов</b> можно создавать и работать с проектами, панелями и потоками ClearCase.
+        Запустив Rational ClearCase Explorer, вы получите доступ ко в сем командам ClearCase, позволяющим задавать и
+        продвигать контрольные версии, доставлять и перебазировать потоки. Эта команда доступна только в ClearCase 4.0 и
+        последующих версиях.
+    </li>
+</ul>
+<h5>
+    <b>Дополнительные сведения</b>
+</h5>
+<p>
+    Обратитесь к памятке по инструменту Rational ClearCase:
+</p>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/setup_implementation_model_40C73358.html" guid="{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}">Настройка модели реализации с помощью Rational ClearCase</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/creating_baselines_EFAE6E4.html" guid="{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}">Создание контрольной версии с помощью Rational ClearCase</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/promoting_project_baselines_728AA53B.html" guid="{BCD4B9BC-9799-4B27-A010-4D82F2CAE82B}">Продвижение контрольных версий проекта с помощью Rational
+        ClearCase</a>
+    </li>
+</ul>
+<h4>
+    2. <a id="Add Rose files to ClearCase version control" name="Add Rose files to ClearCase version control">Добавить
+    файлы Rational Rose к управлению версиями Rational ClearCase</a>
+</h4>
+<p>
+    Для добавления файлов к управлению версиями Rational ClearCase из Rational Rose можно воспользоваться всплывающими меню
+    Rose или выбрать опцию <b>Добавить к управлению версиями</b> из подменю ClearCase в меню Инструменты Rose. В
+    зависимости от версии ClearCase, эта команда вызовет диалоговое окно Rose, связанное с ClearCase, или будет показано
+    фактическое окно ClearCase. Можно также удалить файлы из управления версиями ClearCase с помощью команд Rose ClearCase.
+    Однако при удалении файлов из управления версиями рекомендуется соблюдать крайнюю осторожность.
+</p>
+<h5>
+    <b>Дополнительные сведения</b>
+</h5>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения о
+    добавлении и удалении файлов из управления версиями Rational ClearCase обратитесь к электронной справке по Rational
+    Rose ClearCase и&nbsp; по памятке по инструменту Rational ClearCase <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/setup_implementation_model_40C73358.html" guid="{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}">Настройка модели реализации с помощью Rational ClearCase</a>.
+</p>
+<h4>
+    3. <a id="Check out and check in Rose files" name="Check out and check in Rose files">Добавление и изъятие файлов
+    Rational Rose&nbsp;</a>
+</h4>
+<p>
+    Для добавления и изъятия файлов из управления версиями Rational ClearCase из Rational Rose можно воспользоваться
+    всплывающими меню Rose или выбрать одну из следующих команд в подменю ClearCase меню Инструменты Rose:
+</p>
+<ul>
+    <li>
+        Добавить
+    </li>
+    <li>
+        Изъять
+    </li>
+    <li>
+        Отменить изъятие
+    </li>
+    <li>
+        Получить последний
+    </li>
+</ul>
+<p>
+    В зависимости от версии Rational ClearCase эти команды приведут к вызову диалоговых окон Rational Rose, связанных с
+    ClearCase, или отобразят фактические окна ClearCase.
+</p>
+<h5>
+    <b>Дополнительные сведения</b>
+</h5>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения о
+    добавлении и изъятии файлов Rational Rose из управления версиями Rational ClearCase обратитесь к электронной справке
+    Rose ClearCase и к памяткам по инструментам Rational ClearCase<a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/check_out_check_in_203CEEC2.html" guid="{3D4CC908-5E3C-48C5-99F6-D4137834D9A4}">Checking Out and Checking In Configuration Items</a> and <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/using_ucm_change_sets_with_clearcase_46E66835.html" guid="{C7D320FC-FD99-4842-9193-28565FC50FEB}">Using UCM Change Sets</a>.
+</p>
+<h4>
+    4. <a id="View ClearCase information about Rose files" name="View ClearCase information about Rose files">Просматривать
+    сведения Rational ClearCase о файлах Rational Rose</a>
+</h4>
+<p>
+    Встраиваемый модуль Rational Rose ClearCase содержит два набора команд, позволяющих получить сведения ClearCase о
+    файлах Rose.
+</p>
+<ul>
+    <li>
+        Команды <b>Список</b> отправляют запрос к Rational ClearCase и затем отображает запрошенные сведения в текстовом
+        формате. К командам Список относятся: Объект, Хронология, Изъятия, Структура версий и Все вышеуказанные.
+    </li>
+    <li>
+        Команды <b>Обзор</b> напрямую обращаются к диалоговым окнам Rational ClearCase, позволяя просматривать сведения о
+        файлах с помощью графических браузеров ClearCase. К командам обзора относятся Свойства, Хронология, Структура
+        версий и Каталог.
+    </li>
+</ul>
+<h5>
+    <b>Дополнительные сведения</b>
+</h5>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения о
+    просмотре информации Rational ClearCase в Rational Rose приведены в электронной справке встраиваемого модуля Rose
+    ClearCase. Подробное описание сведений файлов ClearCase приведены в справке по Rational ClearCase.
+</p>
+<h4>
+    5. <a id="Deliver Rose files to the integration stream" name="Deliver Rose files to the integration stream">Доставка
+    файлов Rational Rose в поток интеграции</a>&nbsp;
+</h4>
+<p>
+    Для доставки файлов Rational Rose из потока разработки в поток интеграции воспользуйтесь командой <b>Доставить
+    поток</b>, доступной через подменю Rational ClearCase меню Инструменты Rose. Эта команда доступна только в ClearCase
+    4.0 и последующих версиях.
+</p>
+<h5>
+    <b>Дополнительные сведения</b>
+</h5>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения о
+    доставке потока разработки в поток интеграции в Rational ClearCase приведены в памятке по инструменту Rational
+    ClearCase <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/delivering_your_work_4891CF09.html" guid="{DD0A5FB2-76C7-4B86-BBBD-FFF767EA07FA}">Доставка работы.</a>
+</p>
+<h4>
+    6.&nbsp;<a id="Update a work area from the integration stream" name="Update a work area from the integration stream">Обновление рабочей области из потока интеграции</a>
+</h4>
+<p>
+    Для обновления файлов Rational Rose в потоке разработки из последней контрольной версии потока интеграции
+    воспользуйтесь командой <b>Перебазировать поток</b>, доступной в подменю Rational ClearCase меню Инструменты Rose. Эта
+    команда доступна только в ClearCase 4.0 и последующих версиях.
+</p>
+<h5>
+    <b>Дополнительные сведения</b>
+</h5>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения о
+    перебазировании потока разработки с помощью Rational ClearCase приведены в памятке по инструменту Rational ClearCase <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/updating_your_project_workarea_DE9AB16A.html" guid="{12294137-8815-4CC8-B79E-09BE5046C6D8}">Обновление рабочей области.</a>
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Дескриптор задачи: Анализ поведения среды выполнения</title>
+<meta content="TaskDescriptor" name="uma.type">
+<meta content="analyze_runtime_behavior" name="uma.name">
+<meta content="Анализ поведения среды выполнения" name="uma.presentationName">
+<meta content="_GJ1iIEofEdqrjq4i3fchvA" name="uma.guid">
+<meta content="TaskDescriptor" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ActivityTreeTable.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ProcessElementPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/processElementData.js"></script><script language="JavaScript" type="text/javascript">
+					var defaultQueryStr = '?proc={F2AD342D-0F3B-4E19-A351-75ECDCB806F5}&path={F2AD342D-0F3B-4E19-A351-75ECDCB806F5},{4DC6F53E-1FE1-44EE-812B-003D3BD1ACEA},_GJ1iIEofEdqrjq4i3fchvA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, true, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_GJ1iIEofEdqrjq4i3fchvA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Дескриптор задачи: Анализ поведения среды выполнения</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/taskdes_lg_dgm32.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Эта задача описывает способ анализа поведения компонента в процессе его выполнения для определения возможных усовершенствований.</td>
+</tr>
+<tr>
+<td>На основе задачи метода: <a href="./../../core.base_rup/tasks/analyze_runtime_behavior_B2DD7652.html" guid="{5131A5BB-5B95-499E-A68B-788A2F0957C3}">Анализ поведения среды выполнения</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Главный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_implementer_F0B4A62.html" guid="_CRsnoRi2Edq_uI8xTPML6g">Реализатор</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительно:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Помощь:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_implementation_element_F2E45E16.html" guid="_Ok328b9eEdqBwpaAk4N49g">Элемент реализации</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_implementation_element_32482278.html" guid="_OzjMIb9eEdqBwpaAk4N49g">Элемент реализации</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_log_8423E88.html" guid="_CRsnoxi2Edq_uI8xTPML6g">Протокол тестирования</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Внешний:
+								</span>
+<ul>
+<li>Нет</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="3" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_results_A6735CFE.html" guid="_GJ7owEofEdqrjq4i3fchvA">Результаты тестирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableCell">
+<div class="stepHeading"> Определить требуемый сценарий выполнения </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DetermineScenario" name="DetermineScenario"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      bordercolor="#808080" cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%"     bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%" colspan="2">
+                    <b>Цель:&#160;</b>
+                </td>
+                <td width="95%" colspan="2">
+                    Определить путь выполнения, который будет имитировать желаемое поведение
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Если наблюдение и анализ поведения при выполнении программного обеспечения приводит к его пониманию, вам будет
+    необходимо рассмотреть возможные пути выполнения, в которых важно исследовать приложение, и в которых легче всего
+    получить понимание его поведения.
+</p>
+<p>
+    В общем случае, наиболее полезные для исследования сценарии отражают все или часть тех путей, которые обычно
+    применяются пользователем. Поэтому, полезно по возможности определить сценарии, проконсультировавшись со специалистом в
+    данной предметной области, как с представительным пользователем разрабатываемого программного обеспечения.
+</p>
+<p>
+    Варианты использования предлагают ценный набор артефактов, из которого могут быть определены и исследованы полезные
+    сценарии. Как разработчик вы скорее всего начнете с тех реализаций вариантов использования, которые вам наиболее
+    знакомы. При отсутствии реализаций вариантов использования определите все доступные сценарии вариантов использования,
+    имеющие текстовое описание пути, по которому будет проходить пользователь через различные потоки событий в этом
+    варианте использования. Наконец, проанализировав поток событий варианта использования, можно получить информацию для
+    определения возможных сценариев. При выборе последнего подхода полезно проконсультироваться с представителем субъекта
+    варианта использования или другим экспертом предметной области.
+</p>
+<p>
+    Можно также проконсультироваться с тестировщиками в процессе определения полезных сценариев для анализа выполнения.
+    Тестировщики часто имеют понимание и опыт в предметной области, так как вовлекаются в нее в процессе тестирования,
+    становясь псевдо-экспертами. Во многих случаях стимулы для наблюдения поведения программного обеспечения во время
+    выполнения возникают по ходу самого тестирования.
+</p>
+<p>
+    Если эта задача выполняется из-за обнаруженного дефекта, то главное внимание будет уделено тому, как воспроизвести его
+    в управляемой среде. На основании информации, внесенной в протокол во время возникновения проблемы, нужно отметить ряд
+    тестовых сценариев, которые могли с большой вероятностью вызвать появление дефекта. Вы можете подстроить некоторые
+    тесты или написать новые, но следует помнить, что воспроизведение дефекта - это самый важный момент, и для большинства
+    трудных случаев потребуется больше времени для стабилизации воспроизведения дефекта, чем для его устранения.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Подготовить компонент реализации для наблюдения выполнения </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="PrepareComponent" name="PrepareComponent"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      bordercolor="#808080" cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%"     bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%" colspan="2">
+                    <b>Цель:</b>
+                </td>
+                <td width="95%" colspan="2">
+                    Убедиться в том, что компонент готов к выполнению
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Для получения точных результатов выполнения компонента, нужно уделить внимание его подготовке, чтобы не возникли
+    неправильные результаты, вследствие ошибок в реализации, компиляции или компоновки.
+</p>
+<p>
+    Часто бывает необходимо использовать <i><a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/termdefinitions/stub_A0899BD4.html" target="_blank" guid="_yWtT6dnmEdmO6L4XMImrsA">компоненты-заглушки</a></i>, чтобы наблюдение выполнения могло быть завершено в
+    приемлемые сроки, или в тех ситуациях, когда компонент зависит от других еще не реализованных компонентов.
+</p>
+<p>
+    Необходимо также подготовить структуру или средства поддержки, которые требуются для выполнения компонента. В некоторых
+    случаях это означает создание драйвера или специального кода для поддержки выполнения компонента, а в других случаях
+    это означает оборудование компонента так, чтобы внешние средства поддержки могли наблюдать его поведение и, возможно,
+    управлять им.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Подготовить среду к выполнению </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="PrepareEnvironment" name="PrepareEnvironment"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolor="#808080" bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td colspan="2" width="5%">
+                <b>Цель:</b>
+            </td>
+            <td colspan="2" width="95%">
+                Убедиться в том, что предварительная установка целевой среды выполнена удовлетворительно.
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Важно продумать все требования и ограничения целевой среды, в которой будет проходить анализ выполнения. В некоторых
+    случаях необходимо имитировать одну или несколько целевых сред развертывания, в которых в конечном счете должен
+    выполняться компонент. В других случаях будет достаточно произвести наблюдения поведения в системе разработчика.
+</p>
+<p>
+    В любом случае важно установить целевую среду для наблюдения поведения удовлетворительно, чтобы подготовка не прошла
+    напрасно из-за включения "загрязнений", которые могут сделать последующий анализ неверным.
+</p>
+<p>
+    Нужно также рассмотреть средства, которые генерируют ограничения среды или исключительные условия, которые трудно
+    воспроизвести другим образом. Такие средства неоценимы для обнаружения неполадок или отклонений, которые возникают в
+    поведении при этих условиях.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Выполнить компонент и произвести наблюдение поведения </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="ObserveBehavior" name="ObserveBehavior"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolor="#808080" bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td colspan="2" width="5%">
+                <b>Цель:</b>
+            </td>
+            <td colspan="2" width="95%">
+                Произвести наблюдение поведения компонента.
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Подготовив как компонент, так и среду для его наблюдения, вы можете теперь начать выполнение компонента с помощью
+    выбранного сценария. В зависимости от применяемых приемов и инструментов, этот шаг может выполняться автоматически, или
+    он может (или даже требует) сопровождаться вниманием по ходу выполнения сценария.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Просмотреть данные наблюдения поведения и выделить начальные сведения </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="ReviewObservations" name="ReviewObservations"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolor="#808080" bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td colspan="2" width="5%">
+                <b>Цель:</b>
+            </td>
+            <td colspan="2" width="95%">
+                Определить неполадки и отклонения в поведении компонентов
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Или после каждого шага, или по завершению всего сценария наблюдения, ищите неполадки и отклонения от ожидаемого
+    поведения. Отмечайте любые свои впечатления, которые по вашему мнению могут иметь отношение к неверному поведению.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Проанализировать полученные данные и понять корневые причины </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="AnalyzeFindings" name="AnalyzeFindings"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolor="#808080" bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td colspan="2" width="5%">
+                <b>Цель:</b>
+            </td>
+            <td colspan="2" width="95%">
+                Понять главную причину каждой неполадки
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    С помощью полученных данных начните исследовать лежащие в основе ошибки и корневые причины каждой неполадки.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определить дальнейшие действия </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="CommunicateActions" name="CommunicateActions"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolor="#808080" bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td colspan="2" width="5%">
+                <b>Цель:</b>
+            </td>
+            <td colspan="2" width="95%">
+                Предложить дальнейшие действия по исследованию и исправлению
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    После того как вы просмотрите все полученные данные, у вас появится ряд мыслей и предположений о требуемом дальнейшем
+    исследовании, а также о возможных действиях по исправлению. Если вы не совершите сразу этих действий самостоятельно, то
+    запишите свои предложения в подходящей форме и представьте их тем сотрудникам, которые могут их утвердить и принять
+    соответствующие действия.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Оценка результатов </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="EvaluateResults" name="EvaluateResults"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      bordercolor="#808080" cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%"     bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%" colspan="2">
+                    <b>Цель:</b>
+                </td>
+                <td width="95%" colspan="2">
+                    Убедиться в том, что задача правильно выполнена, и что получены приемлемые рабочие продукты.
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Теперь, когда работа выполнена, стоит проверить, имела ли она достаточную пользу. Вы должны оценить, имела ли ваша
+    работа подходящее качество, достаточно ли она завершена для того, чтобы быть полезной тем членам коллектива, которые
+    впоследствии будут использовать ее в своей работе. Там, где это возможно, применяйте справочные таблицы,
+    предоставленные в RUP для проверки качества и полноты работы.
+</p>
+<p>
+    Позвольте тем, кто будет впоследствии использовать вашу работу, участвовать в просмотре промежуточных вариантов.
+    Делайте это, пока еще есть достаточно времени для удовлетворения их пожеланий. Необходимо также оценить свою работу по
+    отношению к ключевым входным рабочим продуктам, чтобы убедиться в том, что они точно и в достаточной мере представлены.
+    Может быть полезным, чтобы автор входного рабочего продукта просмотрел вашу работу.
+</p>
+<p>
+    Помните, что RUP - это итерационный процесс и во многих случаях рабочие продукты развиваются с течением времени.
+    Поэтому, не всегда необходимо (а часто даже приводит к обратным результатам) полностью формировать рабочий продукт,
+    который будет использоваться только частично или не будет использоваться совсем в работе, которая непосредственно
+    следует за этой. Причина этого состоит в том, что существует высокая вероятность изменения ситуации вокруг рабочего
+    продукта до его использования, что приводит к потерянным напрасно усилиям.
+</p>
+<p>
+    Также избегайте ошибки тратить слишком много времени на представление в ущерб содержимому. В средах тех проектов, в
+    которых представление имеет важность и экономическое значение при их сдаче, можно использовать административный ресурс
+    ил младший персонал для выполнения задач представления.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Свойства</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Несколько вхождений" abbr="Несколько вхождений">Несколько вхождений</th><td align="left" class="sectionTableCell" headers="property_Несколько вхождений"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Управляется событиями" abbr="Управляется событиями">Управляется событиями</th><td align="left" class="sectionTableCell" headers="property_Управляется событиями"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Выполняющийся" abbr="Выполняющийся">Выполняющийся</th><td align="left" class="sectionTableCell" headers="property_Выполняющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Необязательный" abbr="Необязательный">Необязательный</th><td align="left" class="sectionTableCell" headers="property_Необязательный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Запланированный" abbr="Запланированный">Запланированный</th><td align="left" class="sectionTableCell" headers="property_Запланированный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Повторяющийся" abbr="Повторяющийся">Повторяющийся</th><td align="left" class="sectionTableCell" headers="property_Повторяющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

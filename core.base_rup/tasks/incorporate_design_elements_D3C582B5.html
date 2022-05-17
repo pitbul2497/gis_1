@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Задача: Объединение существующих структурных элементов</title>
+<meta content="Task" name="uma.type">
+<meta content="incorporate_design_elements" name="uma.name">
+<meta content="Объединение существующих структурных элементов" name="uma.presentationName">
+<meta content="Discipline:rup_analysis_design_discipline:Анализ и проектирование" name="uma.category">
+<meta name="element_type" content="activity">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_MC6wMN7FEdm8G6yT7-Wdqw", path: ["_MC6wMN7FEdm8G6yT7-Wdqw", "_ydt62NnmEdmO6L4XMImrsA", "{5C647173-4E32-4594-96A9-2548B47722FA}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_ydt62NnmEdmO6L4XMImrsA", "{5C647173-4E32-4594-96A9-2548B47722FA}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_IY0NkAISEdqTna4sZVFRow", "_ydt62NnmEdmO6L4XMImrsA", "{5C647173-4E32-4594-96A9-2548B47722FA}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="{5C647173-4E32-4594-96A9-2548B47722FA}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Задача: Объединение существующих структурных элементов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/task.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой задаче описывается развитие и уточнение модели проекта.</td>
+</tr>
+<tr>
+<td>Дисциплины: <a href="./../../core.base_rup/disciplines/rup_analysis_design_discipline_29760231.html" guid="_ydt62NnmEdmO6L4XMImrsA">Анализ и проектирование</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<ul>
+    <li>
+        <a id="XE_class__refining_analysis_classes" name="XE_class__refining_analysis_classes"></a>Для анализа
+        взаимодействий классов анализа с целью обнаружения интерфейсов, классов проектирования и подсистем проектирования
+    </li>
+    <li>
+        Для уточнения архитектуры, где возможно, применение повторного включения.
+    </li>
+    <li>
+        Для определения стандартных решений для часто обнаруживаемых неполадок проекта
+    </li>
+    <li>
+        Для включения значимых с точки зрения архитектуры элементов модели проекта в раздел логического представления в
+        документе архитектуры программного обеспечения.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Основной исполнитель:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_software_architect_DB0BF177.html" guid="{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}">Разработчик архитектуры</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительные исполнители:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Документ архитектуры программного обеспечения</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html" guid="{E5501201-7EE6-4243-AE91-73880FF76FC1}">Рекомендации по проекту</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Документ архитектуры программного обеспечения</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_interface_9816B54F.html" guid="{C6938487-1DAA-4F6A-B3BC-CB99165F0680}">Интерфейс</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html" guid="{952A9CE9-D5A3-43AC-980D-0B9298F3872E}">Проектирование класса</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_package_8376BC8E.html" guid="{80CC5437-F481-487B-A69B-957D9D236D8D}">Проектирование пакета</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html" guid="{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}">Проектирование подсистемы</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading"> Определение возможностей многократного использования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="XE_reuse__identify_reuse_opportunities" name="XE_reuse__identify_reuse_opportunities"></a><a id="Identify Reuse Opportunities" name="Identify Reuse Opportunities"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Назначение</b>
+            </td>
+            <td width="95%">
+                Для определения возможности многократного применения существующих подсистем и/или компонентов на основании
+                их интерфейсов.&nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    <b>Выполните поиск существующих подсистем или компонентов с похожими интерфейсами.</b> Сравните обнаруженные интерфейсы
+    с интерфейсами, предоставляемыми существующими подсистемами или компонентами. Обычно не бывает точного совпадения,
+    однако можно обнаружить приблизительное совпадение. Сначала выполняйте поиск похожих алгоритмов и возвращаемых
+    значений, а затем рассматривайте параметры.
+</p>
+<p>
+    <b>Измените найденные интерфейсы для увеличения совпадения</b>. Может существовать возможность внести небольшие
+    изменения в интерфейс, которые увеличат его соответствие существующему интерфейсу. В число простых изменений входит
+    перестройка или добавление параметров и последующий факторинг интерфейса путем его разбиения на несколько интерфейсов,
+    один или несколько из которых соответствуют интерфейсу существующего компонента, с "новыми" алгоритмами, размещенными в
+    отдельном интерфейсе.
+</p>
+<p>
+    <b>Замените найденные интерфейсы существующими интерфейсами там, где обнаружено точное совпадение.</b> После упрощения
+    и факторинга, если имеется точное совпадение с существующим интерфейсом, отбросьте найденный интерфейс и просто
+    используйте существующий.
+</p>
+<p>
+    <b>Отобразите подсистему-кандидата на существующие компоненты.</b> Выполните поиск существующих компонентов и набора
+    подсистем-кандидатов. Разложите подсистемы таким образом, чтобы там, где возможно, применялись существующие компоненты
+    для удовлетворения требуемого алгоритма работы системы. Там где подсистема-кандидат может быть реализована существующим
+    компонентом, создайте трассируемость между подсистемой проектирования и компонентом в модели реализации.
+</p>
+<p>
+    При отображении подсистем на компоненты многократного применения примите во внимание механизмы проектирования,
+    связанные с подсистемой; требования к производительности или защите могут сделать компонент непригодным для
+    многократного применения, несмотря на хорошее совпадение сигнатур операций.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Обратное проектирование компонентов и баз данных </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="XE_database__reverse_engineering" name="XE_database__reverse_engineering"></a><a id="XE_component__reverse_engineer" name="XE_component__reverse_engineer"></a><a id="XE_code__reverse_engineering" name="XE_code__reverse_engineering"></a><a id="Reverse Engineer Components and Databases" name="Reverse Engineer Components and Databases"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Назначение</b>
+            </td>
+            <td width="95%">
+                Для включения элементов модели с возможностью многократного применения из других проектов, внешних
+                источников или предыдущих итераций.&nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Существующий код и определения баз данных можно 'извлечь' из предыдущих проектов или итераций и сделать их доступными
+    для текущего проекта/итерации. Используя потенциальные возможности многократного применения в качестве фильтра, работа,
+    выполняемая методом обратного проектирования, может быть сосредоточена на тех компонентах, которые можно повторно
+    применить в текущей итерации.
+</p>
+<h4>
+    Обратное проектирование компонентов
+</h4>
+<p>
+    В организациях, создающих похожие системы, часто существует набор стандартных компонентов, которые обеспечивают
+    архитектурные механизмы, необходимые для новой системы. Также могут существовать компоненты, доступные на рынке,
+    которые также предоставляют эти архитектурные механизмы. Следует изучить существующие компоненты, для того чтобы
+    определить их пригодность и совместимость в рамках архитектуры программного обеспечения.
+</p>
+<p>
+    Существующие компоненты, либо разработанные в предыдущих итерациях и еще не включенные в модель проектирования, либо
+    приобретенные компоненты, следует подвергнуть обратному анализу и включить в модель проектирования. В модели
+    проектирования такие компоненты обычно представлены в виде подсистемы с одним или несколькими интерфейсами.
+</p>
+<h4>
+    Обратное проектирование баз данных
+</h4>
+<p>
+    Базы данных и содержащиеся в них данные представляют собой один из наиболее важных источников ресурсов многократного
+    применения. Для повторного применения неявных определений классов, включенных в существующие базы данных, определите,
+    какая информация, применяемая приложением, уже находится в существующих базах данных. Выполните обратный анализ набора
+    классов для представление структур баз данных, содержащих эту информацию. Одновременно создайте отображение между
+    представлением классов приложения и структурами, применяемыми в базе данных. Дополнительная информация по обратному
+    анализу баз данных приведена в разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/guidelines/reverse-engineering_relational_databases_902803B8.html" guid="1.338740134620651E-305">Рекомендации по рабочему продукту: Обратный анализ реляционных баз данных</a>.
+    Дополнительная информация по отображению между классами и таблицами в реляционной базе данных приведена в разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/guidelines/data_model_80FB2539.html" guid="3.4196799396281445E-306">Руководство по рабочему продукту: Модель данных</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Обновите организацию модели проектирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="XE_design_subsystem__defining_low-level_organization_of" name="XE_design_subsystem__defining_low-level_organization_of"></a><a id="Update the Organization of the Design Model" name="Update the Organization of the Design Model"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Назначение</b>
+            </td>
+            <td width="95%">
+                Для определения новых элементов модели в организации модели проектирования.<br />
+                 Для изменения баланса структуры модели проектирования, если необходимо.&nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    После добавления новых элементов в модель проектирования часто требуется повторная создание пакетов элементов.
+    Повторное создание пакетов имеет несколько целей: уменьшается связность между пакетами и улучшается сцепление в
+    пределах пакетов в модели проектирования. Основной целью является обеспечение возможности проектирования и разработки
+    различных пакетов (и подсистем) независимо друг от друга различными сотрудниками или группами. В то время как полной
+    независимости достичь, вероятно, невозможно, освобождение связей между пакетами облегчает разработку крупных или
+    сложных систем.
+</p>
+<p>
+    'Плоская' структура модели (в которой все пакеты и подсистемы находятся на одном и том же концептуальном уровне
+    системы) подходит для небольшой системы; для более крупных систем требуется дополнительный инструмент выделения
+    структуры, который называется 'разделение на уровни' (см. раздел <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/guidelines/layering_FCCD1BDA.html" guid="4.458864982057142E-306">Руководство по рабочему
+    продукту: Разделение на уровни</a>). Правила разделения на уровни определяют ограничения на разрешенные отношения между
+    определенными типами пакетов. Эти правила распознают, что определенные зависимости не должны существовать:
+    функциональность приложения не должна напрямую зависеть от определенной операционной системы или оконных служб системы
+    - должен существовать промежуточный уровень, содержащий логическую операционную систему и службы окон, который отделяет
+    функциональность приложения от изменений в службах реализации низкого уровня. Разделение на уровни предоставляет способ
+    снижения воздействия изменений: устанавливая правила, которые ограничивают зависимости между пакетами и подсистемами,
+    снижая степень связности между пакетами и подсистемами, при этом система становится более устойчивой. Это допускает
+    внесение изменений.
+</p>
+<p>
+    После добавления новых элементов в систему существующие пакеты могут стать слишком крупными, для того чтобы ими могла
+    управлять одна группа: такой пакет следует разделить на несколько пакетов, имеющих сильную связь внутри пакетов и со
+    слабой связностью между пакетами. Это может быть трудной задачей - может оказаться сложным поместить некоторые элементы
+    в один определенный пакет, поскольку они используются элементами в обоих пакетах. Существует два возможных решения:
+    разделить элемент на несколько объектов, по одному в каждом пакете (это возможно, если элемент имеет несколько
+    'персоналий', или набор непересекающихся ответственностей), либо переместить элемент в пакет в нижележащем уровне,
+    тогда элементы вышележащего уровня могут зависеть от него в одинаковой степени.
+</p>
+<p>
+    По мере увеличения сложности системы потребуется больше уровней, для того чтобы обеспечить управляемую и осознаваемую
+    структуру. Однако, наличие более 7-10 уровней является необычным даже в самых больших системах, поскольку с увеличением
+    числа уровней возрастает сложность и снижается возможность осознания системы.
+</p>
+<p>
+    Ниже приведен пример разделения на уровни, включая уровни промежуточного ПО и программного обеспечения системы:
+</p>
+<p align="center">
+    <img src="./../../core.base_rup/tasks/resources/layers.gif" alt="Диаграмма уровней приложения на Java / Web-приложения" border="0" width="496"     height="554" />
+</p>
+<p class="picturetext">
+    Пример разделения пакетов на уровни для приложения на Java/Web-приложения. Примечание: зависимости от пакета TCP/IP
+    обычно не моделируются явным образом, поскольку применения служб TCP/IP встроено в Java VM, java.rmi и Web-браузер.
+    Здесь они изображены только в качестве иллюстрации.
+</p>
+<p>
+    Присвоение ответственностей отдельным сотрудникам и группам для подсистем и уровней. За каждый пакет или подсистему
+    должен отвечать отдельный сотрудник (если их область мала) либо группа (в случае широкой области).
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Обновите логическое представление </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="XE_logical_view__including_classes_in" name="XE_logical_view__including_classes_in"></a><a id="Update the Logical View" name="Update the Logical View"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Назначение</b>
+            </td>
+            <td width="95%">
+                Для того чтобы гарантировать современность <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Рабочего продукта: Документ архитектуры программного
+                обеспечения (Логическое представление)</a>.&nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Если проектирование классов, пакетов и подсистем (элементов модели) является важным с точки зрения архитектуры, то их
+    следует включить в раздел Логическое представление <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Рабочего продукта: Документ архитектуры программного обеспечения</a>. Это
+    позволит гарантировать, что о новых архитектурно значимых элементы модели будет сообщено остальным членам коллектива
+    проекта.
+</p>
+<p>
+    Кроме этого, роль архитектора программного обеспечения работает совместно с ролью инженера процесса для предоставления
+    подробных рекомендаций для проектировщиков и ответственных за реализацию по вопросам применения новых включенных
+    элементов проектирования.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Руководства по инструментам</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/reverse_engineer_code_D4050BB0.html" guid="{D674D96E-1A37-48D1-B120-6145C9802E3E}">Обратный инжиниринг кода с помощью Rational Rose</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/incorporating_existing_design_elements_EF175FD6.html" guid="{10AF28B5-15F1-4F58-BBB3-14EB49123FBC}">Объединение элементов разработки с помощью Rational XDE Developer</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

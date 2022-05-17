@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Задача: Настройка среды управления конфигурацией (CM)</title>
+<meta content="Task" name="uma.type">
+<meta content="setup_cm_environment" name="uma.name">
+<meta content="Настройка среды управления конфигурацией (CM)" name="uma.presentationName">
+<meta content="Discipline:rup_config_and_change_manage_discipline:Управление конфигурацией и изменениями" name="uma.category">
+<meta name="element_type" content="activity">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_MC6wMN7FEdm8G6yT7-Wdqw", path: ["_MC6wMN7FEdm8G6yT7-Wdqw", "_yeA1xNnmEdmO6L4XMImrsA", "{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_yeA1xNnmEdmO6L4XMImrsA", "{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_nB0hwAITEdqu-LkyOdB8SQ", "_yeA1xNnmEdmO6L4XMImrsA", "{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Задача: Настройка среды управления конфигурацией (CM)</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/task.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой задаче рассмотрен процесс создания среды для разработки и компоновки продукта.</td>
+</tr>
+<tr>
+<td>Дисциплины: <a href="./../../core.base_rup/disciplines/rup_config_and_change_manage_discipline_CC612E7A.html" guid="_yeA1xNnmEdmO6L4XMImrsA">Управление конфигурацией и изменениями</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_configuration_management__environment_setup" name="XE_configuration_management__environment_setup"></a> 
+<p>
+    Цель этой задачи - создание среды для разработки и компоновки продукта. Этот процесс состоит из двух этапов: настройки
+    аппаратной среды и создания среды разработки.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Основной исполнитель:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_configuration_manager_9B799A15.html" guid="{8939FDEF-EC44-4009-9F16-FAD4CFAA0B2D}">Администратор конфигурации</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительные исполнители:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_project_plan_D89CA030.html" guid="{D77D6716-B167-4643-A4B6-6F76C7769A80}">План разработки программного обеспечения</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_development_infrastructure_21BD206E.html" guid="{A40A3A6E-A090-46B4-B2FE-5F1AC36F010B}">Инфраструктура разработки</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_implementation_model_5858DB65.html" guid="{157E9B67-C619-410D-A927-F2CD217BF8FE}">Модель реализации</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_iteration_plan_623AFF7F.html" guid="{97269E0F-CDF3-448D-A732-DF39D099BDDD}">План итерации</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_cm_plan_EDA7C715.html" guid="{71138CAE-59CA-41DE-8DD1-BE11799566FD}">План управления конфигурацией</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_development_process_A6449790.html" guid="{345D1811-317B-47EC-AC9D-10E1072A7D68}">Процесс разработки</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_project_repository_E3932821.html" guid="{A99B1686-7BD7-43B3-9A7F-7DB18A10F4B2}">Хранилище проектов</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Настройка среды управления конфигурацией (CM) предусматривает выделение аппаратных ресурсов (серверов и дисковой
+    памяти), а также установку инструментов управления конфигурацией.
+</p>
+<p>
+    Настройка среды разработки предусматривает создание хранилищ, создание структуры каталогов продукта и импорт
+    существующих файлов. Начальная среда выполняет роль контрольной версии для дальнейшей разработки.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading"> Настройка аппаратной среды управления конфигурацией</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Plan the CM Environment" name="Plan the CM Environment"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Выделение аппаратных ресурсов, необходимых для установки и настройки инструмента управления конфигурацией
+                (CM). &nbsp;
+            </td>
+        </tr>
+    </table>
+</div>
+<p>
+    Совместно с системным администратором координатор конфигурации выделяет аппаратные ресурсы и устанавливает необходимое
+    программное обеспечение.
+</p>
+<p>
+    Ниже перечислены (в порядке убывания приоритета) ключевые показатели системы, в которой выполняется сервер, управляющий
+    доступом к данным из хранилища проекта.
+</p>
+<ul>
+    <li>
+        Требования к памяти
+    </li>
+    <li>
+        Требования к операциям дискового ввода-вывода
+    </li>
+    <li>
+        Пропускная способность сети
+    </li>
+    <li>
+        Дисковая память хранилища проекта
+    </li>
+</ul>
+<p>
+    Дополнительная информация приведена в разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_project_repository_E3932821.html" guid="{A99B1686-7BD7-43B3-9A7F-7DB18A10F4B2}">Рабочий продукт: Хранилище проекта</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Связывание архитектуры с хранилищем</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Map the Architecture to the Repository" name="Map the Architecture to the Repository"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%">
+                    <b>Цель:</b>&nbsp;
+                </td>
+                <td width="95%">
+                    Логическая организация структуры каталогов продукта предусматривает заменители для всех связанных
+                    рабочих продуктов проекта. &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    Структура каталогов продукта выполняет роль заменителя для всех рабочих продуктов. Форма каталога, выполняющего роль
+    хранилища проекта, зависит от общего числа подсистем в системе, а также от числа элементов в каждой подсистемы.
+</p>
+<p>
+    Логическая структура продукта появляется после выполнения следующих задач: <a class="PresentationName" href="./../../core.base_rup/disciplines/rup_analysis_design_discipline_29760231.html" guid="_ydt62NnmEdmO6L4XMImrsA">Анализ и
+    проектирование</a>. Начальное хранилище продукта создается для планирования рабочих продуктов и управления ими.
+    Рекомендации по созданию начальной структуры приведены в разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/concepts/product_directory_structure_293B0B00.html" guid="3.654568680407835E-305">Концепция: Структура каталогов продукта</a>.
+</p>
+<p>
+    Оставшаяся часть структуры разрабатывается по мере принятия решений относительно проектирования и уточнения способов
+    упаковки различных элементов проектирования для реализации.
+</p>
+<p>
+    Создайте заменитель для каждой подсистемы, подлежащей реализации в структуре каталогов. Оцените требования к памяти,
+    предъявляемые разрабатываемыми рабочими продуктами, и убедитесь в наличии достаточного объема физической памяти. В
+    целях эффективного управления конфигурацией требуется обеспечить высокую степень взаимодействия между внутренними
+    элементами структуры каталогов продукта. Для подсистем необходимо четко определить интерфейсы взаимодействия с другими
+    компонентами системы. Кроме того, подсистемы должны допускать независимую компоновку и тестирование. Ключевая идея -
+    обеспечить независимую и параллельную разработку систем разными группами. Такой подход позволяет значительно ускорить
+    разработку, уделяя внимание возможностям повторного использования и простоте обслуживания системы.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Создание начального набора элементов с версиями</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Create Initial Set of Versioned Elements" name="Create Initial Set of Versioned Elements"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Создание начальной контрольной версии рабочих продуктов проекта. &nbsp;
+            </td>
+        </tr>
+    </table>
+</div>
+<p>
+    Даже в рамках проектов, не требующих управления конфигурацией, существует понятие структуры каталогов и фактического
+    набора материалов, применяемых проектом на постоянной основе. Основная идея - экспорт/импорт существующих материалов в
+    структуру, созданную для разработки продукта.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определение уровней продвижения контрольной версии</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Define Baseline Promotion Levels" name="Define Baseline Promotion Levels"></a> 
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="5%">
+                    <b>Цель:</b>&nbsp;
+                </td>
+                <td width="95%">
+                    Применение общего набора "официальных" уровней продвижения для всех элементов, расположенных в
+                    хранилище проекта. &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    Контрольная версия - это отдельная версия хранилища проекта. Качество или состояние контрольной версии определяется
+    уровнем ее продвижения. Все элементы, расположенные в хранилище проекта, применяют общий набор "официальных" уровней
+    продвижения. Рекомендуется согласовать их определения с другими проектами. Дополнительная информация приведена в
+    разделе <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/concepts/baselining_88B2C018.html" guid="4.4540149642001026E-305">Концепция: Контрольные версии</a>.<br />
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Руководства по инструментам</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/archiving_requirements_A3B2A33E.html" guid="{1AA3B210-5979-4E05-8A08-A436B38997B0}">Архивирование требований с помощью Rational RequisitePro</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/check_out_check_in_203CEEC2.html" guid="{3D4CC908-5E3C-48C5-99F6-D4137834D9A4}">Добавление и удаление элементов конфигурации с помощью Rational ClearCase</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/setup_implementation_model_40C73358.html" guid="{FEEAA9AD-2CEE-41C6-BD6C-BBF14CA205A5}">Настройка модели реализации с помощью Rational ClearCase</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/setting_up_impl_model_with_ucm_C9DD9D5A.html" guid="{10964F4E-39B2-4D34-9A75-3B6360B47C2B}">Настройка модели реализации с помощью UCM Using Rational ClearCase</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/linking_cm_and_crm_FD3C62D6.html" guid="{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}">Привязка управления конфигурацией и запросами изменений с помощью Rational ClearQuest и Rational ClearCase</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/baseline_requirements_C387B42A.html" guid="{CC4BC013-6917-468D-A3DC-0E696FB9DB7A}">Создание контрольной версии проекта Rational RequisitePro</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/creating_multiple_sites_rup_clearcase_env_92CE96A6.html" guid="{9EE4A89E-5DB3-433D-A9C9-1798D1BC7E61}">Создание нескольких сайтов с помощью Rational ClearCase</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/creating_multiple_sites_57D10B26.html" guid="{B1604683-0DD2-4DF6-80D6-F566B7E4741C}">Создание нескольких сайтов с помощью Rational ClearQuest</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

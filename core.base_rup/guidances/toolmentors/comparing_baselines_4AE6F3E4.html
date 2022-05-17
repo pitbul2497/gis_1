@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Сравнение контрольных версий с помощью Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="comparing_baselines" name="uma.name">
+<meta content="Сравнение контрольных версий с помощью Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{8707215B-CA9D-4C5D-B08C-AECB4DF1DBA5}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Сравнение контрольных версий с помощью Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается сравнение двух контрольных версий компонента UCM с обозревателем структуры компонентов Rational ClearCase Component Tree Browser.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/update_workspace_59C1448.html" guid="{D6FFB987-F032-4B65-9290-2A501FBB9FF8}">Обновите рабочую область</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/report_on_configuration_status_9ECFA6E8.html" guid="{500A96BD-80F5-4E04-BCAB-CCE48F98639C}">Создание отчета о состоянии конфигурации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    <b>Обзор</b>
+</h3>
+<p>
+    В ClearCase контрольная версия UCM обычно представляет стабильную конфигурацию компонента. &nbsp;Контрольная версия
+    определяет действия и одну версию каждого элемента, видимого в одном или нескольких компонентах. &nbsp;Обозреватель
+    структуры компонентов ClearCase Component Tree Browser является графическим интерфейсом пользователя, отображающим
+    хронологию контрольных версий компонента. С его помощью можно сравнивать содержимое двух контрольных версий.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<p>
+    Для сравнения двух контрольных версий в проекте UCM выполните следующие действия:
+</p>
+<div align="left">
+    <ol>
+        <li>
+            <a href="#StartClearCaseExplorer">Запустите ClearCase Explorer</a>
+        </li>
+        <li>
+            <a href="#OpenTheTreeBrowserForSpecifiedComponent">Откройте обозреватель структуры компонентов для выбранного
+            компонента</a>
+        </li>
+        <li>
+            <a href="#SelectBaselineAndComparisonParameters">Выберите контрольную версию и параметры сравнения</a>
+        </li>
+    </ol>
+    <p>
+        Дополнительная информация приведена в руководстве ClearCase <i>Управление программными проектами</i>.
+    </p>
+</div>
+<h3>
+    1.&nbsp;<a id="StartClearCaseExplorer" name="StartClearCaseExplorer">Запустите ClearCase Explorer</a>
+</h3>
+<p>
+    Для поиск компонента, хронологию контрольных версий для которого требуется просмотреть, выполните следующие действия:
+</p>
+<ul>
+    <li>
+        На панели задач Windows выберите кнопку <b>Пуск &gt; Программы &gt; Rational Software &gt; Rational ClearCase &gt;
+        ClearCase Explorer</b>.
+    </li>
+</ul>
+<h3 align="left">
+    2.&nbsp;<a id="OpenTheTreeBrowserForSpecifiedComponent" name="OpenTheTreeBrowserForSpecifiedComponent">Откройте
+    обозреватель структуры компонентов для выбранного компненнта</a>
+</h3>
+<ul>
+    <li>
+        Выберите <b>Обзор контрольных версий</b> во всплывающем меню компонента для запуска обозревателя структуры
+        компонентов ClearCase.
+    </li>
+    <li>
+        Щелкните на папке Компоненты проекта для просмотра списка компонентов.
+    </li>
+    <li>
+        Щелкните правой кнопкой на компоненте чтобы открыть контекстное меню.
+    </li>
+    <li>
+        Выберите <b>Обзор контрольных версий</b> для запуска обозревателя структуры компонентов.
+    </li>
+</ul>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> Обратитесь к разделу
+    <i>Обозреватель структуры компонентов ClearCase</i> электронной справки ClearCase.
+</p>
+<h3>
+    3. <a id="SelectBaselineAndComparisonParameters" name="SelectBaselineAndComparisonParameters">Выберите контрольную
+    версию и параметры сравнения</a>
+</h3>
+<ul>
+    <li>
+        Выберите одну из показываемых контрольных версий в качестве основы для сравнения.
+    </li>
+    <li>
+        В меню <b>Инструменты</b> выберите один из элементов меню <b>Сравнить...</b>. Появится приглашение задать вторую
+        контрольную версию для сравнения.
+    </li>
+    <li>
+        Можно просмотреть различия действий или версий. Выберите нужную вкладку.
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

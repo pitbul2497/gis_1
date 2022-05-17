@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: План развертывания</title>
+<meta content="Guideline" name="uma.type">
+<meta content="deployment_plan" name="uma.name">
+<meta content="План развертывания" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.775830552473531E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.775830552473531E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: План развертывания</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Эта рекомендация предоставляет дополнительные указания по разработке Плана развертывания.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_deployment_plan_93F2F60B.html" guid="{993ED293-A529-4B3F-82CB-2BF289D9E4E4}">План развертывания</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_deployment_plan__guidelines_for" name="XE_deployment_plan__guidelines_for"></a> 
+<h3>
+    <a id="Identifying compatibility, conversion and migration strategies" name="Identifying compatibility, conversion and migration strategies">Определение стратегий обеспечения совместимости,
+    преобразования и переноса</a>
+</h3>
+<p>
+    Если системе предстоит заменить существующую систему, то необходимо учесть аспекты, связанные с совместимостью,
+    преобразованием и переносом. &nbsp;Конкретно:
+</p>
+<ul>
+    <li>
+        Данные из существующей системы должны быть перенесены (и, возможно, преобразованы в соответствующий формат) в новую
+        систему.
+    </li>
+    <li>
+        Существующие пользовательские интерфейсы (экранные форматы, команды и т.п.) должны поддерживаться в новой системе.
+    </li>
+    <li>
+        Должны поддерживаться все существующие интерфейсы прикладных программ (API).
+    </li>
+    <li>
+        Перенос из существующей системы в новую не должен нарушить работу пользователей более чем на заранее определенный
+        период (конкретное значение зависит от вида бизнеса).
+    </li>
+    <li>
+        У новой системы должна быть возможность работать параллельно со старой системой в течение переходного периода.
+    </li>
+    <li>
+        Должна существовать возможность переключения обратно на старую систему, если это понадобится, в течение первых двух
+        недель работы.
+    </li>
+    <li>
+        Старые архивные данные могут понадобиться в новой системе. Если они зашифрованы, то шифровальные ключи потребуют
+        особого внимания во время переноса.
+    </li>
+</ul>
+<p>
+    Стратегии, выбранные для решения перечисленных вопросов, потребуют соответствующей поддержки в архитектуре и
+    конфигурации системы
+</p>
+<h3>
+    <b><a id="Determining the deployment schedule" name="Determining the deployment schedule">Определение расписания
+    развертывания</a></b>
+</h3>
+<p>
+    Перенос системы в рабочую среду требует планирования и подготовки. &nbsp;Ниже перечислены технические факторы, которые
+    нужно учесть:
+</p>
+<ul>
+    <li>
+        Может потребоваться подготовка пользователей системы.
+    </li>
+    <li>
+        Необходимо подготовить рабочую среду и обучить персонал, чтобы он мог поддерживать работу системы.
+    </li>
+    <li>
+        Необходимо разработать процедуры поддержки рабочего процесса, в том числе процедуры резервного копирования,
+        восстановления и устранения неполадок.
+    </li>
+</ul>
+<p>
+    Далее рассмотрены бизнес-факторы, влияющие на расписание развертывания:
+</p>
+<ul>
+    <li>
+        По причинам, связанным с бизнесом, систему может потребоваться развернуть к конкретной дате; несоблюдение этого
+        условия может значительно снизить ценность системы. &nbsp;(Примечание: существование требований такого вида вносит
+        дополнительный риск, который должен быть отмечен в списке рисков (см. раздел <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_risk_list_B87674CA.html" guid="{32D7C484-2FAF-4442-8DA0-6D474B91A9DD}">Рабочий продукт: список рисков</a>) и должен быть снижен в плане
+        управления (см. раздел <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_risk_management_plan_20A20D4E.html" guid="{D6752789-E49F-412A-8E56-BF1709A50E88}">Рабочий продукт: план управления</a>), если такой план
+        разрабатывается. Возможные изменения в расходах и доходах от системы должны быть отражены в обосновании проекта
+        (см. раздел <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_business_case_56F408EB.html" guid="{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}">Рабочий продукт: экономическое обоснование проекта</a>.))
+    </li>
+    <li>
+        Могут быть периоды, когда развертывание системы невозможно по причинам, связанным с бизнесом или текущим рабочим
+        процессом, включая, но не ограничиваясь этим, окончание отчетного финансового периода или период, в течение
+        которого работа системы не должна прерываться. &nbsp; 
+        <p>
+            Пики рабочей нагрузки и другие факторы в существующих системах и процессах могут препятствовать развертыванию в
+            определенные моменты времени. Например:
+        </p>
+        <ul>
+            <li>
+                Увеличенная нагрузка на систему: еженедельные, ежемесячные или ежегодные пики
+            </li>
+            <li>
+                Регулярные циклы обслуживания аппаратного или программного обеспечения - влияют и на готовность систем, и
+                на персонал
+            </li>
+            <li>
+                Периоды выходных и отпусков
+            </li>
+            <li>
+                Плановые одноразовые нарушения рабочего процесса из-за модернизации аппаратного обеспечения или внедрения
+                новых систем
+            </li>
+            <li>
+                Плановые реорганизации
+            </li>
+            <li>
+                Изменения устройств и средств.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Некоторые системы должны работать постоянно (например, сетевые и телефонные коммутаторы); для таких систем
+        развертывать новую версию нужно во время работы старой. &nbsp;Обновление системы высокой готовности обычно требует
+        специальных архитектурных решений, которые должны быть указаны в документе <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Рабочий продукт: документ с описанием архитектуры программного
+        обеспечения</a>.
+    </li>
+</ul>
+<h3>
+    <b><a id="Determining the deployment sequence" name="Determining the deployment sequence">Определение
+    последовательности развертывания</a></b>
+</h3>
+<p>
+    Некоторые системы должны развертываться постепенно, частями, по причинам, связанным с расписанием или готовностью.
+    &nbsp;Если систему нельзя развернуть сразу целиком, то необходимо определить порядок установки компонентов и узлы, на
+    которых они должны устанавливаться. &nbsp;Ниже перечислены общепринятые шаблоны планирования развертывания:
+</p>
+<ul>
+    <li>
+        Географически - в зависимости от территории
+    </li>
+    <li>
+        Функционально - в зависимости от приложения
+    </li>
+    <li>
+        Организационно - в зависимости от подразделения или должностных обязанностей
+    </li>
+</ul>
+<p>
+    Во время поэтапного развертывания приложения необходимо учитывать следующие аспекты:
+</p>
+<ul>
+    <li>
+        программное обеспечение должно работать и в условиях неполной конфигурации
+    </li>
+    <li>
+        различные версии программного обеспечения должны быть совместимы
+    </li>
+    <li>
+        должна существовать возможность возврата к предыдущей версии системы в случае обнаружения неполадок в новой системе
+    </li>
+</ul>
+<p>
+    Соблюдение этих требований невозможно без внесения соответствующих изменений в архитектурную концепцию; эти изменения
+    должны быть отражены в документе <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Рабочий продукт: документ с описанием архитектуры программного
+    обеспечения</a>.
+</p>
+<h3>
+    <a id="Determining user training needs" name="Determining user training needs">Определение необходимости обучения
+    пользователей</a>
+</h3>
+<p>
+    Для каждой категории пользователей - администраторов, операторов и обычных пользователей - определите следующее:
+</p>
+<ul>
+    <li>
+        С какими системами&nbsp;информационных технологий&nbsp;они имеют дело в настоящий момент. Если при работе с данной
+        системой какие-либо категории пользователей, как внутренних, так и внешних по отношению к организации, впервые
+        столкнутся с той или иной информационной технологией, то отметьте это как пункт, требующий особого внимания.
+    </li>
+    <li>
+        С какими новыми функциями они встретятся в данной системе.
+    </li>
+    <li>
+        Чему потребуется их обучить, в широком смысле этого слова.
+    </li>
+    <li>
+        Каковы требования относительно поддержки национальных языков (NLS)
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

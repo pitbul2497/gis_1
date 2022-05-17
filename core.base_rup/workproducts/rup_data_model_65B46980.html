@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Модель данных</title>
+<meta content="Artifact" name="uma.type">
+<meta content="rup_data_model" name="uma.name">
+<meta content="Модель данных" name="uma.presentationName">
+<meta content="@Type:@Name:@DisplayName" name="uma.category">
+<meta content="WorkProductType:model:Модель" name="uma.category">
+<meta content="Artifact" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jijhYAIaEdqEutyfYo0quQ", "_mTMIkN7REdmjRZts2c4ZjQ", "{9DCF1723-1A21-4F48-BEDE-DBC543489682}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_EOvXUN7HEdm8G6yT7-Wdqw", "_kjFBYN7HEdm8G6yT7-Wdqw", "{9DCF1723-1A21-4F48-BEDE-DBC543489682}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_jijhYAIaEdqEutyfYo0quQ", "_mTMIkN7REdmjRZts2c4ZjQ", "{9DCF1723-1A21-4F48-BEDE-DBC543489682}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_QV4x0AISEdqTna4sZVFRow", "_kjFBYN7HEdm8G6yT7-Wdqw", "{9DCF1723-1A21-4F48-BEDE-DBC543489682}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{9DCF1723-1A21-4F48-BEDE-DBC543489682}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Артефакт: Модель данных</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../core.base_rup/workproducts/resources/ar_datmd.jpg"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Этот артефакт описывает логическое и физическое представление постоянных данных, используемых приложением. В тех случаях, когда приложение будет использовать систему управления реляционными базами данных (RDBMS), модель данных также может включать элементы модели для хранящихся процедур, триггеров, ограничений и так далее, которые определяют взаимодействие компонентов приложения с RDBMS.</td>
+</tr>
+<tr>
+<td>Домены: <a href="./../../core.base_rup/domains/analysis_and_design_BD3BBB1D.html" guid="_kjFBYN7HEdm8G6yT7-Wdqw">Анализ и проектирование</a>
+<br>Типы рабочих продуктов: <a href="./../../core.base_rup/workproducttypes/model_C75A0621.html" guid="_mTMIkN7REdmjRZts2c4ZjQ">Модель</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_data_model__as_artifact" name="XE_data_model__as_artifact"></a><a id="Top" name="Top"></a><a id="XE_data_model__purpose_of" name="XE_data_model__purpose_of"></a><a id="Purpose" name="Purpose"></a> 
+<p>
+    Модель данных применяется для описания логической и физической структуры постоянной информации, управляемой системой.
+    Модель данных может быть первоначально создана путем обратного проектирования существующих постоянных хранилищ данных
+    (баз данных) либо из набора постоянных <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html" guid="{952A9CE9-D5A3-43AC-980D-0B9298F3872E}">Классов
+    проектирования</a> в <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модели проектирования</a>.
+</p>
+<p>
+    Модель данных требуется, если механизм постоянной памяти основан на какой-либо не объектно-ориентированной технологии.
+    &nbsp;Модель данных особенно необходима, если структура постоянных данных не может быть автоматически или механически
+    получена из структуры постоянных классов в модели проектирования. Она применяется для определения отображения между
+    постоянными классами проектирования и структурами постоянных данных, а также для определения самих структур постоянных
+    данных.
+</p>
+<p>
+    В приведенной ниже таблице свойств описаны элементы модели данных. &nbsp;Включенные в эту таблицу определения свойств
+    модели согласованы с профайлом моделирования данных для версии 1.3 спецификации Unified Modeling Language (UML).
+    &nbsp;Элементы профайла моделирования данных для UML версии 1.4 еще не были определены.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Ответственный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_database_designer_524DC34F.html" guid="{87EE3BF5-17CA-4211-BD3D-32F361E58550}">Проектировщик базы данных</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Изменен:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_database_designer_524DC34F.html" guid="{87EE3BF5-17CA-4211-BD3D-32F361E58550}">Проектировщик базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Задачи</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Вход для:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/tasks/identify_test_ideas_395DAB3B.html" guid="{6FAD9DF9-DE4E-4BA5-9B9B-482A2366D1B9}">Определение идеи тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/identify_test_targets_693323A6.html" guid="{FFBDC174-FA91-4712-ABE2-7580A5670E8D}">Определение цели теста</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/review_the_design_34CB80A9.html" guid="{9574768B-7886-40C9-9938-A7E36E9B0739}">Проверка проекта</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/database_design_8552DD3.html" guid="{2E74A414-49F5-4F27-BFCB-AA2DAC675F58}">Проектирование базы данных</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/implement_component_AE366827.html" guid="{3293F4F7-EFCD-4476-BFF1-81AC3812B512}">Элементы проекта реализации</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Выход из:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/tasks/database_design_8552DD3.html" guid="{2E74A414-49F5-4F27-BFCB-AA2DAC675F58}">Проектирование базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Опции представления</th><td class="sectionTableCell"><p>
+    Представление UML: Пакет, представляемый как &lt;&lt;модель&gt;&gt;.
+</p>
+<p>
+    <strong>Модель данных</strong> может иметь следующие <strong>свойства</strong>:&nbsp;
+</p>
+<div align="left">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody valign="top">
+            <tr>
+                <td width="20%">
+                    <p class="tableheading">
+                        <b>Имя свойства</b>
+                    </p>
+                </td>
+                <td width="40%">
+                    <p class="tableheading">
+                        <b>Краткое описание</b>
+                    </p>
+                </td>
+                <td width="40%">
+                    <p class="tableheading">
+                        <b>Представление UML</b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Введение
+                </td>
+                <td width="40%">
+                    Текстовое описание, которое служит в качестве краткого введения в модель.
+                </td>
+                <td width="40%">
+                    Специальное значение, имеющее тип "краткий текст".
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Пакеты
+                </td>
+                <td width="40%">
+                    Пакеты, применяемые для группировки в организационных целях.
+                </td>
+                <td width="40%">
+                    Принадлежат посредством ассоциации "represents", либо рекурсивно посредством объединения "owns".
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Таблицы
+                </td>
+                <td width="40%">
+                    Таблицы в модели данных, принадлежащие пакетам.
+                </td>
+                <td width="40%">
+                    Классы, имеющие стереотип «Таблица».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Взаимосвязь
+                </td>
+                <td width="40%">
+                    Простая ассоциация между таблицами в модели.
+                </td>
+                <td width="40%">
+                    Ассоциация, имеющая стереотип «Non-Identifying»
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Строгая взаимосвязь
+                </td>
+                <td width="40%">
+                    Взаимосвязь составного объединения между таблицами в модели.
+                </td>
+                <td width="40%">
+                    Ассоциация, имеющая стереотип «Identifying»
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Зависимость (обзор по таблице)
+                </td>
+                <td width="40%">
+                    Зависимость между таблицами, представлениями и другими элементами модели
+                </td>
+                <td width="40%">
+                    Зависимость, имеющая стереотип «Derive», для взаимосвязей зависимости между таблицей и представлением
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Столбец
+                </td>
+                <td width="40%">
+                    Значения данных в таблицах.
+                </td>
+                <td width="40%">
+                    Атрибут, имеющий стереотип «Column».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Домен
+                </td>
+                <td width="40%">
+                    Пользовательский тип данных.
+                </td>
+                <td width="40%">
+                    Класс, имеющий стереотип «Domain».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Представление
+                </td>
+                <td width="40%">
+                    Виртуальная таблица, составленная из столбцов одной или нескольких таблиц.
+                </td>
+                <td width="40%">
+                    Класс, имеющий стереотип «View».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Диаграммы
+                </td>
+                <td width="40%">
+                    Диаграммы в модели, принадлежащие пакетам.
+                </td>
+                <td width="40%">
+                    Диаграммы классов, изображающие таблицы и и их взаимосвязи, и диаграммы компонентов, изображающие
+                    реализацию таблиц в модели в компонентах пространства таблиц и в компонентах баз данных.
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Оглавление
+                </td>
+                <td width="40%">
+                    Структуры доступа к данным, применяемые для ускорения доступ по указанным путям.
+                </td>
+                <td width="40%">
+                    Операция, имеющая стереотип «Index».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Триггер
+                </td>
+                <td width="40%">
+                    Активируемый событием алгоритм, связанный с таблицами.
+                </td>
+                <td width="40%">
+                    Операция, имеющая стереотип «Trigger».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Контрольное ограничение
+                </td>
+                <td width="40%">
+                    Правило проверки в столбце или таблице. Может состоять из диапазона допустимых значений или из
+                    вычисляемых значений.
+                </td>
+                <td width="40%">
+                    Операция, имеющая стереотип «Check».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Ограничение уникальности
+                </td>
+                <td width="40%">
+                    Указывает, что данные в столбце или в наборе столбцов должны быть уникальными.
+                </td>
+                <td width="40%">
+                    Операция, имеющая стереотип «Unique».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Пакет хранимой процедуры
+                </td>
+                <td width="40%">
+                    Класс, который используется как "контейнер" для операций хранимой процедуры
+                </td>
+                <td width="40%">
+                    Класс, имеющий стереотип «SP_Container».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Хранимая процедура&nbsp;
+                </td>
+                <td width="40%">
+                    Явно вызываемый алгоритм, связанный с таблицами либо с моделью в целом.
+                </td>
+                <td width="40%">
+                    Операция, имеющая стереотип «SP».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Схема&nbsp;
+                </td>
+                <td width="40%">
+                    Контейнер для элементов модели данных, который представляет структуру базы данных в целом. Применяется
+                    для управления защитой и принадлежностью таблиц.
+                </td>
+                <td width="40%">
+                    Пакет, имеющий стереотип «Schema».
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    База данных
+                </td>
+                <td width="40%">
+                    Элемент модели, представляющий физическую базу данных
+                </td>
+                <td width="40%">
+                    Компонент, имеющий стереотип «Database»
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    Табличное пространство
+                </td>
+                <td width="40%">
+                    Блоки физической памяти в базе данных
+                </td>
+                <td width="40%">
+                    Компонент, имеющий стереотип «Tablespace»
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    <a id="Tailoring" name="Tailoring"></a>
+</p>
+<p>
+    Для проектов с небольшим объемом постоянных данных либо имеющих простое преобразование классов проектирования в
+    механизм хранилища, наличие отдельной модели данных не является необходимым. &nbsp;Для проектов, использующих RDBMS для
+    хранилища, модель данных необходимо настроить для конкретной семантики лежащей в основе базы данных, которая может
+    иметь небольшие отличия для разных RDMBS.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/checklists/data_model_D22985A5.html" guid="2.800761632096845E-305">Модель данных</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/guidelines/data_model_80FB2539.html" guid="3.4196799396281445E-306">Модель данных</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/guidelines/reverse-engineering_relational_databases_902803B8.html" guid="1.338740134620651E-305">Обратное проектирование реляционных баз данных</a>
+</li>
+<li>
+<a href="./../../core.base_rup/guidances/guidelines/forward-engineering_relational_databases_53C0441E.html" guid="5.250868507423771E-305">Прямое проектирование реляционных баз данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

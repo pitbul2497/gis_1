@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Диаграмма деятельности в модели варианта использования</title>
+<meta content="Guideline" name="uma.type">
+<meta content="activity_diagram_in_the_use-case_model" name="uma.name">
+<meta content="Диаграмма деятельности в модели варианта использования" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "7.230899877161861E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="7.230899877161861E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Диаграмма деятельности в модели варианта использования</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Диаграмма деятельности может представлять поток событий в варианте использования. Настоящая рекомендация описывает, как пользоваться диаграммой деятельности в этом случае.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_usecase_A5D30E62.html" guid="{B1526BC5-E346-42CB-A08A-3C0D7F382407}">Вариант</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/detail_a_use_case_D9BECBF4.html" guid="{536BC669-A8FB-426D-88FF-CBEA806A9066}">Создание подробного описание варианта</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<p>
+    Поток событий варианта использования описывает, что необходимо сделать системе, чтобы предоставить значение субъекту.
+    Он состоит из последовательности задач, в результате выполнения которых субъект получает результат. Поток событий
+    состоит из основного потока и одного или нескольких альтернативных потоков.
+</p>
+<p>
+    Поток событий варианта использования можно описать графически с помощью диаграммы деятельности. На этой диаграмме
+    показаны:
+</p>
+<ul>
+    <li>
+        <b>Состояния деятельности</b>, представляющие производительность задачи или этапа в потоке событий.
+    </li>
+    <li>
+        <a id="XE_transition_(in_activity_diagrams)__in_business_use-case_model" name="XE_transition_(in_activity_diagrams)__in_business_use-case_model"></a><b>Переходы</b>, указывающие, в какой
+        последовательности идут состояния деятельности. Этот тип перехода иногда называют переходом после выполнения,
+        поскольку он отличается от обычного перехода тем, что не требует явного события триггера; он активизируется по
+        окончании выполнения задачи, которую представляет состояние деятельности.
+    </li>
+    <li>
+        <a id="XE_decision_(in_activity_diagrams)__business_use-case_model" name="XE_decision_(in_activity_diagrams)__business_use-case_model"></a><b>Решения</b>, для которых определен набор
+        <b>сторожевых условий</b>. Эти сторожевые условия определяют, какой переход (или набор альтернативных переходов)
+        будет выбран после выполнения задачи. Решения и сторожевые условия позволяют просматривать <b>альтернативные
+        нити</b> в потоке событий варианта использования.
+    </li>
+    <li>
+        <b>Панели синхронизации</b>, с помощью которых можно просматривать параллельные субпотоки. Панели синхронизации
+        позволяют просматривать <b>параллельные нити</b> в потоке событий варианта использования.
+    </li>
+</ul>
+<p align="center">
+    <img height="495" alt="Диаграмма, описанная в сопроводительном тексте." src="./../../../core.base_rup/guidances/guidelines/resources/md_act.gif" width="510" />
+</p>
+<p class="picturetext">
+    Упрощенная диаграмма деятельности для варианта использования Снять деньги с карточки в модели варианта использования
+    для банкомата.
+</p>
+<p>
+    Диаграмма деятельности - это особая разновидность диаграммы состояний, на которой все или большинство состояний
+    являются состояниями деятельности и все или большинство переходов активизируются по окончании выполнения действий в
+    исходных состояниях.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

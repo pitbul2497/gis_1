@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Введение в RUP</title>
+<meta content="SupportingMaterial" name="uma.type">
+<meta content="introduction_to_rup" name="uma.name">
+<meta content="Введение в RUP" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "__yoNMDIcEdqDs_9ORT1Rig", "_uRs44C8CEdqfj_h52-wqcw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_uRs44C8CEdqfj_h52-wqcw"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Введение в RUP</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../core.base_rup/guidances/supportingmaterials/resources/icon_introL.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом руководстве даются ответы на фундаментальные вопросы о сущности и назначении Rational Unified Process.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><table width="100%">
+    <tbody>
+        <tr>
+            <td width="45%">
+                <p>
+                    <a href="#What">Что такое Rational Unified Process, или RUP?</a>
+                </p>
+                <p>
+                    <a href="#Whom">Кому следует использовать RUP?</a>
+                </p>
+                <p>
+                    <a href="#How">Настройка RUP для данного проекта.</a>
+                </p>
+                <p>
+                    <a href="#Why">Почему следует использовать RUP?</a>
+                </p>
+                <p>
+                    <a href="#When">Когда следует использовать RUP?</a>
+                </p>
+                <p>
+                    <a href="#Where">Где можно получить дополнительные сведения о RUP?</a>
+                </p>
+            </td>
+            <td width="55%">
+                <map id="FPMap1" name="FPMap1">
+                    <area shape="poly" alt="Rational Unified Process" coords="347,200,341,162,320,128,290,104,238,93,197,103,164,125,144,154,137,186,141,226,167,258,206,276,244,283,285,274,317,258,338,231" href="#HeartOfRUP"></area>
+                    <area shape="poly" alt="Инструменты создания процесса" coords="342,161,347,198,339,229,319,256,285,272,318,340,313,398,476,338,495,275,410,140" href="#ProcessAuthoringTools"></area>
+                    <area shape="poly" alt="Сообщество/ Рынок" coords="249,281,212,275,174,257,149,225,70,251,79,300,143,464,317,398,322,340,289,272" href="#CommunityMarketplace"></area>
+                    <area shape="poly" alt="Инструменты настройки" coords="343,160,412,140,337,23,183,69,199,103,242,93,291,103,322,125" href="#ProcessConfigurationTools"></area>
+                    <area shape="poly" alt="Инструменты доставки процесса" coords="145,153,164,125,194,104,178,69,12,119,29,187,73,300,64,250,142,224,137,187" href="#ProcessDeliveryTools"></area>
+                </map><img height="474" alt="Платформа Rational Unified Process" src="./../../../core.base_rup/resources/rup_platform.jpg"                 width="504" usemap="#fpmap1" border="0" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3>
+    <a id="What" name="What"></a>Что такое Rational Unified Process, или RUP?
+</h3>
+<h4>
+    <a id="HeartOfRUP" name="HeartOfRUP"></a>Сущность RUP
+</h4>
+<p>
+    По существу, Rational Unified Process&reg; (RUP&reg;) предназначен для успешной разработки программного обеспечения. Существует
+    три основных элемента, определяющих RUP:
+</p>
+<ul>
+    <li>
+        <h5>
+            Основной набор доктрин и принципов для успешной разработки программного обеспечения.
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Эти доктрины и принципы являются фундаментом, на котором была разработана технология RUP. Для того чтобы получить
+        общее представление о философии RUP, ознакомьтесь со следующими документами: <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/key_business_driven_development_principles_B4EF3701.html" guid="_0_ltcDqYEdqvoMTMKvbIlA">Основные принципы</a> и<a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/supportingmaterials/process_essentials_C18A2AB2.html" guid="5.95251660891756E-306">Основы процесса</a>.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <h5>
+            Среда многоразового содержимого метода и строительных блоков процесса.
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Определенное и усовершенствованное Rational Software на постоянной основе, семейство RUP модулей метода определяет
+        <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/supportingmaterials/configurable_process_34A7BAC2.html" guid="2.65719655976642E-305">среду метода</a>, в которой вы создаете собственные конфигурации метода и
+        специализированные процессы.
+    </p>
+</blockquote>
+<ul dir="ltr">
+    <li>
+        <h5>
+            Лежащий в основе язык определения методов и процессов.
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        В основе всего лежит <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/introduction_to_uma_931F5B93.html" guid="_94_eoO8LEdmKSqa_gSYthg">унифицированная метамодель архитектуры метода</a>. &nbsp;Эта модель предоставляет <a class="elementLinkWithUserText" href="./../../../core.base_concepts/customcategories/method_architecture_fundamentals_5F73467B.html" guid="_uDU1oASEEdq61bDkWg1SXw">язык описания процессов и содержимого методов</a>. Этот новый язык представляет
+        собой объединение различных языков разработки методов и процессов, таких как расширение SPEM для UML для разработки
+        программного обеспечения, языков, которые используются для RUP v2003, Unified Process, IBM Global Services Method,
+        а также IBM Rational Summit&nbsp;Ascendant.&nbsp;
+    </p>
+</blockquote>
+<h4>
+    Платформа Rational Method Composer (RMC)
+</h4>
+<p>
+    На протяжении многих лет разработки RUP развилась в имеющую широкие возможности платформу разработки процесса -
+    Rational Method Composer (RMC). &nbsp;С помощью RMC рабочие группы могут определять, настраивать, адаптировать и
+    осуществлять на практике согласованный процесс. Ключевыми элементами &nbsp;платформы являются:
+</p>
+<ul>
+    <li>
+        <h5>
+            <a id="ProcessDeliveryTools" name="ProcessDeliveryTools"></a>Инструменты доставки метода
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        RUP доставляется практикам в виде интерактивного Web-сайта с помощью стандартной технологии браузеров. В число
+        инструментов доставки RUP входят:
+    </p>
+</blockquote>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            <h5>
+                Текущий Web-сайт RUP
+            </h5>
+        </li>
+    </ul>
+</div>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <p>
+            Web-сайт RUP представляет собой опубликованную презентацию процесса&nbsp;<a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_rational_method_composer_84A966EC.html" guid="_hAfB8COzEdq41POk0CQYwA">Rational
+            Method Composer</a>&nbsp;, настроенную для вашего процесса и специализированную для конкретных потребностей.
+            Web-сайт создается с использованием динамически генерируемых HTML-страниц, которые с помощью RMC можно
+            публиковать в форме нескольких Web-сайтов RUP, каждый из которых представляет настроенное и адаптированное
+            определение процесса.
+        </p>
+    </blockquote>
+</blockquote>
+<div style="MARGIN-LEFT: 2em">
+    <ul>
+        <li>
+            <h5>
+                Набор инструментов навигации Web-браузера
+            </h5>
+        </li>
+    </ul>
+</div>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <p>
+            Аплеты браузера RUP допускают динамический доступ к Web-сайту RUP посредством ряда стандартных web-браузеров с
+            помощью<a class="elementlinkwithusertext" href="./../../../core.base_concepts/customcategories/navigating_the_process_468E716C.html" guid="_3uTl0ASHEdq61bDkWg1SXw">дополнительных аплетов навигации</a>.
+        </p>
+    </blockquote>
+</blockquote>
+<ul>
+    <li>
+        <h5>
+            <a id="ProcessConfigurationTools" name="ProcessConfigurationTools"></a>Инструмент настройки методов
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_rational_method_composer_84A966EC.html" guid="_hAfB8COzEdq41POk0CQYwA">Rational Method Composer</a>&nbsp;(RMC) поддерживает детализированную настройку
+        процессов и содержимого метода во время публикации, что позволяет удовлетворить разнообразные требования различных
+        проектов и конечных пользователей. &nbsp; Method Composer обеспечивает оптимальное включение расширений методов и
+        процессов с помощью технологии модулей Method Composer. &nbsp;С его помощью также можно настроить варианты
+        процессов, которые будут публиковаться различным образом в зависимости от пользовательского выбора.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <h5>
+            <a id="CommunityMarketplace" name="CommunityMarketplace"></a>Рынок расширений процесса
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <a href="http://www-136.ibm.com/developerworks/rational/products/rup/">Раздел RUP Web-сайта developerWorks&reg;:
+        Rational&reg;</a> предоставляет место, где разработчики процессов в сообществе разработки программного обеспечения
+        могут распространять свои расширения методов в виде модулей, и предоставляет обширный источник расширений методов
+        для руководителей проектов.
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <h5>
+            <a id="ProcessAuthoringTools" name="ProcessAuthoringTools"></a>Инструмент создания методов
+        </h5>
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Инструмент<a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_rational_method_composer_84A966EC.html" guid="_hAfB8COzEdq41POk0CQYwA">Rational Method Composer</a>&nbsp;(RMC)&nbsp; специально разработан для управления
+        содержимым методов и создания процессов с такими функциями, как основанное на форме и основанное на разбиении
+        элементов проекта создание, просмотр содержимого, поиск по содержимому и импорт и экспорт содержимого метода.
+        &nbsp;Method Composer также предоставляет механизмы для быстрой сборки процесса с использованием шаблонов процесса
+        и многоразовых элементов методов. &nbsp;Поддерживается создание модулей методов, которые обеспечивают возможности
+        расширения и изменения существующего содержимого, упрощения содержимого метода и управления и обслуживания
+        процесса.
+    </p>
+</blockquote>
+<h3>
+    <a id="Whom" name="Whom"></a>Кому следует использовать RUP?
+</h3>
+<p>
+    Если необходимо обеспечить возможность разработки и развертывания программного обеспечения, важного для успешной работы
+    вашей организации, то в этом вам поможет RUP. Разработка продукта RUP была нацелена на две основных группы
+    пользователей:
+</p>
+<ul>
+    <li>
+        практики-разработчики программного обеспечения, работающие над проектом в составе группы, включая лица,
+        заинтересованные в данных проектах по разработке программного обеспечения.
+    </li>
+    <li>
+        практики-разработчики процессов, в частности, инженеры по процессам программного обеспечения и менеджеры.
+    </li>
+</ul>
+<p>
+    Для практиков-разработчиков программного обеспечения представлены рекомендации по тому, что от них требуется с точки
+    зрения <a class="elementlinkwithusertext" href="./../../../core.base_concepts/guidances/concepts/role_BBD6A3E6.html" guid="1.1609745730665898E-304">ролей, определенных в RUP</a>. Практику, работающему над проектом по разработке
+    программного обеспечения в RUP, присваивается одна или несколько ролей, определенных в RUP, где каждая роль выделяет
+    набор задач и рабочих продуктов, за которые эта роль отвечает. Также дается руководство по совместной работе этих ролей
+    с точки зрения <a class="elementlinkwithusertext" href="./../../../core.base_concepts/guidances/concepts/activity_417F8F65.html" guid="3.132140065969088E-305">деятельностей</a>, которые требуются для введения настроенного процесса (который
+    называется <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html" guid="_EhgqwO8MEdmKSqa_gSYthg">процесс доставки</a>).
+</p>
+<p>
+    Для практиков-разработчиков процессов представлено руководство по определению, настройке, адаптации и <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/concepts/implementing_a_process_in_a_project_3656F98A.html" guid="2.870714010568015E-306">реализации</a> процессов разработки. Семейство продуктов RUP предоставляет ряд
+    &nbsp;инструментов, облегчающих определение, настройку и адаптацию процесса разработки.
+</p>
+<p>
+    Вместе с продуктом RUP предоставляется ряд <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/supportingmaterials/my_rup_tree_E4322EB0.html" guid="1.1767879055150166E-304">представлений</a>, которые предназначены для различных групп разработчиков программного
+    обеспечения.
+</p>
+<h3>
+    <a id="How" name="How"></a>Настройка RUP для данного проекта.
+</h3>
+<p>
+    Одним из ключевых принципов RUP является итерационная и инкрементальная разработка. Этот принцип также следует иметь в
+    виду перед началом работы с RUP: не пытайтесь "выполнить" весь RUP сразу. Усвойте подход к<a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/concepts/implementing_a_process_in_a_project_3656F98A.html" guid="2.870714010568015E-306">реализации</a>, изучению и применению RUP, который сам по себе является итерационным и
+    инкрементальным. Начните с оценки существующего процесса и выбора одной или двух ключевых областей, которые вы хотели
+    бы улучшить. Сначала используйте RUP для улучшения этих областей, а затем, в более поздних итерациях или циклах
+    разработки, вносите дополнительные улучшения в других областях.
+</p>
+<p>
+    Для получения более подробной информации по этим разделам используйте следующие ссылки:
+</p>
+<ul>
+    <li>
+        различные способы <a class="elementlinkwithusertext" href="./../../../core.base_concepts/customcategories/navigating_the_process_468E716C.html" guid="_3uTl0ASHEdq61bDkWg1SXw">навигации
+        по Web-сайту RUP</a> и использование <a class="elementlinkwithusertext" href="./../../../core.base_rup/tools/rup_rational_unified_process_524E1A15.html" guid="{0CE549AE-24A8-41BC-BBD5-DAF664E3DFF8}">функциональных возможностей Web-сайта RUP</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_concepts/customcategories/method_architecture_fundamentals_5F73467B.html" guid="_uDU1oASEEdq61bDkWg1SXw">ключевые концепции</a> определения процесса в RUP
+    </li>
+    <li>
+        настройка RUP для данного проекта с помощью <a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_rational_method_composer_84A966EC.html" guid="_hAfB8COzEdq41POk0CQYwA">Rational
+        Method Composer</a>
+    </li>
+    <li>
+        расширение определенных доменов, методик и технологий <a href="http://www.ibm.com/developerworks/rational/rupcenter">модулей</a>
+    </li>
+    <li>
+        <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/conceptual_road_maps_2DE84E99.html" guid="1.8262162566452063E-305">планы</a>, которые предоставляют концептуальный анализ применения процесса для
+        различных типов проектов
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/g_white_papers_63890D0C.html" guid="_EiiR4DIdEdqDs_9ORT1Rig">документы, написанные различными авторами</a>, в которых описывается опыт работы с
+        RUP
+    </li>
+    <li>
+        способы <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/guidelines/process_tailoring_practices_9DD16395.html" guid="1.433186963661493E-305">адаптации процесса</a> для контекста данного проекта
+    </li>
+</ul>
+<h3>
+    <a id="why" name="why"></a>///Почему следует использовать RUP?
+</h3>
+<p>
+    RUP предоставляет разработчику программного обеспечения основанную на стандартах настраиваемую среду процесса. Эта
+    среда:
+</p>
+<ul>
+    <li>
+        позволяет публикацию адаптированного метода Rational Method Composer и <a class="elementlinkwithusertext" href="./../../../core.base_concepts/customcategories/navigating_the_process_468E716C.html" guid="_3uTl0ASHEdq61bDkWg1SXw">доступ к
+        нему всей рабочей группы проекта</a>
+    </li>
+    <li>
+        позволяет &nbsp;настроить этот метод в соответствии с потребностями данного проекта
+    </li>
+    <li>
+        предоставляет каждому пользователю <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/supportingmaterials/my_rup_tree_E4322EB0.html" guid="1.1767879055150166E-304">настраиваемую фильтрацию</a>
+    </li>
+</ul>
+<p>
+    По своей сути RUP является собранием большого количества методов проектирования программного обеспечения, которые <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/whats_new_F014E799.html" guid="1.7589094092733532E-305">постоянно совершенствуются</a> для отражения изменений в отрасли.
+</p>
+<p>
+    Как <a class="elementLinkWithUserText" href="./../../../core.base_rup/roles/rup_stakeholder_1011D446.html" guid="{7A4262EA-AB5B-431E-BB4A-3822FBF7F239}">заинтересованному лицу</a> в проекте разработки программного обеспечения,
+    RUP обеспечивает вас пониманием того, что следует ожидать от процесса разработки. Предоставляется глоссарий терминов и
+    энциклопедия знаний, которые помогут вам эффективно общаться с коллективом разработчиков программного обеспечения.
+</p>
+<p>
+    Для &nbsp;&nbsp;<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/developer_EA155B9E.html" guid="_zRigkAILEdq-_NKqZM1EhA">разработчика программного обеспечения</a> эта среда процесса предоставляет основное
+    общее определение процесса, которое может совместно использоваться всеми участниками коллектива по разработке
+    программного обеспечения, что гарантирует четкую и однозначную связь между членами коллектива. Это поможет вам играть в
+    коллективе ожидаемую от вас роль, четко определяя вашу ответственность. В качестве общего справочника по разработке
+    программного обеспечения RUP обеспечивает обширный материал с рекомендациями по разработке программного обеспечения,
+    который может представлять ценность и для новичков, и для опытных разработчиков. Даже если вы работаете самостоятельно,
+    а не в составе коллектива, RUP будет полезен при разработке программного обеспечения мирового уровня.
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/manager_A4902169.html" guid="_4U33kAILEdq-_NKqZM1EhA">Менеджерам</a> и руководителям коллективов RUP предоставляет процесс, посредством
+    которого можно эффективно общаться с персоналом и соответственно управлять его работой и контролировать ее.
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.base_rup/roles/rup_process_engineer_5954DBA2.html" guid="{ADDC62A7-8E36-4DCE-9E5C-211B0950EBB5}">Инженерам процесса</a> RUP обеспечивает основу архитектуры и обширный
+    материал, из которого можно сконструировать определение процесса, что позволяет настраивать и расширять эту основу. Это
+    позволяет сохранить много времени и усилий, которые потребовались бы при создании такого определения процесса с нуля.
+</p>
+<h3>
+    <a id="When" name="When"></a>Когда следует использовать RUP?
+</h3>
+<p>
+    <img height="390" alt="Платформа Rational Unified Process" src="./../../../core.base_rup/guidances/supportingmaterials/resources/complex.gif" width="467" border="0" />
+</p>
+<p>
+    RUP можно использовать с самого начала нового проекта по созданию программного обеспечения и далее применять в
+    последующих циклах разработки после завершения начального проекта. Однако способ использования RUP необходимо <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/guidelines/process_discriminants_36B1ADD5.html" guid="2.746702783003723E-305">варьировать в соответствии с вашими потребностями</a>. Существует несколько условий,
+    которые определяют, когда и как следует использовать различные части RUP:
+</p>
+<ul>
+    <li>
+        <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/rup_lifecycle_100BF298.html" guid="_PEpmMCVuEdqSZ9OimJ-AzA">жизненный цикл</a> проекта (число итераций, продолжительность каждого этапа,
+        продолжительность проекта)<br />
+    </li>
+    <li>
+        <a class="elementlinkwithusertext" href="./../../../core.base_rup/workproducts/rup_business_case_56F408EB.html" guid="{9B13F235-E8E9-4CDC-9ACE-216124C8C5EC}">бизнес-цели</a> проекта,<a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_vision_2D6D6F1.html" guid="{417F089F-6636-451A-A8AB-AB4EAC7AC4F1}">Представление</a>, область применения и <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/risk_7A001372.html" guid="5.120819940832181E-305">риск</a><br />
+    </li>
+    <li>
+        объем усилий по разработке программного обеспечения
+    </li>
+</ul>
+<h3>
+    <a id="Where" name="Where"></a>Где можно получить дополнительные сведения о RUP?
+</h3>
+<p>
+    Следующие ресурсы могут помочь вам начать работу с RUP:
+</p>
+<ul>
+    <li>
+        Ряд публикаций различных авторов;<br />
+         
+        <ul>
+            <li>
+                <i>The Rational Unified Process, An Introduction, Second Edition.</i> <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#KRU00" guid="7.755968586980351E-308">[KRU00]</a>
+            </li>
+            <li>
+                <i>The Rational Unified ProcessMade Easy, A Practitioners Guide to the RUP.</i> <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#KRO03" guid="7.755968586980351E-308">[KRO03]</a>
+            </li>
+            <li>
+                <i>The Unified Software Development Process.</i> <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#JAC98" guid="7.755968586980351E-308">[JAC98]</a>
+            </li>
+            <li>
+                <i>Software Project Management: A Unified Framework</i> <a class="elementlinkwithusertext" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#ROY98" guid="7.755968586980351E-308">[ROY98]</a>
+            </li>
+            <li>
+                ряд <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/g_white_papers_63890D0C.html" guid="_EiiR4DIdEdqDs_9ORT1Rig">официальных документов</a> по различным приемам, рекомендованным в RUP
+            </li>
+            <li>
+                множество статей в электронном журнале <a href="http://www.therationaledge.com">The Rational
+                Edge</a>.<br />
+                <br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="http://www-136.ibm.com/developerworks/rational/products/rup/">Раздел RUP Web-сайта developerWorks&reg;:
+        Rational&reg;.</a><br />
+    </li>
+    <li>
+        <a class="elementlinkwithusertext" href="./../../../core.base_rup/guidances/supportingmaterials/training_with_rational_university_931C47F2.html" guid="1.3612642469528346E-305">Rational University</a> обеспечивает практическое обучение процессу.<br />
+    </li>
+    <li>
+        <a href="http://www-306.ibm.com/software/rational/services/professional/index.html">Консультационные службы
+        IBM/Rational</a>, которые предлагают руководство и поддержку со стороны технических специалистов, имеющих опыт в
+        реализации и вводе RUP в действие.
+    </li>
+</ul><br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

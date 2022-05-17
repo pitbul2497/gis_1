@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Анализ производительности выполнения с помощью инструментов Rational PurifyPlus (Windows и UNIX)</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="analyzing_runtime_behavior_using_purifyplus" name="uma.name">
+<meta content="Анализ производительности выполнения с помощью инструментов Rational PurifyPlus (Windows и UNIX)" name="uma.presentationName">
+<meta content="Tool:rup_purifyplus:Rational PurifyPlus" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational PurifyPlus" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{63F53632-61E3-40E9-BA84-3DCE7903F99D}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{63F53632-61E3-40E9-BA84-3DCE7903F99D}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{63F53632-61E3-40E9-BA84-3DCE7903F99D}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{63F53632-61E3-40E9-BA84-3DCE7903F99D}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{63F53632-61E3-40E9-BA84-3DCE7903F99D}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Анализ производительности выполнения с помощью инструментов Rational PurifyPlus (Windows и UNIX)</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту содержится описание применения инструментов Rational PurifyPlus для создания кода, свободного от ошибок памяти и утечек, эффективно использующего память и предоставляющего оптимальную производительность.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_purifyplus_CABB5CD4.html" guid="{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}">Rational PurifyPlus</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_runtime_behavior_B2DD7652.html" guid="{5131A5BB-5B95-499E-A68B-788A2F0957C3}">Анализ поведения среды выполнения</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<p>
+    Данная памятка по инструментам подходит как для Microsoft Windows, так и для UNIX.
+</p>
+<p>
+    Инструменты PurifyPlus содержат Rational Purify, Rational PureCoverage и Rational Quantify.
+</p>
+<p>
+    <img height="15" alt="значок книги" hspace="0" src="./../../../core.base_rup/resources/book.gif" width="16" border="0" />Для получения
+    дополнительных сведений об инструментах PurifyPlus обратитесь к руководству <i>Начало работы</i> по PurifyPlus (для
+    версии под Windows или UNIX).
+</p>
+<p>
+    <img height="16" alt="значок справочника" hspace="0" src="./../../../core.base_rup/resources/helpbook.gif" width="16"     border="0" />Пошаговая информация о применении инструментов PurifyPlus приведены в электронной справке по инструменту.
+</p>
+<h2>
+    Анализ быстродействия выполнения&nbsp;
+</h2>
+<p>
+    Анализ быстродействия выполнения включает в себя следующие моменты:
+</p>
+<ul>
+    <li>
+        <b>Обнаружение ошибок памяти и утечек (программы C/C++ для Windows и UNIX).</b> 
+        <ul>
+            <li>
+                С помощью Purify можно обнаружить эти неполадки, как в вашем собственном коде, так и в компонентах,
+                используемых вашим ПО, даже при отсутствии источника.
+            </li>
+            <li>
+                С помощью PureCoverage можно обеспечить прогон всего кода. (Также PureCoverage можно использовать
+                независимо от Purify для сбора данных о прогоне для кода, управляемого C/C++, Java и .NET).
+            </li>
+        </ul>
+    </li>
+    <li>
+        <b>Использование профилирования памяти (код, управляемый Java и .NET в Windows).</b> С помощью Purify можно найти
+        примеры неэффективного использования памяти.
+    </li>
+    <li>
+        <b>Профилирование быстродействия (Windows и UNIX).</b> С помощью Quantify можно найти места, на которые программа
+        тратит больше всего времени и устранить основные узкие места быстродействия.
+    </li>
+</ul>
+<p>
+    Анализ выполнения с помощью инструментов PurifyPlus позволяет получить свободный от ошибок код, выполняемый максимально
+    эффективно.
+</p>
+<h4>
+    Этапы работы с инструментами
+</h4>
+<p>
+    Для использования анализа выполнения с помощью инструментов PurifyPlus выполните следующие шаги:
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ol>
+        <li>
+            <a href="#Step1">Запустите программу в Purify для сбора ошибок, утечек и данных о прогоне кода (программы C/C++
+            для Windows и UNIX)</a>
+        </li>
+        <li>
+            <a href="#Step2">Выполните программу в Purify для поиска неэффективного использования памяти (управляемый Java
+            и .NET код для Windows)</a>
+        </li>
+        <li>
+            <a href="#Step3">Выполните программу в Quantify для поиска узких мест быстродействия (Windows и UNIX)</a>
+        </li>
+    </ol>
+</div>
+<h3>
+    1. <a id="Step1" name="Step1"></a><b>Выполните программу в Purify для сбора ошибок, утечек и данных о прогоне кода
+    (программы C/C++ для Windows и UNIX)&nbsp;</b>
+</h3>
+<p>
+    Purify обнаружит скрытые ошибки выполнения, включая утечку памяти, в вашем коде и в компонентах, используемых вашим ПО.
+    Будет подготовлен отчет о таких ошибках, как сбои границ массивов, доступ через зависшие указатели, чтение памяти без
+    инициализации, ошибки выделения памяти, утечки памяти, после чего вы сможете устранить ошибки прежде, чем они нанесут
+    ущерб. При наличии в системе Rational PureCoverage вы сможете также просматривать проверенные и нет фрагменты кода.
+    &nbsp;
+</p>
+<p>
+    Начните с запуска программы в Purify:
+</p>
+<ul>
+    <li>
+        В системе Windows: 
+        <ul>
+            <li>
+                При работе в Microsoft Visual Studio 6 вначале выберите в Visual Studio пункт меню <b>Purify&nbsp;&gt;
+                Запустить интеграцию Purify</b>. При наличии в системе PureCoverage выберите <b>Purify&nbsp;&gt; Собрать
+                данные о прогоне</b> чтобы указать Purify на необходимость отслеживания прогона кода. Затем запустите
+                программу в Visual Studio как обычно.
+            </li>
+            <li>
+                При использовании Purify в качестве автономной программы, не интегрированной в Visual Studio, выберите
+                <b>Файл &gt; Выполнить</b>. В окне Выполнить программу выберите <b>Собирать ошибки, утечки и данные о
+                прогоне кода</b> (либо <b>Собирать ошибки и данные об утечках</b> если PureCoverage в системе отсутствует)
+                и выполните программу.
+            </li>
+        </ul>
+    </li>
+    <li>
+        В системе UNIX добавьте слово <font face="Courier New" size="2">purify</font>. Поместите его в начале строки
+        compile/link. При наличии PureCoverage в системе добавьте <font face="Courier New" size="2">purecov</font> .
+        Например:<br />
+         <font face="Courier New,Courier" size="-1">% purify purecov cc -g hello_world.c</font><br />
+         Затем выполните программу как обычно.
+    </li>
+</ul>При выполнении программы Purify отобразит ошибки исполнения в программе просмотра Purify. При выходе из программы
+Purify сообщит об утечке памяти. 
+<p>
+    Просканируйте заголовки сообщений для поиска критических ошибок. Разверните сообщения для просмотре дополнительной
+    диагностической информации, включая код, вызвавший ошибку. Из программы просмотра можно открыть исходный код в
+    редакторе с указанной строкой, содержащей ошибку, и исправить ее незамедлительно.
+</p>
+<p>
+    Исправив ошибки и перекомпоновав программу проверьте исправления, выполнив обновленную программу и сравнив результаты с
+    предыдущим исполнением. Повторите встраивание кода, выполнение, анализ и исправление до тех пор, пока при выполнении
+    программы ошибки не исчезнут полностью.
+</p>
+<p>
+    При сборе данных о прогоне кода можно также просмотреть компоненты кода, еще не проверенные на наличие ошибок. С
+    помощью этих сведений можно настроить область анализа выполнения таким образом, чтобы обнаружить все ошибки в
+    программе.
+</p>
+<p>
+    <b><img height="16" alt="значок справочника" hspace="0" src="./../../../core.base_rup/resources/helpbook.gif" width="16"     border="0" /></b>Дополнительные сведения приведены в следующих разделах электронной справки Purify:
+</p>
+<ul>
+    <li>
+        <i>выполнение программ</i>
+    </li>
+    <li>
+        <i>сообщения Purify</i>
+    </li>
+    <li>
+        <i>исходный код</i>
+    </li>
+    <li>
+        <i>данные о прогоне кода</i>
+    </li>
+</ul>
+<h3>
+    2. <a id="Step2" name="Step2"></a><b>Выполните программу в Purify для поиска неэффективного использования памяти
+    (управляемый Java и .NET код в Windows)&nbsp;</b>
+</h3>
+<p>
+    Purify помогает обнаружить неполадки при работе с памятью для управляемого Java и .NET кода. С помощью Purify можно
+    обнаружить:
+</p>
+<ul>
+    <li>
+        сколько памяти использует ваша программа
+    </li>
+    <li>
+        сколько новой памяти потребляет программа для определенного набора действий&nbsp;
+    </li>
+    <li>
+        какие методы и объекты вашей программы потребляют так много памяти&nbsp;
+    </li>
+    <li>
+        какие объекты могут мешать сбору ненужных объектов при сборе мусора&nbsp;
+    </li>
+    <li>
+        где требуется принудительный сбор мусора для повышения быстродействия
+    </li>
+</ul>НАчните с выполнения программы в Purify. 
+<ul>
+    <li>
+        При работе в Microsoft Visual Studio .NET, IBM WSWB или IBM WSS AD вначале выберите пункт меню
+        <b>PurifyPlus&nbsp;&gt; Purify&nbsp;&gt; ЗАпустить интеграцию Purify</b>. Затем выполните программу как обычно.
+    </li>
+    <li>
+        Если вы используете Purify как автономную программу, не интегрированную с Visual Studio .NET или WSWB/WSS AD,
+        выберите пункт <b>Файл &gt; Выполнить</b> в пользовательском интерфейсе Purify. В окне Выполнить программу выберите
+        пункт <b>СОбирать данные профилирования памяти</b> и запустите программу.
+    </li>
+</ul>Когда программа завершит процедуры инициализации, воспользуйтесь командой Purify создания моментальной копии для
+<b>проверки производительности</b> использования памяти на данный момент. Моментальная копия является основой для проверки
+потребления памяти программой. &nbsp;&nbsp; 
+<p>
+    Получив моментальную копию вы сможете сделать запись памяти, используемой программой при выполнении. Запустите
+    компоненты программы, которые, предположительно, отвечают за утечку памяти. Purify отобразит график выделения памяти,
+    показывающий в реальном времени потребление памяти. Наблюдая повышение в выделении памяти создайте еще одну
+    моментальную копию.
+</p>
+<p>
+    Сравните две моментальные копии для определения методов, ответственных за утечку памяти. Выйдите из программы и
+    сравните ("diff") две моментальные копии. Purify отобразит схему вызовов, отвечающих за наибольшее выделение памяти во
+    время выполнения программы между временем создания первой и второй моментальной копии. Вы можете сфокусироваться на
+    определенных методах в схеме вызовов для их более тщательного изучения.
+</p>
+<p>
+    Если объем выделенной методу памяти является неожиданном большим, проверьте исходный код и исправьте его при
+    необходимости для освобождения памяти когда в ней больше нет необходимости.
+</p>
+<p>
+    Обнаружив методы, потребляющие излишнюю память, проанализируйте их на уровне объектов. Проверьте объекты, которые
+    должны были быть, но не были, освобождены и собраны при сборке мусора, возможно из-за того, что другие объекты
+    сохраняют ненужные ссылки на них. &nbsp;
+</p>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />Дополнительные сведения
+    приведены в следующих разделах электронной справки Purify:&nbsp;
+</p>
+<ul>
+    <li>
+        <i>выполнение программ</i>
+    </li>
+    <li>
+        <i>сравнение выполнений</i>
+    </li>
+    <li>
+        <i>обозреватель данных</i>
+    </li>
+</ul>
+<h3>
+    3. <a id="Step3" name="Step3"><b>Выполните программу в Quantify для поиска узких мест производительности (Windows
+    иUNIX).</b></a>
+</h3>
+<p>
+    Quantify предоставляет полный, точный и доступный для обработки набор данных быстродействия для программы и ее
+    компонентов, что позволяет вам найти и устранить узкие места производительности в коде.
+</p>
+<p>
+    Начните с запуска программы в Quantify для сбора данных о быстродействии:
+</p>
+<ul>
+    <li>
+        В системе Windows: 
+        <ul>
+            <li>
+                При работе в Microsoft Visual Studio 6 вначале выберите пункт меню Visual Studio <b>Quantify&nbsp;&gt;
+                ЗАпустить интеграцию Quantify</b>. Затем запустите программу в Visual Studio как обычно.
+            </li>
+            <li>
+                При работе в Microsoft Visual Studio .NET, IBM WSWB или IBM WSS AD выберите пункт меню
+                <b>PurifyPlus&nbsp;&gt; Quantify&nbsp;&gt; Запустить интеграцию Quantify</b>. Затем выполните программу как
+                обычно.
+            </li>
+            <li>
+                При использовании Quantify в качестве автономной программы, не интегрированной в Visual Studio или WSWB/WSS
+                AD, выберите в пользовательском интерфейсе Quantify пункт <b>Файл&nbsp;&gt;&nbsp;Выполнить</b> для
+                выполнения программы.
+            </li>
+        </ul>
+    </li>
+    <li>
+        В системе UNIX добавьте слово <i>quantify</i> в начало строки compile/link. Например:<br />
+<pre>
+     % quantify cc -g hello_world.c
+</pre>
+        Затем выполните программу как обычно.
+    </li>
+</ul>
+<p>
+    При выполнении кода Quantify записывает данные о быстродействии программы и отображает активность ее нитей. При выходе
+    из программы Quantify создаст точный профайл ее быстродействия, который можно будет использовать для поиска и
+    диагностики узких мест.
+</p>
+<p>
+    Quantify отображает следующие данные:
+</p>
+<ul>
+    <li>
+        окно Схема вызовов, графически описывающее структуру вызовов и быстродействие функций программы
+    </li>
+    <li>
+        доступный для сортировки список функций, содержащий все функции с данными быстродействия
+    </li>
+    <li>
+        окно Сведения о функциях, содержащее данные о конкретных функциях, инициаторах и потомках
+    </li>
+    <li>
+        окно Источник с аннотацией, содержащее построчные сведения о данных быстродействия для копии исходного кода
+    </li>
+</ul>
+<p>
+    После сбора данных вы сможете найти узкие места быстродействия, такие как ненужные вычисления и повторные вычисления,
+    преждевременные вычисления или чрезмерные вызовы библиотек.
+</p>
+<p>
+    Изменив код и устранив или минимизировав узкие места быстродействия, повторно выполните обновленную программу в
+    Quantify. Затем сравните новые результаты с предыдущим выполнением, создав набор данных "diff", предоставляющий четкие
+    сведения об улучшении или снижении быстродействия.
+</p>
+<p>
+    Дополнительная информация приведена в следующих разделах электронной справки Quantify:
+</p>
+<ul>
+    <li>
+        <i>выполнение программ</i>
+    </li>
+    <li>
+        <i>сравнение выполнений</i>
+    </li>
+    <li>
+        <i>окно схемы вызовов</i>
+    </li>
+    <li>
+        <i>окно источника с аннотацией</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

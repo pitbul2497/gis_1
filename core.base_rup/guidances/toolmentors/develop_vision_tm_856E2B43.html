@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Разработка видения с помощью Rational RequisitePro</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="develop_vision_tm" name="uma.name">
+<meta content="Разработка видения с помощью Rational RequisitePro" name="uma.presentationName">
+<meta content="Tool:rup_requisite_pro:Rational RequisitePro" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational RequisitePro" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{29BC529A-4416-45C0-9633-B05F1A9EF2CB}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{29BC529A-4416-45C0-9633-B05F1A9EF2CB}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{29BC529A-4416-45C0-9633-B05F1A9EF2CB}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{29BC529A-4416-45C0-9633-B05F1A9EF2CB}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Разработка видения с помощью Rational RequisitePro</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение Rational RequisitePro&reg; для документирования видения проекта. Документ видение является общим оператором основных требований проекта и предоставляет договорную основу для технических требований.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_requisite_pro_593FD397.html" guid="{887DBA0C-5761-494D-862D-5956F1C51BF7}">Rational RequisitePro</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/develop_vision_D9584F04.html" guid="{7069CFB7-77C3-4B44-B8A2-9CCA752BDDDA}">Разработка видения</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Документ видение предоставляет основу высокого уровня, и иногда контрактную, для технических требований. Также может
+    существовать и формальная спецификация требований. В видении содержатся требования и ограничения разработки высокого
+    уровня для предоставления читателю возможности понять разрабатываемую систему. Он сообщает относящиеся к проекту "что и
+    почему" и является мерой всех будущих решений.
+</p>
+<h4>
+    Этапы работы с инструментами
+</h4>
+<p>
+    Для документирования видения с помощью RequisitePro выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Create a Vision Document">Создайте документ Видение</a>
+    </li>
+    <li>
+        <a href="#Create requirements in the Vision document">Создайте в документе Видение требования</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="Create a Vision Document" name="Create a Vision Document">Создайте документ Видение</a>
+</h3>
+<p>
+    Документ Видение содержит компоненты продукта, определенные в <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/elicit_stakeholder_requests_97BE5D6E.html" guid="{EAEF65F0-E9CA-45B2-A875-47E66B3FDBC6}">Задаче: оценка запросов заинтересованных лиц</a>. При создании проекта
+    RequisitePro с помощью одного из шаблонов по умолчанию (Прецедент, Обычный, Составной) в проектах уже содержится
+    документ Видение в пакете Компоненты и Видение. Если в проекте отсутствует документ Видение, выполните следующие
+    действия для его создания.
+</p>
+<p>
+    Для создания документа требований Видение выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Откройте проект RequisitePro.
+    </li>
+    <li>
+        В обозревателе выберите пакет, в который следует поместить документ Видение и затем выберите <b>Файл &gt; Создать
+        &gt; Документ</b>. Откроется диалоговое окно Свойства документа.
+    </li>
+    <li>
+        Введите имя, описание и имя файла для документа.
+    </li>
+    <li>
+        В списке <b>Тип документа</b> выберите "Тип документа Видение". Нажмите <b>OK</b>. В Microsoft&reg; Word откроется
+        схема документа Видение.
+    </li>
+    <li>
+        Замените информационный текст по умолчанию на относящиеся к проекту сведения.
+    </li>
+    <li>
+        Выберите <b>RequisitePro</b> &gt; <b>Документ</b> &gt; <b>Сохранить</b>.
+    </li>
+</ol>
+<h4>
+    Дополнительная информация
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" border="0" />Обратитесь к следующим
+    разделам электронной справки RequisitePro:
+</p>
+<ul>
+    <li>
+        <i>Создание проекта RequisitePro</i> (Индекс: проекты&gt;создание)
+    </li>
+    <li>
+        <i>Создание документов требований</i> (Индекс: документы&gt;создание)
+    </li>
+</ul>
+<h3>
+    2. <a id="Create requirements in the Vision document" name="Create requirements in the Vision document">Создайте
+    требования в документе Видение</a>
+</h3>
+<p>
+    Создайте требования из компонентов продукта, обозначенных в разделе Компоненты продукта документа Видение. Это
+    позволяет управлять атрибутами требований в матрице атрибутов и помогает отслеживать ссылки трассируемости между
+    компонентами продукта и требованиями к ПО.
+</p>
+<p>
+    Для создания требований в документе Видение выполните следующие действия:
+</p>
+<ol>
+    <li>
+        В разделе Компоненты продукта документа Видение выберите (выделите) текст, определяющий требование.
+    </li>
+    <li>
+        Выполните одно из следующих действий: 
+        <ul>
+            <li>
+                Щелкните правой кнопкой и выберите <b>Создать требование</b>.
+            </li>
+            <li>
+                Выберите <b>RequisitePro</b> &gt; <b>Требование</b> &gt; <b>Создать</b>.<br />
+                 Откроется диалоговое окно Свойства требования.
+            </li>
+        </ul>
+    </li>
+    <li>
+        На вкладке <b>Общие</b> примите тип требований компонента (FEAT) и введите имя для него.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Атрибуты</b> и задайте атрибут <b>Приоритет</b> равным одному из предоставленных значений
+        (Обязательно, Рекомендуется, Возможно, Ненужное). Рекомендуется записывать приоритеты заинтересованных лиц при
+        оценке их запросов требований. (См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/elicit_stakeholder_requests_97BE5D6E.html" guid="{EAEF65F0-E9CA-45B2-A875-47E66B3FDBC6}">Задача: Определение запросов заинтересованных лиц</a>.)
+    </li>
+    <li>
+        Выберите атрибут <b>Сведения о создании</b> и выберите запись, представляющую отправителя определенного компонента.
+        Это поможет отследить отправителей запросов к определенным компонентам продукта, чтобы вы знали к кому обратиться
+        при возникновении необходимости прояснить или обсудить запрос.
+    </li>
+    <li>
+        Нажмите <b>OK</b>.
+    </li>
+    <li>
+        Можно повторить эти действия для каждого компонента продукта, обозначенного в разделе Компоненты продукта документа
+        Видение. Завершив выберите в меню <b>RequisitePro &gt; Документ &gt; Сохранить</b>.
+    </li>
+</ol>
+<p>
+    Для просмотра атрибутов и требований выполните следующие действия:
+</p>
+<ol>
+    <li>
+        В окне RequisitePro выберите пакет, в котором требуется создать панель.
+    </li>
+    <li>
+        Выберите <b>Файл &gt; Создать &gt; Панель</b>. Откроется диалоговое окно Свойства панели.
+    </li>
+    <li>
+        Введите имя панели, выберите тип панели <b>Матрица атрибутов</b> и выберите тип требований <b>FEAT</b>,
+        использованный в документе Видение.
+    </li>
+    <li>
+        Нажмите <b>OK</b>. Просмотрите требования к компоненту и значения их атрибутов.
+    </li>
+</ol>
+<h4>
+    Дополнительная информация
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" />Обратитесь к следующим разделам
+    электронной справки RequisitePro:
+</p>
+<ul>
+    <li>
+        <i>Создание требований в документе</i> (Индекс: требования &gt; создание)
+    </li>
+    <li>
+        <i>Присвоение значений атрибутам требований</i> (Индекс: атрибут требований &gt; значения, присвоение)
+    </li>
+    <li>
+        <i>Создание панели</i> (Индекс: панели &gt; создание панелей)
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

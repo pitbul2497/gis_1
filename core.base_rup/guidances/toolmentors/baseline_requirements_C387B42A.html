@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Создание контрольной версии проекта Rational RequisitePro</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="baseline_requirements" name="uma.name">
+<meta content="Создание контрольной версии проекта Rational RequisitePro" name="uma.presentationName">
+<meta content="Tool:rup_requisite_pro:Rational RequisitePro" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational RequisitePro" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{CC4BC013-6917-468D-A3DC-0E696FB9DB7A}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{CC4BC013-6917-468D-A3DC-0E696FB9DB7A}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{887DBA0C-5761-494D-862D-5956F1C51BF7}", "{CC4BC013-6917-468D-A3DC-0E696FB9DB7A}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{CC4BC013-6917-468D-A3DC-0E696FB9DB7A}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Создание контрольной версии проекта Rational RequisitePro</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается процесс создания контрольной версии требований с помощью Rational Administrator и Rational ClearCase.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_requisite_pro_593FD397.html" guid="{887DBA0C-5761-494D-862D-5956F1C51BF7}">Rational RequisitePro</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_cm_environment_78ABEDF9.html" guid="{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}">Настройка среды управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/create_baseline_30FA138.html" guid="{F8256B31-5CE3-49C0-9DC2-ECB57DD48867}">Создание контрольных версий</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<p>
+    <strong><font size="4">Обзор</font></strong>
+</p>
+<p>
+    Рекомендуется создавать контрольную версию проекта требований для всех <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/iteration_441A13D7.html" guid="3.379871268737602E-305">вех</a>
+    проекта. Контрольная версия создает объект ClearCase, представляющий стабильную конфигурацию проекта Rational
+    RequisitePro&reg; в определенный момент времени. Этот объект можно использовать для создания нового проекта.
+</p>
+<p>
+    Проект RequisitePro состоит из базы данных требований, панелей проектов и документов, содержащих требования. Требования
+    можно создать непосредственно на панели проекта или в документе Microsoft&reg; Word в RequisitePro. Все требования хранятся
+    в базе данных, вне зависимости от их расположения в проекте. Можно создать контрольную версию любого проекта
+    RequisitePro вне зависимости от того, использует ли он базу данных Oracle, Microsoft Access или SQL Server.
+</p>
+<p>
+    <strong>Примечание:</strong> Сведения об архивации проекта RequisitePro project приведены в памятке по инструменту <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/archiving_requirements_A3B2A33E.html" guid="{1AA3B210-5979-4E05-8A08-A436B38997B0}">Архивация требований с помощью RequisitePro</a>.
+</p>
+<h3>
+    Создание контрольной версии проекта с помощью Unified Change Management
+</h3>
+<p>
+    С помощью модели Unified Change Management (UCM) администраторы проектов RequisitePro могут создавать контрольные
+    версии проектов RequisitePro, выполняя задачи в Rational Administrator и ClearCase.
+</p>
+<p>
+    Перед созданием контрольной версии проекта RequisitePro вначале следует выполнить следующие предварительные условия:
+</p>
+<ul>
+    <li>
+        Проект RequisitePro должен быть связан с поддерживающим UCM проектом Rational в Rational Administrator.
+    </li>
+    <li>
+        Проект RequisitePro должен быть закрыт, активных пользователей быть не должно.
+    </li>
+</ul>
+<p>
+    Для создания контрольной версии проекта RequisitePro:
+</p>
+<ol>
+    <li>
+        Откройте Rational Administrator.
+    </li>
+    <li>
+        Щелкните правой кнопкой мыши на проекте Administrator и выберите <strong>Настроить</strong>.
+    </li>
+    <li>
+        В диалоговом окне Настроить проект в области <strong>Требуемые ресурсы</strong> выберите <strong>Пометить
+        все</strong>.
+    </li>
+    <li>
+        В появившемся сообщении подтвердите выбор и укажите действие для описания контрольной версии.
+    </li>
+    <li>
+        После завершения операции Пометить все закройте окно Настроить проект.
+    </li>
+    <li>
+        В меню Rational Administrator <strong>Инструменты</strong> выберите <strong>Обзор проектов Rational
+        ClearCase</strong>. ОТкроется проводник ClearCase.
+    </li>
+    <li>
+        Щелкните правой кнопкой мыши на потоке интеграции <strong>Требуемые ресурсы RequisitePro</strong> и выберите во
+        всплывающем меню пункт <strong>Создать контрольную версию</strong>.
+    </li>
+    <li>
+        Укажите название контрольной версии, выберите <strong>Полная</strong> в качестве типа контрольной версии, выберите
+        <strong>Показать контекст</strong> и нажмите кнопку <strong>OK</strong>.
+    </li>
+</ol>
+<h4>
+    Дополнительная информация
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" />Обратитесь к разделу <i>Создание
+    контрольной версии&nbsp; с помощью Unified Change Management</i> (Индекс: создание&gt;контрольных версий) электронной
+    справки по RequisitePro.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Агрегирование</title>
+<meta content="Guideline" name="uma.type">
+<meta content="aggregation" name="uma.name">
+<meta content="Агрегирование" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "1.1538495077622037E-304"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.1538495077622037E-304"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Агрегирование</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Агрегирование моделирует составную взаимосвязь между элементами модели. В этой рекомендации описываются способы работы с этим отношением.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/class_design_98F20FF9.html" guid="{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}">Проектирование классов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_capsule_designer_F3E66EDF.html" guid="{86253FE7-0036-4D14-8BD7-C18CE86A5E14}">Проектировщик капсул</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_aggregation__guidelines_for" name="XE_aggregation__guidelines_for"></a><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Агрегирование</a>
+</h3>
+<p>
+    Агрегирование служит для моделирования составной взаимосвязи между элементами модели. Существует множество примеров
+    составных взаимосвязей: <b>Библиотека</b> содержит <b>Книги</b>, <b>Отделы</b> компании состоят из <b>Сотрудников</b>,
+    <b>Компьютер</b> состоит из набора <b>Устройств</b>. Для моделирования этого создается <b>агрегационная</b> ассоциация
+    между агрегатом (<b>Отдел</b>) и его составными частями (<b>Сотрудник</b>).
+</p>
+<p>
+    Для обозначения агрегирования к концу пути ассоциации на боковой стороне агрегата (целого) прикрепляется незакрашенный
+    ромбик.
+</p>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    В этом примере у <b>Клиента</b> есть <b>Адрес</b>. Так как два класса представляют часть более крупного целого,
+    применяется агрегирование. <b>Адрес</b> моделируется как отдельный класс, поскольку у многих других объектов также есть
+    адреса.
+</p>
+<p class="picturecenter" align="center">
+    <img height="115" alt="Пример агрегирования" src="./../../../core.base_rup/guidances/guidelines/resources/aggr0.gif" width="395" />
+</p>
+<p class="picturetext">
+    Объект агрегата может объединять другие объекты.
+</p>
+<h3>
+    <a id="Shared Aggregation" name="Shared Aggregation">Общее агрегирование</a>
+</h3>
+<p>
+    Если для агрегата установлена агрегационная взаимосвязь с множественностью выше единицы, то такая взаимосвязь
+    называется <b>общей</b>. Уничтожение агрегата не обязательно вызывает уничтожение его частей. Подразумевается, что
+    общее агрегирование образует граф, т.е. дерево с несколькими корнями. Общие агрегирования применяются в случаях, когда
+    между двумя классами существует сильная взаимосвязь, так что один и тот же экземпляр может участвовать в двух различных
+    агрегированиях.
+</p>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    Рассмотрим случай, когда пользователь занимается бизнесом на дому. И у Пользователя, и у Бизнеса есть адрес; на самом
+    деле, это <u>один и тот же</u> адрес. Адрес является составной частью и Пользователя, и Бизнеса. Однако Бизнес может
+    прекратить свое существование; в этом случае адрес Пользователя, будем надеяться, не изменится.
+</p>
+<p class="example">
+    Заметьте, что в этом случае можно начинать и с общего агрегирования, а впоследствии преобразовать его в необщую.
+    Домашний бизнес может расти и процветать и в какой-то момент разделиться на несколько областей. С этого момента адреса
+    Пользователя и Бизнеса перестанут совпадать. В результате этого агрегирование перестанет быть общим.
+</p>
+<p class="picturecenter" align="center">
+    <img height="185" alt="Пример агрегирования" src="./../../../core.base_rup/guidances/guidelines/resources/aggr5.gif" width="387" />
+</p>
+<p class="picturetext">
+    Пример общего агрегирования.
+</p>
+<h3>
+    <a id="Composition" name="Composition">Композиция</a>
+</h3>
+<p>
+    <b>Композиция</b> - это форма агрегирования с сильным владением и одинаковыми сроками жизни части и агрегата.
+    Множественность конца агрегата (в примере - <b>Заказ</b>) не может превышать единицы (т.е. агрегирование не может быть
+    общим). Агрегирование также неизменяемо, т.е. его ссылки нельзя изменить после их установления. Подразумевается, что
+    составное агрегирование образует "дерево" частей, в котором корень - это агрегат, а "ветви" - части.
+</p>
+<p>
+    Составное агрегирование следует применять вместо "простого", когда между агрегатом и его частями существует сильная
+    взаимозависимость, т.е. определение агрегата неполно без частей. В представленном ниже примере иметь <b>Заказ</b>
+    целесообразно, даже если ничего не заказывается (например, <b>Товары</b>). В некоторых случаях эту взаимозависимость
+    можно определить на стадии анализа (как в этом примере), но чаще такие решения могут быть приняты конфиденциально не
+    ранее чем на стадии проектирования.
+</p>
+<p>
+    Для обозначения композиции к концу пути ассоциации прикрепляется закрашенный ромбик, как показано ниже:
+</p>
+<p align="center">
+    <img height="61" alt="Составное агрегирование" src="./../../../core.base_rup/guidances/guidelines/resources/aggr4.gif" width="304" />
+</p>
+<p class="picturetext">
+    Пример составного агрегирования.
+</p>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    В этом примере <b>Интерфейс клиента</b> состоит из нескольких других классов. Множественности агрегирований пока не
+    заданы.
+</p>
+<p class="picturecenter" align="center">
+    <img height="161" alt="Пример составного агрегирования" src="./../../../core.base_rup/guidances/guidelines/resources/aggr1.gif" width="377" />
+</p>
+<p class="picturetext">
+    Объекту <b>Интерфейс клиента</b> известно, какие объекты <b>Дисплей, Принтер для печати расписок</b>, <b>Клавиатура</b>
+    и <b>Динамик</b> ему принадлежат.
+</p>
+<h3>
+    <a id="Using Composition to Model Attributes" name="Using Composition to Model Attributes">Применение композиции для
+    моделирования свойств класса</a>
+</h3>
+<p>
+    Свойство класса - это то, о чем известно классу. Как в случае показанного выше класса <b>Клиент</b>, можно выбрать
+    моделирование <b>Адреса</b> Клиента как класса, как это было показано, или как набора атрибутов класса. Выбор между
+    классом и агрегационным отношением, или набором атрибутом, зависит от ответов на следующие вопросы:
+</p>
+<ul>
+    <li>
+        Нужна ли "свойствам" возможность независимой идентификации, т.е. чтобы на них можно было ссылаться из различных
+        объектов? Если да, используйте класс и агрегирование.
+    </li>
+    <li>
+        Необходимы ли каким-либо классам те же "свойства"? Если да, используйте класс и агрегирование.
+    </li>
+    <li>
+        Сложная ли структура у "свойств", т.е. есть ли у них свои собственные свойства? Если да, используйте класс (или
+        классы) и агрегирование.
+    </li>
+    <li>
+        В противном случае, используйте атрибуты.
+    </li>
+</ul>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    В <b>Банкомате</b> система должна отслеживать текущего клиента и его PIN. Предположим, что за это отвечает <b>Интерфейс
+    клиента</b>. Эту информацию можно рассматривать как "свойства" класса. Это можно сделать с помощью отдельного класса,
+    как показано ниже:
+</p>
+<p class="picturecenter" align="center">
+    <img height="220" alt="Свойства, моделируемые с помощью агрегирования" src="./../../../core.base_rup/guidances/guidelines/resources/aggr2.gif" width="173" />
+</p>
+<p class="picturetext" align="center">
+    Свойства объекта, моделируемые с помощью агрегирования
+</p>
+<p class="example">
+    Альтернативный вариант, когда <b>Интерфейс заказчика</b> отслеживает текущего клиента и его PIN с помощью атрибутов,
+    моделируется так:
+</p>
+<p class="picturecenter" align="center">
+    <img height="87" alt="Свойства, моделируемые с помощью атрибутов" src="./../../../core.base_rup/guidances/guidelines/resources/aggr3.gif" width="186" />
+</p>
+<p class="picturetext">
+    Свойства объекта, моделируемые с помощью атрибутов
+</p>
+<p>
+    Решение о том, что следует применять: атрибуты или агрегационную ассоциацию с отдельным классом, принимается в
+    зависимости от того, насколько тесно связаны представленные концепции. Если моделируемые концепции тесно связаны,
+    применяйте атрибуты. Если концепции, по-видимому, изменяются независимо, применяйте агрегирование.
+</p>
+<h3>
+    <a id="XE_aggregation__association_vs._aggregation" name="XE_aggregation__association_vs._aggregation"></a><a id="XE_association__aggregation_vs._association" name="XE_association__aggregation_vs._association"></a><a id="Aggregation or Association?" name="Aggregation or Association?">Агрегирование или ассоциация?</a>
+</h3>
+<p>
+    Агрегирование следует применять только тогда, когда между классами есть составная взаимосвязь, когда один класс состоит
+    из остальных классов, когда "части" неполны вне контекста целого. Рассмотрим случай <b>Заказа</b>: нет никакого смысла
+    иметь заказ, который "пуст" и состоит из "ничего". То же самое справедливо для всех агрегатов: в отделах должны быть
+    сотрудники, в семьях - члены семей, и т.д.
+</p>
+<p>
+    Если у классов может быть независимая идентификация вне контекста других классов, если они не являются частью некоего
+    большего целого, то следует применять ассоциативную взаимосвязь. Кроме того, ассоциацию следует применять в случае
+    сомнений; агрегирования, вообще говоря, очевидны, и выбирают их только с целью упростить дело. Это не критический
+    фактор для достижения успеха при моделировании.
+</p>
+<h3>
+    <a id="Self-Aggregations" name="Self-Aggregations">Циклические агрегирования</a>
+</h3>
+<p>
+    Иногда класс может быть агрегирован с самим собой. Это не означает, что экземпляр класса состоит из самого себя (это
+    было бы глупо); это означает, что один из экземпляров класса является агрегатом, составленным из других экземпляров
+    того же класса. В случае циклических агрегирований имена ролей существенны для различения цели ассоциации.
+</p>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    Рассмотрим следующее циклическое агрегирование с участием класса <b>Продукт</b>:
+</p>
+<p class="picturetext" align="center">
+    <img height="119" alt="Пример циклического агрегирования" src="./../../../core.base_rup/guidances/guidelines/resources/assoc3.gif" width="152" />
+</p>
+<p class="example">
+    В этом случае продукт может состоять из других продуктов; если это так, то последние называются субпродуктами. В
+    ассоциации можно перемещаться только от агрегата к субпродукту; иными словами, субпродуктам "неизвестно", в состав
+    каких продуктов они входят (поскольку они могут входить в состав многих продуктов).
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

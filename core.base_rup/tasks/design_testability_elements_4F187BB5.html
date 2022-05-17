@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Задача: Проектирование критериев пригодности к тестированию</title>
+<meta content="Task" name="uma.type">
+<meta content="design_testability_elements" name="uma.name">
+<meta content="Проектирование критериев пригодности к тестированию" name="uma.presentationName">
+<meta content="Discipline:rup_analysis_design_discipline:Анализ и проектирование" name="uma.category">
+<meta name="element_type" content="activity">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_MC6wMN7FEdm8G6yT7-Wdqw", path: ["_MC6wMN7FEdm8G6yT7-Wdqw", "_ydt62NnmEdmO6L4XMImrsA", "{635D3072-5A38-4EF8-B63E-08502EBBC8B4}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_ydt62NnmEdmO6L4XMImrsA", "{635D3072-5A38-4EF8-B63E-08502EBBC8B4}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_IY0NkAISEdqTna4sZVFRow", "_ydt62NnmEdmO6L4XMImrsA", "{635D3072-5A38-4EF8-B63E-08502EBBC8B4}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="{635D3072-5A38-4EF8-B63E-08502EBBC8B4}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Задача: Проектирование критериев пригодности к тестированию</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/task.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой задаче рассмотрено проектирование средств тестирования.</td>
+</tr>
+<tr>
+<td>Дисциплины: <a href="./../../core.base_rup/disciplines/rup_analysis_design_discipline_29760231.html" guid="_ydt62NnmEdmO6L4XMImrsA">Анализ и проектирование</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Основной исполнитель:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительные исполнители:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html" guid="{952A9CE9-D5A3-43AC-980D-0B9298F3872E}">Проектирование класса</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_test_class_790117F2.html" guid="{1C78947B-33D4-49AF-9E1F-655E7D74C53F}">Класс пригодности к тестированию</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_package_8376BC8E.html" guid="{80CC5437-F481-487B-A69B-957D9D236D8D}">Проектирование пакета</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_test_interface_specification_F1C8A203.html" guid="{020BA1FD-8940-4473-9C5B-0CA35FDDF4E6}">Спецификации интерфейса тестирования</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_test_class_790117F2.html" guid="{1C78947B-33D4-49AF-9E1F-655E7D74C53F}">Класс пригодности к тестированию</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_package_8376BC8E.html" guid="{80CC5437-F481-487B-A69B-957D9D236D8D}">Проектирование пакета</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading"> Определите классы и пакеты для проведения тестирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Identify Test Specific Classes and Packages" name="Identify Test Specific Classes and Packages"></a><a id="XE_test_procedure__design_behavior" name="XE_test_procedure__design_behavior"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель</b>
+            </td>
+            <td width="95%">
+                Определить и спроектировать классы и пакеты, которые обеспечат проведение тестирования. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    На основе данных, предоставленных проектировщиком тестов, определите и укажите классы и пакеты, предназначенные для
+    проведения тестирования, в модели проектирования.
+</p>
+<p>
+    Драйвер или заглушка класса проектирования содержат те же методы, что и исходный класс, но поведение для методов не
+    определено, за исключением обеспечения ввода (для объекта тестирования) или возврата предопределенного значения (для
+    объекта тестирования).
+</p>
+<p>
+    Драйвер или заглушка пакета проектирования содержит имитируемые классы для классов, образующих общедоступный интерфейс
+    исходного пакета.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Проектирование интерфейса инструмента автоматического тестирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Design Interface to Automated Test Tool" name="Design Interface to Automated Test Tool"></a><a id="XE_test_tool__design_interface_to" name="XE_test_tool__design_interface_to"></a>
+<div align="leftt">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель</b>
+            </td>
+            <td width="95%">
+                Определить интерфейс, необходимый для интеграции инструмента автоматического тестирования и средств
+                тестирования. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Определите, какое поведение необходимо, чтобы инструмент автоматического тестирования мог эффективно контактировать с
+    объектом тестирования. Определите и опишите соответствующие классы и пакеты проектирования.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Спроектируйте поведение процедуры тестирования </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Design Test Procedure Behavior" name="Design Test Procedure Behavior"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель</b>
+            </td>
+            <td width="95%">
+                Автоматизировать процедуры тестирования, для которых отсутствует инструмент автоматического тестирования.
+                &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Для того чтобы автоматизировать процедуры тестирования, для которых отсутствует инструмент автоматического
+    тестирования, определите соответствующие классы и пакеты проектирования. В качестве ввода используйте тестовые наборы и
+    порождающие их варианты использования.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

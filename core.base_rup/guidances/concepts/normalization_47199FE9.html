@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Нормализация</title>
+<meta content="Concept" name="uma.type">
+<meta content="normalization" name="uma.name">
+<meta content="Нормализация" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "3.183357382287462E-306"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="3.183357382287462E-306"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Нормализация</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Нормализацией называется процесс приведения сложной структуры данных к простейшей и наиболее стабильной форме в целях минимизации избыточности.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_database_designer_524DC34F.html" guid="{87EE3BF5-17CA-4211-BD3D-32F361E58550}">Проектировщик базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    В данном разделе приведены общие сведения о нормализации данных в контексте разработки рабочего продукта <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Рабочий продукт: Модель данных</a>.&nbsp;Этот раздел не охватывает
+    нормирование полностью, поскольку это довольно широкая тема, и она подробно освещена в различных публикациях по
+    разработке баз данных. &nbsp;В публикации [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#NBG01" guid="7.755968586980351E-308">NBG01</a>]
+    нормализация названа "аналитической технологией, применяемой для создания оптимальной структуры реляционной базы
+    данных". На практике нормализация представляет собой процедуру устранения избыточности в модели данных путем применения
+    определенных правил. Устранение избыточности в таблицах модели данных позволяет обеспечить целостность базы данных.
+    &nbsp;
+</p>
+<p>
+    Нормализацию модели данных обычно проводят после создания начальной версии таблиц и отношений между ними.
+    &nbsp;Оптимальный момент для нормализации зависит от конкретной ситуации, а решение о выборе момента принимает <a class="elementLinkWithUserText" href="./../../../core.base_rup/roles/rup_database_designer_524DC34F.html" guid="{87EE3BF5-17CA-4211-BD3D-32F361E58550}">разработчик базы данных</a>.&nbsp;Процесс нормализации таблиц модели
+    данных выполняется в несколько шагов, причем на каждом очередном шаге применяются все более строгие правила. &nbsp;
+</p>
+<h3>
+    <a id="Levels of Normalization" name="Levels of Normalization"></a>Уровни нормализации
+</h3>
+<p>
+    Нормализацию можно представить в виде иерархической структуры нормальных форм, в которой наиболее активно используются
+    первые три формы. Каждый следующий уровень нормализации более строг, чем предыдущий. Ниже перечислены первые три
+    иерархических уровня нормализации:
+</p>
+<ul>
+    <li>
+        <b>Первая нормальная форма</b> - из таблицы исключены все повторяющиеся столбцы данных, и данные приведены к
+        минимальным неделимым элементам.
+    </li>
+    <li>
+        <b>Вторая нормальная форма</b> - данные находятся в первой нормальной форме, удалено дублирование главных ключей, и
+        теперь значения в столбцах зависят только от поля основного ключа.
+    </li>
+    <li>
+        <b>Третья нормальная форма</b> - данные находятся во второй нормальной форме и ни один столбец не зависит от других
+        неключевых столбцов.
+    </li>
+</ul>
+<p>
+    Существуют и другие уровни нормализации, однако их обсуждение выходит за рамки данного раздела. &nbsp; Сведения о
+    других уровнях нормализации можно найти в публикации [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html#DAT99" guid="7.755968586980351E-308">DAT99</a>].&nbsp;При выборе уровня нормализации модели данных разработчик базы данных
+    должен учесть особенности конкретного проекта.
+</p>
+<p align="left">
+    &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.appliedis.com" target="_blank"><img alt="значок Applied Information Sciences"                 src="./../../../core.base_rup/guidances/supportingmaterials/resources/appliedis.gif" border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.appliedis.com" target="_blank">Applied Information Sciences</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

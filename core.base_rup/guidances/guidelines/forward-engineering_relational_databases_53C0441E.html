@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Прямое проектирование реляционных баз данных</title>
+<meta content="Guideline" name="uma.type">
+<meta content="forward-engineering_relational_databases" name="uma.name">
+<meta content="Прямое проектирование реляционных баз данных" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "5.250868507423771E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="5.250868507423771E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Прямое проектирование реляционных баз данных</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой рекомендации приведено описание методов преобразования постоянных классов проектирования модели проекта в таблицы модели данных.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Модель данных</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/database_design_8552DD3.html" guid="{2E74A414-49F5-4F27-BFCB-AA2DAC675F58}">Проектирование базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="Guidelines: Forward-Engineering Relational Databases" name="Guidelines: Forward-Engineering Relational Databases"></a> 
+<h3>
+    <a id="Introduction" name="Introduction"></a>Введение
+</h3>
+<p>
+    В этой рекомендации приведено описание методов преобразования постоянных <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_class_B33BD5E5.html" guid="{952A9CE9-D5A3-43AC-980D-0B9298F3872E}">классов
+    проектирования</a> <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">модели проекта</a> в таблицы <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">модели
+    данных</a>. &nbsp;
+</p>
+<h3>
+    <a id="Transform Design Model Elements to Data Model Elements" name="Transform Design Model Elements to Data Model Elements"></a>Преобразование элементов модели проекта в элементы
+    модели данных
+</h3>
+<p>
+    Постоянные классы модели проекта можно преобразовать в таблицы модели данных. &nbsp;Ниже приведена таблица,
+    иллюстрирующая преобразование между элементами модели проекта и модели данных.
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="50%">
+                    <p class="Text">
+                        <b>Элемент модели проекта</b>
+                    </p>
+                </th>
+                <th scope="col" width="50%">
+                    <p class="Text">
+                        <b>Соответствующий элемент модели данных</b>
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Класс
+                </td>
+                <td width="50%">
+                    Таблица
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Атрибут
+                </td>
+                <td width="50%">
+                    Столбец
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Ассоциация
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Неидентифицирующая связь
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Класс ассоциации
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Таблица пересечений
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Составная агрегация
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Идентифицирующая связь
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Ассоциация многие-ко-многим
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Таблица пересечений
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Множественность
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Кардинальное число
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p class="Text">
+                        Квалифицированная ассоциация
+                    </p>
+                </td>
+                <td width="50%">
+                    <p class="Text">
+                        Таблица пересечений
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Обобщение (Наследование)
+                </td>
+                <td width="50%">
+                    Отдельная таблица
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<h4>
+    <a id="Mapping Persistent Classes to Tables" name="Mapping Persistent Classes to Tables"></a>Преобразование постоянных
+    классов в таблицы
+</h4>
+<p>
+    Постоянные классы в модели проекта содержат информацию, которая должна храниться в системе. Теоретически эти классы
+    обладают характеристиками, схожими со свойствами элементов реляционной модели данных. (Например, классы в модели
+    проекта можно до какой-то степени выразить через сущности в реляционной схеме.) При переходе от уточнения к построению
+    цели модели проекта и цели реляционной модели данных расходятся. Это происходит потому, что цель разработки реляционной
+    базы данных - нормирование данных, а цель модели проекта - инкапсулирование постоянно усложняющегося поведения. Из-за
+    расхождения этих двух направлений (данные и поведение) возникает необходимость преобразования элементов одной модели в
+    соответствующие элементы другой модели.
+</p>
+<p>
+    В реляционной базе данных, составленной в третьей нормальной форме, каждый ряд таблицы (каждый "кортеж")
+    рассматривается как объект. Столбец таблицы представляет постоянный атрибут или класс. (Помните, что постоянный класс
+    может содержать временные атрибуты.) Поэтому в простом случае, когда нет ассоциаций с другими классами, преобразование
+    выполняется очень легко. Тип данных атрибута соответствует одному из допустимых типов данных из столбцов.
+</p>
+<p class="exampleheading">
+    Пример
+</p>
+<p class="example">
+    Класс Пользователь:
+</p>
+<p align="center">
+    <img height="87" alt="Класс Пользователь" src="./../../../core.base_rup/guidances/guidelines/resources/md_rdb1.gif" width="130" />
+</p>
+<p class="example">
+    при моделировании с помощью реляционной СУБД (RDBMS) будет преобразован в таблицу с названием Пользователь, состоящую
+    из столбцов ИД пользователя, Имя и Адрес.
+</p>
+<p>
+    Ниже приведен пример такой таблицы:
+</p>
+<p align="center">
+    <img height="118" alt="Фрагмент таблицы Объект Новый пользователь" src="./../../../core.base_rup/guidances/guidelines/resources/md_rdb2.gif" width="428" />
+</p>
+<h4>
+    <a id="Persistent Attributes and Keys" name="Persistent Attributes and Keys">Постоянные атрибуты и ключи</a>
+</h4>
+<p>
+    Для каждого постоянного атрибута нужно задать вопросы для получения дополнительной информации, на основе которой будет
+    создан постоянный объект в реляционной модели данных. Пример:
+</p>
+<ul>
+    <li>
+        Может ли этот постоянный атрибут служить ключом или частью ключа? Пример: "Атрибут X вместе с атрибутом Z служит
+        уникальным идентификатором объекта". В таблице Пользователь столбец ИД пользователя содержит первичный ключ.
+    </li>
+    <li>
+        Каково минимальное и максимальное значение атрибута?
+    </li>
+    <li>
+        Можно ли при поиске использовать этот атрибут вместо ключа? Например, он может быть частью фильтра в следующем
+        операторе выбора: "Обычно производится поиск всех экземпляров, где Y&gt;1000."
+    </li>
+    <li>
+        Есть ли у атрибута подобное описание: "Атрибут X - это количество повторных передач на 100 000 переданных
+        элементов"?
+    </li>
+    <li>
+        Может ли атрибут принимать цифровые значения и существуют ли правила для этих значений?
+    </li>
+    <li>
+        Кто обладает правом обновлять атрибут? Пример: "Объект T могут изменять только пользователи с полномочиями класса
+        nn."
+    </li>
+    <li>
+        Кто обладает правом считывать атрибут? Примеры: "Объект P могут считывать пользователи с полномочиями классов yy и
+        zz" или "Объект P включен в панели Vi и Vj."
+    </li>
+    <li>
+        Существует ли достаточная информация об объеме или повторяемости? Примеры: "Существует не более 50 000 вариантов
+        объекта A" или "В среднем в день изменяются 2000 объектов A".
+    </li>
+    <li>
+        Является ли атрибут уникальным? Пример: Номер каждого водительского удостоверения уникален.
+    </li>
+</ul>
+<h4>
+    <a id="Mapping Associations between Persistent Objects to the Data Model" name="Mapping Associations between Persistent Objects to the Data Model">Преобразование ассоциаций между постоянными
+    объектами в модель данных</a>
+</h4>
+<p>
+    Ассоциации между двумя постоянными объектами реализуются в виде внешних ключей к связанным объектам. Внешний ключ - это
+    столбец в таблице, где содержится значение первичного ключа связанного объекта.
+</p>
+<p class="exampleheading">
+    Пример:
+</p>
+<p class="example">
+    Предположим, что существует следующая ассоциация между Заказом и Покупателем:
+</p>
+<p align="center">
+    <img height="211" alt="Диаграмма UML, иллюстрирующая ассоциацию между Заказом и Покупателем. "     src="./../../../core.base_rup/guidances/guidelines/resources/md_rdb4.gif" width="135" />
+</p>
+<p class="example">
+    В результате преобразования в реляционные таблицы создаются таблица Заказ и таблица Покупатель. В таблице Заказ есть
+    столбец с атрибутами и дополнительный столбец ИД покупателя с внешними ключами, которые указывают на первичные ключи,
+    перечисленные в соответствующей строке таблицы Покупатель. Для каждого заказа в столбце ИД покупателя указан
+    идентификатор Покупателя, разместившего данный заказ. Внешние ключи позволяют реляционной СУБД связывать данные между
+    собой.
+</p>
+<h4>
+    <a id="Mapping Aggregation Associations to the Data Model" name="Mapping Aggregation Associations to the Data Model">Преобразование ассоциаций типа агрегации в модель данных</a>
+</h4>
+<p>
+    Агрегацию также можно моделировать с помощью внешних ключей.
+</p>
+<p class="exampleheading">
+    Пример:
+</p>
+<p class="example">
+    Предположим, что существует следующая ассоциация между Заказом и Каталогом:
+</p>
+<p align="center">
+    <img height="74" alt="Классы Заказ и Каталог" src="./../../../core.base_rup/guidances/guidelines/resources/md_rdb3.gif" width="343" />
+</p>
+<p class="example">
+    В результате преобразования в реляционные таблицы создаются таблица Заказ и таблица Каталог. В таблице Каталог есть
+    столбец с атрибутами и дополнительный столбец ИД заказа с внешними ключами, которые указывают на первичные ключи,
+    перечисленные в соответствующей строке таблицы Заказ. Для каждого товара из Каталога в столбце ИД заказа указан
+    идентификатор заказа, размещенного на данный товар. Внешние ключи позволяют реляционной СУБД связывать данные между
+    собой.
+</p>
+<p>
+    Кроме того, необходимо установить ограничение на каскадное удаление, чтобы обеспечить целостность ссылок в модели
+    данных. После этого при удалении Заказа будут также удаляться все ссылки на товары из данного заказа.
+</p>
+<h4>
+    <a id="Modeling Inheritance" name="Modeling Inheritance">Моделирование отношений обобщения</a> в модели данных
+</h4>
+<p>
+    Стандартная реляционная модель данных напрямую не поддерживает моделирование наследования. Для моделирования
+    наследования можно применять различные стратегии, а именно:
+</p>
+<ul>
+    <li>
+        Представление родительских и дочерних классов в отдельных таблицах. Таблица дочерних классов должна содержать
+        внешние ключи, ссылающиеся на таблицу родительских классов. Для создания объекта дочернего класса необходимо
+        объединить эти таблицы. Этот подход теоретически прост и облегчает процесс изменения модели, но его неудобно
+        использовать из-за обилия дополнительных действий.
+    </li>
+    <li>
+        Создание копии всех унаследованных атрибутов и ассоциаций в отдельных столбцах таблицы дочерних классов. Эта
+        стратегия повторяет процесс денормализации стандартной реляционной модели данных.
+    </li>
+</ul>
+<h4>
+    <a id="Modeling Many-to-Many Associations" name="Modeling Many-to-Many Associations">Моделирование ассоциаций
+    многие-ко-многим</a> в модели данных
+</h4>
+<p>
+    Для создания ассоциаций многие-ко-многим в реляционном моделировании применяется стандартный метод с использованием
+    связывающих сущностей. Здесь применяется тот же подход: для создания таких ассоциаций применяется таблица пересечений.
+</p>
+<p class="exampleheading">
+    Пример:
+</p>
+<p class="example">
+    Если поставщики могут доставлять различные продукты, и один и тот же продукт могут доставлять разные поставщики,
+    необходимо создать таблицу Поставщик/Продукт. Эта таблица будет содержать только первичные ключи из таблиц Поставщик и
+    Продукт и служить связующим звеном между поставщиками и продуктами, которые они поставляют. В модели объекта нет
+    аналогичной таблицы. Эта таблица используется только для определения ассоциаций в реляционной модели данных.
+</p>
+<h3>
+    <a id="Refine the Data Model" name="Refine the Data Model"></a>Уточнение модели данных
+</h3>
+<p>
+    После преобразования классов проектирования в таблицы и отношения модели данных эту модель при необходимости можно
+    уточнить для обеспечения целостности ссылок и настройки доступа к данным через панели или с помощью хранимых процедур.
+    Дополнительная информация приведена в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/data_model_80FB2539.html" guid="3.4196799396281445E-306">Рекомендация: Модель
+    данных</a>.
+</p>
+<h3>
+    <b><a id="Forward-Engineering the Data Model" name="Forward-Engineering the Data Model">Прямое проектирование модели
+    данных</a></b>
+</h3>
+<p>
+    Большинство инструментов проектирования поддерживают создание сценариев из модели данных на языке определения данных
+    (DDL) и/или создание базы данных из модели данных. &nbsp;Прямое проектирование базы данных нужно планировать как часть
+    всего процесса разработки приложения и выполнения задач по интеграции. &nbsp;Время и частота проведения прямого
+    проектирования базы данных зависят от требований проекта. &nbsp;При разработке нового приложения и создании новой базы
+    данных прямое проектирование можно первый раз применить в конце этапа уточнения в процессе реализации стабильной
+    архитектуры. &nbsp;В других случаях прямое проектирование можно первый раз применить при первых итерациях этапа
+    построения. &nbsp;
+</p>
+<p>
+    В зависимости от того, какие инструменты проектирования и какие реляционные СУБД применяются в проекте, с помощью
+    прямого проектирования можно создавать те или иные типы элементов модели данных. &nbsp; Обычно можно создавать основные
+    структурные элементы модели данных: таблицы, панели, триггеры и индексы.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.appliedis.com" target="_blank"><img alt="значок Applied Information Sciences"                 src="./../../../core.base_rup/guidances/supportingmaterials/resources/appliedis.gif" border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.appliedis.com" target="_blank">Applied Information Sciences</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Управление запросами заинтересованных лиц с помощью Rational ClearQuest и Rational RequisitePro</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="manage_stakeholder_requests" name="uma.name">
+<meta content="Управление запросами заинтересованных лиц с помощью Rational ClearQuest и Rational RequisitePro" name="uma.presentationName">
+<meta content="Tool:rup_suite_analyst_studio:Rational Suite AnalystStudio" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Suite AnalystStudio" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{F6A36701-8189-4691-86CB-1DE7140E9C0B}", "{7FA7141F-FF45-4DB9-9853-C6221A2D67FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{F6A36701-8189-4691-86CB-1DE7140E9C0B}", "{7FA7141F-FF45-4DB9-9853-C6221A2D67FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{F6A36701-8189-4691-86CB-1DE7140E9C0B}", "{7FA7141F-FF45-4DB9-9853-C6221A2D67FF}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{7FA7141F-FF45-4DB9-9853-C6221A2D67FF}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Управление запросами заинтересованных лиц с помощью Rational ClearQuest и Rational RequisitePro</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается создание и связывание требований в Rational RequisitePro&reg; с запросами расширений в Rational ClearQuest&reg;, что позволяет аналитикам эффективно отслеживать происхождение запросов. В памятке также описывается управление свойствами требований из ClearQuest.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_suite_analyst_studio_B0237242.html" guid="{F6A36701-8189-4691-86CB-1DE7140E9C0B}">Rational Suite AnalystStudio</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/elicit_stakeholder_requests_97BE5D6E.html" guid="{EAEF65F0-E9CA-45B2-A875-47E66B3FDBC6}">Определение требований заинтересованных лиц</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html" guid="{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}">Поиск субъектов и вариантов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/review_change_request_E7D91346.html" guid="{1CD358DF-3FFC-4281-B3EF-8E3CD76C5900}">Проверка запросов изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/develop_supplementary_specification_52FC4CAE.html" guid="_I5vM8DJwEdqLGaxX1Cc4eA">Разработка дополнительных спецификаций</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/manage_dependencies_4F6CEFAA.html" guid="{7F42C4D6-584F-4B19-9B0B-FDE86BD85FBB}">Управление зависимостями</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="Top" name="Top"></a> 
+<p>
+    <strong>Примечание</strong>: Перед этим необходимо установить RequisitePro и ClearQuest, проект <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/configure_projects_82600862.html" guid="{63D2EE2A-A8D2-4A1D-BC41-8D62E9DA7CBF}">Rational Administrator</a> должен быть настроен для обоих продуктов для
+    доступа к этой функции.
+</p>
+<h3>
+    Обзор
+</h3>
+<p>
+    Роль аналитика заключается в объединении потребностей заинтересованных лиц и сведений от пользователей в определении
+    системы. Интеграция Rational между ClearQuest и RequisitePro позволяет связать полные запросы расширения со связанными
+    требованиями, таким образом отслеживая источник требований.
+</p>
+<p>
+    Для каждого запроса расширения, идентифицированного для доставки системных функций ClearQuest, аналитик может создать
+    или связать одно или несколько требований, переформулировав текст запроса расширения в допустимое определение
+    требования. <i>Хорошо сформулированное определение требования</i> ссылается на доступные для тестирования, точно
+    выраженные, согласованные, доступные для проверки и полные требования. Требования хранятся в RequisitePro, но доступны
+    для создания в ClearQuest или RequisitePro, а их свойствами можно управлять как в ClearQuest, так и в RequisitePro.
+</p>
+<p>
+    <b>Примечание</b>: связать запросы расширений можно только с требованиями в приложениях RequisitePro или ClearQuest
+    Windows, но не в RequisiteWeb или ClearQuest Web.
+</p>
+<h4>
+    <strong>Этапы работы с инструментом</strong>
+</h4>
+<p>
+    Этот документ описывает следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Enabling">Включение интеграции ClearQuest и RequisitePro</a>
+    </li>
+    <li>
+        <a href="#select">Применение ClearQuest для выбора проекта RequisitePro</a>
+    </li>
+    <li>
+        <a href="#associate">Применение ClearQuest для связывания требований с запросами расширений</a>
+    </li>
+    <li>
+        <a href="#create">Применение ClearQuest для создания требований из запросов расширения</a>
+    </li>
+    <li>
+        <a href="#Managing">Управление свойствами требований в ClearQuest</a>
+    </li>
+</ol>
+<h3>
+    <font face="Arial">1. <b><a id="Enabling" name="Enabling">Включение</a> интеграции ClearQuest и RequisitePro</b></font>
+</h3>
+<p>
+    Для связывания запросов расширения с требованиями требуется минимальная настройка. Она включает в себя применение
+    проекта Rational Suite для указания базы данных ClearQuest и проекта RequisitePro. При установке администратор
+    ClearQuest задает типы требований, которые можно создать в ClearQuest. Администраторы могут задать привязку для
+    автоматизации связанных с проектом потребностей. Информация о включении этой интеграции приведена в документе
+    <i>Rational Suite - руководство администратора</i> на компакт-диске с документацией.
+</p>
+<h3>
+    <font face="Arial">2. <b>Применение ClearQuest для <a id="select" name="select">выбора</a> проекта
+    RequisitePro&nbsp;.</b></font>
+</h3>
+<p>
+    Для связывания запросов расширения с требованиями каждый запрос расширения должен идентифицировать проект Rational
+    Suite, используемый в качестве источника доступных требований.
+</p>
+<p>
+    Для выбора проекта RequisitePro из ClearQuest:
+</p>
+<ol>
+    <li>
+        Выберите запрос расширения и щелкните на пункте <b>Действия</b> &gt; <b>Изменить</b> чтобы разрешить изменение
+        записи.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Основные</b>.
+    </li>
+    <li>
+        В списке <b>Проект RA</b> появятся допустимые проекты Rational Suite. Каждый проект Rational Suite связан с
+        уникальным проектом RequisitePro. Выберите соответствующий проект и нажмите кнопку <b>Применить</b>. ClearQuest
+        сохранит ссылку на проект с записью запроса расширения.
+    </li>
+</ol>
+<h3>
+    <font face="Arial">3. <b>С помощью ClearQuest <a id="associate" name="associate">свяжите</a> требования с запросами
+    расширения</b></font>
+</h3>
+<p>
+    После идентификации проекта Rational Suite в ClearQuest аналитик готов к связыванию запросов расширения с требованиями.
+    Это связывание можно выполнить только если запросы расширений не были отправлены при отправке. При наличии
+    существующего требования, представляющего потребности заинтересованных лиц в описании требования расширения, аналитик
+    связывает запрос расширения с существующим требованием, выбрав требование из полного списка требований. С одним
+    требованием можно связать несколько запросов расширения, а с одним запросом расширения можно связать несколько
+    требований.
+</p>
+<p>
+    Чтобы связать запрос расширения с существующим требованием, выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Выберите запрос расширения и щелкните на пункте <strong>Действия&gt; Изменить</strong> чтобы разрешить изменение
+        записи. Можно выбрать несколько запросов расширений для связывания с одним требованием, для этого удерживайте
+        нажатой клавишу Ctrl или Shift при выборе запросов расширений.
+    </li>
+    <li>
+        На вкладке <b>Основные</b> выберите <b>Проект RA</b>.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Требования</b>. Эта вкладка используется для выбора и удаления связанных требований, а
+        также для просмотра свойств связанных требований.
+    </li>
+    <li>
+        Нажмите кнопку <strong>Добавить в список</strong>. Появится окно Выбрать требование. Требования, отображаемые в
+        этом окне, динамически запрашиваются из связанного проекта RequisitePro.
+    </li>
+    <li>
+        В списке <b>Требования типа</b> выберите тип требований <strong>FEAT</strong>. Будут показаны все требования FEAT.
+    </li>
+    <li>
+        Выберите нужное требование и нажмите кнопку <b>OK</b>.
+    </li>
+    <li>
+        Нажмите кнопку <strong>Применить</strong> для сохранения изменений.
+    </li>
+</ol>
+<p>
+    Обратитесь к <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/eliciting_stakeholder_requests_F741CFA2.html" guid="{73B617C8-1E9A-4262-975F-8D097B771BD9}">Памятке по инструменту: оценка запросов заинтересованных лиц с помощью
+    Rational ClearQuest</a> для получения более подробной информации.
+</p>
+<h3>
+    <font face="Arial">4. <b>Применение ClearQuest для <a id="create" name="create">создания</a> требований из запросов
+    расширения</b></font>
+</h3>
+<p>
+    Если потребности заинтересованного лица, отраженные в определении запроса, не представлены существующими требованиями ,
+    аналитик может создать новое требование из ClearQuest.
+</p>
+<ol>
+    <li>
+        Выберите запрос расширения и щелкните на пункте <strong>Действия&gt; Изменить</strong> чтобы разрешить изменение
+        записи. Можно выбрать несколько запросов расширений для связывания с одним требованием, для этого удерживайте
+        нажатой клавишу Ctrl или Shift при выборе запросов расширений.
+    </li>
+    <li>
+        На вкладке <b>Основные</b> выберите <b>Проект RA</b>.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Требования</b>. Эта вкладка используется для выбора и удаления связанных требований, а
+        также для просмотра свойств связанных требований.
+    </li>
+    <li>
+        Нажмите кнопку <strong>Добавить в список</strong>. Появится окно Выбрать требование. Требования, отображаемые в
+        этом окне, динамически запрашиваются из связанного проекта RequisitePro.
+    </li>
+    <li>
+        Выберите тип требования для нового требования.
+    </li>
+    <li>
+        Нажмите <b>Создать</b>. Откроется диалоговое окно Свойства требования.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Общие</b> и задайте имя и текст требования. Убедитесь, что вы выбрали соответствующий пакет
+        для содержания нового требования.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Атрибуты</b> и задайте значения атрибутов требования.
+    </li>
+    <li>
+        Нажмите кнопку <b>OK</b>. Откроется окно Выбрать требование.
+    </li>
+    <li>
+        Прокрутите список требований вниз чтобы найти новое требование, выделите его и нажмите кнопку <b>OK</b>.
+    </li>
+    <li>
+        Нажмите кнопку <b>Применить</b> для сохранения изменений. Требование связывается с запросом расширения.
+    </li>
+</ol>
+<p>
+    <b>Примечание</b>: созданные таким образом требования находятся только в базе данных, но не в документах. В
+    RequisitePro можно изменить расположение требований к документу для дальнейшей разработки, вырезав требование из панели
+    (с помощью пунктов меню <b>Правка</b> &gt; <b>Вырезать</b>) и вставив его в нужный документ RequisitePro (с помощью
+    пунктов меню <b>RequisitePro</b> &gt; <b>Требование</b> &gt; <b>Вставить</b>).
+</p>
+<p>
+    Дополнительная информация о разработке требований функций в документе приведена в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/develop_vision_tm_856E2B43.html" guid="{29BC529A-4416-45C0-9633-B05F1A9EF2CB}">Памятке по инструменту: разработка видения с помощью Rational
+    RequisitePro</a>.
+</p>
+<h3>
+    <font face="Arial">5. <b><a id="Managing" name="Managing">Управление</a> свойствами требования из ClearQuest</b></font>
+</h3>
+<p>
+    Свойства требований для требований, созданных в базе данных, доступны напрямую из ClearQuest. Связав запрос расширения
+    с требованием аналитик может просмотреть и изменить свойства требований связанного требования работая напрямую с
+    ClearQuest. В окне Свойства требования можно просмотреть и изменить свойства требований. К этим свойствам относятся
+    атрибуты требования, хронология и взаимосвязи.
+</p>
+<ol>
+    <li>
+        Выберите запрос расширения и перейдите на вкладку <b>Требования</b>. На этой вкладке можно просмотреть свойства
+        связанного требования.
+    </li>
+    <li>
+        Выберите <b>Действия</b> &gt; <b>Изменить</b> чтобы разрешить изменение записи.
+    </li>
+    <li>
+        Выберите связанное требование и щелкните на пункте <b>Свойства</b> внизу формы. Появятся свойства требования.
+    </li>
+    <li>
+        Внесите нужные изменения.
+    </li>
+    <li>
+        Нажмите <b>OK</b> для сохранения изменений.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/guidances/toolmentors/resources/helpbook.gif" width="16" />Обратитесь к разделу <i>Обзор
+    свойств требования</i> (Индекс: требования &gt; свойства) электронной справки RequisitePro.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

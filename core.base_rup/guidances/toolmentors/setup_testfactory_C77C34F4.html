@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Настройка тестовой среды в Rational TestFactory</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="setup_testfactory" name="uma.name">
+<meta content="Настройка тестовой среды в Rational TestFactory" name="uma.presentationName">
+<meta content="Tool:rup_test_factory:Rational TestFactory" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational TestFactory" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{FAC387D8-BA1A-4056-A53B-E1C43571D1DC}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{FAC387D8-BA1A-4056-A53B-E1C43571D1DC}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{FAC387D8-BA1A-4056-A53B-E1C43571D1DC}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{FAC387D8-BA1A-4056-A53B-E1C43571D1DC}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Настройка тестовой среды в Rational TestFactory</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается выполнение действий по настройке среды Rational TestFactory для реализации созданных тестовых сценариев для тестируемого приложения (AUT).</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_test_factory_3EDA2115.html" guid="{FBA5098E-2CA8-483D-814D-DE3E876426B1}">Rational TestFactory</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_tools_FBA37850.html" guid="{78C58888-2969-4A74-BF76-5F77AFA36F9C}">Настройка инструментов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/support_development_1443EF07.html" guid="{35936CF9-4B04-402A-9482-07E5CFB45D99}">Разработка справочных материалов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_the_test_implementation_AAB73625.html" guid="{ED9DF0C0-744A-443A-AEBA-604382E05A5F}">Создание реализация теста</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/define_testability_elements_B792858D.html" guid="{CDA7EC1B-2D50-46BE-A3BA-C621EAF22D84}">Установка критериев пригодности к тестированию</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Перед тем, как использовать Rational TestFactory для автоматического создания тестовых сценариев необходимо настроить
+    конфигурацию тестовой среды. TestFactory создает тестовые сценарии исходя из "схемы приложения", иерархического списка
+    "объектов UI", представляющих окна и управляющие элементы пользовательского интерфейса в тестируемом приложении (AUT).
+</p>
+<p>
+    Эта памятка по инструменту применима для систем с Windows 98/2000/NT 4.0.
+</p>
+<p>
+    Для настройки тестовой среды в Rational TestFactory выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Define AUT">Задайте проект в Rational TestFactory и реализуйте AUT</a>
+    </li>
+    <li>
+        <a href="#Map AUT">Создайте схему тестируемого приложения</a>
+    </li>
+    <li>
+        <a href="#Review refine AUT">Просмотрите и уточните схему приложения</a>
+    </li>
+</ol>
+<h3>
+    1.&nbsp;&nbsp; <a id="Define AUT" name="Define AUT">Задайте проект в Rational TestFactory и реализуйте AUT</a>
+</h3>
+<p>
+    При первом открытии проекта в Rational TestFactory необходимо предоставить сведения о проекте и тестируемом приложении
+    (AUT). Основные функциональные области TestFactory остаются недоступными до тех пор, пока вы не зададите сведения о
+    проекте.
+</p>
+<p>
+    Для измерения охвата кода выполняемого тестового сценария AUT должен содержать точки реализации - счетчики,
+    подсчитывающие части кода, охваченные тестовым сценарием. Rational TestFactory использует сведения из реализованных
+    файлов для подсчета охвата данных на базе кода для тестовых сценариев, создаваемых TestFactory, и тестовых сценариев
+    Robot, воспроизводимых из TestFactory.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp; Обратитесь к следующим
+    разделами справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Запуск TestFactory</i>
+    </li>
+    <li>
+        <i>Определение сведений для нового проекта</i>
+    </li>
+    <li>
+        <i>Встраивание тестируемого приложения</i>
+    </li>
+</ul>
+<h3>
+    2.&nbsp;&nbsp; <a id="Map AUT" name="Map AUT">Схема тестируемого приложения</a>
+</h3>
+<p>
+    Хорошо разработанная схема приложения является основой при создании тестовых сценариев в Rational TestFactory.
+    "Создатель схем приложения" - это процесс, создающий схемы приложения, досконально исследующий пользовательский
+    интерфейс тестируемого приложения (AUT). Все окна и управляющие элементы изучаются и сравниваются с известными классами
+    и подклассами, хранящимися в "библиотеке пользовательского интерфейса (UI)". Исходя из результата сравнения, процесс
+    создания схем создает объект UI, являющийся экземпляром совпадающих классов, и помещает его в схему приложения.
+</p>
+<p>
+    Все заданные в библиотеке UI классы имеют определенные наборы "свойств объектов UI", связанных с ними. При создании
+    объекта UI, Создатель схем приложения присваивает объекту набор свойств, связанных с его классом. Эти свойства
+    определяют управляющий элемент в AUT, который представляет объект, и сообщает Rational TestFactory как выполнять
+    управляющий элемент при тестировании и преобразовании.
+</p>
+<p>
+    Если AUT содержит окно входа в систему, требующего ввода, такого как имя пользователя и пароль, необходимо предоставить
+    эти сведения в Создатель схем приложения.
+</p>
+<p>
+    При завершении создания схемы в обзоре процедуры будут указаны окна и управляющие элементы AUT, добавленные Rational
+    TestFactory в схему.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделами справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Создайте схему AUT с помощью мастера создания схем приложений</i>
+    </li>
+    <li>
+        <i>Создайте схему AUT с помощью значка Создать схему!</i>
+    </li>
+    <li>
+        <i>Создание схемы AUT, имеющего окно входа в систему</i>
+    </li>
+</ul>
+<h3>
+    3.&nbsp;&nbsp; <a id="Review refine AUT" name="Review refine AUT">Просмотрите и уточните схему приложения</a>
+</h3>
+<p>
+    Первая версия схемы приложения может оказаться неточным представлением всех управляющих элементов в AUT. Схема
+    приложения может быть неполной или для объектов UI может понадобиться повторная классификация.
+</p>
+<p>
+    Хорошо разработанная схема приложения является критически важной для создания качественных тестовых сценариев. Rational
+    TestFactory может протестировать только управляющие элементы в AUT, представленные объектами UI на схеме приложения.
+    Просмотрев и уточнив схему приложения перед началом тестирования можно повысить область и качество создаваемых тестовых
+    сценариев.
+</p>
+<p>
+    Можно просмотреть схему приложения, сравнив окна и управляющие элементы, показанные в AUT, с объектами UI на схеме
+    приложения. Заметив не представленные на схеме управляющие элементы AUT при необходимости протестировать их нужно
+    определить и устранить причину отсутствия на схеме этих элементов.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделами справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Просмотрите схему приложения</i>
+    </li>
+    <li>
+        <i>Определение необнаруженных управляющих элементов</i>
+    </li>
+    <li>
+        <i>Обработка общих объектов</i>
+    </li>
+    <li>
+        <i>Применение объектов взаимодействия для улучшения схемы приложения</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

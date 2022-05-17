@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Определение уведомлений об изменении и проверке с помощью Rational ClearQuest</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="define_change_review_notifications" name="uma.name">
+<meta content="Определение уведомлений об изменении и проверке с помощью Rational ClearQuest" name="uma.presentationName">
+<meta content="Tool:rup_clearquest:Rational ClearQuest" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearQuest" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{ED0B771E-CA09-4317-AB43-F88489AA520F}", "{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{F6EC9AC7-18D5-44D1-9EB7-39BC3DF4F2D2}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Определение уведомлений об изменении и проверке с помощью Rational ClearQuest</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается настройка Rational ClearQuest&amp; для уведомления пользователей или групп пользователей об изменении состояния запроса на изменение.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearquest_3C7831BD.html" guid="{ED0B771E-CA09-4317-AB43-F88489AA520F}">Rational ClearQuest</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/establish_project_change_control_process_159A3B7A.html" guid="{0A40D5A0-2119-4D42-9B35-72D9B42BB4FA}">Реализация процесса управления изменениями</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    ClearQuest использует электронную почту двумя способами: для отправки изменений в базу данных (от пользователя к базе
+    данных) и для рассылки уведомлений (от базы данных к пользователю).
+</p>
+<p>
+    <b>Отправка изменений по электронной почте</b>: администратор ClearQuest использует программу просмотра электронной
+    почты Rational E-Mail Reader для предоставления пользователям возможности отправлять и изменять записи через
+    электронную почту. Для обеспечения доступности этой функции необходимо обеспечить постоянную работу почтового сервера
+    Rational в той же системе, в которой выполняются базы данных ClearQuest.
+</p>
+<p>
+    <b>Рассылка уведомлений по электронной почте</b>: администратор ClearQuest может настроить ClearQuest для отправки по
+    электронной почте уведомлений пользователям об изменении запросов на изменение. Администратор использует тип записи
+    E-Mail Rules для определения условий уведомлений по электронной почте, получателей и содержимого. Кроме того,
+    администратор или пользователи могут настроить свои клиентские системы для получения уведомлений по электронной почте.
+    Даже Web-клиенты ClearQuest могут получать уведомления по электронной почте.
+</p>
+<h3>
+    Этапы работы с инструментами
+</h3>
+<h4>
+    1. Настройте отправку изменений с помощью ClearQuest Designer
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> Для просмотра электронной
+    справки по ClearQuest Designer выберите в меню пункт <b>Справка &gt; Содержимое и индекс &gt; Администрирование
+    электронной почты ClearQuest &gt; Включить отправку изменений по электронной почте.</b>
+</p>
+<h4>
+    2. Настройка рассылки уведомлений по электронной почте с помощью ClearQuest Designer
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> Для просмотра справки
+    ClearQuest Designer выберите в меню пункт <b>Справка &gt; Содержимое и индекс &gt; Администрирование электронной почты
+    ClearQuest &gt; Включение автоматической рассылки уведомлений по электронной почте</b>.
+</p>
+<h4>
+    3. Получение уведомлений по электронной почте клиентом ClearQuest
+</h4>
+<p>
+    <img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" /> Для просмотра справки по
+    ClearQuest выберите пункт меню <b>Справка &gt; Содержимое и индекс &gt; Администрирование электронной почты ClearQuest
+    &gt; Включение функции электронной почты клиента ClearQuest</b>.
+</p>
+<h4>
+    4. Настройте рассылку уведомлений пл электронной почте для Web-клиентов ClearQuest
+</h4>
+<p>
+    <img height="15" alt="значок справочника" src="./../../../core.base_rup/resources/book.gif" width="16" /> См. <i>Установка Rational
+    ClearQuest</i>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

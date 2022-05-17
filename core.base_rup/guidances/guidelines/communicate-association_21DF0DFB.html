@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Ассоциация связи</title>
+<meta content="Guideline" name="uma.type">
+<meta content="communicate-association" name="uma.name">
+<meta content="Ассоциация связи" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "4.1665593852713E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="4.1665593852713E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Ассоциация связи</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Ассоциация связи моделирует взаимодействие вариантов использования и субъектов, осуществляемое посредством отправки сигналов друг другу. Настоящая рекомендация объясняет, как применять эту взаимосвязь.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_usecase_model_EF15E534.html" guid="{9C66F2EC-EDEB-4369-9AFB-04B9E7CBCB8E}">Модель прецедентов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/find_actors_and_use_cases_1ACB35F0.html" guid="{3CD5FA7E-160C-4A39-9DEB-C6D162D8AECD}">Поиск субъектов и вариантов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_communicates-association__guidelines_for" name="XE_communicates-association__guidelines_for"></a> 
+<h3>
+    <a id="Explanation" name="Explanation">Объяснение</a>
+</h3>
+<p>
+    Варианты использования и субъекты взаимодействуют посредством отправки сигналов друг другу. Для обозначения таких
+    взаимодействий используется понятие <b>ассоциации связи</b> между вариантом использования и субъектом. У варианта
+    использования может быть не более одной ассоциации связи с конкретным субъектом, а у субъекта - не более одной
+    ассоциации связи с конкретным вариантом использования, независимо от числа передач сигналов между ними. Полная сеть
+    таких ассоциаций - это статическая картина взаимодействия между системой и ее средой.
+</p>
+<p>
+    Ассоциациям связи не присваиваются имена. Поскольку между вариантом использования и субъектом может быть только одна
+    ассоциация связи, для определения конкретной ассоциации связи достаточно указать ее начальную и конечную точки.
+</p>
+<p align="center">
+    <img height="140" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/guidelines/resources/comasso1.gif" width="214" />
+</p>
+<p class="picturetext">
+    Линия или стрелка между субъектом и вариантом использования указывает, что они взаимодействуют посредством обмена
+    сигналами.
+</p>
+<h3>
+    <a id="Roles" name="Roles">Роли</a>
+</h3>
+<p>
+    Каждый конец ассоциации связи - это <b>роль</b>, которую вариант использования или субъект играет в ассоциации<i>.</i>
+    Роли служат для указания множественностей и направлений ассоциации (см. ниже).
+</p>
+<h3>
+    <a id="Multiplicity" name="Multiplicity">Множественность</a>
+</h3>
+<p>
+    Каждая роль ассоциации связи указывает <b>множественность</b> ее типа, т.е. число экземпляров этого субъекта или
+    варианта использования, которое можно связать с одним экземпляром другого варианта использования или субъекта.
+    Множественность задается текстовым выражением в роли. Выражение - это список перечисленных через запятую диапазонов
+    целых чисел. Диапазон задается целым числом (нижним значением), двумя точками и другим целым числом (верхним
+    значением); отдельное целое число задает допустимый диапазон, а символ '*' означает "много", т.е. неограниченное число
+    объектов. Отдельный символ '*' эквивалентен диапазону '0..*', т.е. произвольному неотрицательному целому числу; это
+    значение по умолчанию. Множественность необязательной скалярной роли равна 0..1.
+</p>
+<p>
+    Множественность может быть дополнена ограничением по времени. Это позволяет указать, сколько экземпляров могут быть
+    связаны, возможно разными экземплярами, в течение заданного периода. Эта информация полезна, поскольку сообщает, часто
+    ли выполняется вариант использования и насколько часто каждый экземпляр субъекта задействует вариант использования.
+</p>
+<h5>
+    Пример:
+</h5>
+<p align="center">
+    <img height="105" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/guidelines/resources/md_coma4.gif" width="450" />
+</p>
+<p class="picturetext">
+    Вариант использования Провести транзакции применяется клиентами 400 000 раз в день. Каждый клиент применяет вариант
+    использования дважды в месяц.
+</p>
+<h3>
+    <a id="Navigability" name="Navigability">Инициатива</a>
+</h3>
+<p>
+    У каждой роли ассоциации связи есть свойство <b>Инициатива</b>, которое указывает, кто инициализирует взаимодействие.
+    &nbsp;Инициатива изображается открытой стрелкой. &nbsp;Если стрелка указывает на вариант использования, то субъект на
+    другом конце ассоциации инициализирует взаимодействие с системой. &nbsp;Если стрелка указывает на субъекта, то система
+    инициализирует взаимодействие с субъектом. &nbsp;Двусторонняя инициатива изображается линией без стрелок
+    (двунаправленные стрелки сделали бы диаграммы слишком громоздкими).
+</p>
+<p align="center">
+    <img height="211" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/guidelines/resources/comasso2.gif" width="446" />
+</p>
+<p class="picturetext">
+    Стрелка связи определяет субъект, инициализировавший вариант использования. Для каждой стрелки связи предполагается
+    наличие ответного сообщения. Линия без стрелок означает двустороннюю связь.
+</p>
+<p>
+    Не путайте инициативу с обменом потоками данных; <span style="mso-bidi-font-family: 'Courier New'">она
+    применяется</span> <span     style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-family: 'Courier New'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">исключительно
+    для указания инициатора связи. &nbsp;Например, клиентский запрос на получение данных изображается стрелкой,
+    направленной к варианту использования, представляющему систему, несмотря на то, что большая часть данных перемещается
+    от системы к клиенту.</span>
+</p>
+<h3>
+    <a id="Communication from Actor to Use Case" name="Communication from Actor to Use Case">Передача информации от
+    субъекта к варианту использования</a> <a href="#Top"><img height="20" alt="В начало страницы"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Субъекты взаимодействуют с системой путем отправки сигналов. Для того чтобы полностью понять роль субъекта, вы должны
+    знать, в каких вариантах использования он участвует. Это изображается ассоциациями связи между субъектом и вариантами
+    использования.
+</p>
+<p>
+    Множественность ассоциации указывает, со сколькими экземплярами варианта использования может одновременно
+    контактировать один экземпляр субъекта.
+</p>
+<h5>
+    Пример:
+</h5>
+<p class="example">
+    Рассмотрим машину для переработки вторсырья. Каждый раз, когда экземпляр субъекта Клиент кладет предмет, он отправляет
+    сигнал связанному экземпляру Перерабатываемые предметы варианта использования. По окончании работы субъекта вариант
+    использования печатает расписку. Клиент может общаться только с одним экземпляром Перерабатываемых предметов. Таким
+    образом, множественность ассоциации равна 1. Расписка, возвращенная системой, рассматривается здесь как ответ от
+    экземпляра варианта использования; соответственно, ассоциации связи не нужна инициатива в другом направлении.
+</p>
+<p class="picturecenter" align="center">
+    <img height="68" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/guidelines/resources/md_coma2.gif" width="236" />
+</p>
+<p class="picturetext">
+    Клиент, который хочет вернуть предметы в машину для переработки вторсырья, будет контактировать с экземпляром
+    Перерабатываемые предметы варианта использования.
+</p>
+<p>
+    Субъект контактирует с вариантами использования по многим причинам, в том числе:
+</p>
+<ul>
+    <li>
+        Для активизации варианта использования. Экземпляр субъекта всегда активизирует экземпляр варианта использования.
+    </li>
+    <li>
+        Для запроса данных, хранимых в системе; вариант использования извлекает эти данные и представляет их субъекту.
+    </li>
+    <li>
+        Для изменения данных, хранимых в системе, посредством диалога с системой.
+    </li>
+    <li>
+        Для сообщения о том, что в окружении системы произошло нечто необычное, в связи с чем система должна принять меры.
+    </li>
+</ul>
+<h3>
+    <a id="Communication from Use Case to Actor" name="Communication from Use Case to Actor">Передача информации от
+    варианта использования к субъекту</a>
+</h3>
+<p>
+    Вариант использования инициализируется одним субъектом. Однако после запуска вариант использования может контактировать
+    с несколькими субъектами. Показать субъекты, с которыми может контактировать вариант использования, можно с помощью
+    ассоциаций связи между вариантом использования и субъектами. Множественность ассоциации указывает, со сколькими
+    экземплярами субъекта может одновременно контактировать один экземпляр варианта использования.
+</p>
+<p>
+    Варианты использования контактируют с субъектами по многим причинам, в том числе:
+</p>
+<ul>
+    <li>
+        Если в системе произошло что-то особое, субъекту может понадобиться знать об этом.
+    </li>
+    <li>
+        Варианту использования может понадобиться обратиться к субъекту за помощью в принятии решения при наличии
+        нескольких вариантов.
+    </li>
+</ul>
+<p>
+    Как правило, но не всегда, вариант использования ожидает ответа после отправки сигнала субъекту. Это должно быть явно
+    описано в варианте использования.
+</p>
+<h3>
+    <a id="Optional Conventions" name="Optional Conventions">Необязательные соглашения</a>
+</h3>
+<p>
+    Далее указаны общепринятые необязательные соглашения о том, какой субъект инициализирует вариант использования.
+</p>
+<ul>
+    <li>
+        <span style="mso-bidi-font-family: Courier New">Инициализирующая стрелка от субъекта к варианту использования
+        показана всегда, даже если вариант использования впоследствии инициализирует соединение с
+        субъектом-инициализатором. &nbsp;Это единственная показанная стрелка от субъекта к варианту использования.</span>
+    </li>
+    <li>
+        <span style="mso-bidi-font-family: Courier New">Стрелки от варианта использования к субъектам могут быть опущены
+        или указаны для ясности.</span><br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

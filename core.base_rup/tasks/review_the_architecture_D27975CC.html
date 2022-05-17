@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Задача: Проверка архитектуры</title>
+<meta content="Task" name="uma.type">
+<meta content="review_the_architecture" name="uma.name">
+<meta content="Проверка архитектуры" name="uma.presentationName">
+<meta content="Discipline:rup_analysis_design_discipline:Анализ и проектирование" name="uma.category">
+<meta name="element_type" content="activity">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_MC6wMN7FEdm8G6yT7-Wdqw", path: ["_MC6wMN7FEdm8G6yT7-Wdqw", "_ydt62NnmEdmO6L4XMImrsA", "{35BAFA92-EAF9-41E8-8BDE-AB9B61A68E04}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_hsuoEDIFEdqwaNnSEheSAg", "{35BAFA92-EAF9-41E8-8BDE-AB9B61A68E04}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_kC0pcN7GEdm8G6yT7-Wdqw", "_ydt62NnmEdmO6L4XMImrsA", "{35BAFA92-EAF9-41E8-8BDE-AB9B61A68E04}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_IY0NkAISEdqTna4sZVFRow", "_ydt62NnmEdmO6L4XMImrsA", "{35BAFA92-EAF9-41E8-8BDE-AB9B61A68E04}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="{35BAFA92-EAF9-41E8-8BDE-AB9B61A68E04}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Задача: Проверка архитектуры</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/task.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой задаче рассмотрен процесс проверки архитектуры и оценки полученных результатов.</td>
+</tr>
+<tr>
+<td>Дисциплины: <a href="./../../core.base_rup/disciplines/rup_analysis_design_discipline_29760231.html" guid="_ydt62NnmEdmO6L4XMImrsA">Анализ и проектирование</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_reviewing__architecture" name="XE_reviewing__architecture"></a><a id="XE_architecture__reviewing" name="XE_architecture__reviewing"></a><a id="Top" name="Top"></a> 
+<ul>
+    <li>
+        Выявление неизвестных и представляемых рисков, связанных с расписанием или бюджетом.
+    </li>
+    <li>
+        Обнаружение недостатков архитектуры. Исправление недостатков архитектуры требует наибольших усилий; в долгосрочной
+        перспективе такие недостатки являются самыми дорогостоящими.
+    </li>
+    <li>
+        Обнаружение потенциальных несоответствий между требованиями и архитектурой: излишняя сложность проектирования,
+        невыполнимые или отсутствующие требования. В частности, оценка аспектов, которые не учитываются в областях
+        использования, администрирования и обслуживания. Каким образом система установлена и обновлена? Каким образом
+        переносятся текущие базы данных?
+    </li>
+    <li>
+        Оценка конкретных показателей архитектуры: производительность, надежность, возможность изменения, защита и
+        безопасность.
+    </li>
+    <li>
+        Определение возможностей повторного использования.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Основной исполнитель:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_technical_reviewer_81F699C8.html" guid="{0319C70C-35C9-4190-94F0-E7E5E9216CA0}">Технический контролер</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительные исполнители:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_software_architecture_document_C367485C.html" guid="{6F49641A-ED10-47B5-9E5D-3F90A6BF3006}">Документ архитектуры программного обеспечения</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_risk_list_B87674CA.html" guid="{32D7C484-2FAF-4442-8DA0-6D474B91A9DD}">Список рисков</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_supplementary_specification_F5ACAA22.html" guid="{B16C2941-791C-44E6-B353-354109B5C9DE}">Дополнительные спецификации</a>
+</li>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html" guid="{E5501201-7EE6-4243-AE91-73880FF76FC1}">Рекомендации по проекту</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_review_record_CA816ECE.html" guid="{4047B5B0-5FB7-4960-8A7E-451719D85DFF}">Проверка записи</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading"> Общие рекомендации</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="GeneralRecommendations" name="GeneralRecommendations"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель</b>
+            </td>
+            <td width="95%">
+                Общие рекомендации по выполнению проверок.
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Если смотреть издалека, то процесс оценки архитектуры программного обеспечения не значительно отличается от других
+    процессов оценки и проверки.
+</p>
+<p>
+    Однако одна из важных характеристик архитектуры программного обеспечения заключается в недостатке точных показателей
+    для оценки атрибутов архитектуры - только небольшой набор показателей, допускающих объективное измерение. В качестве
+    примера показателя, допускающего измерение, можно привести производительность. Прочие показатели имеют более
+    качественный или субъективный характер: например, концептуальная целостность. Более того, в условиях отсутствия
+    дополнительных данных или объекта для сравнения оценка значения показателя может вызвать затруднения. При наличии
+    опорной системы, которая известна целевой аудитории, результаты проверки рекомендуется представлять <b>относительно</b>
+    показателей этой системы. Например, если разрабатываемую систему можно сравнить с ее предыдущей версией.
+</p>
+<p>
+    Кроме того, важное значение имеет выбор конкретного этапа жизненного цикла для выполнения оценки.
+</p>
+<p align="center">
+    <img src="./../../core.base_rup/tasks/resources/ac_rvarc.gif" alt="Диаграмма итераций жизненного цикла проекта" width="660" height="210" />
+</p>
+<ol>
+    <li>
+        Концу начального этапа, как правило, соответствует цикл начальной разработки архитектуры, когда о ней известны
+        преимущественно общие сведения. Тем не менее, проверка может выявить невыполнимые требования, отсутствующие
+        компоненты, пропущенные возможности повторного использования существующих продуктов и т.д.
+    </li>
+    <li>
+        Оптимальное время для оценки архитектуры программного обеспечения - конец этапа уточнения. На этом этапе основное
+        внимание уделяется уточнению требованию и созданию контрольной версии архитектуры. На этой вехе RUP требует
+        обязательной проверки архитектуры. Как правило, оценивается широкий перечень показателей архитектуры.
+    </li>
+    <li>
+        Более подробная оценка может потребоваться в ходе этапа построения (для проверки конкретных показателей, таких как
+        производительность и безопасность), а также в конце этого этапа (для проверки оставшихся неполадок, делающих
+        продукт неприемлемым для передачи пользователям).
+    </li>
+    <li>
+        Восстановительные оценки могут выполняться на этапах построения и даже внедрения, если в ходе проекта возникли
+        серьезные затруднения: построение не удалось завершить или уровень неполадок установленной версии в ходе внедрения
+        неприемлем.
+    </li>
+    <li>
+        И наконец, оценку можно выполнить в конце этапа внедрения, в частности с целью инвентаризации многоразовых
+        ресурсов, подходящих для нового продукта или цикла разработки.
+    </li>
+</ol>
+<p>
+    Профайл проверяющего аналогичен профайлу роли <a class="elementLinkWithUserText" href="./../../core.base_rup/roles/rup_software_architect_DB0BF177.html" guid="{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}">архитектор
+    программного обеспечения</a>, однако требует меньшего внимания техническим вопросам. Такие качества, как
+    организаторские способности, зрелость, практичность и направленность на результат, имеют меньшее значение, однако не
+    следует недооценивать их важность - проверяющий может обнаружить архитектурные дефекты, угрожающие расписанию проекта.
+    Однако критически важные вопросы следует поднимать на ранних этапах проекта, а не слепо следовать расписанию, ведущему
+    группу проекта по неверному пути. Проверяющий архитектуры должен найти баланс между рисками и стоимостью, оставаясь
+    внимательным к более общим факторам успеха проекта. Кроме того, проверяющий архитектуры должен обладать способностью
+    убеждения, чтобы поднимать и обсуждать важные вопросы.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Рекомендации по проведению собраний, посвященных проверке</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="RecommendedReviewMeetings" name="RecommendedReviewMeetings"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель</b>
+            </td>
+            <td width="95%">
+                Определение области действия и целей проверки.<br />
+                Определение подходов, применяемых для каждой конкретной комбинации область/цель. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Проверку можно выполнить различными подходами:
+</p>
+<ul>
+    <li>
+        на основе представления
+    </li>
+    <li>
+        на основе данных
+    </li>
+    <li>
+        на основе сценария
+    </li>
+</ul>
+<h5>
+    Проверка на основе представления
+</h5>
+<p>
+    Получите (или создайте) представление архитектуры, затем в соответствии с этим представлением поставьте вопросы и
+    примите решения.
+</p>
+<p>
+    В данном случае возможны различные ситуации: организации, предоставляющие четкое начальное описания архитектуры;
+    организации, в которых требуется определить сотрудника, выполняющего роль архитектора программного обеспечения
+    (независимо от его фактической должности), и получить информацию у него; а также организации, в которых понятие
+    архитектуры программного обеспечения неизвестно. Этот процесс называется "сбор и анализ данных об архитектуре" и
+    заключается в следующем: анализ программного обеспечения и документации, просмотр исходного кода, интерфейсов, данных
+    конфигурации и т.д.
+</p>
+<p>
+    Для представления архитектуры можно использовать модель архитектурных представлений, описанную в документе архитектуры
+    программного обеспечения: логическое представление содержит основные классы (модель объектов), представление процессов
+    описывает основные потоки управления и способы их взаимодействия, представление разработки отражает различные
+    подсистемы и их взаимосвязи, физическое представление описывает связи между элементами разных представлений в одной или
+    нескольких физических конфигурациях. Вопросы, требующие внимания, следует распределить по различным представлениям.
+</p>
+<h5>
+    Проверка на основе данных
+</h5>
+<p>
+    Составьте список информации (данные, показатели), необходимой для принятия решений, соберите эту информацию и сравните
+    ее с требованиями или с приемлемыми опорными стандартами. Такой подход эффективен для оценки отдельных качественных
+    показателей, таких как производительность и надежность.
+</p>
+<h5>
+    Проверка на основе сценариев
+</h5>
+<p>
+    Данный подход представляет собой причинно-следственный анализ. Интересующие вас вопросы следует преобразовать в набор
+    сценариев, через которые должна пройти система. Затем эти вопросы следует задать на основе сценариев. Примеры
+    сценариев:
+</p>
+<ul>
+    <li>
+        Система выполняется на платформах X и Y. (Проверяется показатель переносимости.)
+    </li>
+    <li>
+        Система поддерживает дополнительную функцию F. (Проверяется показатель расширяемости.)
+    </li>
+    <li>
+        Система обрабатывает 200 запросов в час. (Проверяется показатель масштабируемости.)
+    </li>
+    <li>
+        Система устанавливается пользователем в конкретной среде. (Проверяется показатель завершенности или удобства
+        работы.)
+    </li>
+</ul>
+<p>
+    Преимущество такого подхода заключается в максимально конкретном представлении задачи, которое понятно всем
+    заинтересованным сторонам. Кроме того, он позволяет найти пропущенные требования и недостатки требований, в особенности
+    в случае неформальных, нечетких, слишком общих и лаконичных требований. Недостаток этого подхода связан с тем, что
+    архитектура не рассматривается в качестве отдельного объекта. Система представлена в виде черного ящика, в который
+    передаются различные входные данные.
+</p>
+<p>
+    На практике четкое разграничение между описанными подходами отсутствует и применяется их сочетание.
+</p>
+<h5>
+    Определение неполадок
+</h5>
+<p>
+    Важную роль в процессе обнаружение потенциальных неполадок играют опыт и знания проверяющих. Отдельные шаблоны
+    неисправностей могут повторяться в нескольких проектах или организациях. Для обнаружения некоторых проблемных областей
+    применим эвристический поиск. Кроме того, можно использовать справочные таблицы (примеры наиболее общих таблиц
+    приведены ниже) и результаты предыдущих проверок.
+</p>
+<p>
+    Описывая обнаруженные <b>потенциальные</b> неполадки, используйте нейтральные высказывания - не допускайте поиска
+    виновных и излишней обреченности. Для облегчения расстановки приоритетов, организации и устранения неполадок
+    рекомендуется использовать небольшие картонные карточки, как это делают проверяющие AT&T, либо карточки CRC.
+</p>
+<p>
+    Далее потенциальные неполадки следует отсортировать в порядке уменьшения области действия или влияния; в случае
+    большого числа неполадок сначала рассмотрите те из них, которые непосредственно связаны с текущим вопросом, отложив
+    "остальные предложения". Оцените, насколько реальна неполадка: зачастую вследствие нехватки информации неполадки видят
+    там, где их нет. Повторите сортировку. Проверьте реальность неполадки с учетом нескольких факторов. (Неопытные
+    проверяющие обычно рассматривают проблемы только с одной стороны.)
+</p>
+<p>
+    Подтвердив неполадку, попытайтесь найти способ ее устранения, не требующий повторного проектирования системы. Запишите
+    потенциальные упрощения, возможности повторного использования и альтернативы (например, покупка по сравнению с
+    разработкой).
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Распределите обязанности по устранению дефектов</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Allocate Defect Resolution Responsibilities" name="Allocate Defect Resolution Responsibilities"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель</b>
+            </td>
+            <td width="95%">
+                Обработка обнаруженных дефектов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    После проверки для каждого дефекта назначьте ответственных сотрудников. В данном случае назначенные сотрудники могут
+    отвечать не за непосредственное устранение дефекта, а за координацию дополнительного анализа альтернативных вариантов
+    или координацию его устранения (если дефект имеет далеко идущие последствия или охватывает широкую область действия).
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/guidelines/software_architecture_document_F4C93435.html" guid="2.9494785550310917E-305">Документ архитектуры программного обеспечения</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Руководства по инструментам</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/toolmentors/comparing_merging_rose_models_62845B55.html" guid="{C0DD6F06-15D6-4D34-B2B0-39330A3CC180}">Сравнение и слияние моделей Rational Rose с помощью Model Integrator</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

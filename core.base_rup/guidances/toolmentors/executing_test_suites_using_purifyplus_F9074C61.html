@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Выполнение тестовых комплектов с помощью инструментов Rational PurifyPlus (Windows и UNIX)</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="executing_test_suites_using_purifyplus" name="uma.name">
+<meta content="Выполнение тестовых комплектов с помощью инструментов Rational PurifyPlus (Windows и UNIX)" name="uma.presentationName">
+<meta content="Tool:rup_purifyplus:Rational PurifyPlus" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational PurifyPlus" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{0FBC2989-4BF7-4161-86A4-760F327D0E04}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{0FBC2989-4BF7-4161-86A4-760F327D0E04}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{0FBC2989-4BF7-4161-86A4-760F327D0E04}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}", "{0FBC2989-4BF7-4161-86A4-760F327D0E04}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{0FBC2989-4BF7-4161-86A4-760F327D0E04}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Выполнение тестовых комплектов с помощью инструментов Rational PurifyPlus (Windows и UNIX)</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение инструментов Rational PurifyPlus в тестовых комплектах для обнаружения потенциально опасных ошибок и утечек памяти чтобы убедиться, что тесты достигают приемлемого уровня охвата кода и чтобы обратить внимание на недостатки производительности.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_purifyplus_CABB5CD4.html" guid="{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}">Rational PurifyPlus</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/execute_test_suite_492795DE.html" guid="{6B420194-5EB7-4A12-A061-09FAA5DC18DE}">Выполнение комплекта тестов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/perform_developer_test_512B18D9.html" guid="{55EAEE66-A254-457F-BCC3-D1C21ED88134}">Выполнение тестов разработчика</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<p>
+    Данная памятка по инструменту подходит как для Microsoft Windows, так и для UNIX.
+</p>
+<p>
+    Инструменты PurifyPlus содержат Rational Purify, Rational PureCoverage и Rational Quantify.
+</p>
+<p>
+    <img height="15" alt="значок книги" hspace="0" src="./../../../core.base_rup/resources/book.gif" width="16" border="0" />Для получения
+    дополнительных сведений об инструментах PurifyPlus обратитесь к руководству <i>Начало работы</i> по PurifyPlus (для
+    версии под Windows или UNIX).
+</p>
+<p>
+    <img height="16" alt="значок справочника" hspace="0" src="./../../../core.base_rup/resources/helpbook.gif" width="16"     border="0" />Пошаговая информация о применении инструментов PurifyPlus приведены в электронной справке по инструменту.
+</p>
+<p>
+    С помощью инструментов PurifyPlus можно выполнить следующие действия:
+</p>
+<ul>
+    <li>
+        <b>Обнаружить ошибки памяти и утечки (программы C/C++ для Windows и UNIX).</b> С помощью Purify можно найти ошибки
+        и утечки в тестируемых приложениях.
+    </li>
+    <li>
+        <b>Отслеживать охват кода (Windows и UNIX).</b> С помощью PureCoverage можно обнаружить пробелы в тестировании и
+        предупредить о регрессиях.
+    </li>
+    <li>
+        <b>Профилировать быстродействие (Windows и UNIX).</b> Используя Quantify можно выяснить, не снизилась ли
+        производительность из-за новых добавлений.
+    </li>
+</ul>
+<p>
+    Выполнение тестовых комплектов с помощью инструментов PurifyPlus ведет к получению надежного, свободного от ошибок
+    кода, выполняемого с максимальной эффективностью.
+</p><br />
+<h4>
+    Этапы работы с инструментами
+</h4>
+<p>
+    Для реализации тестов с помощью инструментов PurifyPlus выполните следующие действия:
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ol>
+        <li>
+            <a href="#Step1">Выполните программу в Purify для сбора ошибок и утечек данных (только для программ C/C++)</a>
+        </li>
+        <li>
+            <a href="#Step2">Выполните программу в PureCoverage для мониторинга охвата кода</a>
+        </li>
+        <li>
+            <a href="#Step3">Выполните программу в Quantify для профилирования производительности</a>
+        </li>
+    </ol>
+</div>
+<h3>
+    1. <a id="Step1" name="Step1"></a><b>Выполните программу в Purify для сбора ошибок и данных об утечках (только для
+    программ C/C++)&nbsp;</b>
+</h3>
+<p>
+    Purify обнаруживает ошибки выполнения, включая утечки памяти, и тестируемых приложениях и в используемых ими
+    компонентах. Будет подготовлен отчет о таких ошибках, как сбои границ массивов, доступ через зависшие указатели, чтение
+    памяти без инициализации, ошибки выделения памяти, утечки памяти, после чего вы сможете устранить ошибки прежде, чем
+    они нанесут ущерб. &nbsp;
+</p>
+<p>
+    Начните с добавления Purify в существующие сценарии Perl, пакетные файлы и команды создания файлов.
+</p>
+<ul>
+    <li>
+        <b>В Windows</b> измените командные строки для запуска программ<font         face="courier">&lt;имя_программы&gt;.exe</font><br />
+         &nbsp;<br />
+         <font face="courier">Purify /SaveTextData &lt;имя_программы&gt;.exe</font><br />
+         &nbsp;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <br />
+         &nbsp;
+    </li>
+    <li>
+        <b>В UNIX</b> измените строку компиляции и компоновки:<br />
+         &nbsp;<br />
+         <font face="courier">% purify -logfile=&lt;имя_файла&gt; cc -g &lt;имя_программы&gt;.c</font>
+    </li>
+</ul>
+<p>
+    С помощью опции <font face="courier">/SaveTextData</font> <font face="courier">-logfile</font> в UNIX можно выполнять
+    Purify без пользовательского интерфейса и затем, при запуске программы из сценария отправьте данные об ошибках и
+    утечках в текстовый файл вывода по завершении программы.
+</p>
+<p>
+    Изучите этот файл вывода самостоятельно или напишите сценарии для его анализа. Можно использовать сообщения о ошибках и
+    предупреждениях из файла в качестве дополнительного критерия для результатов тестирования.
+</p>
+<p>
+    Можно собрать данные об охвате для идентичных выполнений, если в системе установлен PureCoverage, добавив опцию <font     face="courier">/Coverage</font> (Windows) или опцию <font face="courier">purecov</font> <font     face="courier">purify</font> (UNIX). С помощью данных об охвате можно также найти компоненты кода, еще не проверенные
+    на ошибки. Дополнительные сведения о применении данных об охвате приведены в описании этапа 2 данной памятки по
+    инструменту.
+</p>
+<p>
+    <b>Примечания</b> :
+</p>
+<ul>
+    <li>
+        С помощью Purify API можно управлять сбором данных из программы.
+    </li>
+    <li>
+        Purify также имеет опции командной строки, позволяющие сохранить данные тестов в виде двоичных файлов, которые
+        можно просмотреть с помощью графического интерфейса пользователя Purify; более подробные сведения можно найти в
+        памятке по инструменту "Анализ производительности выполнения с помощью инструментов Rational PurifyPlus".
+    </li>
+</ul>
+<p>
+    <b><img height="16" alt="значок справочника" hspace="0" src="./../../../core.base_rup/resources/helpbook.gif" width="16"     border="0" /></b>Дополнительные сведения приведены в следующих разделах электронной справки Purify:
+</p>
+<ul>
+    <li>
+        <i>выполнение программ</i>
+    </li>
+    <li>
+        <i>сообщения об ошибках</i>
+    </li>
+    <li>
+        <i>опции</i>
+    </li>
+    <li>
+        <i>функции API</i>
+    </li>
+    <li>
+        <i>сохранение данных</i>
+    </li>
+</ul>
+<h3>
+    2. <a id="Step2" name="Step2"></a><b>Выполнение программ в PureCoverage для мониторинга охвата кода. &nbsp;</b>
+</h3>
+<p>
+    PureCoverage предоставляет точную информацию об охвате кода на уровне строк и функций. Используйте PureCoverage с
+    ночными тестами для обеспечения адекватности тестов разработке кода.
+</p>
+<p>
+    Начните с добавления PureCoverage в существующие сценарии Perl, пакетные файлы и команды создания файлов.
+</p>
+<ul>
+    <li>
+        <b>В Windows</b> измените командные строки для запуска программ или файлы классов Java, файл .jar или аплет для
+        добавления PureCoverage:<br />
+         &nbsp;<br />
+         Для программ C/C++: <font face="courier">Coverage /SaveTextData &lt;имя_программы&gt;.exe</font><br />
+         Для файлов классов Java: <font face="courier">Coverage /SaveTextData /Java Java.exe
+        &lt;имя_класса&gt;.class</font><br />
+         Для управляемых программ кода .NET: <font face="courier">Coverage /SaveTextData /Net
+        &lt;имя_программы&gt;.exe</font><br />
+         &nbsp;<br />
+         С помощью опции <font face="courier">/SaveTextData</font> можно выполнить PureCoverage без пользовательского
+        интерфейса и при выполнении программы из сценария он отправит данные в текстовый файл вывода после завершении
+        программы.
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <br />
+         &nbsp;
+    </li>
+    <li>
+        <b>В UNIX</b> измените строку компиляции и компоновки:<br />
+         &nbsp;<br />
+         Для программ C/C++: <font face="courier">% purecov cc -g &lt;имя_программы&gt;.c</font><br />
+         Для файлов классов Java: <font face="courier">% purecov -java java &lt;имя_класса&gt;</font><br />
+         &nbsp;<br />
+         Воспользуйтесь опцией PureCoverage <font face="courier">-export</font> после завершения программы для записи
+        данных охвата в текстовый файл вывода.
+    </li>
+</ul>
+<p>
+    При выполнении кода PureCoverage запишет данные обо всех строках и функциях, которые были использованы. Вы можете
+    вызвать функции PureCoverage API из программы для сохранения данных в определенных точках кода или собрать данные
+    только для определенных процедур. При выходе из программы в вашем распоряжении будет точный набор данных, указывающих
+    на то, какие строки и функции были охвачены вашим тестом.
+</p>
+<p>
+    Можно объединить данные охвата из нескольких запусков тестов или сохранить их в отдельных файлах для анализа изменений
+    охвата.
+</p>
+<p>
+    С помощью сценариев можно сравнить текущие данные с данными, собранными в предыдущих выполнениях. Если охват
+    сократился, возможно, ваши тесты не выполняют код должным образом или новый код создал ошибку, из-за которой большие
+    области кода не тестируются. С помощью инструмента тестирования, такого как Rational Robot или Rational Visual Test,
+    запишите тестовые сценарии, выполняющие новый код.
+</p>
+<p>
+    <b>Примечание:</b> можно изучить файлы данных охвата двоичных файлов с помощью графического интерфейса PureCoverage.
+</p>
+<p>
+    <img height="15" alt="значок справочника" hspace="0" src="./../../../core.base_rup/resources/helpbook.gif" width="16"     border="0" />Дополнительные сведения приведены в следующих разделах электронной справки PureCoverage:
+</p>
+<ul>
+    <li class="mvd-P">
+        <i>выполнение программ</i>
+    </li>
+    <li>
+        <i>опции</i>
+    </li>
+    <li class="mvd-P">
+        <i>функции API</i>
+    </li>
+    <li class="mvd-P">
+        <i>сохранение данных</i>
+    </li>
+    <li class="mvd-P">
+        <i>сравнение данных</i>
+    </li>
+</ul>
+<h3>
+    3. <a id="Step3" name="Step3"></a><b>Выполните программу в Quantify для профилирования производительности&nbsp;</b>
+</h3>Quantify предоставляет полный и точный набор данных производительности для программы и ее компонентов, чтобы вы смогли
+отслеживать производительность и идентифицировать регрессию на ранних этапах цикла разработки и тестирования. &nbsp; 
+<p>
+    Начните с добавления Quantify в существующие сценарии Perl, пакетные файлы и команды создания файлов.
+</p>
+<ul>
+    <li>
+        <b>В Windows</b> измените командные строки для запуска программ или файлы классов, файл .jar или аплет для
+        добавления Quantify:<br />
+         &nbsp;<br />
+         Для программ C/C++: <font face="courier">Quantify /SaveTextData &lt;имя_программы&gt;.exe</font><br />
+         Для файлов классов Java: <font face="courier">Quantify /SaveTextData /Java Java.exe
+        &lt;имя_класса&gt;.class</font><br />
+         Для управляемых программ кода .NET: <font face="courier">Quantify /SaveTextData /Net
+        &lt;имя_программы&gt;.exe</font><br />
+         &nbsp;<br />
+         С помощью опции <font face="courier">/SaveTextData</font> можно выполнить Quantify без пользовательского
+        интерфейса и при выполнении программы из сценария он отправит данные в текстовый файл вывода после завершении
+        программы.
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <br />
+         &nbsp;
+    </li>
+    <li>
+        <b>В UNIX</b> измените строку компиляции и компоновки:<br />
+         &nbsp;<br />
+         Для программ C/C++: <font face="courier">% quantify cc -g &lt;имя_программы&gt;.c</font><br />
+         Для файлов классов Java: <font face="courier">% quantify -java java &lt;имя_класса&gt;</font><br />
+         &nbsp;<br />
+         Воспользуйтесь опцией Quantify <font face="courier">-export</font> после завершения программы для записи данных
+        производительности в текстовый файл вывода.
+    </li>
+</ul>
+<p>
+    При выполнении кода Quantify записывает данные о быстродействии программы. С помощью функций API можно приостановить и
+    продолжить запись данных в любое время и ограничить профилирование для определенного фрагмента кода. Можно также
+    сохранить данные в определенных точках при выполнении кода или собрать данные производительности только для
+    определенных процедур. При выходе из программы Quantify создаст точный профайл ее быстродействия.
+</p>
+<p>
+    Можно написать сценарии, сравнивающие наборы данных и сообщающие об изменении производительности:
+</p>
+<ul>
+    <li>
+        Спад производительности может указывать на то, что последний добавленный код замедлил быстродействие программы.
+        Проанализируйте собранные данные для поиска разделов программы с неприемлемой производительностью.
+    </li>
+    <li>
+        Помеченные улучшения могут указывать на то, что разработчики улучшили код или на то, что ваши тесты по каким-либо
+        причинам перестали выполнять крупные разделы кода. Проверьте данные охвата чтобы убедиться, что предыдущий уровень
+        охвата сохранился.
+    </li>
+</ul>
+<p>
+    <b>Примечание:</b>Quantify также может сохранять данные тестирования в виде двоичных файлов, которые можно изучить с
+    помощью пользовательского интерфейса Quantify; этот вопрос описан более подробно в памятке по инструменту "Анализ
+    производительности выполнения с помощью инструментов Rational PurifyPlus".
+</p>
+<p>
+    Дополнительная информация приведена в следующих разделах электронной справки Quantify:
+</p>
+<ul>
+    <li>
+        <i>выполнение программ</i>
+    </li>
+    <li>
+        <i>опции</i>
+    </li>
+    <li>
+        <i>функции API</i>
+    </li>
+    <li>
+        <i>сохранение данных</i>
+    </li>
+    <li>
+        <i>сравнение данных</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

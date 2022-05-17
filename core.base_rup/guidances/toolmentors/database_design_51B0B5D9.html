@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Разработка баз данных с помощью Rational XDE Developer.</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="database_design" name="uma.name">
+<meta content="Разработка баз данных с помощью Rational XDE Developer." name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A7B13419-14D8-4C55-B98C-497B2E17CC73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A7B13419-14D8-4C55-B98C-497B2E17CC73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A7B13419-14D8-4C55-B98C-497B2E17CC73}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A7B13419-14D8-4C55-B98C-497B2E17CC73}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{A7B13419-14D8-4C55-B98C-497B2E17CC73}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Разработка баз данных с помощью Rational XDE Developer.</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается создание модели данных в Rational XDE Develope Data Modeler.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/database_design_8552DD3.html" guid="{2E74A414-49F5-4F27-BFCB-AA2DAC675F58}">Проектирование базы данных</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    В этой памятке по инструменту описывается создание <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Модели
+    данных</a> в Data Modeler.
+</p>
+<ul>
+    <li>
+        Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения определенных задач.
+    </li>
+    <li>
+        В этой памятке по инструменту выполняются следующие шаги:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <a href="#Develop Logical Data Model">Разработка логической модели данных</a> &lt;необязательно&gt;
+            </li>
+            <li>
+                <a href="#Develop Physical Data Model">Разработка физической модели данных</a> 
+                <ul>
+                    <li>
+                        <a href="#Define Domains">Определение доменов</a>
+                    </li>
+                    <li>
+                        <a href="#Transform Logical Database Design into Physical Database Design">Создайте
+                        исходные элементы разработки физической базы данных</a>
+                    </li>
+                    <li>
+                        <a href="#Define Reference Tables">Задайте справочные таблицы</a>
+                    </li>
+                    <li>
+                        <a href="#Create Primary Key and Unique Key Constraints">Создайте ограничения главного
+                        ключа и уникального ключа</a>
+                    </li>
+                    <li>
+                        <a href="#Define Data and Referential Integrity Enforecment Rules">Задайте правила
+                        принудительной целостности справочников и данных</a>
+                    </li>
+                    <li>
+                        <a href="#De-Normalize the Database Design to Optimize for Performance">Денормализуйте
+                        эскиз базы данных для оптимизации производительности</a>
+                    </li>
+                    <li>
+                        <a href="#Optimize Data Access">Оптимизируйте доступ к данным</a>
+                    </li>
+                    <li>
+                        <a href="#Define Storage Characteristics">Задайте параметры хранилища</a>
+                    </li>
+                    <li>
+                        <a href="#Distribute Class Behavior to the Database">Создайте хранимые процедуры для
+                        распределения поведения класса к базе данных</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Review the Results">Просмотрите результаты</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    Инструмент Rational XDE (TM) содержит функции, позволяющие разработчикам приложений и баз данных разрабатывать
+    приложения и базы данных с помощью единого инструмента. Будучи <u><a class="elementLinkWithUserText" href="./../../../core.base_rup/roles/rup_database_designer_524DC34F.html" guid="{87EE3BF5-17CA-4211-BD3D-32F361E58550}">Разработчиком баз данных</a></u> или <u><a class="elementLinkWithUserText" href="./../../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Разработчиком</a></u> вы можете использовать XDE для моделирования и
+    разработки базы данных, а также для интеграции базы данных и приложения. &nbsp;XDE Data Modeler использует Профайл UML
+    для моделирования баз данных в качестве стандартной нотации для создания моделей данных. &nbsp;В следующих разделах
+    электронной справки XDE содержится ключевая базовая информация по определенным особенностям, связанным с моделированием
+    баз данных и их разработкой в Rational XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Поддерживаемые в Rational XDE базы данных</i>
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_r_db_support"); -->: Список баз
+        данных, поддерживаемых в Rational XDE.
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Поддерживаемые поставщики OLE DB и драйверы
+        JDBC</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_r_support_ole_db_jdbc"); -->: Список
+        поставщиков доступа к данным и драйверов, поддерживаемых в Rational XDE.
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Настройка опций моделей данных</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_data_pref"); -->: Обзор
+        настройки присваивания базы данных по умолчанию и цели базы данных.
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Настройка присваивания базы данных по
+        умолчанию</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_set_default_db_assign"); -->:
+        Предоставляет рекомендации по настройке моделей данных XDE для указания на базы данных с определенными именами.
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Профайл моделирования данных UML</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_r_uml_dm_profile"); -->: Обзор
+        элементов моделирования (UML), используемых в модели данных.
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Значки области видимости моделирования
+        данных</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_r_visible_icon"); -->:
+        Список элементов нотаций для определения основных/внешних ключей и триггеров баз данных для определенной модели
+        данных.
+    </li>
+</ul>
+<p>
+    Для создания <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">модели данных</a> в XDE есть три способа:
+</p>
+<ul>
+    <li>
+        Создайте каталог модели данных непосредственно в XDE с помощью инструментов Data Modeler.
+    </li>
+    <li>
+        Преобразуйте постоянные классы в <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">модель разработки</a> для создания таблиц в модели данных.
+    </li>
+    <li>
+        Выполните обратный инжиниринг для существующей схемы базы данных или сценария DDL для создания модели данных.
+        &nbsp;
+    </li>
+</ul>
+<p>
+    Дополнительная информация о различных методах создания модели данных приведены в следующих разделах электронной справки
+    XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справки" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Разработка моделей данных</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_bld_dm"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Преобразование класса в таблицу</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_clss_tbl_transf"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание моделей данных с помощью обратного
+        инжиниринга</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_gen_dm_re"); -->
+    </li>
+</ul>
+<p>
+    В оставшихся разделах этой памятки по инструменту приведены инструкции по созданию модели данных с помощью
+    преобразования постоянных классов в модели разработки. Структура пакета модели данных, описываемая здесь, более
+    подробно рассмотрена в разделе Модель данных в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Руководстве по структуре модели XDE</a>.
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/reverse_engineering_db_31C775E7.html" guid="{8F40AECA-8AAA-4409-81F0-BFB7B6BECDBC}">Памятка по инструменту: обратный инжиниринг баз данных с помощью Rational
+    XDE</a> содержит более подробные сведения о создании модели данных с помощью обратного инжиниринга разработки
+    физической базы данных.
+</p>
+<h3>
+    <a id="Develop Logical Data Model" name="Develop Logical Data Model">Разработка логической модели данных
+    &lt;необязательно&gt;</a>
+</h3>
+<p>
+    Для некоторых проектов может потребоваться создания идеализированной "логической" модели разработки базы данных,
+    захватывающей независимые от приложения панели ключевых логических сущностей данных и их взаимосвязей. Эту логическую
+    модель данных можно представить как "аналитический" тип модели, похожий на <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_analysis_model_76C3B70C.html" guid="{98EA224C-36F6-46E6-AB36-2999382B58B3}">Продукт работы: модель анализа</a>, доступный для использования в раз
+    работке эскиза приложения. &nbsp;&nbsp;Следует обратить внимание, что логическая модель данных входит в состав <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">Продукта работы: модель данных</a> и не считается отдельным продуктом
+    работы RUP. &nbsp;&nbsp;
+</p>
+<p>
+    Логическая модель данных может быть создана непосредственно с помощью инструментов XDE Data Modeler. &nbsp;В книге <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели XDE</a> приведены сведения по созданию логической модели
+    данных в продукте работы Модель данных. &nbsp;Справочник: <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Логические модели данных</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_logical_dm"); -->
+</p>
+<h3>
+    <a id="Develop Physical Data Model" name="Develop Physical Data Model">Разработка физического эскиза базы данных</a>
+</h3>
+<p>
+    Можно уточнить логическую модель данных для создания подробной модели физического эскиза базы данных с помощью Rational
+    XDE.<br />
+     (См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Физические модели данных</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_phys_dm"); -->.) Эта подробная
+    физическая модель данных может быть с помощью прямого инжиниринга преобразована в базу данных. (См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/forward_engineering_db_14F5AD0B.html" guid="{F55D370E-F820-4646-A0B8-C2242A07A83F}">Памятку по инструменту: прямой инжиниринг баз данных в Rational XDE</a>).
+    &nbsp;Ниже описаны основные действия по разработке физической модели данных.
+</p>
+<h4>
+    <a id="Define Domains" name="Define Domains">Определение доменов</a>
+</h4>
+<p>
+    Создайте домены для реализации пользовательских типов данных, доступных для использования в модели данных для
+    принудительного применения стандартов разработки базы данных. (См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Домены</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_dom"); -->.)&nbsp; Домены также можно
+    использовать для вложения бизнес-правил в столбцы.
+</p>
+<p>
+    Для применения типов данных, заданных доменами в модели данных, необходимо следовать данным рекомендациям:
+</p>
+<ul>
+    <li>
+        Домены необходимо задать в пакете, отличном от модели данных. Для более крупных команд разработчиков зачастую
+        создается отдельная модель XDE. (См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание
+        доменов</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_dom"); -->.)
+    </li>
+    <li>
+        Пакет, содержащий домены, должен быть присвоен компоненту базы данных, отвечающему за реализацию таблиц в базе
+        данных. (См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>присваивание пакетов доменов к
+        базам данных</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_assign_dom_pkg_db"); -->.)
+    </li>
+</ul>
+<p>
+    Сведения о применении домена к столбцу в модели данных приведены в справочнике <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Присваивание доменов к столбцам</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_assign_dom_col"); -->.&nbsp;
+</p>
+<h4>
+    <a id="Transform Logical Database Design into Physical Database Design" name="Transform Logical Database Design into Physical Database Design">Создайте исходные элементы разработки физической
+    базы данных</a>
+</h4>
+<p>
+    Преобразуйте постоянные классы в модели разработки в таблицы внутри нее. (См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Преобразование классов в таблицы</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_clss_tbl_transf"); -->.)&nbsp; Атрибут
+    ы классов станут столбцами в таблицах. &nbsp;Rational XDE позволяет задать атрибуты классов в качестве ключей
+    кандидатов. (См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Присваивание ключей
+    кандидатов</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_assign_cand_key"); -->.)
+    Rational XDE также преобразует определенные ассоциации между классами во взаимосвязи между таблицами. В следующих
+    разделах электронной справки Rational XDE содержатся дополнительные сведения о преобразовании классов в таблицы:
+</p>
+<ul type="square">
+    <li>
+        Общие сведения о преобразовании - <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Преобразование классов в таблицы</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_r_clsstbl_transf_map"); -->
+    </li>
+    <li>
+        Сведения о преобразовании DBMS - <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Привязка
+        типов данных при преобразовании классов в таблицы</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_clss_tbltransf_dtmap"); -->
+    </li>
+</ul>
+<h4>
+    <a id="Define Reference Tables" name="Define Reference Tables">Задайте справочные таблицы</a>
+</h4>
+<p>
+    Создайте справочные таблицы для управления статическими элементами данных в базе данных. &nbsp;Создать справочные
+    таблицы можно непосредственно в модели данных с помощью функций XDE Data Modeler. Справочник: <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование таблиц и столбцов</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_tables_col"); -->
+</p>
+<h4>
+    <a id="Create Primary Key and Unique Key Constraints" name="Create Primary Key and Unique Key Constraints">Создайте
+    ограничения главного ключа и уникального ключа</a>
+</h4>
+<p>
+    Задайте ограничения основного и уникального ключа для идентификации строк с данными в таблице. См. раздел электронной
+    справки <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Ограничения основного ключа</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_pk_cnstrnt"); -->Раздел электронной
+    справки &nbsp; <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание ограничений основного
+    ключа</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_pk_cnstrnt"); -->содержит
+    описание действий по созданию ограничения основного ключа для одного или нескольких столбцов в таблице. &nbsp;Сведения
+    об определении ограничений уникального ключа приведены в разделе <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Ограничения уникального ключа</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_uk_cnstrnt"); -->Действия по созданию
+    ограничения уникального ключа в модели: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание
+    ограничения уникального ключа</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_uk_cnstrnt"); -->.
+</p>
+<p>
+    Обратитесь к электронной справке XDE: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание
+    ограничений</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_create_cnstrnt"); -->
+</p>
+<h4>
+    <a id="Define Data and Referential Integrity Enforecment Rules" name="Define Data and Referential Integrity Enforecment Rules">Задайте правила принудительной целостности справочников
+    и данных</a>
+</h4>
+<p>
+    Контрольные ограничения можно использовать для управления обновлениями элементов данных в таблице. &nbsp;Rational XDE
+    предоставляет возможность задать контрольные ограничения для таблиц, столбцов и доменов. См. раздел <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Контрольные ограничения</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_ck_cnstrnt"); -->В следующих разделах
+    электронной справки XDE содержится описание создания трех типов контрольных ограничений в модели данных:
+</p>
+<ul>
+    <li>
+        Контрольные ограничения столбца - <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание
+        контрольных ограничений столбца</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_ckcnstrnt_col"); -->
+    </li>
+    <li>
+        Контрольные ограничения таблицы - <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание
+        контрольных ограничений таблицы</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_ckcnstrnt_tbl"); -->
+    </li>
+    <li>
+        Контрольные ограничения домена - <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание
+        контрольных ограничений домена</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_ckcnstrnt_dom"); -->
+    </li>
+</ul>
+<p>
+    Еще одним типом ограничений, используемым для обеспечения целостности указателей, является ограничение уникального
+    ключа. (См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Ограничения внешнего ключа</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_fk_cnstrnt"); -->.)&nbsp; Создать
+    ограничения по внешнему ключу можно только создав взаимосвязь между таблицами. (См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание ограничений по внешнему ключу</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_fk_cnstrnt"); -->.)&nbsp;Исключением
+    является процесс обратного инжиниринга баз данных или сценария DDL в модель данных; в этом случае взаимосвязь и внешние
+    ключи создаются автоматически. &nbsp;Миграция ключей зависит от типа взаимосвязи, идентифицирующей или
+    неидентифицирующей, добавленной для двух таблиц.
+</p>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Перенос ключей</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_key_mig"); -->Справочник: <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Изменение переносимых ключей</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_chng_mig_key"); -->.
+</p>
+<h4>
+    <a id="De-Normalize the Database Design to Optimize for Performance" name="De-Normalize the Database Design to Optimize for Performance">Денормализуйте эскиз базы данных для оптимизации
+    производительности</a>
+</h4>
+<p>
+    В зависимости от определенной ситуации с проектом, может потребоваться настройка нормализованной разработки физической
+    базы данных для соответствия определенным требованиям к производительности. &nbsp;Оптимизируйте модель данных для
+    повышения производительности, создав таблицы для хранения объектов, извлекаемых вместе в одной таблице. &nbsp;Этот
+    прием называется денормализация. &nbsp;Для денормализации совместите уникальные столбцы из двух таблиц в одну и удалите
+    вторую таблицу. &nbsp;
+</p>
+<h4>
+    <a id="Optimize Data Access" name="Optimize Data Access">Оптимизация доступа к данным</a>
+</h4>
+<p>
+    Дополнительным приемом оптимизации является применение индексации столбцов для более эффективного доступа к данным в
+    таблицах. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Индексы</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_index"); -->Описание создания индексов
+    в модели данных: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание индексов</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_index"); -->
+</p>
+<p>
+    Еще одним аспектом доступа к данным является применения панелей базы данных. &nbsp;Панели можно использовать для
+    управления или ограничения доступа к данным одной или нескольких таблиц. &nbsp;См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание панелей</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_view"); -->&nbsp;для получения
+    сведений о создании панели в модели данных. Справочник: <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование панелей</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_view"); -->
+</p>
+<h4>
+    <a id="Define Storage Characteristics" name="Define Storage Characteristics">Задайте параметры хранилища</a>
+</h4>
+<p>
+    Создайте эскиз хранения модели для базы данных, указав табличные пространства и контейнеры табличных пространств. (См.
+    <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Табличные пространства</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_ts_overview"); -->.) Преобразуйте
+    элементы разработки физической базы данных в элементы хранилища с помощью взаимосвязей реализации. В разделе
+    электронной справки XDE <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление табличных
+    пространств к базам данных</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_add_ts_db"); -->приведено описание
+    создания табличных пространств для определенных баз данных. В разделе электронной справки XDE <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Присваивание таблиц к табличным пространствам</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_assign_tbl_ts"); -->содержится описание
+    присваивания таблиц модели к табличным пространствам.
+</p>
+<p>
+    Rational XDE в настоящее время поддерживает моделирование табличных пространств для Oracle, DB2 и SQL Server. &nbsp;В
+    следующих разделах электронной справки XDE содержатся указания по моделированию табличных пространств для этих
+    продуктов DBMS:&nbsp;
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование табличных пространств
+        Oracle</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_oracle_ts"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование табличных пространств DB2</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_db2_ts"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование табличных пространств SQL</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_sqlsrv_ts"); -->
+    </li>
+</ul>
+<p>
+    Для получения дополнительных сведений об элементах моделирования табличных пространств и баз данных обратитесь к
+    следующим разделам электронной справки Rational XDE:
+</p>
+<ul>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование табличных пространств и баз
+        данных</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_ts"); -->
+    </li>
+    <li>
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Базы данных</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_db"); -->
+    </li>
+</ul>
+<h4>
+    <a id="Distribute Class Behavior to the Database" name="Distribute Class Behavior to the Database">Создайте хранимые
+    процедуры для распределения поведения класса к базе данных</a>
+</h4>
+<p>
+    Задайте хранимые процедуры для поддержки эффективности хранения и извлечения информации в базе данных. Изучите операции
+    операции классов разработки, использованных для создания таблиц для хранимых процедур кандидата. &nbsp;Хранимые
+    процедуры можно реализовать в качестве процедур или функций. &nbsp;См. <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Хранимые процедуры</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_sp"); -->Хранимые процедуры должны
+    находиться в контейнере хранимых процедур, как описано в разделе <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Контейнеры хранимых процедур</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_c_sp_cont"); -->. Хранимые процедуры
+    создаются в виде операций класса Контейнер хранимых процедур, в котором они находятся. См. <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание хранимых процедур</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_sp"); -->, <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание контейнеров хранимых процедур</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_sp_cont"); -->, <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Создание параметров хранимых процедур</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_t_create_sp_prmtr"); -->
+</p>
+<p>
+    Обратитесь к разделу электронной справки XDE <img alt="значок справочника"     src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование хранимых процедур</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_sp"); -->
+</p>
+<p>
+    Задайте триггеры для дальнейшего контроля и управления изменением информации в таблицах. Справочник: раздел <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Моделирование триггеров</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"dm","dm_o_mdl_trig"); -->
+</p>
+<h3>
+    <a id="Review the Results" name="Review the Results">Просмотрите результаты</a>
+</h3>
+<p>
+    Просмотрите результаты разработки базы данных в <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_data_model_65B46980.html" guid="{9DCF1723-1A21-4F48-BEDE-DBC543489682}">модели
+    данных</a> на предмет согласованности с эскизом приложения в <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">модели
+    разработки</a> и с структурой архитектуры приложения в целом. Перечисление элементов для обзора приведено в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/checklists/data_model_D22985A5.html" guid="2.800761632096845E-305">Справочной таблице: модель данных</a>.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><table width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="center" align="left">
+                <a href="http://www.appliedis.com" target="_blank"><img alt="значок Applied Information Sciences"                 src="./../../../core.base_rup/guidances/supportingmaterials/resources/appliedis.gif" border="0" /></a>
+            </td>
+            <td valign="center" align="left" width="86%">
+                <font face="Arial"><small><small>Это информационное наполнение разработано или частично разработано <a href="http://www.appliedis.com" target="_blank">Applied Information Sciences</a>.</small></small></font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

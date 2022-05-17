@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Отчет о статусе конфигурации</title>
+<meta content="Concept" name="uma.type">
+<meta content="configuration_status_reporting" name="uma.name">
+<meta content="Отчет о статусе конфигурации" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.0480756258268436E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.0480756258268436E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Отчет о статусе конфигурации</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Эти рекомендации описывают типичное содержимое отчета о статусе конфигурации. Отчет о статусе конфигурации предназначен для описания состояния продукта на основании типа, количества и серьезности неполадок, найденных и исправленных во время разработки продукта.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_configuration_manager_9B799A15.html" guid="{8939FDEF-EC44-4009-9F16-FAD4CFAA0B2D}">Администратор конфигурации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_configuration_status_reporting__introduction_to" name="XE_configuration_status_reporting__introduction_to"></a> 
+<h3>
+    <a id="Overview" name="Overview">Обзор</a>
+</h3>
+<p>
+    Мониторинг выполнения проекта программного обеспечения - это трудная задача. Одна из главных проблем - найти критерии
+    объективной оценки степени выполнения и соответствующего статуса. Один из возможных подходов - это мониторинг
+    показателей изменений в системе контроля изменений. Этот подход называется учет статуса конфигурации и выпускаемая
+    отчетность называется отчет о статусе конфигурации.
+</p>
+<p>
+    Система <a id="XE_configuration_status_accounting__definition" name="XE_configuration_status_accounting__definition"></a><b>учета (измерения) статуса конфигурации</b> предназначена
+    для описания состояния продукта на основании типа, количества и серьезности неполадок, найденных и исправленных во
+    время разработки продукта. Данные, получаемые в этом аспекте управление изменениями, полезны при определении общего
+    статуса завершенности проекта.
+</p>
+<p>
+    Ниже перечислены четыре главные источника для отчета о статусе конфигурации программного обеспечения:
+</p>
+<ul>
+    <li>
+        Запросы изменений
+    </li>
+    <li>
+        Компоновки программного обеспечения
+    </li>
+    <li>
+        Описания версий
+    </li>
+    <li>
+        Аудит
+    </li>
+</ul>
+<h3>
+    <a id="ChangeRequests" name="ChangeRequests">Запросы изменений</a>
+</h3>
+<p>
+    Запрос изменений - это общее название для запроса на изменение рабочего продукта или процесса разработки. Общая
+    процедура, связанная с запросом изменений, описана в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/change_request_management_119F2E47.html" guid="5.975934904188119E-305">концепции: Управление запросами изменений</a>.
+</p>
+<p>
+    Теги статуса позволяют создавать статистические отчеты о запросах изменений (возраст, распределение, тенденции).
+</p>
+<p>
+    Отчеты о запросах изменений, основанных на найденных неполадках, содержат следующие разделы:
+</p>
+<ul>
+    <li>
+        Давность (Отчет, основанный на времени)
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p>
+            Время в открытом состоянии различных типов запросов изменений. Какова задержка при исправлении неполадки?
+        </p>
+    </li>
+    <li>
+        Распределение (Отчет, основанный на численных показателях)
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p>
+            Сколько существует запросов изменений для каждого владельца в зависимости от приоритета и стадии исправления?
+        </p>
+    </li>
+    <li>
+        Тенденции (Отчет, основанный на времени и численных показателях)
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p>
+            Каково общее число неполадок, найденных и исправленных за определенный промежуток времени? Какова скорость
+            обнаружения и исправления неполадок? Каково качественное изменение при исправлении неполадки? Каково среднее
+            время исправления неполадки?
+        </p>
+        <p align="center">
+            <img height="311"             alt="Обобщенный поток процесса для запроса изменений, производящий отчеты давности, распределения и тенденций. "              src="./../../../core.base_rup/guidances/concepts/resources/co_strep.gif" width="458" />
+        </p>
+    </li>
+</ul>
+<h3>
+    <a id="BuildReports" name="BuildReports">Отчеты компоновки</a><a id="XE_build__report" name="XE_build__report"></a>
+</h3>
+<p>
+    Отчеты компоновки перечисляют названия файлов, их расположение и внесенные изменения, которые создают определенную
+    версии программного обеспечения.
+</p>
+<p>
+    Отчеты компоновки могут делаться на системном и подсистемном уровнях.
+</p>
+<h3>
+    <a id="VersionDescriptions" name="VersionDescriptions">Описания версий</a><a id="XE_version__descriptions" name="XE_version__descriptions"></a><a id="XE_configuration_status_reporting__version_descriptions" name="XE_configuration_status_reporting__version_descriptions"></a>
+</h3>
+<p>
+    Описания версий описывает подробности выпуска программного обеспечения так же, как и Информация о выпуске. Как минимум,
+    описание должно включать следующее:
+</p>
+<ul>
+    <li>
+        Список выпускаемых материалов (физические носители и документация)
+    </li>
+    <li>
+        Список содержимого программного обеспечения (список файлов)
+    </li>
+    <li>
+        Все данные адаптации для размещения на сайте
+    </li>
+    <li>
+        Инструкции по установке
+    </li>
+    <li>
+        Возможные неполадки и известные ошибки
+    </li>
+</ul>
+<h3>
+    <a id="Audits" name="Audits">Аудит</a><a id="XE_configuration_management__audits_in" name="XE_configuration_management__audits_in"></a>
+</h3>
+<p>
+    В контексте управления изменениями учитываются два типа аудита:
+</p>
+<ul>
+    <li>
+        Аудит физической конфигурации
+    </li>
+    <li>
+        Аудит функциональной конфигурации
+    </li>
+</ul>
+<p>
+    Аудит физической конфигурации (PCA) определяет элементы продукта из хранилища продукта для развертывания.
+</p>
+<p>
+    Аудит функциональной конфигурации (FCA) подтверждает, что контрольная версия соответствует установленным требованиям.
+</p>
+<p>
+    Детали проведения аудита описаны в <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/perform_configuration_audit_9EB6566A.html" guid="{766CE150-54BC-4BD3-9EAB-09857114B268}">Выполнение аудита конфигурации</a>.
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

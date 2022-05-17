@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Создание встраиваемого модуля метода с помощью Rational Method Composer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="creating_method_plugin_rmc" name="uma.name">
+<meta content="Создание встраиваемого модуля метода с помощью Rational Method Composer" name="uma.presentationName">
+<meta content="Tool:rup_rational_method_composer:Rational Method Composer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Method Composer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "_hAfB8COzEdq41POk0CQYwA", "_geA_AEJoEdq3aK0GjVqTbg"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "_hAfB8COzEdq41POk0CQYwA", "_geA_AEJoEdq3aK0GjVqTbg"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_Y9oGwEf6Edq2sZAkASBQMA", "_PUS_kEf7Edq2sZAkASBQMA", "_hAfB8COzEdq41POk0CQYwA", "_geA_AEJoEdq3aK0GjVqTbg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_geA_AEJoEdq3aK0GjVqTbg"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Создание встраиваемого модуля метода с помощью Rational Method Composer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается создание встраиваемого модуля метода с помощью Rational Method Composer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rational_method_composer_84A966EC.html" guid="_hAfB8COzEdq41POk0CQYwA">Rational Method Composer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/tailor_process_for_project_6CFD05E2.html" guid="{1BA9AAA0-DA89-4C14-B45A-CE28A8A10894}">Настройка процесса разработки для проекта</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/prepare_project_specific_guidelines_A9AD00DB.html" guid="{1E706674-C1E7-4F8D-BF06-35FFE49C5E42}">Подготовка рекомендаций по проекту</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/prepare_project_specific_templates_F4BB56.html" guid="{456ACFD8-B1F7-4B18-ABBE-D58D88C9E7C6}">Подготовка шаблонов для проекта</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    A&nbsp;<a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/method_plugin_B417B6A2.html" guid="_0KeEMBUFEdqrUt4zetC1gg">Встраиваемый модуль метода</a>&nbsp;используется для хранения в пакете любых изменений
+    (добавлений, удалений, расширений, и т.д.) &nbsp;в содержимом и процессах существующего метода. &nbsp;
+</p>
+<p>
+    Сведения о создании встраиваемых модулей методов приведены в памятке "Создание собственного встраиваемого модуля
+    метода". &nbsp;Все памятки Rational Method Composer доступны через меню Справка&gt;Памятка.
+</p>
+<p>
+    После создания встраиваемого модуля необходимо заполнить его содержимым:
+</p>
+<ul>
+    <li>
+        Информация о разработке содержимого метода см. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/developing_method_content_rmc_53FEDE8.html" guid="_4Hw3gEJoEdq3aK0GjVqTbg">Памятку по инструменту: разработка содержимого метода с помощью Rational Method
+        Composer</a>. &nbsp;
+    </li>
+    <li>
+        Информация о разработке процессов приведена в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/developing_processes_rmc_525982AF.html" guid="_A1_M4EJeEdqc6pVfdXQ8AQ">Памятке по инструменту: разработка содержимого метода с помощью Rational Method
+        Composer</a>.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

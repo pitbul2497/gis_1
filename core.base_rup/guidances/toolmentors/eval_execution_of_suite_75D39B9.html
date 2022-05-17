@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Оценка результатов выполнения тестового комплекта с помощью Rational TestFactory</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="eval_execution_of_suite" name="uma.name">
+<meta content="Оценка результатов выполнения тестового комплекта с помощью Rational TestFactory" name="uma.presentationName">
+<meta content="Tool:rup_test_factory:Rational TestFactory" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational TestFactory" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{E4299918-C096-4CEE-A119-490B0DE11867}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{E4299918-C096-4CEE-A119-490B0DE11867}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{E4299918-C096-4CEE-A119-490B0DE11867}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{E4299918-C096-4CEE-A119-490B0DE11867}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Оценка результатов выполнения тестового комплекта с помощью Rational TestFactory</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке описывается применение Rational TestFactory для измерения и оценки результатов выполнения тестового комплекта.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_test_factory_3EDA2115.html" guid="{FBA5098E-2CA8-483D-814D-DE3E876426B1}">Rational TestFactory</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_test_failure_7E42EE55.html" guid="{EA0E3D2C-F87E-49CA-8832-F791886D5741}">Анализ ошибки при тестировании</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/execute_test_suite_492795DE.html" guid="{6B420194-5EB7-4A12-A061-09FAA5DC18DE}">Выполнение комплекта тестов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/determine_test_results_630C9EC9.html" guid="{74E51E86-ECAB-4A61-9A88-FD358EE6F2B1}">Определение результатов тестирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    После выполнения тестового комплекта в Rational TestFactory можно оценить результаты. Сведения о применении тестового
+    комплекта для выполнения комплекта тестовых сценариев в TestFactory, приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/execute_suite_of_test_scripts_EAA12F07.html" guid="{ED7B74BA-112A-4A6A-9E2A-9B8958AF7293}">Памятке по инструменту: выполнение комплекта тестовых сценариев.</a> .
+</p>
+<p>
+    Эта памятка по инструменту применима для систем с Windows 98/2000/NT 4.0.
+</p>
+<p>
+    Для применение Rational TestFactory для оценки результатов выполнения комплекта тестовых сценариев выполните следующие
+    действия:
+</p>
+<ol>
+    <li>
+        <a href="#Review script status">Просмотрите состояние выполнения тестовых сценариев комплекта</a>
+    </li>
+    <li>
+        <a href="#Analyze code coverage">Проанализируйте охват теста на базе кода</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="Review script status" name="Review script status">Просмотрите состояние выполнения тестовых сценариев в
+    тестовом комплекте</a>
+</h3>
+<p>
+    Выбрав тестовый комплекте в левой панели главного окна Rational TestFactory, вы можете просмотреть на вкладке
+    <b>Состояние</b> в правой панели результаты его выполнения. Для всех тестовых сценариев, перечисленных в тестовом
+    комплекте, значение состояния указывает, успешно ли выполнен тестовый сценарий в TestFactory.
+</p>
+<p>
+    Если выполнить тестовый сценарий успешно не удалось, можно проанализировать протокол его выполнения в Rational
+    TestManager.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделами электронной справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Вкладка Тестовый комплект</i>
+    </li>
+    <li>
+        <i>Просмотрите состояние выполнения тестового комплекта</i>
+    </li>
+    <li>
+        <i>Просмотрите протокол выполнения сценария</i>
+    </li>
+</ul>
+<h3>
+    2. <a id="Analyze code coverage" name="Analyze code coverage">Проанализируйте охват теста на базе кода</a>
+</h3>
+<p>
+    При встраивании кода тестируемого приложения (AUT) перед запуском тестового комплекта можно просмотреть данные охвата
+    теста на базе кода для тестового комплекта. Когда тестовый комплект является выбранным объектов в левой панели главного
+    окна Rational TestFactory, на вкладке <b>Охват</b> в правой панели отображаются комбинированные значения охвата на базе
+    кода для всех тестовых сценариев, выполняемых в тестовом комплекте.
+</p>
+<p>
+    Rational TestFactory вычисляет значения охвата теста на базе кода в качестве процентного значения исходного кода,
+    затрагиваемого тестовыми сценариями, относительно <i>всего</i> исходного кода AUT. При наличии доступа к исходным
+    файлам AUT можно воспользоваться браузером охвата в TestFactory для просмотра кода в исходном файле и изучения
+    затрагиваемых тестами строк кода.
+</p>
+<p>
+    Можно также просмотреть значения охвата кода для отдельных тестовых сценариев, содержащихся в тестовом комплекте.
+    Дважды щелкните на тестовом сценарии на вкладке <b>Состояние</b> тестового комплекта чтобы выбрать тестовый сценарий в
+    левой панели. Дополнительные сведения приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/eval_test_coverage_8F1DEC44.html" guid="{D4C656B2-68B7-4C88-B999-FA80AA417C6C}">Памятке по инструменту: оценка охвата теста</a>.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделами электронной справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Встраивание тестируемого приложения</i>
+    </li>
+    <li>
+        <i>Вкладка Тестовый комплект</i>
+    </li>
+    <li>
+        <i>Просмотрите результаты охвата кода для тестового сценария</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

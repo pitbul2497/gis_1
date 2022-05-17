@@ -1,0 +1,22 @@
+[
+
+{objectId: "_Cmrq0NQ_Eey45akVU3diGg", title: "ГИС", url: "gis/customcategories/gis_9104B069.html", nodeDocType: "fbd98105", 
+children: [
+
+{objectId: "_6PGBsNQmEey45akVU3diGg", title: "Системный администратор", url: "gis/roles/admin_9D7000.html", nodeDocType: "f3e5326c"},
+{objectId: "_IWDtoNQtEey45akVU3diGg", title: "Учет мероприятий по лесовосстановительным работам", url: "gis/tasks/event_collection_2BD2F434.html", nodeDocType: "eb56c7fb"},
+{objectId: "_aXULQNQ7Eey45akVU3diGg", title: "Готовая карта", url: "gis/workproducts/export_map_A1B48DA5.html", nodeDocType: "e1a899c8"},
+{objectId: "_onlWcNQ8Eey45akVU3diGg", title: "Готовый отчет о лесных работах", url: "gis/guidances/reports/forest_report_E423A1B0.html", nodeDocType: "e9def02a"},
+{objectId: "_rDAAENQoEey45akVU3diGg", title: "Лесничий", url: "gis/roles/forester_16D4762D.html", nodeDocType: "f3e5326c"},
+{objectId: "_oL9W8NQnEey45akVU3diGg", title: "Разрабочик ГИС", url: "gis/roles/gis_developer_25CC022.html", nodeDocType: "f3e5326c"},
+{objectId: "_qf7qENQ6Eey45akVU3diGg", title: "Разработка ГИС", url: "gis/workproducts/gis_development_BE64A2B1.html", nodeDocType: "e1a899c8"},
+{objectId: "_8ZWIMNQlEey45akVU3diGg", title: "Руководитель проекта", url: "gis/roles/manager_1DE593A4.html", nodeDocType: "f3e5326c"},
+{objectId: "_T1AmwNQ5Eey45akVU3diGg", title: "Анализ карты", url: "gis/workproducts/map_analys_C5DF4378.html", nodeDocType: "e1a899c8"},
+{objectId: "_wUFX0NQrEey45akVU3diGg", title: "Обработка карт", url: "gis/tasks/map_processing_7BAC1343.html", nodeDocType: "eb56c7fb"},
+{objectId: "_aJPYMNQpEey45akVU3diGg", title: "Сбор и импорт карт MODIS", url: "gis/tasks/maps_import_CC680786.html", nodeDocType: "eb56c7fb"},
+{objectId: "_1lYUgNQ6Eey45akVU3diGg", title: "Концепция индекса NDVI", url: "gis/guidances/concepts/ndvi_concept_C8C78B97.html", nodeDocType: "699c271e"},
+{objectId: "_XqmtYNQ7Eey45akVU3diGg", title: "Геоинформационная система мониторинга ленточного бора Алтайского края", url: "gis/workproducts/Геоинформационная система мониторинга ленточного бора Алтайского_204B67AF.html", nodeDocType: "252f9d35"},
+{objectId: "_4bhJQNQ8Eey45akVU3diGg", title: "Инструмент QGIS", url: "gis/guidances/toolmentors/QGIS_69B5E688.html", nodeDocType: "609e7ef"},
+{objectId: "_U_hukNQ4Eey45akVU3diGg", title: "Экспорт карты и отчета", url: "gis/tasks/result_export_B629CE11.html", nodeDocType: "eb56c7fb"}]}
+]
+

@@ -1,0 +1,1754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Идеи тестов для булевских выражений и граничных условий</title>
+<meta content="Guideline" name="uma.type">
+<meta content="test_ideas_for_booleans_and_boundaries" name="uma.name">
+<meta content="Идеи тестов для булевских выражений и граничных условий" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "1.8659406802663404E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.8659406802663404E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Идеи тестов для булевских выражений и граничных условий</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Идеи тестов опираются на вероятные сбои программного обеспечения и способы обнаружения этих сбоев. Эта рекомендация посвящена разработке идей тестов для булевских выражений и граничных условий.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_test_ideas_list_2A0F8E03.html" guid="{45219F27-0F84-4FD5-A7BC-73C19226303B}">Тест - Список идей</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_test__developer_testing__test_ideas__for_booleans_and_boundaries" name="XE_test__developer_testing__test_ideas__for_booleans_and_boundaries"></a><a id="XE_test-ideas__for_booleans_and_boundaries" name="XE_test-ideas__for_booleans_and_boundaries"></a><a id="XE_design__developer_testing__test_ideas__for_booleans_and_boundaries" name="XE_design__developer_testing__test_ideas__for_booleans_and_boundaries"></a> 
+<h3>
+    <a id="Introduction" name="Introduction"></a>Введение
+</h3>
+<p>
+    Идеи тестов опираются на <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/termdefinitions/fault_model_C99EBECA.html" target="_blank" guid="_yJJZCdnmEdmO6L4XMImrsA">модели сбоев</a>, понимание вероятных отказов программного обеспечения и способов их
+    обнаружения. Эта рекомендация посвящена созданию идей тестов булевских и условных выражений. Сначала приводится код,
+    обосновывающий методики, а затем описывается, как их применять, если код еще не написан или недоступен.
+</p>
+<h3>
+    <a id="BooleanExpressions" name="BooleanExpressions"></a><b>Булевские выражения</b>
+</h3>
+<p>
+    Рассмотрим следующий фрагмент кода, описывающий вымышленную систему подрыва бомбы. Код является частью системы
+    безопасности и связан с обработкой нажатия кнопки "Взорвать бомбу".
+</p>
+<blockquote>
+<pre>
+ if (publicIsClear || technicianClear) {
+   bomb.detonate(); }
+</pre>
+</blockquote>
+<p>
+    Этот код - ошибочный. <font size="+0">||</font> должен быть заменен на <font size="+0">&&</font>. Результаты
+    этой ошибки будут трагические. Бомба будет взорвана не только в том случае, когда обеспечена безопасность и персонала,
+    и техника, но и когда обеспечена безопасность <i>одного</i> из этих объектов.
+</p>
+<p>
+    Какой тест позволит это обнаружить?
+</p>
+<p>
+    Пусть тест проводится в ситуации, когда обеспечена безопасность и персонала, и техника. Бомба будет взорвана. Но - и
+    это важно - <i>правильный</i> код с <font size="+0">&&</font> сделает то же самое. Поэтому тест в отношении
+    этой ошибки будет бесполезен.
+</p>
+<p>
+    Точно так же неверный код будет работать правильно, когда рядом с бомбой не обеспечена безопасность ни персонала, ни
+    техника, и бомба не взорвется.
+</p>
+<p>
+    Для того чтобы найти ошибку, требуется ситуация, в которой ошибочный и правильный код ведут себя по-разному. Например,
+    это будет ситуация, когда обеспечена безопасность персонала, но техник еще находится рядом с бомбой. В таблице
+    перечислены все тесты:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="20%">
+                    <p align="center">
+                        publicIsClear
+                    </p>
+                </th>
+                <th scope="col" width="20%">
+                    <p align="center">
+                        technicianClear
+                    </p>
+                </th>
+                <th scope="col" width="20%">
+                    <p align="center">
+                        тестируемый код...
+                    </p>
+                </th>
+                <th scope="col" width="20%">
+                    <p align="center">
+                        правильный код...
+                    </p>
+                </th>
+                <th width="20%">
+                    &nbsp;
+                </th>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#008000">взрыв</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#008000">взрыв</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        тест бесполезен (не выявляет эту ошибку)
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#ff0000">взрыв</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#ff0000">нет взрыва</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        полезный тест
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#ff0000">взрыв</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#ff0000">нет взрыва</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        полезный тест
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#008000">нет взрыва</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        <font color="#008000">нет взрыва</font>
+                    </p>
+                </td>
+                <td width="20%">
+                    <p align="center">
+                        тест бесполезен (не выявляет эту ошибку)
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Два средних теста позволяют выявить эту ошибку. Однако они избыточны, для выявления ошибки будет достаточно одного из
+    них.
+</p>
+<p>
+    Существуют и другие варианты ошибочных выражений. Далее приведены два списка с типичными ошибками в булевских
+    выражениях. В левой части приведены ошибки, которые могут быть выявлены с помощью описанной здесь методики. Ошибки в
+    правой части могут остаться незамеченными. Таким образом, эта методика полезна, но не выявляет всех ошибок.
+</p>
+<div align="right">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="50%">
+                    <p align="center">
+                        <b>Обнаруженные ошибки</b>
+                    </p>
+                </th>
+                <th scope="col" width="50%">
+                    <p align="center">
+                        <b>Ошибки, которые могут остаться невыявленными</b>
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Неверный оператор: a <font color="#ff0000"><b>||</b></font> b вместо <font                     color="#ff0000"><b>&&</b></font> b
+                </td>
+                <td width="50%">
+                    Неверная переменная: a&&<font color="#ff0000"><b>b</b></font>&&c вместо a&&
+                    <font color="#ff0000"><b>x</b></font>&&d
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Неверное или упущенное отрицание a||b вместо <font color="#ff0000"><b>!</b></font>a||b, или <font                     color="#ff0000"><b>!</b></font> a||b вместо a||b
+                </td>
+                <td width="50%">
+                    Неполное выражение: a&&b вместо a&&b<font color="#ff0000"><b>&&c</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Неверные скобки в выражении: a&&b||c вместо a&&<font                     color="#ff0000"><b>(</b></font>b||c<font color="#ff0000"><b>)</b></font>
+                </td>
+                <td width="50%">
+                    Выражения, содержащие несколько ошибок в левом столбце
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    Слишком сложное выражение: a&&b<b>&&c</b> вместо <font size="+0">a&&b<br />
+                    </font> Эта ошибка маловероятна, но тесты, позволяющие ее найти, будут использоваться и в других
+                    случаях.
+                </td>
+                <td width="50%">
+                    &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Как применяются эти идеи? Предположим, у нас есть булевское выражение <font size="+0">a&&!b</font>. Составим
+    таблицу истинности:
+</p>
+<div align="right">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="100%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="14%">
+                    <p align="center">
+                        a
+                    </p>
+                </th>
+                <th scope="col" width="14%">
+                    <p align="center">
+                        b
+                    </p>
+                </th>
+                <th scope="col" width="14%">
+                    <p align="center">
+                        a&&!b<br />
+                         (текущий код)
+                    </p>
+                </th>
+                <th scope="col" width="14%">
+                    <p align="center">
+                        возможно, следует заменить на<br />
+                         a<font color="#ff0000"><b>||</b></font>!b
+                    </p>
+                </th>
+                <th scope="col" width="14%">
+                    <p align="center">
+                        возможно, следует заменить на<br />
+                         <font color="#ff0000"><b>!</b></font>a&&!b
+                    </p>
+                </th>
+                <th scope="col" width="15%">
+                    <p align="center">
+                        возможно, следует заменить на<br />
+                         a&&b
+                    </p>
+                </th>
+                <th scope="col" width="15%">
+                    <p align="center">
+                        ...
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="14%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        <font color="#ff0000">true</font>
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        <font color="#ff0000">true</font>
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        ...
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        <font color="#ff0000">false</font>
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        ...
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        ...
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        <font color="#ff0000">true</font>
+                    </p>
+                </td>
+                <td width="14%">
+                    <p align="center">
+                        <font color="#ff0000">true</font>
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="15%">
+                    <p align="center">
+                        ...
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Из всех рассмотренных возможностей требуются только первая, вторая и четвертая. Третья не выявит никаких новых ошибок
+    по сравнению с остальными, поэтому она излишняя. Чем более сложными будут выражения, тем больше удастся сэкономить на
+    выявлении лишних тестов.
+</p>
+<p>
+    Конечно, построить полную универсальную таблицу невозможно. но это и не требуется. Несложно будет запомнить только
+    обязательные варианты для простых выражений. Они описаны ниже. Более сложные выражения, такие как <font     size="+0">A&&B||C</font>, описаны в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/test_ideas_for_booleans_ands_and_ors_BB81527B.html" target="_blank" guid="9.407283892342409E-306">Идеи тестов для смешанных случаев AND и OR</a>, где перечислены идеи тестов для выражений
+    с двумя или более операторами. Для еще более сложных выражений идеи тестов может генерировать <a href="http://www.testing.com/tools/multi/README.html" target="_blank">программа</a>.
+</p>
+<h3>
+    <a id="SimpleExpressionTables" name="SimpleExpressionTables"></a><b>Таблицы для простых булевских выражений</b>
+</h3>
+<p>
+    Выражение <font size="+0">A&&B</font> тестируется следующим образом:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="50%">
+                    <p align="center">
+                        A
+                    </p>
+                </th>
+                <th scope="col" width="50%">
+                    <p align="center">
+                        B
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="50%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="50%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Выражение <font size="+0">A||B</font> тестируется следующим образом:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="50%">
+                    <p align="center">
+                        A
+                    </p>
+                </th>
+                <th scope="col" width="50%">
+                    <p align="center">
+                        B
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="50%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="50%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Выражение <font size="+0">A<sub>1</sub> && A<sub>2</sub> && ... && A<sub>n</sub></font>
+    тестируется следующим образом:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>1,</sub> A<sub>2</sub>, ..., и A<sub>n</sub> все равны true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>1</sub> равен false, все остальные - true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>2</sub> равен false, все остальные - true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        ...
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>n</sub> равен false, все остальные - true
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p align="left">
+    Выражение <font size="+0">A<sub>1</sub> || A<sub>2</sub> || ... || A<sub>n</sub></font> тестируется следующим образом:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>1,</sub> A<sub>2</sub>, ..., и A<sub>n</sub> все равны false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>1</sub> равен true, все остальные - false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>2</sub> равен true, все остальные - false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        ...
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A<sub>n</sub> равен true, все остальные - false
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Выражение <font size="+0">A</font> тестируется следующим образом:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    При тестировании <font size="+0">a&&!b</font> можно применить эту таблицу, обратить значение b, и получить
+    следующий список <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/test-ideas_list_A6CEF011.html" guid="6.149711039531016E-305">идей тестов</a>:
+</p>
+<ul>
+    <li>
+        A true, B false
+    </li>
+    <li>
+        A true, B true
+    </li>
+    <li>
+        A false, B false
+    </li>
+</ul>
+<h3>
+    <a id="RelationalExpressions" name="RelationalExpressions"></a><b>Выражение отношения</b>
+</h3>
+<p align="left">
+    Вот еще один пример ошибочного кода:
+</p>
+<blockquote>
+<pre>
+ if (finished &lt; required) {
+   siren.sound(); }
+</pre>
+</blockquote>
+<p align="left">
+    <font size="+0">&lt;</font> используется вместо <font size="+0">&lt;=</font>. Такие ошибки встречаются очень часто. Как
+    и для булевских выражений, следует составить таблицу для тестовых величин и увидеть, в каком случае будет выявлена
+    ошибка:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        finished
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        required
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        тестируемый код...
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        правильный код...
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        1
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        5
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        срабатывает сирена
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        срабатывает сирена
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        5
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        5
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        <font color="#ff0000">сирена молчит</font>
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        <font color="#ff0000">срабатывает сирена</font>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        5
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        1
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        сирена молчит
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        сирена молчит
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Вообще говоря, эта ошибка выявляется, когда <font size="+0">finished=required</font>. Из анализа для вероятных ошибок
+    вытекают следующие правила для идей тестов:
+</p>
+<p>
+    Выражение A&lt;B или A&gt;=B, следует тестировать со следующими вариантами:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A=B
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A чуть меньше, чем B
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Выражение A&gt;B или A&lt;=B, следует тестировать со следующими вариантами:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A=B
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <p align="center">
+                        A чуть больше, чем B
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Что означает "чуть"? Если A и B - целые, то A должно быть на единицу меньше или больше, чем B. Если это числа с
+    плавающей точкой, то A должно быть числом, близким к B. Вряд ли необходимо, чтобы A было наибольшим числом с плавающей
+    точкой, меньшим B.
+</p>
+<h3>
+    <a id="CombinedExpressions" name="CombinedExpressions"></a><b>Правила для сочетаний булевских выражений и выражений
+    отношения</b>
+</h3>
+<p>
+    Большинство операторов отношения входят в состав булевских выражений, как показано в примере:
+</p>
+<blockquote>
+<pre>
+ if (finished &lt; required) {
+   siren.sound(); }
+</pre>
+</blockquote>
+<p>
+    Правила для выражений отношения приводят к следующим идеям для тестов:
+</p>
+<ol>
+    <li>
+        <font size="+0">finished</font> равно required
+    </li>
+    <li>
+        <font size="+0">finished</font> чуть меньше, чем <font size="+0">required</font>
+    </li>
+</ol>
+<p>
+    Правила для булевских выражений приводят к следующим идеям для тестов:
+</p>
+<ol>
+    <li>
+        <font size="+0">finished &lt; required</font> должно быть равным true
+    </li>
+    <li>
+        <font size="+0">finished &lt; required</font> должно быть равным false
+    </li>
+</ol>
+<p>
+    Если <font size="+0">finished</font> чуть меньше, чем <font size="+0">required</font>, <font size="+0">finished &lt;
+    required</font> равно true, поэтому второе выражение будет излишним.
+</p>
+<p>
+    Также необязательно записывать это выражение, если оно равно false: <font size="+0">finished</font> равно <font     size="+0">required</font>, <font size="+0">, finished &lt; required</font> .
+</p>
+<p>
+    Если выражение отношения не содержит булевских операторов <font size="+0">&&</font> и <font     size="+0">||</font>), то факт того, что это - булевское выражение, можно игнорировать.
+</p>
+<p>
+    Сочетание булевских операторов и операторов отношения усложняет анализ:
+</p>
+<blockquote>
+<pre>
+ if (count&lt;5 || always) {
+   siren.sound(); }
+</pre>
+</blockquote>
+<p>
+    Для выражения отношения имеем:
+</p>
+<ul>
+    <li>
+        <font size="+0">count</font> чуть меньше 5
+    </li>
+    <li>
+        <font size="+0">count</font> равно 5
+    </li>
+</ul>
+<p>
+    Для булевского выражения имеем:
+</p>
+<ul>
+    <li>
+        <font size="+0">count&lt;5</font> равно true, always равно false
+    </li>
+    <li>
+        <font size="+0">count&lt;5</font> равно false, always равно true
+    </li>
+    <li>
+        <font size="+0">count&lt;5</font> равно false, always равно false
+    </li>
+</ul>
+<p>
+    Из этого можно вывести три отдельных идеи теста. Считаем, что <font size="+0">count</font> - это целое число.
+</p>
+<ol>
+    <li>
+        <font size="+0">count=4</font>, always равно false
+    </li>
+    <li>
+        <font size="+0">count=5</font>, always равно true
+    </li>
+    <li>
+        <font size="+0">count=5</font>, always равно false
+    </li>
+</ol>
+<p>
+    Обратите внимание, что <font size="+0">count=5</font> встречается дважды. Не лучше ли будет использовать другое
+    значение вместо 5 для <font size="+0">count</font> ? Может быть, один раз протестировать 5, а другой раз - с другим
+    значением, чтобы результатом было false? Пример: <font size="+0">count&lt;5</font> Это можно, но небезопасно. Легко
+    допустить ошибку. Предположим, мы тестируем так:
+</p>
+<ol>
+    <li>
+        <font size="+0">count=4</font>, always равно false
+    </li>
+    <li>
+        <font size="+0">count=5</font>, always равно true
+    </li>
+    <li>
+        <font size="+0"><b>count&lt;5</b></font> <b>false</b>, always равно false
+    </li>
+</ol>
+<p>
+    Допустим, что сбой может быть выявлен только со следующим значением: <font size="+0">count=5</font>. Это означает, что
+    значение 5 приведет к тому, что выражение будет равно "false". <font size="+0">count&lt;5</font>, в то время как
+    правильный код должен давать true. Однако это значение сравнивается (OR) со значением always, равным true. Тем самым
+    все выражение будет истинным, даже если один из его участников ложен. Ошибка останется невыявленной.
+</p>
+<p>
+    Ошибка будет выявлена <i>другим</i> вариантом с count=5.
+</p>
+<p>
+    Подобные проблемы возникают и в случаях, когда выражение отношения стоит в правой части булевского оператора.
+</p>
+<p>
+    Поскольку трудно предугадать, какие операнды должны быть точными, а какие можно обобщить, лучше всего делать их все
+    точными. Альтернативой будет использование уже упомянутой <a href="http://www.testing.com/tools/multi/README.html" target="_blank">программы булевских выражений</a>. Она генерирует правильные идеи тестов для любых сочетаний булевских
+    выражений и выражений отношения.
+</p>
+<h3>
+    <a id="TestIdeasWithoutCode" name="TestIdeasWithoutCode"></a><b>Идеи тестов без кода</b>
+</h3>
+<p>
+    Как описано в документе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/test-first_design_6124EA6D.html" guid="2.5962561793181055E-305">Концепции:
+    проектирование с приоритетом тестов</a>, желательно спроектировать тесты перед реализацией кода. Поэтому, хотя
+    описанные методики иллюстрируются примерами кода, обычно они применяются в отсутствие кода. Каким образом?
+</p>
+<p>
+    В некоторых артефактах проекта, таких как диаграммы состояний и диаграммы последовательностей, булевские выражения
+    применяются как сторожевые условия. Эти варианты являются прямыми кандидатами для добавления в список идей тестов
+    артефакта. See См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/test_ideas_for_statechart_and_flow_diagrams_B881354C.html" guid="3.794638918140148E-305">Рекомендации по рабочему продукту: идеи тестов для диаграмм конечных состояний и
+    операций</a>.
+</p>
+<p>
+    Самый сложный случай - когда булевские выражения заданы неявно. Часто это имеет место в описаниях API. Пример -
+    рассмотрим следующий метод:
+</p>
+<blockquote>
+<pre>
+ List matchList(Directory d1, Directory d1,
+                FilenameFilter excluder);
+</pre>
+</blockquote>
+<p>
+    Описание поведения этого метода могло бы быть следующим:
+</p>
+<blockquote>
+    <p>
+        Возвращает список с полными путями ко всем файлам в обоих каталогах, включая подкаталоги. [...] Файлы, имена
+        которых совпадают с <font size="+0">excluder</font> , исключаются из списка. Параметр excluder применяется только
+        для самих каталогов, но не для подкаталогов.
+    </p>
+</blockquote>
+<p>
+    Здесь нет слов "и", "или". Но когда файл включается в список? Когда он есть в первом каталоге <b>и</b> во втором
+    каталоге <b>и</b> либо в подкаталоге <b>или</b> не исключен параметром excluder. То есть:
+</p>
+<blockquote>
+<pre>
+ if (appearsInFirst && appearsInSecond && (inLowerLevel || !excluded)) {  
+   add to list }
+</pre>
+</blockquote>
+<p>
+    Это выражение можно протестировать согласно следующей таблице:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        appearsInFirst
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        appearsInSecond
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        inLower
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        excluded
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <br />
+     Общим способом выявления неявных булевских выражений в тексте будет составление списка описанных действий (например,
+    "возвращает соответствующее имя"). Затем следует оставить булевское выражение, описывающее возможные действия. Для всех
+    таких выражений можно придумать тесты.
+</p>
+<p>
+    Этот процесс бывает неоднозначным. Например, мы уже составили булевское выражение для указанного примера. Можно было бы
+    считать, что в нем два действия: первое - это поиск совпадающих имен, второе - их фильтрация. Поэтому вместо одного
+    выражения будет два:
+</p>
+<dl>
+    <dt>
+        найти совпадение:
+    </dt>
+    <dd>
+        имеет место, когда файл с таким именем есть и в первом каталоге, <b>и</b> во втором каталоге
+    </dd>
+    <dt>
+        отфильтровать совпадения:
+    </dt>
+    <dd>
+        имеет место, когда соответствующие файлы расположены в каталоге верхнего уровня <b>и</b> имя совпадает с <font         size="+0">excluder</font>
+    </dd>
+</dl>
+<p>
+    Эти подходы приведут к разным идеям тестов, а значит, и к разным тестам. Но эти различия скорее всего будут не важны.
+    Поэтому лучше не обсуждать, какой подход будет правильнее, а потратить это время на разработку других методик и тестов.
+    Для полноты мы приводим описание, каковы будут эти различия.
+</p>
+<p>
+    Во втором случае будут созданы два набора идей тестов.
+</p>
+<blockquote>
+    <p>
+        идеи тестов для поиска совпадения:
+    </p>
+    <ul>
+        <li>
+            файл есть в первом каталоге, файл есть во втором каталоге (true, true)
+        </li>
+        <li>
+            файл есть в первом каталоге, файла нет во втором каталоге (true, false)
+        </li>
+        <li>
+            файла нет в первом каталоге, файл есть во втором каталоге (false, true)
+        </li>
+    </ul>
+    <p>
+        идеи тестов для фильтрации обнаруженных совпадений:
+    </p>
+    <ul>
+        <li>
+            соответствующие файлы расположены в каталоге верхнего уровня, имя совпадает с <font size="+0">excluder</font>
+            (true, true)
+        </li>
+        <li>
+            соответствующие файлы расположены в каталоге верхнего уровня, имя не совпадает с <font             size="+0">excluder</font> (true, false)
+        </li>
+        <li>
+            соответствующие файлы расположены в подкаталоге каталога верхнего уровня, имя совпадает с <font             size="+0">excluder</font> (false, true)
+        </li>
+    </ul>
+</blockquote>
+<p>
+    Теперь рассмотрим, как объединить эти два набора идей тестов. Идеи из второго набора применимы только тогда, когда файл
+    есть в обоих каталогах, то есть они сочетаются с первой идеей из первого набора. Это приводит нас к следующему:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        файл есть в первом каталоге
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        файл есть во втором каталоге
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        верхний каталог
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        совпадает с excluder
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Две из идей тестов поиска совпадения не входят в эту таблицу. Добавим их:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        файл есть в первом каталоге
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        файл есть во втором каталоге
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        верхний каталог
+                    </p>
+                </th>
+                <th scope="col" width="25%">
+                    <p align="center">
+                        совпадает с excluder
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Пустые ячейки указывают на случаи, которые нас не интересуют.
+</p>
+<p>
+    Теперь эта таблица очень похожа на ту, что мы имели ранее. Эта схожесть еще более усилится, если будет использоваться
+    одинаковая терминология. В первой таблице есть столбец "inLower", во второй - "верхний каталог". Одно можно обратить в
+    другое. После этого вторая таблица примет следующий вид:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th width="25%">
+                    <p align="center">
+                        appearsInFirst
+                    </p>
+                </th>
+                <th width="25%">
+                    <p align="center">
+                        appearsInSecond
+                    </p>
+                </th>
+                <th width="25%">
+                    <p align="center">
+                        inLower
+                    </p>
+                </th>
+                <th width="25%">
+                    <p align="center">
+                        excluded
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td width="25%">
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p align="center">
+                        false
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        true
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+                <td>
+                    <p align="center">
+                        -
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Первые три строки совпадают с тем, что мы имели ранее. Последние два отличаются только тем, что не указаны значения.
+    Это обусловлено тем, как написан код. В первом случае предполагалось сложное булевское выражение:
+</p>
+<blockquote>
+<pre>
+ if (appearsInFirst && appearsInSecond && (inLowerLevel || !excluded)) {  
+   add to list }
+</pre>
+</blockquote>
+<p>
+    Во втором - вложенное булевское выражение:
+</p>
+<blockquote>
+<pre>
+ if (appearsInFirst && appearsInSecond) {
+   // совпадение 
+   if (inTopLevel && excluded) {
+     // отфильтровать
+</pre>
+</blockquote>
+<p>
+    Разница сводится к тому, что первый вариант идей тестов обнаруживает две ошибки, которые не обнаруживаются во втором
+    варианте, потому что они не могут иметь места.
+</p>
+<ol>
+    <li>
+        В первой реализации возможна ошибка в расстановке скобок. Скобки вокруг <font size="+0">||</font> поставлены верно
+        или неверно? Поскольку во второй реализации скобок нет и нет <font size="+0">||</font>, ошибка исключена.
+    </li>
+    <li>
+        В требованиях к тесту первой реализации необходимо указать проверку того, не следует ли заменить выражение <font         size="+0">&&</font> на <font size="+0">||</font>. Во второй реализации явный <font         size="+0">&&</font> заменен на неявный <font size="+0">&&</font>. Ошибка замены <font         size="+0">||</font> на <font size="+0">&&</font> исключена. Может быть ошибка в том, как реализована
+        вложенность, но эта методика к ней не относится.
+    </li>
+</ol><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

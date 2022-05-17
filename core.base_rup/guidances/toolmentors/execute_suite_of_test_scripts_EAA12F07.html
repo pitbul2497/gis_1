@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Выполнение набора тестирования с помощью Rational TestFactory</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="execute_suite_of_test_scripts" name="uma.name">
+<meta content="Выполнение набора тестирования с помощью Rational TestFactory" name="uma.presentationName">
+<meta content="Tool:rup_test_factory:Rational TestFactory" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational TestFactory" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{ED7B74BA-112A-4A6A-9E2A-9B8958AF7293}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{ED7B74BA-112A-4A6A-9E2A-9B8958AF7293}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{ED7B74BA-112A-4A6A-9E2A-9B8958AF7293}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{ED7B74BA-112A-4A6A-9E2A-9B8958AF7293}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Выполнение набора тестирования с помощью Rational TestFactory</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение TestFactory для создания и выполнения тестового комплекта.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_test_factory_3EDA2115.html" guid="{FBA5098E-2CA8-483D-814D-DE3E876426B1}">Rational TestFactory</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/execute_test_suite_492795DE.html" guid="{6B420194-5EB7-4A12-A061-09FAA5DC18DE}">Выполнение комплекта тестов</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_suite_94F58DEC.html" guid="{1C759E0D-B364-4095-A7CF-CD9E39301689}">Реализация комплекта тестов</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    "Тестовый комплект" является элементом Rational TestFactory, позволяющим размещать и выполнять комплект тестовых
+    сценариев. Этот элемент TestFactory позволяет организовать тестовые сценарии, выполнить их в пакете в виде комплекта и
+    проанализировать их тестовый охват на базе кода.
+</p>
+<p>
+    Эта памятка по инструменту применима для систем с Windows 98/2000/NT 4.0.
+</p>
+<p>
+    Для применения Rational TestFactory для выполнения комплекта тестовых сценариев выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Create Test Suite">Создайте тестовый комплект тестовых сценариев</a>
+    </li>
+    <li>
+        <a href="#Execute Test Suite">Выполните тестовый комплект</a>
+    </li>
+</ol>
+<h3>
+    1.&nbsp;&nbsp; <a id="Create Test Suite" name="Create Test Suite">Создайте тестовый комплект тестовых сценариев</a>
+</h3>
+<p>
+    Объект тестового комплекта является контейнером, в который вы добавляете тестовые сценарии, которые требуется выполнит
+    ь в виде пакета. Тестовый комплект может содержать тестовые сценарии записанные в Rational Robot, а также тестовые
+    сценарии, созданные в Rational TestFactory.
+</p>
+<ul>
+    <li>
+        Для создания тестового сценария в Robot обратитесь к памятке по инструменту: реализация тестовых сценариев с
+        помощью Rational Robot.
+    </li>
+    <li>
+        Для создания тестовых сценариев в TestFactory обратитесь к <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/generate_test_scripts_71EF254E.html" guid="{19F8AE86-E40A-42F5-8B81-673C306F5C35}">Памятке по инструменту: реализация созданных тестовых сценариев с
+        помощью Rational TestFactory</a>.
+    </li>
+</ul>
+<p>
+    Тестовые комплекты используются для организации и выполнения групп лучших сценариев, дефектных сценариев и сценариев,
+    созданных для определенной компоновки тестируемого приложения (AUT). Добавляемые в комплект тестовые сценарии остается
+    привязан к объекту тестовый сценарий. Тестовый комплект можно выполнить в качестве тестового комплекта регрессии для
+    будущих компоновок AUT.
+</p>
+<p>
+    Rational TestFactory предоставляет два способа создания тестового комплекта:
+</p>
+<ul>
+    <li>
+        Можно разрешить TestFactory создавать тестовый комплект автоматически с выбранными тестовыми сценариями.
+    </li>
+    <li>
+        Можно вручную добавлять объекта Тестовый сценарий в схему приложений и затем заполнять тестовый комплект тестовыми
+        сценариями.
+    </li>
+</ul>
+<p>
+    При необходимости проанализировать тестовый охват на базе кода для тестовых сценариев комплекта следует встроить код в
+    AUT перед выполнением тестового комплекта. Rational TestFactory вычисляет тестовый охват на базе кода для тестовых
+    сценариев только если приложение встроено. &euro;
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp; Обратитесь к следующим
+    разделами электронной справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        Т<i>естовые комплекты: что это такое и как они работают</i>
+    </li>
+    <li>
+        <i>Работа с тестовыми комплектами</i>
+    </li>
+    <li>
+        <i>Просмотр охвата кода для сценария Robot</i>
+    </li>
+    <li>
+        <i>Встраивание тестируемого приложения</i>
+    </li>
+</ul>
+<h3>
+    2.&nbsp;&nbsp; <a id="Execute Test Suite" name="Execute Test Suite">Выполнение тестового комплекта</a>
+</h3>
+<p>
+    При выполнении тестового комплекта Rational TestFactory выполняет все тестовые сценарии комплекта по порядку их
+    расположения в списке тестовых комплектов. Если порядок расположения тестовых сценариев важен, можно изменить его перед
+    выполнением тестового комплекта.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Обратитесь к разделу
+    <i>Выполнение тестового комплекта вручную</i> электронной справки Rational TestFactory.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

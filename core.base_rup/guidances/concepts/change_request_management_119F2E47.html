@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Управление запросами изменений</title>
+<meta content="Concept" name="uma.type">
+<meta content="change_request_management" name="uma.name">
+<meta content="Управление запросами изменений" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "5.975934904188119E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "5.975934904188119E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="5.975934904188119E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Управление запросами изменений</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Управление запросами изменений - это процесс эффективного и своевременного применения утвержденных методик в случае возникновения изменений в продукте для уменьшения риска неполадок.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_change_manager_51E43456.html" guid="{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}">Администратор управления изменениями</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_change_request_F2E6419.html" guid="{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}">Запрос изменения</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/manage_change_requests_F7A11348.html" guid="{BFBA9E6A-CB4B-45A7-9A25-FF7CA1A1153D}">Управление запросами изменений</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/capabilitypatterns/manage_change_requests_118544AB.html" guid="_lxX9YCJbEdqQipbmJ0SDbw">Управление запросами изменений</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_change_request_(CR)__guidelines_for" name="XE_change_request_(CR)__guidelines_for"></a> 
+<h3>
+    <a id="XE_change_request_(CR)__definition" name="XE_change_request_(CR)__definition"></a><a id="Definitions" name="Definitions">Определения</a>
+</h3>
+<p>
+    <b><a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_change_request_F2E6419.html" guid="{694A7BC8-3D20-4172-BC56-6C7BD4590BA5}">Запрос изменений</a> (<a id="CR" name="CR">CR</a>) -</b>Формально
+    поданный рабочий продукт, используемый для отслеживания всех <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_stakeholder_requests_A89D2BF9.html" guid="{75F38765-E25B-4459-907E-77F429652C0F}">запросов заинтересованных лиц</a> на протяжение всего жизненного цикла
+    проекта, включая запросы на создание функций, расширение возможностей продукта, исправление недостатков и другую
+    информацию, связанную с разработкой продукта. В Запросе изменений содержится вся хронология изменений, включая
+    изменения состояний, их время и причины. Эта информация доступна также для повторных проверок и окончательного закрытия
+    запроса.
+</p>
+<p>
+    <b>Совет по контролю за изменениями (или конфигурациями) <a id="CCB" name="CCB">CCB</a>)</b> - это совет, в который
+    входят представители различных участников проекта (клиентов, разработчиков и пользователей) для наблюдения за процессом
+    изменений. В небольших проектах Совет по контролю за изменениями может состоять из одного члена, например руководителя
+    проекта или разработчика архитектуры. В Rational Unified Process роль Совета по контролю за изменениями называется <a class="elementLinkWithUserText" href="./../../../core.base_rup/roles/rup_change_manager_51E43456.html" guid="{C1D3C2C0-15A0-49AD-9788-8C163E53CB96}">администратор управления изменениями</a>.
+</p>
+<p>
+    <b><a id="CCB Review Meeting" name="CCB Review Meeting">Обзорная встреча Совета по контролю за изменениями</a></b>
+    служит для проверки <i>поданных</i> запросов изменений. На встрече делается первоначальная оценка обоснованности
+    запросов изменений. Если запрос обоснован, то в зависимости от наличия ресурсов, приоритета, сроков и других критериев
+    принимается решение о внесении изменения. Такие встречи обычно проводятся раз в неделю. Если поступает много запросов
+    или приближаются сроки выпуска продукта, то встречи можно проводить чаще, например, каждый день. Обычно на встрече
+    Совета по контролю за изменениями присутствуют администратор тестирования, администратор разработки и представитель
+    отдела маркетинга. Также, при необходимости, могут приглашаться другие участники.
+</p>
+<p>
+    <b>Форма подачи запроса изменения</b> выдается при <i>подаче</i> первый раз запроса изменения. В форме показываются
+    только обязательные для заполнения поля.
+</p>
+<p>
+    <b>Комбинированная Форма запроса изменения</b> выдается при просмотре поданного запроса. Эта форма содержит все поля,
+    необходимые для описания запроса изменения.
+</p>
+<p>
+    Ниже описывается процесс обработки запроса изменение - этапы и состояния, а также лица, которых необходимо оповещать в
+    течении жизненного цикла запроса изменения. Общий процесс обработки запроса изменения описан в <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/establish_project_change_control_process_159A3B7A.html" guid="{0A40D5A0-2119-4D42-9B35-72D9B42BB4FA}">Задача: Организация процесса контроля запросов изменений</a>.
+</p>
+<h3>
+    <a id="XE_change_request_(CR)__states_of" name="XE_change_request_(CR)__states_of"></a><a id="SampleCRManagingActivities" name="SampleCRManagingActivities">Упражнения по управлению запросами изменений</a>
+</h3>
+<p>
+    Следующий пример показывает типовые решения, которые можно применять для управления запросами изменений (щелкните на
+    элемент в диаграмме для просмотра описания):
+</p>
+<p align="center">
+    <map id="FPMap0" name="FPMap0">
+        <area shape="rect" alt="Запрос изменения закрыт" coords="249,385,365,473" href="#Closed"></area>
+        <area shape="rect" alt="Тест не пройден" coords="400,291,440,322" href="#Test Failed"></area>
+        <area shape="rect" alt="Проверка изменений в выпускной компиляции" coords="275,344,378,380" href="#Verify Changes in Release Build"></area>
+        <area shape="rect" alt="Запрос изменения закрыт" coords="199,331,247,348" href="#Closed"></area>
+        <area shape="rect" alt="Подтверждение повторного или отклоненного запроса изменений" coords="191,293,301,330" href="#Confirm Duplicate or Reject"></area>
+        <area shape="rect" alt="Подан" coords="178,274,241,288" href="#Submitted"></area>
+        <area shape="rect" alt="Дополнительная информация" coords="128,312,184,327" href="#More Info"></area>
+        <area shape="rect" alt="Обновление запроса изменений" coords="3,295,96,329" href="#Update CR"></area>
+        <area shape="rect" alt="Подан" coords="24,273,85,291" href="#Submitted"></area>
+        <area shape="rect" alt="Отклонен" coords="327,236,395,252" href="#Reject"></area>
+        <area shape="rect" alt="Повторный" coords="330,225,396,237" href="#Duplicate"></area>
+        <area shape="rect" alt="Проверен" coords="596,237,644,255" href="#Verified"></area>
+        <area shape="rect" alt="Проверка изменений в тестовой компиляции" coords="569,188,666,220" href="#Verify Changes in Test Build"></area>
+        <area shape="rect" alt="Тест не пройден" coords="540,218,581,245" href="#Test Failed"></area>
+        <area shape="rect" alt="Внесение изменений" coords="431,187,519,219" href="#Make Changes"></area>
+        <area shape="rect" alt="Выполнен" coords="480,170,539,185" href="#Resolved"></area>
+        <area shape="rect" alt="Отклонен" coords="283,190,338,202" href="#Reject"></area>
+        <area shape="rect" alt="Повторный" coords="283,179,342,189" href="#Duplicate"></area>
+        <area shape="rect" alt="Проверка изменений в тестовой компиляции" coords="584,0,643,18" href="#Verify Changes in Test Build"></area>
+        <area shape="rect" alt="Назначен" coords="405,113,459,130" href="#Assigned"></area>
+        <area shape="rect" alt="Планирование и назначение работы" coords="407,0,527,18" href="#Assign & Schedule Work"></area>
+        <area shape="rect" alt="Подача запроса изменений" coords="13,0,93,15" href="#Submit CR"></area>
+        <area shape="rect" alt="Планирование и назначение работы" coords="271,27,374,65" href="#Assign & Schedule Work"></area>
+        <area shape="rect" alt="Открыт" coords="299,85,347,100" href="#Opened"></area>
+        <area shape="rect" alt="Проверка запроса изменений" coords="168,123,378,176" href="#Review CR"></area>
+        <area shape="rect" alt="Отложен" coords="196,97,256,115" href="#Postponed"></area>
+        <area shape="rect" alt="Подан" coords="102,132,161,148" href="#Submitted"></area>
+        <area shape="rect" alt="Запрос изменения" coords="35,71,101,97" href="#CR"></area>
+        <area shape="rect" alt="Совет по контролю за изменениями" coords="244,0,288,18" href="#CCB"></area>
+        <area shape="rect" alt="Подача запроса изменений" coords="0,132,96,168" href="#Submit CR"></area>
+    </map><img height="492" alt="Диаграмма, описанная выше в заголовке. " src="./../../../core.base_rup/guidances/concepts/resources/crm_actd.gif" width="698"     usemap="#fpmap0" border="0" />
+</p>
+<p>
+    Описание задач примера процесса управления запросами изменений:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="16%" height="14">
+                    <b>Задача</b>
+                </th>
+                <th scope="col" width="60%" height="14">
+                    <b>Описание</b>
+                </th>
+                <th scope="col" width="24%" height="14">
+                    <b>Ответственность</b>
+                </th>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Submit CR" name="Submit CR"><b>Подача запроса изменений</b></a>
+                </td>
+                <td width="60%" height="14">
+                    Любое заинтересованное лицо в проекте может подать запрос изменений. Запрос изменений поступает в
+                    систему отслеживания запросов изменений (например, Rational ClearQuest) и помещается в очередь Совета
+                    по контролю за изменениями со статусом <i><b>Подан</b>.</i>
+                </td>
+                <td width="24%" height="14">
+                    Подающий
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Review CR" name="Review CR"><b>Рассмотрение запроса изменений</b></a>
+                </td>
+                <td width="60%" height="14">
+                    Цель этого этапа - рассмотрение <b><i>поданных</i></b> запросов на изменение. На Обзорной встрече
+                    Совета по контролю за изменениями делается первоначальная проверка содержания запросов изменений, чтобы
+                    определить допустимость запроса. Если запрос обоснован, то в зависимости от наличия ресурсов,
+                    приоритета, сроков и других критериев принимается решение о внесении изменения.
+                </td>
+                <td width="24%" height="14">
+                    Совет по контролю за изменениями
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Confirm Duplicate or Reject" name="Confirm Duplicate or Reject"><b>Подтверждение повторного или
+                    отклоненного запроса изменений</b></a>
+                </td>
+                <td width="60%" height="14">
+                    Если запрос изменений может быть <b><i>повторным</i></b> или ранее <b><i>отклоненным</i></b> по причине
+                    неправильности составления или работы, то уполномоченный Совета по контролю за изменениями должен, в
+                    случае необходимости, получить дополнительную информацию у лица, подавшего запрос.
+                </td>
+                <td width="24%" height="14">
+                    Уполномоченный Совета по контролю за изменениями
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Update CR" name="Update CR"><b>Обновление запроса изменений</b></a>
+                </td>
+                <td width="60%" height="14">
+                    Если требуется дополнительная информация <i><b>Дополнительная информация</b>)</i> для оценки запроса
+                    изменений или если запрос изменений отклонен (например как <b><i>Повторный</i></b>,
+                    <b><i>Отклонен</i><i>ный</i></b> и т.д.), то лицо, подавшее запрос получает уведомление и может
+                    обновить запрос изменений. После этого обновленный запрос изменений вновь поступает в очередь Совета по
+                    контролю за изменениями для проверки дополнительной информации.
+                </td>
+                <td width="24%" height="14">
+                    Подающий
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Assign amp; Schedule Work" name="Assign & Schedule Work"><b>Планирование и назначение
+                    работ</b></a>
+                </td>
+                <td width="60%" height="14">
+                    Когда запрос изменений <b><i>открыт</i></b>, руководитель проекта поручает работу одному из участников
+                    команды в зависимости от типа запроса (например, расширение, неполадка, изменение документации, ошибка
+                    при тестировании и т.д.) и вносит необходимые изменения в расписание проекта.
+                </td>
+                <td width="24%" height="14">
+                    Руководитель проекта
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Make Changes" name="Make Changes"><b>Внесение изменений</b></a>
+                </td>
+                <td width="60%" height="14">
+                    Ответственный участник коллектива выполняет набор работ по выполнению изменений, утвержденный для
+                    данного процесса разработки, например, определение предварительных условий, анализ и проектирование,
+                    внедрение, разработка справочных материалов пользователя и тестирование. Эти работы подразумевают
+                    проверку и тестирование в соответствии с требованиями, утвержденными для данного процесса разработки.
+                    После этого запросу изменений присваивается статус <i><b>Выполнен</b>.</i>
+                </td>
+                <td width="24%" height="14">
+                    Ответственный участник коллектива
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Verify Changes in Test Build" name="Verify Changes in Test Build"><b>Проверка изменений в
+                    тестовой компиляции</b></a>
+                </td>
+                <td width="60%" height="14">
+                    После того, как изменения <b><i>выполнены</i></b> ответственным участником коллектива (аналитиком,
+                    разработчиком, тестирующим и т.д.), они поступают в очередь тестирования для <b><i>проверки</i></b> в
+                    тестовой компиляции продукта.
+                </td>
+                <td width="24%" height="14">
+                    Тестировщик
+                </td>
+            </tr>
+            <tr>
+                <td width="16%" height="14">
+                    <a id="Verify Changes in Release Build" name="Verify Changes in Release Build"><b>Проверка изменений в
+                    выпускной компиляции</b></a>
+                </td>
+                <td width="60%" height="14">
+                    После <b><i>проверки</i></b> изменений в тестовой компиляции, запрос изменений помещается в очередь для
+                    проверки в выпускной компиляции продукта, подготовки информация о выпуске и <b><i>закрытия</i></b>
+                    запроса изменений.
+                </td>
+                <td width="24%" height="14">
+                    Уполномоченный Советом по контролю за изменениями (системный интегратор)
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<h3>
+    <a id="SampleCRStatesTransitions" name="SampleCRStatesTransitions">Примеры состояний и переходов запроса изменений</a>
+</h3>
+<p>
+    Следующий пример диаграммы показывает типовые состояния и указывает, кого необходимо уведомлять в течение жизненного
+    цикла запроса изменений, (щелкните на диаграмме для просмотра описания):
+</p>
+<p align="center">
+    <map id="FPMap1" name="FPMap1">
+        <area shape="rect" alt="Обзорная встреча совета Совета по контролю за изменениями" coords="116,230,156,267" href="#CCB Review Meeting"></area>
+        <area shape="rect" alt="Дополнительная информация" coords="188,323,252,350" href="#More Info"></area>
+        <area shape="rect" alt="Дополнительная информация" coords="52,352,113,379" href="#More Info"></area>
+        <area shape="rect" alt="Обновление запроса изменений" coords="65,283,239,317" href="#Update CR"></area>
+        <area shape="rect" alt="Обновление запроса изменений" coords="6,354,44,386" href="#Update CR"></area>
+        <area shape="rect" alt="Подтверждение повторного или отклоненного запроса изменений" coords="169,394,241,431" href="#Confirm Duplicate or Reject"></area>
+        <area shape="rect" alt="Проверка изменений в выпускной компиляции" coords="344,419,421,451" href="#Verify Changes in Release Build"></area>
+        <area shape="rect" alt="Закрыт" coords="256,332,339,459" href="#Closed"></area>
+        <area shape="rect" alt="Дополнительная информация" coords="3,409,84,443" href="#More Info"></area>
+        <area shape="rect" alt="Проверен" coords="383,381,460,416" href="#Verified"></area>
+        <area shape="rect" alt="Повторный" coords="248,293,325,328" href="#Duplicate"></area>
+        <area shape="rect" alt="Отклонен" coords="93,318,169,353" href="#Reject"></area>
+        <area shape="rect" alt="Обзорная встреча совета Совета по контролю за изменениями" coords="169,118,340,230" href="#CCB Review Meeting"></area>
+        <area shape="rect" alt="Подача запроса изменений" coords="0,156,75,189" href="#Submit CR"></area>
+        <area shape="rect" alt="Подан" coords="88,174,165,209" href="#Submitted"></area>
+        <area shape="rect" alt="Тест не пройден" coords="353,168,482,370" href="#Test Failed"></area>
+        <area shape="rect" alt="Проверка изменений в тестовой компиляции" coords="500,157,548,184" href="#Verify Changes in Test Build"></area>
+        <area shape="rect" alt="Выполнен" coords="450,119,528,154" href="#Resolved"></area>
+        <area shape="rect" alt="Внесение изменений" coords="411,45,465,72" href="#Make Changes"></area>
+        <area shape="rect" alt="Открыт" coords="195,83,316,117" href="#Opened"></area>
+        <area shape="rect" alt="Планирование и назначение работы" coords="314,61,394,88" href="#Assign & Schedule Work"></area>
+        <area shape="rect" alt="Назначен" coords="333,16,412,52" href="#Assigned"></area>
+        <area shape="rect" alt="Отложен" coords="38,0,198,86" href="#Postponed"></area>
+        <area shape="rect" alt="Запрос изменения" coords="0,123,61,147" href="#CR"></area>
+    </map><img height="461" alt="Диаграмма, описанная выше в заголовке. " src="./../../../core.base_rup/guidances/concepts/resources/crm_stat.gif" width="549"     usemap="#fpmap1" border="0" />
+</p>
+<p align="left">
+    Описание примера состояний процесса управления запросами изменений:
+</p>
+<div align="center">
+    <table     style="BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; BORDER-LEFT: rgb(128,128,128) 1px solid; BORDER-BOTTOM: rgb(128,128,128) 1px solid"      cellspacing="0" bordercolordark="#808080" cellpadding="4" width="85%" bordercolorlight="#808080" border="1">
+        <tbody>
+            <tr>
+                <th scope="col" width="16%">
+                    <b>Состояние</b>
+                </th>
+                <th scope="col" width="60%">
+                    <b>Определение</b>
+                </th>
+                <th scope="col" width="24%">
+                    <b>Права доступа</b>
+                </th>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Submitted" name="Submitted"><b>Подан</b></a></i>
+                </td>
+                <td width="60%">
+                    Это состояние возникает в следующих ситуациях: 1) подачи нового запроса изменений, 2) обновления
+                    существующего запроса изменений или 3) рассмотрения <b><i>отложенного</i></b> запроса изменений для
+                    следующего выпуска. Запрос изменений помещен в очередь для рассмотрения Советом по контролю за
+                    изменениями. На этом этапе ему не присваивается ответственное лицо.
+                </td>
+                <td width="24%">
+                    Все пользователи
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Postponed" name="Postponed"><b>Отложен</b></a></i>
+                </td>
+                <td width="60%">
+                    Запрос изменений признан допустимым, но вне рамок данного выпуска. Запросы изменений со статусом
+                    <b><i>Отложен</i></b> рассматриваются при последующих выпусках продукта. Также для запроса изменений
+                    может быть указан целевой выпуск и его время выхода, для которого запрос считается
+                    <b><i>поданным</i></b> и вновь помещается в очередь для рассмотрения Советом по контролю за
+                    изменениями.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Руководитель проекта
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Duplicate" name="Duplicate"><b>Повторный</b></a></i>
+                </td>
+                <td width="60%">
+                    Запрос изменений считается повтором поданного запроса изменений. Присвоить этот статус запросу может
+                    Администратор Совета по контролю за изменениями или ответственное лицо. При присвоении запросу статуса
+                    <b><i>Повторный</i></b> будет указан номер запроса, который он повторяет (в ClearQuest - на вкладке
+                    Вложения). Подающий запрос должен запрашивать базу данных запросов перед подачей нового запроса. Это
+                    позволит сэкономить время. Подавшие повторный запрос изменений должны быть занесены в список для
+                    оповещения о состояниях этого запроса изменений.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Руководитель проекта
+                    </p>
+                    <p>
+                        Администратор контроля качества
+                    </p>
+                    <p>
+                        Разработка
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><b><a id="Reject" name="Reject">Отказ</a></b></i>
+                </td>
+                <td width="60%">
+                    Этот статус запроса изменений означает, что он признан недопустимым Советом по контролю за изменениями
+                    или уполномоченным участником команды или требуется дополнительная информация. Если раннее запрос
+                    изменений обладал статусом <b><i>Открыт</i></b>, то он убирается из очереди на выполнение и будет вновь
+                    рассмотрен. Для подтверждения этого назначается участник Совета по контролю за изменениями. От
+                    подавшего запрос не требуется дополнительных действий, за исключением случая, когда состояние запроса
+                    изменяется на <b><i>Дополнительная информация</i></b>. Запрос изменений будет рассмотрен Советом по
+                    контролю за изменениями с учетом дополнительной информации. В случае признания недопустимым, запрос
+                    будет <i>закрыт</i>, и подавший запрос будет уведомлен.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Руководитель проекта
+                    </p>
+                    <p>
+                        Администратор разработки
+                    </p>
+                    <p>
+                        Руководитель тестирования
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="More Info" name="More Info"><b>Дополнительная информация</b></a></i>
+                </td>
+                <td width="60%">
+                    Для проверки допустимости запроса изменений со статусом <b><i>Отказ</i></b> или <b><i>Повтор</i></b>
+                    недостаточно данных. Падавший запрос уведомляется о недостаточности данных.
+                </td>
+                <td width="24%">
+                    Администратор
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Opened" name="Opened"><b>Открыт</b></a></i>
+                </td>
+                <td width="60%">
+                    Запрос изменений был признан допустимым в рамках данного выпуска и ожидает выполнения. Его выполнение
+                    назначено на определенную веху проекта. Это называется - быть в "очереди назначения". Только члены
+                    Совета по контролю за изменениями могут перевести запрос в очередь на выполнение. Если обнаружен запрос
+                    изменений с приоритетом два или выше, он должен быть немедленно направлен на рассмотрение
+                    администратору разработки или Администратору контроля качества. Они могут запланировать внеочередную
+                    встречу Совета по контролю за изменениями или просто поместить запрос в очередь на выполнение.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Руководитель проекта
+                    </p>
+                    <p>
+                        Администратор разработки
+                    </p>
+                    <p>
+                        Отдел контроля качества
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Assigned" name="Assigned"><b>Назначен</b></a></i>
+                </td>
+                <td width="60%">
+                    В обязанности руководителя проекта входит назначить ответственного за <b><i>открытый</i></b> запрос
+                    изменений, в зависимости от типа запроса изменений, и обновить расписание проекта.
+                </td>
+                <td width="24%">
+                    Руководитель проекта
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Resolved" name="Resolved"><b>Выполнен</b></a></i>
+                </td>
+                <td width="60%">
+                    Означает, что запрос выполнен и нуждается в проверке. Если подавший запрос - участник отдела контроля
+                    качества, он автоматически становится владельцем запроса, в противном случае владельцем становиться
+                    администратор контроля качества и запрос назначается вручную.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Руководитель проекта
+                    </p>
+                    <p>
+                        Администратор разработки
+                    </p>
+                    <p>
+                        Администратор контроля качества
+                    </p>
+                    <p>
+                        Отдел разработки
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Test Failed" name="Test Failed"><b>Тест не пройден</b></a></i>
+                </td>
+                <td width="60%">
+                    Этот статус присваивается запросу, который не прошел тестирование в тестовой или выпускной компиляции.
+                    Владельцем запроса становится участник команды, выполнивший изменения.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Отдел контроля качества
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Verified" name="Verified"><b>Проверен</b></a></i>
+                </td>
+                <td width="60%">
+                    Этот статус присваивается запросу, <b><i>проверенному</i></b> в тестовой компиляции, и готовому к
+                    включению в выпуск.
+                </td>
+                <td width="24%">
+                    Администратор 
+                    <p>
+                        Отдел контроля качества
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="16%">
+                    <i><a id="Closed" name="Closed"><b>Закрыт</b></a></i>
+                </td>
+                <td width="60%">
+                    Запрос изменений не требует дальнейшей обработки. Это последний из возможных статусов запроса
+                    изменений. Этот статус может присваивать только администратор проверки Совета по контролю за
+                    изменениями. При присвоении статуса <b>З<i>акрыт</i></b> подавший запрос получает уведомление. Статус
+                    <b><i>Закрыт</i></b> может быть присвоен в следующих случаях: 1) после <i>проверенного</i> выполнения в
+                    выпускной компиляции, 2) после подтверждения статуса <i>Отказ</i> или 3) при обнаружении <i>повтора</i>
+                    другого запроса. В последнем случае подавший запрос будет уведомлен о наличии такого запроса и добавлен
+                    к списку уведомляемых о статусе первоначального запроса (за дополнительной информацией обратитесь к
+                    определениям статусов <i><b>Отказ</b></i> и <i><b>Повтор</b></i>). Если подавший запрос хочет оспорить
+                    закрытие, то он может обновить запрос и вновь <b><i>подать</i></b> его на проверку Совета по контролю
+                    за изменениями.
+                </td>
+                <td width="24%">
+                    Администратор
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+</div>
+<p>
+    Теги статуса позволяют создавать статистические отчеты о запросах изменений (возраст, распределение, тенденции).
+</p>
+<blockquote>
+    <p align="center">
+        <img height="321" alt="Диаграмма, описанная ниже в заголовке. " src="./../../../core.base_rup/guidances/concepts/resources/co_revno.gif" width="433" />
+    </p>
+</blockquote>
+<p class="picturetext">
+    Состояния запросов изменений в контексте CM Cube.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

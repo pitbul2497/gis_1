@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Проектирование пакета</title>
+<meta content="Artifact" name="uma.type">
+<meta content="rup_design_package" name="uma.name">
+<meta content="Проектирование пакета" name="uma.presentationName">
+<meta content="WorkProductType:model_element:Элементы модели" name="uma.category">
+<meta content="Artifact" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_jijhYAIaEdqEutyfYo0quQ", "_n7ZcgN7REdmjRZts2c4ZjQ", "{80CC5437-F481-487B-A69B-957D9D236D8D}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jijhYAIaEdqEutyfYo0quQ", "_n7ZcgN7REdmjRZts2c4ZjQ", "{80CC5437-F481-487B-A69B-957D9D236D8D}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_Jvt1cAIaEdqEutyfYo0quQ", "_jijhYAIaEdqEutyfYo0quQ", "_n7ZcgN7REdmjRZts2c4ZjQ", "{80CC5437-F481-487B-A69B-957D9D236D8D}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{80CC5437-F481-487B-A69B-957D9D236D8D}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Артефакт: Проектирование пакета</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../core.base_rup/workproducts/resources/package.jpg"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Этот рабочий продукт представляет собой набор классов, взаимосвязей, реализаций вариантов использования проектирования, диаграмм и других пакетов. Он применяется для выделения структуры модели проектирования путем ее разделения на более мелкие части.</td>
+</tr>
+<tr>
+<td>Типы рабочих продуктов: <a href="./../../core.base_rup/workproducttypes/model_element_74CA3914.html" guid="_n7ZcgN7REdmjRZts2c4ZjQ">Элементы модели</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="XE_design_package__as_artifact" name="XE_design_package__as_artifact"></a><a id="Top" name="Top"></a><a id="XE_design_package__purpose_of" name="XE_design_package__purpose_of"></a><a id="Purpose" name="Purpose"></a> 
+<p>
+    Пакеты проектирования применяются для группировки связанных элементов Модели проектирования для организационных целей,
+    а также часто для управления конфигурацией. В отличие от <a class="elementLinkWithUserText" href="./../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html" guid="{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}">Рабочего продукта: Подсистема проектирования</a>, пакет проектирования не
+    предлагает формальный интерфейс, хотя может демонстрировать некоторое свое содержимое (помеченное как 'общее'), которое
+    предлагает алгоритм работы. Пакеты проектирования следует в первую очередь использовать как инструмент организации
+    модели для группировки связанных элементов; если требуется поведенческая семантика, используйте подсистемы
+    проектирования.
+</p>
+<p>
+    За пакет проектирования и его содержимое отвечает один <a class="elementLinkWithUserText" href="./../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Роль:
+    Проектировщик</a>. Элементы в пакете могут зависеть от элементов, содержащихся в других пакетах; это вызывает
+    зависимости между пакетами. Зависимости пакетов можно использовать как инструмент для анализа гибкости модели
+    проектирования: модель с перекрестными зависимостями пакетов является менее гибкой по отношению к изменениям.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Артефакт-контейнер</th><td colspan="2" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/workproducts/rup_design_model_2830034D.html" guid="{8CDAEAD4-5E84-4F50-87FD-3240ED047DE7}">Модель проектирования</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Ответственный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../core.base_rup/roles/rup_capsule_designer_F3E66EDF.html" guid="{86253FE7-0036-4D14-8BD7-C18CE86A5E14}">Проектировщик капсул</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Изменен:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/roles/rup_designer_BA8DE74E.html" guid="{DB21F5EF-810B-4994-B120-79FA8774FA9D}">Проектировщик</a>
+</li>
+<li>
+<a href="./../../core.base_rup/roles/rup_software_architect_DB0BF177.html" guid="{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}">Разработчик архитектуры</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Задачи</th><td width="42%" class="sectionTableCell"><span class="sectionTableCellHeading">Вход для:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/tasks/design_testability_elements_4F187BB5.html" guid="{635D3072-5A38-4EF8-B63E-08502EBBC8B4}">Проектирование критериев пригодности к тестированию</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Выход из:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/tasks/incorporate_design_elements_D3C582B5.html" guid="{5C647173-4E32-4594-96A9-2548B47722FA}">Объединение существующих структурных элементов</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/identify_design_mechanisms_9A197FBC.html" guid="{C7A26BD7-3820-48D9-830F-684C3AF155F9}">Определение механизмов проектирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/identify_design_elements_E884AB82.html" guid="{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}">Определение элементов проекта</a>
+</li>
+<li>
+<a href="./../../core.base_rup/tasks/design_testability_elements_4F187BB5.html" guid="{635D3072-5A38-4EF8-B63E-08502EBBC8B4}">Проектирование критериев пригодности к тестированию</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Опции представления</th><td class="sectionTableCell">Представление UML: Пакет в модели проектирования.&nbsp; 
+<p>
+    <a id="Tailoring" name="Tailoring"></a>
+</p>
+<p>
+    Пакеты применяются в моделях для группировки схожих элементов, улучшая организацию модели и облегчая ее понимание.
+    Создание пакетов существенно в больших моделях. Даже в меньших моделях соответствующее создание пакетов может
+    существенно повысить понятность системы. Создание некоторого количества пакетов практически всегда является полезным.
+    Более подробная информация приведена в <a class="elementLinkWithUserText" href="./../../core.base_rup/guidances/guidelines/design_package_8CF100B8.html" guid="3.3691722315666536E-305">Рекомендации по
+    рабочему продукту: Пакет проектирования</a>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/checklists/design_package_A6ADC74E.html" guid="4.0129693828082837E-305">Проектирование пакета</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/guidances/guidelines/design_package_8CF100B8.html" guid="3.3691722315666536E-305">Проектирование пакета</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

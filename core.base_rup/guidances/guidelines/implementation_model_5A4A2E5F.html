@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Рекомендация: Модель реализации</title>
+<meta content="Guideline" name="uma.type">
+<meta content="implementation_model" name="uma.name">
+<meta content="Модель реализации" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "2.012199185622896E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_2ClPcDIcEdqDs_9ORT1Rig", "2.012199185622896E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="2.012199185622896E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Рекомендация: Модель реализации</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/guidance.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В первую очередь модель реализации формирует подсистемы реализации, включая зависимости и другие данные управления. В этой рекомендации приведено описание структуры и назначения модели реализации.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_implementation_model_5858DB65.html" guid="{157E9B67-C619-410D-A927-F2CD217BF8FE}">Модель реализации</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    <a id="XE_implementation_model__explanation_of" name="XE_implementation_model__explanation_of"></a><a id="Explanation" name="Explanation"></a>Объяснение
+</h3>
+<p>
+    В среде программирования реализация состоит из элементов реализации, в частности, из организованных в каталоги файлов с
+    исходным кодом, бинарных файлов и файлов с данными. В дополнение к этим элементам нижнего уровня часто возникает
+    необходимость создать элементы управления верхнего уровня, которые группировали бы элементы реализации и другие
+    подсистемы реализации.
+</p>
+<p>
+    В первую очередь модель реализации формирует подсистемы реализации, включая зависимости и другие данные управления.
+    Также она формирует ключевые элементы подсистемы реализации, например, развертываемые файлы или структуры каталогов.
+</p>
+<p class="picturecenter" align="center">
+    <img height="195" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/guidelines/resources/md_impm2.gif" width="163" />
+</p>
+<p class="picturetext">
+    Нотация в модели реализации. Стрелки показывают потенциальное владение.
+</p>
+<p>
+    При необходимости можно создать пакет, служащий корневым узлом в модели реализации. Пакеты, включенные в стереотип
+    &lt;&lt;подсистема реализации&gt;&gt;, группируют элементы реализации (файлы и каталоги) и другие подсистемы
+    реализации.
+</p>
+<h5>
+    Пример:
+</h5>
+<p class="example">
+    В банковской системе подсистемы реализации оформлены в виде широкой структуры с корневым узлом модели реализации.
+    Другой способ организации подсистем в модели реализации - распределение их по уровням. (См. раздел <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/import_dependency_in_implementation_20C8C9DC.html" guid="2.390918925290993E-305">Рекомендация по рабочему продукту: Импорт зависимости</a>).
+</p>
+<p class="picturecenter" align="center">
+    <img height="155" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/guidelines/resources/md_impm3.gif" width="477" />
+</p>
+<p class="picturetext">
+    Модель реализации для банковской системы, иллюстрирующая иерархию владения.
+</p>
+<p>
+    Модель реализации не только определяет основную структуру реализации (то есть иерархию подсистем реализации), но и
+    может отражать импорт зависимостей между подсистемами реализации, компиляционные зависимости между элементами
+    реализации, а также содержать диаграммы зависимостей между элементами модели реализации и модели проекта.
+</p>
+<p>
+    Дополнительная информация приведена в следующих разделах:
+</p>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/import_dependency_in_implementation_20C8C9DC.html" guid="2.390918925290993E-305">Рекомендация: Импорт зависимостей при реализации</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/compilation_dependency_in_implementation_BED92496.html" guid="6.725844217842153E-306">Рекомендация: Компиляционная зависимость при реализации</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/manifest_dependency_5790834E.html" guid="7.405934676741527E-306">Рекомендация: Зависимость манифеста</a>
+    </li>
+</ul>
+<h3>
+    <a id="Use" name="Use"></a>Использование
+</h3>
+<p>
+    Модель реализации главным образом нацелена на формирование физической структуры программного обеспечения, то есть
+    подсистем и элементов реализации. При необходимости можно создать одну модель, которая будет отвечать как за физическую
+    реализацию, так и за логическую структуру. Этот подход часто применяется при обратном проектировании и заключается в
+    синхронизации файлов с исходным кодом с совмещенной моделью реализации и проекта.
+</p>
+<p>
+    Организация подсистем реализации может быть более или менее близка к модели проекта, в зависимости от способа
+    преобразования между этими моделями. Это процессуальное решение, и оно должно быть описано в рекомендациях по
+    проектированию, относящихся к проекту. Если преобразование полное, то есть каждая подсистема реализации является также
+    подсистемой проекта, можно создать диаграммы для одной подсистеме проекта, отражающие аспекты как проектирования, так и
+    реализации.
+</p>
+<p>
+    Дополнительная информация о формировании структуры модели реализации и выполнении преобразования между моделью проекта
+    и моделью реализации приведена в разделах <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/mapping_from_design_to_code_D1454680.html" guid="1.424219730601675E-305">Прием:
+    Преобразование проектирования в код</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html" guid="{35272424-8A0A-4DDD-BA74-C91B80A8D046}">Задача: Структурирование модели реализации</a> и <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/implementation_element_ECCAA21E.html" guid="1.0315418523886092E-305">Рекомендация: Элемент реализации</a>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

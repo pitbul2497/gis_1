@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Шаблон возможностей: Тестирование</title>
+<meta content="CapabilityPattern" name="uma.type">
+<meta content="test" name="uma.name">
+<meta content="Тестирование" name="uma.presentationName">
+<meta name="element_type" content="other">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ActivityTreeTable.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ProcessElementPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/processElementData.js"></script><script language="JavaScript" type="text/javascript">
+					var defaultQueryStr = '?proc={35359DDF-6361-43E5-8B1B-18D204DA8CFF}&path={35359DDF-6361-43E5-8B1B-18D204DA8CFF}';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="{35359DDF-6361-43E5-8B1B-18D204DA8CFF}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Шаблон возможностей: Тестирование</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/capabilitypattern.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Этот шаблон возможностей охватывает операции и потоки операций дисциплины тестирования. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="middle">
+<td class="tab"><img title="" alt="" height="17" width="10" src="./../../images/shim.gif"></td><td class="tab" nowrap><a id="TAB_Description" class="tab" href="./../../core.base_rup/capabilitypatterns/test_7EF99F54.html_desc.html">Описание</a></td><td width="21"><img title="" alt="" align="absmiddle" height="17" width="21" src="./../../images/tab_middle-i_i.gif"></td><td class="tab" nowrap><a id="TAB_WBS" class="tab" href="./../../core.base_rup/capabilitypatterns/test_7EF99F54.html_wbs.html"><span style="white-space:nowrap;">Структура работы</span></a></td><td width="1"><img title="" alt="" align="absmiddle" height="17" width="21" src="./../../images/tab_middle-i_a.gif"></td><td class="activeTab" nowrap><span style="white-space:nowrap;">Распределение групп</span></td><td width="21"><img title="" alt="" align="absmiddle" height="17" width="21" src="./../../images/tab_middle-a_i.gif"></td><td class="tab" nowrap><a id="TAB_WPBS" class="tab" href="./../../core.base_rup/capabilitypatterns/test_7EF99F54.html_wpbs.html"><span style="white-space:nowrap;">Использование рабочего продукта</span></a></td><td width="21"><img title="" alt="" height="17" width="21" src="./../../images/tab_end-i.gif"></td><td width="50%"><img title="" alt="" height="17" width="10" src="./../../images/shim.gif"></td>
+</tr>
+<tr>
+<td colspan="4"><img height="2" title="" alt="" src="./../../images/shim.gif"></td><td><img title="" alt="" height="2" width="21" src="./../../images/tab_space_middle.gif"></td><td class="activeTab"><img title="" alt="" height="2" width="10" src="./../../images/shim.gif"></td><td><img title="" alt="" height="2" width="21" src="./../../images/tab_space.gif"></td><td colspan="3"><img title="" alt="" height="2" src="./../../images/shim.gif"></td>
+</tr>
+<tr>
+<td class="activeTab" colspan="10"><img title="" alt="" height="5" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="sectionHeading">Структура группы</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Структура группы", summary: "Структура группы", 
+columns: [
+["presentation_name", "Элемент структуры"],
+["model_info", "Сведения о модели"],
+["teams", "Группа"],
+["type", "Тип"],
+["is_planned", "Запланированный"],
+["has_multiple_occurrences", "Несколько вхождений"],
+["is_optional", "Необязательный"]],
+rows: [
+
+{id: "e2942f2a", parentId: "", relPath: ",_CWXsRBi2Edq_uI8xTPML6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "rup_test_analyst", title: "Аналитик", url: "./../../core.base_rup/capabilitypatterns/rup_test_analyst_9525E514.html", 
+	predecessors: "", info: "", type: "Дескриптор роли", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a5552ed4", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_data", title: "Данные теста", url: "./../../core.base_rup/capabilitypatterns/rup_test_data_FA46B83.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "159d4194", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workload_analysis_model", title: "Модель анализа нагрузки", url: "./../../core.base_rup/capabilitypatterns/rup_workload_analysis_model_4EE75D9A.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "757e7b5a", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_results", title: "Результаты тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_results_CC338534.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "cf168066", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_ideas_list", title: "Тест - Список идей", url: "./../../core.base_rup/capabilitypatterns/rup_test_ideas_list_476A8195.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b21f296", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_case", title: "Тестовый набор", url: "./../../core.base_rup/capabilitypatterns/rup_test_case_DED42DB2.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d56918a2", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_data", title: "Данные теста", url: "./../../core.base_rup/capabilitypatterns/rup_test_data_FA46B83.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b8dfaa6", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_workload_analysis_model", title: "Модель анализа нагрузки", url: "./../../core.base_rup/capabilitypatterns/rup_workload_analysis_model_4EE75D9A.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7144f040", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_plan", title: "План тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_plan_949F866B.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c21290b8", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_results", title: "Результаты тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_results_CC338534.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "71c4f0d2", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_evaluation_summary", title: "Сводные результаты оценки тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_evaluation_summary_C195A524.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a8e779fa", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_strategy", title: "Стратегия тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_strategy_9FC3C524.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fb074ea2", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Сценарий тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_script_53AA5028.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5c3abc98", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_ideas_list", title: "Тест - Список идей", url: "./../../core.base_rup/capabilitypatterns/rup_test_ideas_list_476A8195.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b6356632", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_case", title: "Тестовый набор", url: "./../../core.base_rup/capabilitypatterns/rup_test_case_DED42DB2.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fe722d1e", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_test_ideas", title: "Определение идеи тестирования", url: "./../../core.base_rup/capabilitypatterns/identify_test_ideas_574E9706.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "623d7bc8", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_assessment_and_traceability_needs", title: "Определение потребностей в оценке и прослеживаемости", url: "./../../core.base_rup/capabilitypatterns/define_assessment_and_traceability_needs_468789CD.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "375b554", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "determine_test_results", title: "Определение результатов тестирования", url: "./../../core.base_rup/capabilitypatterns/determine_test_results_AFA8EC72.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "950bdaa8", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_test_details", title: "Определение сведений о тесте", url: "./../../core.base_rup/capabilitypatterns/define_test_details_CF19AA59.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "69e379b2", parentId: "e2942f2a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_test_targets", title: "Определение цели теста", url: "./../../core.base_rup/capabilitypatterns/identify_test_targets_4B58DA82.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e25d7dfe", parentId: "", relPath: ",_pjCkAEoiEdqrjq4i3fchvA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "rup_process_engineer", title: "Инженер", url: "./../../core.base_rup/capabilitypatterns/rup_process_engineer_B6023E.html", 
+	predecessors: "", info: "", type: "Дескриптор роли", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7bb6dbbc", parentId: "e25d7dfe", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_development_process", title: "Процесс разработки", url: "./../../core.base_rup/capabilitypatterns/rup_development_process_92B5F490.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e7c260bc", parentId: "e25d7dfe", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_project_specific_guidelines", title: "Рекомендации по проекту", url: "./../../core.base_rup/capabilitypatterns/rup_project_specific_guidelines_8112B5CF.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7a0cfad4", parentId: "e25d7dfe", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "prepare_project_specific_guidelines", title: "Подготовка рекомендации по проекту", url: "./../../core.base_rup/capabilitypatterns/prepare_project_specific_guidelines_CE2D5D49.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fec3332a", parentId: "", relPath: ",_CT5ACRi2Edq_uI8xTPML6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "rup_tester", title: "Испытатель", url: "./../../core.base_rup/capabilitypatterns/rup_tester_1F053E21.html", 
+	predecessors: "", info: "", type: "Дескриптор роли", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "c41d2382", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_log", title: "Протокол тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_log_1C3E1D2.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "18628cf8", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Сценарий тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_script_53AA5028.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e5282608", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_change_request", title: "Запрос изменения", url: "./../../core.base_rup/capabilitypatterns/rup_change_request_B17B7D6C.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "476752a4", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_suite", title: "Комплект тестов", url: "./../../core.base_rup/capabilitypatterns/rup_test_suite_F1637807.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "82833532", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_log", title: "Протокол тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_log_1C3E1D2.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d94c8b58", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Сценарий тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_script_53AA5028.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "aef466d6", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "analyze_test_failure", title: "Анализ ошибки при тестировании", url: "./../../core.base_rup/capabilitypatterns/analyze_test_failure_AD204A8D.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "49756c6e", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "execute_test_suite", title: "Выполнение комплекта тестов", url: "./../../core.base_rup/capabilitypatterns/execute_test_suite_38D6CCD4.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "af45d436", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_test_suite", title: "Реализация комплекта тестов", url: "./../../core.base_rup/capabilitypatterns/implement_test_suite_4D41C58F.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "339967fe", parentId: "fec3332a", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "implement_test", title: "Реализация теста", url: "./../../core.base_rup/capabilitypatterns/implement_test_B8187D13.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b9aa8ae2", parentId: "", relPath: ",_j7pTIEohEdqrjq4i3fchvA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "rup_test_designer", title: "Разработчик тестов", url: "./../../core.base_rup/capabilitypatterns/rup_test_designer_5EF246E4.html", 
+	predecessors: "", info: "", type: "Дескриптор роли", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "24bbd2b8", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_automation_architecture", title: "Архитектура автоматизации тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_automation_architecture_DB31E305.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f273862", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_suite", title: "Комплект тестов", url: "./../../core.base_rup/capabilitypatterns/rup_test_suite_F1637807.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1f55431e", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_environment_configuration", title: "Конфигурация среды тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_environment_configuration_9CEFF0DB.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8088b114", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_design", title: "Проект тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_design_A3660FD1.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "44290a5a", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_interface_specification", title: "Спецификации интерфейса тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_interface_specification_D4364DA2.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "104483ac", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_strategy", title: "Стратегия тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_strategy_9FC3C524.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e1708e2c", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_automation_architecture", title: "Архитектура автоматизации тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_automation_architecture_55B06974.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1ce0fdc6", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_suite", title: "Комплект тестов", url: "./../../core.base_rup/capabilitypatterns/rup_test_suite_18C2BDB8.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7f2b850e", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_environment_configuration", title: "Конфигурация среды тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_environment_configuration_9CEFF0DB.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "185be64c", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_plan", title: "План тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_plan_949F866B.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "7cdcd6ba", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_design", title: "Проект тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_design_A3660FD1.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b3d5195c", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_interface_specification", title: "Спецификации интерфейса тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_interface_specification_D4364DA2.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1aec5aa8", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_strategy", title: "Стратегия тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_strategy_9FC3C524.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "6d0c2f50", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_script", title: "Сценарий тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_script_B34D6DE0.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "85aadad6", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_test_environment_configurations", title: "Определение конфигурации среды тестирования", url: "./../../core.base_rup/capabilitypatterns/define_test_environment_configurations_5A384EF0.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "f2c00a4c", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_testability_elements", title: "Определение критериев пригодности к тестированию", url: "./../../core.base_rup/capabilitypatterns/define_testability_elements_27C1B960.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8b37aa1a", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_testability_mechanisms", title: "Определение механизмов определения пригодности к тестированию", url: "./../../core.base_rup/capabilitypatterns/identify_testability_mechanisms_8444D9BA.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "1bcd6b74", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "define_test_approach", title: "Определение подхода к тестированию", url: "./../../core.base_rup/capabilitypatterns/define_test_approach_24135557.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d7f08c52", parentId: "b9aa8ae2", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "structure_the_test_implementation", title: "Создание реализации теста", url: "./../../core.base_rup/capabilitypatterns/structure_the_test_implementation_639FF693.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "5f4b2d08", parentId: "", relPath: ",_CWRloRi2Edq_uI8xTPML6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "rup_test_manager", title: "Руководитель тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_manager_D6D6B026.html", 
+	predecessors: "", info: "", type: "Дескриптор роли", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "db90920", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_plan", title: "План тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_plan_949F866B.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "51ea1278", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_evaluation_summary", title: "Сводные результаты оценки тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_evaluation_summary_C195A524.html", 
+	predecessors: "", info: "Ответственный за", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "4cf11f42", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_plan", title: "План тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_plan_949F866B.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fb514b2c", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "rup_test_evaluation_summary", title: "Сводные результаты оценки тестирования", url: "./../../core.base_rup/capabilitypatterns/rup_test_evaluation_summary_C195A524.html", 
+	predecessors: "", info: "Изменяет", type: "Дескриптор артефакта", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "814f2730", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "identify_test_motivators", title: "Определение мотивационных факторов тестирования", url: "./../../core.base_rup/capabilitypatterns/identify_test_motivators_903D1D2.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "534e4c7e", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_advocate_quality", title: "Оценка и обоснование оценки качества", url: "./../../core.base_rup/capabilitypatterns/assess_advocate_quality_737D42B0.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b7d98320", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "assess_improve_test_effort", title: "Оценка и улучшение схемы тестирования", url: "./../../core.base_rup/capabilitypatterns/assess_improve_test_effort_E8801BCB.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "240d3a76", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "obtain_testability_commitment", title: "Получение подтверждения пригодности к тестированию", url: "./../../core.base_rup/capabilitypatterns/obtain_testability_commitment_EA2FA33C.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ab7fbd84", parentId: "5f4b2d08", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "agree_mission", title: "Согласование цели", url: "./../../core.base_rup/capabilitypatterns/agree_mission_26A35F01.html", 
+	predecessors: "", info: "Выполняет как владелец", type: "Дескриптор задачи", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

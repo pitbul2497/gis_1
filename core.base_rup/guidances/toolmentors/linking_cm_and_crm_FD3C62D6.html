@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Привязка управления конфигурацией и запросами изменений с помощью Rational ClearQuest и Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="linking_cm_and_crm" name="uma.name">
+<meta content="Привязка управления конфигурацией и запросами изменений с помощью Rational ClearQuest и Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{D7831113-CEE7-42F2-9DC5-B9C9DE120B02}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Привязка управления конфигурацией и запросами изменений с помощью Rational ClearQuest и Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение Rational ClearQuest с проектами унифицированного управления изменениями (UCM) Rational ClearCase.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/setup_cm_environment_78ABEDF9.html" guid="{FC91D0C9-759E-4D3D-86D8-22D7B26AA0F6}">Настройка среды управления конфигурацией (CM)</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Проекты ClearCase UCM можно интегрировать с ClearQuest, инструментом управления запросами изменения. С помощью
+    ClearQuest можно отправить запросы на изменения, просмотреть и изменить существующие запросы на изменение, создать и
+    выполнить определенные для пользователя или сайта запросы и отчеты. Интеграция UCM-ClearQuest добавляет мощные функции
+    по управлению проектом и операциями в проекты UCM. Например, записи ClearQuest можно привязать к операциям ClearCase,
+    которые можно задать для управления доставкой операций в ClearCase и возможностью завершения операции в ClearQuest.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<p>
+    &nbsp;<img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Дополнительные
+    сведения приведены в руководстве <i>Руководство IBM Rational ClearCase по управлению программными проектами</i>.
+</p>
+<h4>
+    <a id="ToolSteps" name="ToolSteps">Этапы работы с инструментом</a>
+</h4>
+<p>
+    Для настройки интеграции UCM-ClearQuest выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#IntegrateClearQuestWithAUCMSchema">Включите схему ClearQuest для работы с UCM или воспользуйтесь
+        предустановленной схемой с поддержкой UCM</a>
+    </li>
+    <li>
+        <a href="#SetupAClearQuestDatabaseToUseTheSchema">Создайте или обновите базу данных запросов изменений для
+        применения со схемой</a>
+    </li>
+    <li>
+        <a href="#IntegrateYourUCMProjectWithClearQuest">Включите применение проекта с ClearQuest</a>
+    </li>
+</ol>
+<h3>
+    1.&nbsp;<a id="IntegrateClearQuestWithAUCMSchema" name="IntegrateClearQuestWithAUCMSchema">Включите схему ClearQuest
+    для работы с UCM или воспользуйтесь предустановленной схемой с поддержкой UCM</a> <a href="#ToolSteps"><img height="20"     alt="Перейти к этапам работы с инструментом" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Описанные ниже действия касаются применения предустановленных схем с поддержкой UCM для настройки работы базы данных
+    запросов изменений с UCM. Предустановленные схемы UCM, названные <b>UnifiedChangeManagement</b> и <b>Enterprise</b>,
+    содержат тип записи, поле, форму, состояние и прочие необходимые определения для работы с проектом UCM.
+</p>
+<p>
+    Для настройки работы базы данных запросов на изменение с UCM выполните следующие действия:
+</p>
+<ol>
+    <li>
+        Создайте пользовательскую базу данных с одной из предустановленных схем с поддержкой UCM.
+    </li>
+    <li>
+        В ClearQuest Designer выберите пункт <b>База данных</b> &gt; <b>Создать базу данных</b> для запуска мастера
+        создания базы данных.
+    </li>
+    <li>
+        Выполните этапы мастера, на этапе 4 вам будет предложено выбрать схему для связывания с новой базой данных.
+        Прокрутите список имен схем и выберите новую схему.
+    </li>
+    <li>
+        Нажмите <b>Готово</b>.
+    </li>
+</ol>
+<p>
+    &nbsp;<img height="15" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" border="0" />&nbsp;Дополнительные
+    сведения о том, как включить схему ClearQuest для работы с интеграцией UCM-ClearQuest приведены в главе "Настройка
+    пользовательской базы данных Rational ClearQuest для UCM" в руководстве <i>Руководство IBM Rational ClearCase по
+    управлению программными проектами</i>.
+</p>
+<h3>
+    2.&nbsp;<a id="SetupAClearQuestDatabaseToUseTheSchema" name="SetupAClearQuestDatabaseToUseTheSchema">Создайте или
+    обновите базу данных запросов на изменение для применения схемы</a> <a href="#ToolSteps"><img height="20"     alt="Перейти к этапам работы с инструментом" src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Предустановленные схемы UCM позволяют использовать интеграцию UCM-ClearQuest немедленно, но вы можете предпочесть
+    создать пользовательскую схему для отслеживания операций проекта и запросов на изменение. Можно даже использовать
+    различные предустановленные схемы. Существует несколько способов сделать это, в зависимости от потребностей вашего
+    проекта.
+</p>
+<p>
+    Мы рекомендуем вам ознакомиться с главой "Настройка пользовательской базы Rational ClearQuest для UCM" руководства
+    <i>Руководство IBM Rational ClearCase по управлению программными проектами</i> перед продолжением. Также в этом разделе
+    содержатся подробные сведения о процедурах для данной задачи.
+</p>
+<p>
+    &nbsp;<img height="15" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" border="0" />&nbsp; Дополнительная
+    информация об этой процедуре приведена в разделе "Планирование использования интеграции UCM с Rational ClearQuest" в
+    руководстве <i>Руководство IBM Rational ClearCase о управлению программными проектами</i>.
+</p>
+<h3>
+    3.&nbsp;<a id="IntegrateYourUCMProjectWithClearQuest" name="IntegrateYourUCMProjectWithClearQuest">Включите применение
+    проекта UCM с ClearQuest</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам работы с инструментом"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<ul>
+    <li>
+        В левой панели обозревателя проектов ClearCase Project Explorer щелкните правой кнопкой на проекте для отображения
+        контекстного меню. Выберите <b>Свойства</b> для просмотра страницы свойств.
+    </li>
+    <li>
+        Перейдите на вкладку <b>ClearQuest</b> и выберите переключатель <b>Проект поддерживает ClearQuest</b>. В системах
+        <b>Ссылка на пользовательскую базу данных ClearQuest</b> находится возле имени. Откроется диалоговое окно Хранилище
+        схем Rational ClearQuest с соединением, относящимся к выбранной пользовательской базе данных.
+    </li>
+    <li>
+        Выберите пользовательскую базу данных из списка "Ссылка на эту базу данных запросов на изменение".
+    </li>
+    <li>
+        При первом включении проекта ClearQuest отобразит диалоговое окно Вход в систему. Введите имя пользователя, пароль
+        и имя базы данных, к которой привязывается проект.
+    </li>
+    <li>
+        Нажмите <b>OK</b>.
+    </li>
+</ul>
+<p>
+    &nbsp;<img height="15" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" border="0" />&nbsp;
+    <b>Дополнительная функция</b>: можно также задать стратегии разработки для проектов, использующих интеграцию
+    UCM-ClearQuest. См. раздел "Стратегии интеграции UCM с Rational ClearQuest" в руководстве <i>Руководство IBM Rational
+    ClearCase по управлению программными проектами</i> для получения дополнительной информации.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

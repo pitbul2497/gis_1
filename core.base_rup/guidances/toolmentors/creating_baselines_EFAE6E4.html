@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Создание контрольных версий с помощью Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="creating_baselines" name="uma.name">
+<meta content="Создание контрольных версий с помощью Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{2BF31AC7-E278-4558-B8D2-83C5C646B7E9}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Создание контрольных версий с помощью Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке описывается процедура обеспечения безопасности ресурсов проекта и возможности их воссоздания при необходимости с помощью соответствующих приемов контролирования версий.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/establish_project_cm_policies_6B9785AC.html" guid="{E45B1CBF-29EB-431E-9417-F40E45BBAFD1}">Реализация стратегий управления конфигурацией (CM)</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/create_baseline_30FA138.html" guid="{F8256B31-5CE3-49C0-9DC2-ECB57DD48867}">Создание контрольных версий</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    На следующей диаграмме показан поток операций для управления проектами UCM. Затемненные области описаны в этой памятке.
+</p>
+<p>
+    <img height="103" alt="Диаграмма потока операций UCM" src="./../../../core.base_rup/guidances/toolmentors/resources/wflow_mkbl.gif" width="463" border="0" />
+</p>
+<p>
+    В Rational ClearCase UCM контрольная версия является объектом, обычно представляющим стабильную конфигурацию
+    компонента. Контрольная версия идентифицирует действия и одну версию каждого элемента компонента, выполняя роль версии
+    компонента.
+</p>
+<p>
+    По мере того, как разработчики доставляют работу в поток интеграции, руководители проекта создают новые контрольные
+    версии для интеграции проекта или общие рабочие области, учитывающие внесенные изменения. Разработчики затем могут
+    перейти к новым контрольным версиям и учитывать при этом новые изменения проекта.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<h4>
+    Терминология
+</h4>
+<h5>
+    Типы контрольных версий
+</h5>
+<blockquote>
+    <p>
+        <b><i>Дополняющая контрольная версия</i></b> является контрольной версией, создаваемой ClearCase с помощью записи
+        последней полной контрольной версии и тех версий, которые были изменены после создания последней полной контрольной
+        версии.
+    </p>
+    <p>
+        <b><i>Полная контрольная версия</i></b> является контрольной версией, создаваемой ClearCase с помощью записи всех
+        версий в корневом каталоге компонента. Обычно для создания дополняющей контрольной версии требуется меньше времени.
+        Однако поиск информации в полной контрольной версии ClearCase выполняет быстрее.
+    </p>
+</blockquote>
+<h3>
+    <a id="ToolSteps" name="ToolSteps">Этапы работы с инструментом</a>
+</h3>
+<p>
+    Выполните следующие действия для создания контрольных версий:
+</p>
+<ul>
+    <li>
+        <a href="#LockProjectIntegrationStream">Заблокируйте поток интеграции проекта</a>
+    </li>
+    <li>
+        <a href="#StartMakeBaseline">Запустите диалоговое окно создания контрольной версии</a>
+    </li>
+    <li>
+        <a href="#DescribeTheBaselineInformation">Укажите описание контрольной версии</a>
+    </li>
+    <li>
+        <a href="#UnlockProjectIntegrationStream">Разблокируйте поток интеграции</a>
+    </li>
+</ul>
+<h3>
+    1.&nbsp;<a id="LockProjectIntegrationStream" name="LockProjectIntegrationStream">Заблокируйте поток интеграции
+    проекта</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам работы с инструментом"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    В заблокированный поток интеграции добавить новую работу нельзя, что гарантирует стабильную конфигурацию для создания
+    контрольной версии.
+</p>
+<ol>
+    <li>
+        На панели инструментов Windows выберите <b>Пуск &gt; Программы &gt; Rational Software &gt; Rational ClearCase &gt;
+        Project Explorer</b>.
+    </li>
+    <li>
+        В Project Explorer найдите и выберите поток интеграции проекта.
+    </li>
+    <li>
+        Выберите <b>Файл &gt; Свойства</b> для отображения страницы свойств потока интеграции.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Блокировка</b>.
+    </li>
+    <li>
+        Выберите <b>Заблокировано</b> и нажмите кнопку <b>OK</b>. &nbsp;&nbsp;
+    </li>
+</ol>
+<h3>
+    2.&nbsp;<a id="StartMakeBaseline" name="StartMakeBaseline">Откройте окно Создать контрольную версию</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам работы с инструментом" src="./../../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h3>
+<ol>
+    <li>
+        В Project Explorer найдите и выберите поток интеграции проекта.
+    </li>
+    <li>
+        Выберите <b>Инструменты &gt; Создать контрольную версию</b>. &nbsp;Появится окно Создать контрольную версию.
+    </li>
+</ol>
+<h3>
+    3.&nbsp;<a id="DescribeTheBaselineInformation" name="DescribeTheBaselineInformation">Укажите описание контрольной
+    версии</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам работы с инструментами"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<p>
+    Это описание содержит имя контрольной версии, тип создаваемой контрольной версии, компоненты для которых создается
+    контрольная версия, сведения о панели и потоке.
+</p>
+<ol>
+    <li>
+        Введите имя в поле <b>Имя контрольной версии</b>. По умолчанию ClearCase называет контрольную версию, добавляя дату
+        к имени проекта.
+    </li>
+    <li>
+        Выберите тип создаваемой контрольной версии: <b>дополняющая</b> или <b>полная</b>.
+    </li>
+    <li>
+        Выберите контекст панели для контрольной версии, указав одну из панелей интеграции проекта, панель, подключенную к
+        потоку интеграции проекта.
+    </li>
+    <li>
+        Укажите компоненты, для которых создается контрольная версия. ClearCase автоматически добавит уникальный
+        идентификатор ко всем контрольным версиям, чтобы облегчить различие версий, связанных с отдельными компонентами.
+    </li>
+</ol>
+<p>
+    &nbsp;<img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Дополнительные
+    сведения приведены в разделе <i>Обозреватель структуры компонентов ClearCase</i> электронной справки ClearCase.
+</p>
+<h3>
+    4.&nbsp;<a id="UnlockProjectIntegrationStream" name="UnlockProjectIntegrationStream">Разблокировать поток
+    интеграции</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам работы с инструментом"     src="./../../../core.base_rup/resources/top.gif" width="26" border="0" /></a>
+</h3>
+<ol>
+    <li>
+        В Project Explorer найдите и выберите поток интеграции проекта.
+    </li>
+    <li>
+        Выберите <b>Файл &gt; Свойства</b> для отображения страницы свойств потока интеграции.
+    </li>
+    <li>
+        Перейдите на вкладку <b>Блокировка</b>.
+    </li>
+    <li>
+        Нажмите <b>Разблокировать</b>, затем нажмите кнопку <b>OK</b>.
+    </li>
+</ol>
+<p>
+    &nbsp;<img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Дополнительные
+    сведения приведены в следующих разделах электронной справки ClearCase:
+</p>
+<ul>
+    <li>
+        &nbsp;<i>О контрольных версиях</i>
+    </li>
+    <li>
+        &nbsp;<i>Создание контрольной версии</i>
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Концепции</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/guidances/concepts/baselining_88B2C018.html" guid="4.4540149642001026E-305">Создание контрольной версии</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

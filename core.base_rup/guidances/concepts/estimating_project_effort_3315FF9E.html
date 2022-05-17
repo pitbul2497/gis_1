@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Оценка объема усилий, необходимых для реализации проекта</title>
+<meta content="Concept" name="uma.type">
+<meta content="estimating_project_effort" name="uma.name">
+<meta content="Оценка объема усилий, необходимых для реализации проекта" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "2.0746098019135414E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "2.0746098019135414E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="2.0746098019135414E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Оценка объема усилий, необходимых для реализации проекта</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом разделе обсуждается оценка объема усилий, которых потребует выполнение проекта, на основе вариантов использования и методики оценки Wideband Delphi.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_project_manager_363CE680.html" guid="{EE97A8CD-66CA-4A9B-9871-E3B94CCED528}">Руководитель проекта</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_estimating_effort__concept_of" name="XE_estimating_effort__concept_of"></a> 
+<h3>
+    <a id="Introduction" name="Introduction"></a>Введение
+</h3>
+<p>
+    Одной из самых востребованных величин в сфере разработки программного обеспечения является точный предварительный
+    прогноз общей стоимости проекта. Учитывая всеобщую тенденцию к нарушению графиков и невыполнению бюджетов разработки,
+    это не удивительно. Однако в настоящее время разработку программного обеспечения нельзя назвать точной наукой, о чем
+    недвусмысленно свидетельствует огромное количество провалившихся проектов.
+</p>
+<p>
+    Тем не менее, не помешает хотя бы попытаться спрогнозировать общую стоимость проекта, а затем сверять прогноз с
+    фактическими данными в ходе выполнения проекта. Ниже перечислены некоторые технологии, применяемые для прогнозирования
+    стоимости проектов.
+</p>
+<h3>
+    <a id="UseCasePoints" name="UseCasePoints">Показатели вариантов использования</a>
+</h3>
+<p>
+    Данная технология основана на результатах работы, проделанной в компании Objective Systems SF AB, и была впервые
+    опубликована в 1993 году в статье Густава Карнера <i>Resource Estimation for Objectory Projects</i>. Эта технология
+    позволяла оценить объем ресурсов, которые потребуются для разработки программной системы, на базе элементов модели
+    вариантов использования. Метод позволяет вычислить так называемые показатели вариантов использования (UCP), которые
+    затем преобразуются в функциональные показатели (FP). Функциональные показатели (FP) представляют собой довольно
+    распространенную систему прогнозирования, разработанную А. Дж. Альбрехтом (1979), см. <i>Measuring application
+    development productivity</i>.
+</p>
+<p>
+    Дополнительные сведения можно найти в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/the_estimation_of_effort_based_on_use_cases_9C41D15B.html" guid="1.9405904686693683E-305">Информационный бюллетень: Оценка трудоемкости на основе вариантов использования</a>.
+</p>
+<h3>
+    <a id="WidebandDelphi" name="WidebandDelphi">Wideband Delphi</a>
+</h3>
+<p>
+    Эта технология, разработанная компанией Rand Corporation в 1948 году, первоначально называлась методом оценки Delphi.
+    Суть метода заключается в том, что создается группа экспертов, каждый из которых дает анонимную оценку исходя из
+    описания задачи, а затем эксперты итерационным путем сводят это множество оценок к одной.
+</p>
+<p>
+    В начале 1970-х годов Барри Бем (Barry Boehm) и его коллеги из корпорации Rand расширили базовый метод путем усиления
+    взаимодействия групп экспертов, и в результате увидел свет метод Wideband Delphi (см. <i>Software Engineering
+    Economics.</i> [<a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/references_56F06DFD.html" target="ory_doc" guid="7.755968586980351E-308">BOE81</a>]. Позднее Мэри Сакри и Нил Поттер из консультационной компании
+    The Process Group в Далласе (Техас) разработали устойчивую процедуру проведения оценки по методу Wideband Delphi для
+    проектов по разработке программного обеспечения. В данном руководстве излагается эта процедура.
+</p>
+<p>
+    Дополнительные сведения приведены в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/estimating_effort_using_the_wide-band_delphi_technique_CAC30635.html" guid="8.245547473531647E-305">Технология: Оценка трудоемкости по методу Wideband Delphi</a>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

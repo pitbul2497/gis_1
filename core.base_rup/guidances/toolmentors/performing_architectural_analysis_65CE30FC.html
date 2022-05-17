@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Архитектурный анализ с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="performing_architectural_analysis" name="uma.name">
+<meta content="Архитектурный анализ с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{08B5477D-97F9-4EEB-AA59-A109128B5CA1}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Архитектурный анализ с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описано выполнение архитектурного анализа с помощью Rational XDE Developer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/architectural_analysis_2B9BE03.html" guid="{8CB48402-D4C5-4E17-BB33-507315CB1BBF}">Архитектурный анализ</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Эта памятка по инструменту поддерживает выполнение архитектурного анализа с помощью Rational XDE Developer - Java
+    Platform Edition. &nbsp;&nbsp;
+</p>
+<p>
+    В этой памятке предполагается, что набор структурных моделей уже создан заранее, согласно <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациям по структуре модели XDE</a>.
+</p>
+<ul>
+    <li>
+        Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения определенных задач.
+    </li>
+    <li>
+        Ссылки на разделы электронной справки XDE помечены <img height="16" alt="значок книги"         src="./../../../core.base_rup/resources/book.gif" width="16" />.
+    </li>
+    <li>
+        В этой памятке по инструменту выполняются следующие шаги:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <a href="#Develop Architecture Overview">Разработка обзора архитектуры</a>
+            </li>
+            <li>
+                <a href="#Survey Available Assets">Обзор доступных ресурсов</a>
+            </li>
+            <li>
+                <a href="#Define the High-Level Organization of Subsystems">Определение организации подсистем на
+                высоком уровне</a>
+            </li>
+            <li>
+                <a href="#Identify Key Abstractions">Идентификация абстракций ключей</a>
+            </li>
+            <li>
+                <a href="#Identify Stereotypical Interactions">Идентификация стереотипных взаимодействий</a>
+            </li>
+            <li>
+                <a href="#Develop Deployment Overview">Разработка обзора развертывания</a>
+            </li>
+            <li>
+                <a href="#Identify Analysis Mechanisms">Идентификация механизмов анализа</a>
+            </li>
+            <li>
+                <a href="#Review the Results">Просмотрите результаты</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    <a id="Develop Architecture Overview" name="Develop Architecture Overview">Разработка обзора
+    архитектуры</a><b>&nbsp;</b>
+</h3>
+<p>
+    Rational XDE можно использовать для создания неформальных диаграмм, описывающих обзор архитектуры.<br />
+</p>
+<h3>
+    <a id="Survey Available Assets" name="Survey Available Assets">Обзор доступных ресурсов</a>
+</h3>
+<p>
+    Архитектор должен рассмотреть возможность многократного использования имеющихся ресурсов, включая модели Rational XDE.
+</p>
+<h3>
+    <a id="Define the High-Level Organization of Subsystems" name="Define the High-Level Organization of Subsystems">Определение организации подсистем на высоком уровне</a>
+</h3>
+<p>
+    Добавьте пакеты в модель проекта для отражения выбранной стратегии уровней. Согласно примеру уровней, приведенному в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендациях по структуре модели Rational XDE</a>, необходимо выполнить следующие
+    действия:
+</p>
+<ol>
+    <li>
+        Откройте модель проекта.
+    </li>
+    <li>
+        Перейдите к пакету или пакетам, содержащим подпакеты уровней.
+    </li>
+    <li>
+        Создайте пакеты для каждого уровня и присвойте им стереотип &lt;&lt;уровень&gt;&gt;. Справочник: <img         alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Группировка элементов модели в пакетах</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_group_mod_ele_package"); -->, <img         alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа со стереотипами</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_working_stereotypes"); -->.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" />Рекомендации по структурированию
+    моделей приведены в следующих документах:
+</p>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/layering_strategies_300DC1D1.html" guid="1.0962026102409748E-305">Стратегии создания уровней</a>
+    </li>
+</ul>
+<h3>
+    <a id="Identify Key Abstractions" name="Identify Key Abstractions">Идентификация абстракций ключей&nbsp;</a>
+</h3>
+<p>
+    Захватите ключевые абстракции в диаграммах классов с кратким описанием для каждого класса. Выполните следующие
+    действия:
+</p>
+<ol>
+    <li>
+        Откройте модель проекта.
+    </li>
+    <li>
+        Перейдите к пакету, содержащему ключевые абстракции. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+    </li>
+    <li>
+        Добавьте диаграмму классов. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление
+        диаграмм</i> <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); --> .
+    </li>
+    <li>
+        Добавьте к диаграмме классы со стереотипом &lt;&lt;сущность&gt;&gt;. Справочник: <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление форм к диаграммам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->, <img         alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Присвоение стереотипов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_assign_stereos"); -->.
+    </li>
+    <li>
+        Добавьте описание к классам. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Документирование элементов модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_doc_model_elem"); -->.
+    </li>
+    <li>
+        При необходимости сопоставьте документ с классом. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Привязка внешних файлов к элементам модели</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_lnk_extrn_file_mdl_ele"); -->.
+    </li>
+    <li>
+        Задайте взаимосвязи, существующие между классами.
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Добавьте взаимосвязи ассоциаций. См. <img alt="значок справочника"                 src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей ассоциаций</i> 
+                <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_assoc_rels"); -->.
+            </li>
+            <li>
+                Задайте типы взаимосвязей ассоциаций. См. <img alt="Значок справочника"                 src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение типов взаимосвязей ассоциаций</i> 
+                <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_kinds_assoc"); -->.
+            </li>
+            <li>
+                Добавьте взаимосвязи обобщения. См. <img alt="значок справочника"                 src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей обобщений</i> 
+                <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_genrlztn_relshp"); -->.
+            </li>
+        </ul>
+    </li>
+</ol>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами классов</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_w_class_dgms"); -->.
+</p>
+<h3>
+    <a id="Identify Stereotypical Interactions" name="Identify Stereotypical Interactions">Идентификация стереотипных
+    взаимодействий</a>
+</h3>
+<p>
+    Это действие выполняется только при запуске данной задачи во время ознакомления.
+</p>
+<p>
+    Целью выполнения данного действия является идентификация данных взаимодействий между ключевыми абстракциями в системе,
+    характеризующими или представляющими значимые типы операций в системе. Эти взаимодействия захватываются в качестве
+    реализаций прецедентов.
+</p>
+<p>
+    Руководства по созданию реализаций прецедентов в XDE приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/performing_use_case_analysis_12C8207E.html" guid="{D498540C-E196-4936-AAFB-0BC37CF05A40}">Памятке по инструменту: выполнение анализа прецедентов с помощью XDE</a>.
+</p>
+<h3>
+    <a id="Develop Deployment Overview" name="Develop Deployment Overview">Разработка обзора развертывания</a>
+</h3>
+<ol>
+    <li>
+        Добавьте диаграмму развертывания к модели развертывания. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление диаграмм</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); -->.
+    </li>
+    <li>
+        Добавьте к диаграмме узлы. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление
+        форм к диаграммам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.
+    </li>
+    <li>
+        Добавьте ассоциации между узлами. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей ассоциаций</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_assoc_rels"); -->.
+    </li>
+</ol>
+<p>
+    Справочник: <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами
+    развертывания</i> 
+    <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_with_deploy_dgm"); --> .
+</p>
+<h3>
+    <a id="Identify Analysis Mechanisms" name="Identify Analysis Mechanisms"><b>Идентификация механизмов
+    анализа</b>&nbsp;</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="Review the Results" name="Review the Results">Просмотрите результаты</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

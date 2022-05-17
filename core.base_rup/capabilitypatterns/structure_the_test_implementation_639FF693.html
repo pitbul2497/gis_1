@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Дескриптор задачи: Создание реализации теста</title>
+<meta content="TaskDescriptor" name="uma.type">
+<meta content="structure_the_test_implementation" name="uma.name">
+<meta content="Создание реализации теста" name="uma.presentationName">
+<meta content="_9VPYoEohEdqrjq4i3fchvA" name="uma.guid">
+<meta content="TaskDescriptor" name="element_type">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ActivityTreeTable.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ProcessElementPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript" src="./../../scripts/processElementData.js"></script><script language="JavaScript" type="text/javascript">
+					var defaultQueryStr = '?proc={35359DDF-6361-43E5-8B1B-18D204DA8CFF}&path={35359DDF-6361-43E5-8B1B-18D204DA8CFF},{93B7D625-C83A-4EFB-9772-B88F2EB02CE2},_9VPYoEohEdqrjq4i3fchvA';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, true, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_9VPYoEohEdqrjq4i3fchvA"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Дескриптор задачи: Создание реализации теста</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../images/taskdes_lg_dgm32.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Эта задача посвящена созданию общей структуры реализации набора тестов.</td>
+</tr>
+<tr>
+<td>На основе задачи метода: <a href="./../../core.base_rup/tasks/structure_the_test_implementation_AAB73625.html" guid="{ED9DF0C0-744A-443A-AEBA-604382E05A5F}">Создание реализация теста</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Роли</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Главный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_designer_A3072D6F.html" guid="_9Vbl4EohEdqrjq4i3fchvA">Разработчик тестов</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Дополнительно:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Помощь:
+								</span></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Входы</th><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Обязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_suite_18C2BDB8.html" guid="_CWqAIhi2Edq_uI8xTPML6g">Комплект тестов</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_strategy_A1E681F6.html" guid="_CWqAKhi2Edq_uI8xTPML6g">Стратегия тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_script_B34D6DE0.html" guid="_CWqAKRi2Edq_uI8xTPML6g">Сценарий тестирования</a>
+</li>
+</ul>
+</td><td width="30%" class="sectionTableCell"><span class="sectionTableCellHeading">Необязательный:
+								</span>
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_automation_architecture_103143D.html" guid="_CWqANRi2Edq_uI8xTPML6g">Архитектура автоматизации тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_data_DD549FD7.html" guid="_CWqAJhi2Edq_uI8xTPML6g">Данные теста</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_development_infrastructure_31D3520E.html" guid="_CWqAMBi2Edq_uI8xTPML6g">Инфраструктура разработки</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_suite_18C2BDB8.html" guid="_CWqAIhi2Edq_uI8xTPML6g">Комплект тестов</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_environment_configuration_F665342D.html" guid="_CWqANBi2Edq_uI8xTPML6g">Конфигурация среды тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_plan_66786415.html" guid="_CWqALhi2Edq_uI8xTPML6g">План тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_project_specific_guidelines_E7F27FE7.html" guid="_CWqAJxi2Edq_uI8xTPML6g">Рекомендации по проекту</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_interface_specification_77D66196.html" guid="_CW20cRi2Edq_uI8xTPML6g">Спецификации интерфейса тестирования</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_case_E41DABB1.html" guid="_CWqAJBi2Edq_uI8xTPML6g">Тестовый набор</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Внешний:
+								</span>
+<ul>
+<li>Нет</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Выходы</th><td colspan="3" class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_suite_18C2BDB8.html" guid="_CWqAIhi2Edq_uI8xTPML6g">Комплект тестов</a>
+</li>
+<li>
+<a href="./../../core.base_rup/capabilitypatterns/rup_test_script_B34D6DE0.html" guid="_CWqAKRi2Edq_uI8xTPML6g">Сценарий тестирования</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Шаги</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr>
+<td class="sectionTableCell">
+<div class="stepHeading"> Проанализируйте подход к тесту, целевые элементы тестов и потребности в оценке</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="ExamineApproachTargetsAndAssmnt" name="ExamineApproachTargetsAndAssmnt"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Понять принципы оценки тестирования и влияние оценки на зависимость способа реализации тестовых наборов от
+                способа оценки объектов тестирования. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Начните с проверки плана тестирования для определения потребности в оценке. Определите, насколько точно можно оценить
+    длительность тестирования и качество программного обеспечения, применяя выбранный подход к тестированию. Определите,
+    предъявляют ли объекты тестирования какие-либо особые требования.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Изучите механизмы обеспечения возможности тестирования и поддерживающие их элементы </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="ExamineMechanismsAndElements" name="ExamineMechanismsAndElements"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Разобраться в доступных элементах повышения удобства тестирования и понять, какие механизмы они
+                поддерживают и какие преимущества предоставляют. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Изучите механизмы, применяемые для обеспечения возможности тестирования в конкретной среде, и выявите элементы
+    обеспечения возможности тестирования, с помощью которых реализованы эти механизмы. В частности, можно изучить
+    библиотеки функций, разработанных членами группы тестирования, а также заглушки и оснастку команды разработчиков.
+</p>
+<p>
+    Возможность тестирования обеспечивается двумя факторами: разработкой программного обеспечения, пригодного для
+    тестирования, и формированием адекватного подхода к тестированию. Возможность тестирования - важный аспект разработки
+    ресурсов группы тестирования, а также важный элемент всего проекта разработки программного обеспечения. Обеспечение
+    возможности тестирования (возможности эффективно тестировать программный продукт) обычно обусловлено следующими
+    обстоятельствами:
+</p>
+<ul>
+    <li>
+        средствами обеспечения возможности тестирования, предоставляемыми инструментами автоматизации тестирования
+    </li>
+    <li>
+        специальными технологиями создания сценариев тестирования компонентов
+    </li>
+    <li>
+        библиотеками функций, обеспечивающими инкапсуляцию сложных элементов тестирования и разделение сложных элементов
+        тестирования и простых процедурных описаний тестов; подобные библиотеки выступают в роли центральной точки
+        управления тестированием и изменения тестов
+    </li>
+</ul>
+<h4>
+    <a id="AnalyzeDistribution" name="AnalyzeDistribution">Проанализируйте требования к распределению</a>
+</h4>
+<p>
+    Нуждается ли текущий комплект тестов в распределении? Если да, воспользуйтесь элементами обеспечения возможности
+    тестирования, поддерживающими распределение. Подобные элементы обычно представляют собой функции конкретных
+    инструментов поддержки автоматизации, отвечающие за распределение комплекта тестов, его удаленное выполнение, сбор и
+    запись результатов в централизованные протоколы и хранилища.
+</p>
+<h4>
+    <a id="AnalyzeConcurrency" name="AnalyzeConcurrency">Проанализируйте требования к параллелизму</a>
+</h4>
+<p>
+    Должен ли текущий комплект тестов выполняться параллельно с другими комплектами тестов? Если да, воспользуйтесь
+    элементами обеспечения возможности тестирования, поддерживающими параллелизм. Эти элементы чаще всего будут
+    представлять собой сочетание конкретных инструментов поддержки, обеспечивающих одновременное выполнение нескольких
+    комплектов тестов в разных физических системах. Обеспечение параллелизма требует тщательной подготовки данных для
+    тестирования и тщательного управления тестированием, позволяющего предотвратить возникновение нежелательных и
+    непредвиденных побочных эффектов в ситуациях, когда два теста пытаются одновременно изменить один и тот же объект
+    данных.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Создайте начальную структуру наборов тестов</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="CreateTestSuiteStructure" name="CreateTestSuiteStructure"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Создать схему реализуемых наборов тестов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Подберите один или несколько комплектов тестов, выполнив которые в определенном порядке, группа тестирования сможет
+    получить полные и осмысленные результаты, на основании которых можно будет сделать выводы, интересующие
+    заинтересованных лиц. Попытайтесь найти такую подробность результатов тестирования, при котором они дают максимум
+    информации, но при этом все еще достаточно просты для восприятия.
+</p>
+<p>
+    Если сценарии тестирования уже существуют, можно скомпоновать наборы тестов самостоятельно, а затем передать их
+    реализаторам наборов тестов для заключительной стабилизации.
+</p>
+<p>
+    При работе с наборами тестов, нуждающимися в создании сценариев тестирования, следует предоставить какую-либо
+    информацию о сценариях тестирования или других наборов тестов, от которых зависят данные наборы. Если можно просто
+    перечислить эти наборы, так и сделайте. Если нет, напишите краткое описание ожидаемого содержания основного набора
+    тестов и предоставьте реализатору возможность принять тактические решения о том, какие именно тестовые сценарии нужно
+    включить в набор.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Адаптируйте структуру набора тестов к структуре коллектива и имеющимся в его расположении инструментам. </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="AdaptStructureToTeam" name="AdaptStructureToTeam"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Оптимизировать структуру набора тестов под распределение обязанностей в конкретной группе. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Для адаптации к структуре распределения работы (WBR) в конкретном коллективе может потребоваться разделить или
+    реструктурировать отобранные наборы тестов. Это может позволить сократить вероятность возникновения конфликтов при
+    разработке наборов тестов. Иногда инструменты автоматизации тестирования предъявляют определенные требования к
+    организации работы с ресурсами автоматизации, и при необходимости рекомендуется реструктурировать наборы тестов для
+    удовлетворения этих требований.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Выявите механизмы обмена данными между наборами тестов </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="IdentifyTestScriptComms" name="IdentifyTestScriptComms"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Выявить тестовые данные и состояния системы, которыми обмениваются наборы тестов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    В большинстве случаев наборы тестов могут просто вызывать другие наборы тестов в определенном порядке. Довольно часто
+    такой организации достаточно для обеспечения того, чтобы система находилась в ожидаемом состоянии при переходе от одних
+    наборов тестов к другим.
+</p>
+<p>
+    Однако некоторые системы генерируют динамические данные времени выполнения или используют в качестве таких данных
+    результаты выполнения транзакций. Например, система приема и обработки заказов присваивает уникальный номер каждому
+    поступившему заказу. Для того чтобы автоматизированный сценарий тестирования мог обработать заказ, нужно, чтобы
+    предыдущий сценарий тестирования определил уникальный номер заказа и передал его сценарию тестирования обработки
+    заказов.
+</p>
+<p>
+    В подобных случаях нужно подобрать наиболее подходящий механизм обмена данными между сценариями тестирования. Примерами
+    таких механизмов могут служить передача входных параметров, запись данных на диск и чтение данных с диска, а также
+    использование глобальных переменных времени выполнения. У каждого из этих механизмов есть преимущества и недостатки,
+    поэтому лучше всего выбирать механизм отдельно для каждой ситуации.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Определите начальные зависимости между элементами набора тестов</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="DefineTestSuiteDependencies" name="DefineTestSuiteDependencies"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Определить и записать зависимости времени выполнения между элементами набора тестов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Эта задача в основном связана с определением порядка, в котором будут выполняться сценарии и наборы тестов. Если не
+    будут правильно определены зависимости между тестами, повышается вероятность сбоев и получения неестественных данных
+    при тестировании.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Создайте визуальную модель архитектуры реализации тестов</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="VisualTestImpModel" name="VisualTestImpModel"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Создать диаграмму со схемой реализации тестов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Если у вас есть доступ к инструментам моделирования или рисования UML, создайте диаграмму модели реализации теста с
+    изображением ключевых элементов программного обеспечения для автоматического тестирования. Кроме того, можно создать
+    диаграмму ключевых аспектов архитектуры автоматизации тестов.
+</p>
+<p>
+    Еще один подход заключается в том, чтобы нарисовать диаграммы на стенде, который хорошо виден всем членам группы
+    тестирования.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Оптимизируйте структуру набора тестов</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="RefineTestSuiteStructure" name="RefineTestSuiteStructure"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Внести необходимые коррективы для обеспечения целостности реализации теста. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    По мере выполнения проекта наборы тестов меняются: время от времени добавляются новые сценарии тестирования, а
+    существующие сценарии изменяются, удаляются или начинают выполняться в другом порядке. Такие изменения - неотъемлемая
+    часть обслуживания наборов тестов, и правильный подход заключается в подготовке идеальной среды для этих изменений, а
+    не в предотвращении изменений как таковых.
+</p>
+<p>
+    В отсутствие обслуживания комплекты тестов довольно быстро становятся непригодными к использованию. Если оставить набор
+    тестов без присмотра хотя бы в течение нескольких компиляций, его уже будет сложно восстановить, и, быть может, проще
+    будет выбросить его и создать новый с нуля. Дополнительные рекомендации по обслуживанию автоматизированных наборов
+    тестов приведены в разделе <b><a href="#Top">Дополнительная информация:</a></b> в начале этой страницы.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Поддерживайте прослеживаемость</div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="Traceability" name="Traceability"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Обеспечить возможность анализа влияния изменяемых объектов на связанные с ними объекты. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    Поддерживайте прослеживаемость в соответствии с требованиями к прослеживаемости, изложенными в плане тестирования.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading"> Оцените и проверьте результаты </div>
+<div class="stepContent">
+<table cellpadding="0" cellspacing="0" border="0" class="stepTable">
+<tr valign="top">
+<td><a id="EvaluateResults" name="EvaluateResults"></a>
+<div align="left">
+    <table border="1" width="100%" cellspacing="0" cellpadding="4" style="border: 1px solid rgb(128,128,128)"     bordercolorlight="#808080" bordercolordark="#808080">
+        <tr>
+            <td width="5%">
+                <b>Цель:</b>&nbsp;
+            </td>
+            <td width="95%">
+                Проверка полноты выполнения задачи и приемлемости полученных рабочих продуктов. &nbsp;
+            </td>
+        </tr>
+    </table><br />
+</div>
+<p>
+    После завершения работы полезно проверить, принесла ли работа полезные результаты, или же она была просто переводом
+    большого количества бумаги. Необходимо оценить, достаточным ли было качество работы, и в достаточно ли полном объеме
+    она была выполнена для того, чтобы ее результаты принесли пользу остальным членам проектной группы. По возможности
+    пользуйтесь при проверке качества и полноты контрольными таблицами RUP.
+</p>
+<p>
+    Привлеките к проверке результатов работы сотрудников, которые будут пользоваться этими результатами для выполнения
+    своих задач. Сделайте это тогда, когда у вас еще будет оставаться время на внесение необходимых корректив. Кроме того,
+    нужно сопоставить результаты работы с ключевыми входными рабочими продуктами и убедиться в том, что они представлены с
+    достаточной точностью и в достаточном объеме. Идеальным вариантом будет проверка вашей работы автором входного
+    продукта.
+</p>
+<p>
+    Не забывайте о том, что RUP - итерационный процесс, и рабочие продукты довольно часто меняются со временем. Поэтому
+    обычно не требуется (а зачастую даже приносит больше вреда, чем пользы) полное описание рабочих продуктов, которые
+    будут использоваться только частично или могут и вовсе не использоваться. Это связано с высокой вероятностью изменения
+    среды, в которой применяется рабочий продукт, в результате чего предположения, на которых этот продукт был основан,
+    могут стать неточными, а сам рабочий продукт может потребовать полной переделки. Кроме того, старайтесь не тратить
+    слишком много времени на отладку внешнего оформления рабочего продукта в ущерб его содержанию. В ситуациях, когда
+    большое значение играет внешнее оформление продукта, рекомендуется привлечь к работе над оформлением административный
+    ресурс.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Свойства</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Несколько вхождений" abbr="Несколько вхождений">Несколько вхождений</th><td align="left" class="sectionTableCell" headers="property_Несколько вхождений"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Управляется событиями" abbr="Управляется событиями">Управляется событиями</th><td align="left" class="sectionTableCell" headers="property_Управляется событиями"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Выполняющийся" abbr="Выполняющийся">Выполняющийся</th><td align="left" class="sectionTableCell" headers="property_Выполняющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Необязательный" abbr="Необязательный">Необязательный</th><td align="left" class="sectionTableCell" headers="property_Необязательный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Запланированный" abbr="Запланированный">Запланированный</th><td align="left" class="sectionTableCell" headers="property_Запланированный"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+<tr valign="top">
+<th scope="row" class="sectionTableHeading" id="property_Повторяющийся" abbr="Повторяющийся">Повторяющийся</th><td align="left" class="sectionTableCell" headers="property_Повторяющийся"><img title="" alt="" height="15" width="20" src="./../../images/indent.gif"></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

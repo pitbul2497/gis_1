@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Операция</title>
+<meta content="Concept" name="uma.type">
+<meta content="activity" name="uma.name">
+<meta content="Операция" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:3.2329841703462285E-305", path: ["3.2329841703462285E-305", "_uDU1oASEEdq61bDkWg1SXw", "_AtM0gBTQEdqrUt4zetC1gg", "3.132140065969088E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "3.2329841703462285E-305", "_uDU1oASEEdq61bDkWg1SXw", "_AtM0gBTQEdqrUt4zetC1gg", "3.132140065969088E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "3.132140065969088E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "3.132140065969088E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="3.132140065969088E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Операция</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Операции допускают вложение и логическую группировку связанных элементов процесса, которые также называются составными элементами и могут представлять собой другие операции или описания задач. Этапы, итерации, процессы доставки и шаблоны функций представляют собой особые операции. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Операция - это фундаментальное понятие, используемое при описании процессов. &nbsp; Операции применяются для описания
+    составных элементов процесса и порядка их выполнения. &nbsp; Каждая операция может содержать набор вложенных операций,
+    и таким образом любое задание или поток можно представить в виде иерархической структуры операций. &nbsp; Операции
+    также могут содержать ссылки на задачи, роли и продукты работы, называемые <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/descriptor_FA0AB9FE.html" guid="_5V9HEBUEEdqrUt4zetC1gg">дескрипторами</a>. &nbsp; Для экземпляров операций и дескрипторов можно указывать даты
+    их начала и окончания. &nbsp;Кроме того, можно задать другие обстоятельства выполнения: например, нужно ли выполнить
+    операцию несколько раз, и если да - следует ли выполнять экземпляры операции параллельно (hasMultipleOccurrences
+    attribute) или последовательно (isRepeatable attribute). &nbsp;Кроме того, для управления операциями и дескрипторами
+    задач можно пользоваться событиями. И наконец, операции и дескрипторы могут быть определены в качестве текущих, без
+    конкретной даты начала или окончания.
+</p>
+<p>
+    В UMA предусмотрены несколько особых операций,&nbsp; позволяющих описывать процессы понятным и простым языком.
+    &nbsp;Например, этап и итерация - это особые виды операций с определенным набором предопределенных атрибутов. Любой
+    процесс, например <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/capability_pattern_ECA78A86.html" guid="1.7072348895114264E-305">шаблон возможностей</a>&nbsp;или <a class="elementLinkWithUserText" href="./../../../core.base_concepts/guidances/concepts/delivery_process_CFEBBC78.html" guid="_EhgqwO8MEdmKSqa_gSYthg">процесс поставки</a>,&nbsp; также представляет собой особую операцию с дополнительной
+    информацией о том, почему и когда она должна выполняться. Поэтому поскольку операции могут быть вложенными, процессы
+    также могут быть вложенными.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2005&nbsp;Все права защищены
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

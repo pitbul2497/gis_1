@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Структуризация реализации теста в Rational TestFactory</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="structure_test_implementation" name="uma.name">
+<meta content="Структуризация реализации теста в Rational TestFactory" name="uma.presentationName">
+<meta content="Tool:rup_test_factory:Rational TestFactory" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational TestFactory" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{FBA5098E-2CA8-483D-814D-DE3E876426B1}", "{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{AD403709-9F1A-496A-B5F7-F7CF823F8BDD}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Структуризация реализации теста в Rational TestFactory</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение Rational TestFactory для структуризации реализации теста для разрешения реализации созданных тестов.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_test_factory_3EDA2115.html" guid="{FBA5098E-2CA8-483D-814D-DE3E876426B1}">Rational TestFactory</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/implement_test_35C1B0AA.html" guid="{BC805E79-736B-42D5-BDC1-B95E7D002312}">Реализация теста</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/structure_the_test_implementation_AAB73625.html" guid="{ED9DF0C0-744A-443A-AEBA-604382E05A5F}">Создание реализация теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    В Rational TestFactory структуризация реализации теста начинается с функции "схема приложения".
+</p>
+<p>
+    Хорошо разработанная схема приложения отражает точно представление пользовательского интерфейса в тестируемом
+    приложении (AUT). Все окна и управляющие элементы в AUT представлены на схеме приложения как "объекты UI". Сведения о
+    разработке схемы приложения приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/setup_testfactory_C77C34F4.html" guid="{FAC387D8-BA1A-4056-A53B-E1C43571D1DC}">Памятке по инструменту: настройка тестовой среды в Rational
+    TestFactory</a>.
+</p>
+<p>
+    Эта памятка по инструменту применима для систем с Windows 98/2000/NT 4.0.
+</p>
+<p>
+    Для применения Rational TestFactory для захвата результатов модели теста для автоматического тестирования выполните
+    следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#ID test locations">Определите компоненты приложения, которые следует протестировать</a>
+    </li>
+    <li>
+        <a href="#Set up interaction objects">Настройте объекты взаимодействия для отражения требований тестового
+        сценария</a>
+    </li>
+    <li>
+        <a href="#Supply test data">Предоставьте данные тестирования для объектов, представляющих текстовые управляющие
+        элементы</a>
+    </li>
+    <li>
+        <a href="#Restrict object testing">Ограничьте тестирование определенными объектами</a>
+    </li>
+</ol>
+<h3>
+    1.&nbsp;&nbsp; <a id="ID test locations" name="ID test locations">Определите компоненты приложения, которые следует
+    протестировать</a>
+</h3>
+<p>
+    Разработав схему приложения можно определить области AUT, подходящие для тестирования в Rational TestFactory.
+</p>
+<p>
+    "Пилот" является инструментом Rational TestFactory, автоматически создающим тестовые сценарии. Расположения пилотов на
+    схеме приложения определяют управляющие элементы в AUT, которые они могут протестировать. Пилот может протестировать
+    все доступные объекты UI на схеме, находящиеся в ветви под родительским объектом пилота. Если управляющий элемент
+    представлен объектом UI в этой ветви схемы и объект доступен, пилот протестирует его.
+</p>
+<p>
+    Просмотрите тестовые процедуры, созданные при выполнении задачи Тест проекта, целью которых является определение
+    следующих моментов:
+</p>
+<ul>
+    <li>
+        Управляющих элементов, выполняемых в определенном порядке.
+    </li>
+    <li>
+        Управляющие элементы для которых необходимо предоставить тестовые данные.
+    </li>
+    <li>
+        Окна или диалоговое окна, в которых отображаются управляющие элементы.
+    </li>
+</ul>
+<p>
+    Объекты UI на схеме приложения, относящиеся к окнам, диалогам и управляющим элементам, определенным для тестирования
+    пилотами в Rational TestFactory. Можно указать способ тестирования TestFactory управляющего элемента в AUT, задав
+    значения свойств соответствующего объекта UI.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделами справки Rational TestFactory:
+</p>
+<p>
+    <i>Пилоты: что это такое и как они работают</i>
+</p>
+<p>
+    <i>Эффективное размещение пилота</i>
+</p>
+<h3>
+    2.&nbsp;&nbsp; <a id="Set up interaction objects" name="Set up interaction objects">Настройте объекты взаимодействия
+    для отражения требований тестового сценария</a>
+</h3>
+<p>
+    Тестовый сценарий, в котором все управляющие элементы расположены в одном окне, является подходящим кандидатом для
+    тестирования в Rational TestFactory. "Объект взаимодействия" является функцией TestFactory, позволяющей указать способ
+    взаимодействия тестового сценария для таких управляющих элементов.
+</p>
+<p>
+    Объект взаимодействия является контейнером, в который можно добавлять один или несколько объектов UI в качестве
+    "компонентов". Компоненты объекта взаимодействия представляют управляющие элементы, которые необходимо выполнить для
+    получения определенного пути или выполнения определенной задачи в AUT. Добавив компоненты для взаимодействия можно
+    настроить их для соответствия требованиям тестового сценария.
+</p>
+<p>
+    При наличии нескольких тестовых сценариев, тестирующих управляющие элементы в одном окне, можно указать требования для
+    каждого тестового сценария в отдельном объекте взаимодействия. Пилот в TestFactory может тестировать несколько объектов
+    взаимодействия в одном окне в ходе выполнения одного тестового комплекта или пилота.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к разделу
+    <i>Применение объектов взаимодействий для настройки определенных тестов</i> справки Rational TestFactory:
+</p>
+<h3>
+    3.&nbsp;&nbsp; <a id="Supply test data" name="Supply test data">Предоставьте тестовые данные для объектов,
+    представляющих входные управляющие элементы</a>
+</h3>
+<p>
+    Пилот в TestFactory выполняет множество тестов над максимально доступным числом объектов UI в определенной области
+    схемы, к которой у него есть доступ. По умолчанию пилот выполняет объекты в произвольном порядке и применяет
+    произвольные значения данных к объектам, требующим ввода.
+</p>
+<p>
+    При наличии управляющих элементов в тестовом сценарии, для которых требуется ввод определенных тестовых данных, можно
+    использовать "стиль ввода данных" для предоставления необходимой вводной информации. Стиль ввода данных является
+    группой свойств объектов UI, задающих тестовый ввод для объекта UI:
+</p>
+<ul>
+    <li>
+        Обязательная строка, которую будет использовать пилот TestFactory.
+    </li>
+    <li>
+        Список строк, выполняющий роль пула данных, произвольно используемого пилотом.
+    </li>
+    <li>
+        Список масок, для которых Rational TestFactory создает строковые значения, произвольно используемые пилотом.
+    </li>
+    <li>
+        Опции, позволяющие пилоту создавать произвольные значения - целочисленные, с плавающей точкой и строковые.
+    </li>
+</ul>
+<p>
+    Rational TestFactory предоставляет набор предустановленных <i>системных</i> стилей записей данных, отражающих
+    стандартные типы ввода. Можно создать дополнительные <i>пользовательские</i> стили записи данных, основанные на
+    системных стилях или на существующих пользовательских стилях. Также можно переопределить параметры системного или
+    пользовательского стиля для отдельного объекта.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к разделу
+    <i>Применение стилей записи данных для объектов типа "ввода"</i> справки Rational TestFactory:
+</p>
+<h3>
+    4.&nbsp;&nbsp; <a id="Restrict object testing" name="Restrict object testing">Ограничение тестирования определенных
+    объектов</a>
+</h3>
+<p>
+    По умолчанию все управляющие элементы в AUT, представленные объектами UI в схеме приложения, доступны для тестирования.
+    Если пилот обнаруживает объект UI, при прохождении пути по схеме приложения, пилот может добавить объект UI в
+    создаваемый тестовый сценарий. Однако AUT может содержать связанные управляющие элементы, которые не следует
+    тестировать пилоту. В качестве примеров можно привести:
+</p>
+<ul>
+    <li>
+        Нестабильный управляющий элемент
+    </li>
+    <li>
+        Управляющий элемент, работа которого вызывает наносящие вред действия<br />
+         (например, управляющий элемент, удаляющий базу данных)
+    </li>
+    <li>
+        Управляющий элемент, который не следует тестировать<br />
+         (например, управляющий элемент печати или управляющий элемент, открывающий справку)
+    </li>
+</ul>
+<p>
+    Если ваше AUT содержит такие управляющие элементы, можно исключить связанные с ними объекты UI из тестирования. Также
+    можно ограничить тестовые действия, выполняемые пилотом над управляющим элементом. Свойства объекта UI, связанного с
+    управляющим элементом, отражают возможные действия, выполняемые пользователем над управляющим элементом.
+</p>
+<p>
+    <img height="16" alt="Значок справки" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;&nbsp; Обратитесь к
+    следующим разделами справки Rational TestFactory:
+</p>
+<ul>
+    <li>
+        <i>Исключение объектов UI из тестирования</i>
+    </li>
+    <li>
+        <i>Изменение действий по тестированию объекта UI</i>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

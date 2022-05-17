@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Фиксация архитектуры параллелизма с помощью Rational Rose RealTime</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="capturing_a_concurrency_architecture" name="uma.name">
+<meta content="Фиксация архитектуры параллелизма с помощью Rational Rose RealTime" name="uma.presentationName">
+<meta content="Tool:rup_rose_rt:Rational Rose RealTime" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational Rose RealTime" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{693A3653-B92C-4342-B427-2BEA239BA15F}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B3026434-672D-4564-9106-A951C326EBF5}", "{693A3653-B92C-4342-B427-2BEA239BA15F}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{693A3653-B92C-4342-B427-2BEA239BA15F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{693A3653-B92C-4342-B427-2BEA239BA15F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B3026434-672D-4564-9106-A951C326EBF5}", "{693A3653-B92C-4342-B427-2BEA239BA15F}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B3026434-672D-4564-9106-A951C326EBF5}", "{693A3653-B92C-4342-B427-2BEA239BA15F}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{693A3653-B92C-4342-B427-2BEA239BA15F}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Фиксация архитектуры параллелизма с помощью Rational Rose RealTime</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описан процесс распространения капсул между нитями с помощью Rational Rose RealTime.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_rose_rt_DDC0220E.html" guid="{B3026434-672D-4564-9106-A951C326EBF5}">Rational Rose RealTime</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/describe_runtime_architecture_2F8E190.html" guid="{4D35C038-A2D0-48B8-9ECD-52717FEAE33A}">Создание описания архитектуры среды выполнения</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    Обзор
+</h3>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows 98/NT 4.0.
+</p>
+<h4>
+    Этапы работы с инструментами
+</h4>
+<p>
+    Для распространения капсул между нитями с помощью Rose RealTime выполните следующие действия:
+</p>
+<ol>
+    <li>
+        <a href="#Identify processes and threads">Идентифицируйте процессы и нити</a>
+    </li>
+    <li>
+        <a href="#Design the structure">Спроектируйте структуру</a>
+    </li>
+</ol>
+<h3>
+    1. <a id="Identify processes and threads" name="Identify processes and threads">Идентифицируйте процессы и нити</a>
+</h3>
+<p>
+    Rose RealTime использует три механизма для обеспечения параллелизма:
+</p>
+<ul>
+    <li>
+        Процессы, являющиеся громоздкими активными объектами с высокой дополнительной нагрузкой по переключения контекста
+    </li>
+    <li>
+        Нити и задачи, являющиеся легкими механизмами переключения контекста
+    </li>
+    <li>
+        Капсулы, являющиеся сверх-легкими активными объектами с очень низкой дополнительной нагрузкой переключения
+        контекста
+    </li>
+</ul>
+<p>
+    В Rose RealTime капсулы являются активными объектами, доступными для выделения нитям операционной системы. Эти активные
+    объекты вписываются в расписание с помощью механизма планирования активных объектов, минимизирующего дополнительную
+    нагрузку переключения контекста. В некоторых случаях может понадобиться распределить капсулы между нитями и процессами.
+</p>
+<p>
+    Дополнительные сведения о проектировании с помощью активных объектов приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/designing_with_active_objects_E041AB4C.html" guid="{8A0A5BB3-5CBC-4A38-BFD2-4A21CA5FF833}">Памятке по инструменту: проектирование с помощью активных объектов в
+    Rational Rose RealTime</a>.
+</p>
+<h3>
+    2. <a id="Design the structure" name="Design the structure">Проектирование структуры</a>
+</h3>
+<p>
+    Действия процедуры проектирования физической и логической структуры могут различаться в зависимости от используемого
+    языка (C, C++ или Java).
+</p>
+<h4>
+    Проектирование структуры с помощью C или C++
+</h4>
+<ol>
+    <li>
+        Добавьте служебный порт фрейма в капсулу контейнера.
+    </li>
+    <li>
+        Задайте подкапсулу.
+    </li>
+    <li>
+        Сделайте подкапсулу необязательной.
+    </li>
+    <li>
+        Определите логическую нить.
+    </li>
+    <li>
+        Задайте физическую нить.
+    </li>
+    <li>
+        Привяжите логическую нить к физической.
+    </li>
+    <li>
+        Воссоздайте капсулу в логической нити.
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" /> Дополнительные сведения о
+    проектировании структуры с помощью C или C++ приведены в руководстве <i>Справочник по Rational Rose RealTime C или
+    Справочник по C++</i> guide.
+</p>
+<h4>
+    Проектирование структуры с помощью Java
+</h4>
+<ol>
+    <li>
+        Добавьте служебный порт фрейма в капсулу контейнера. &nbsp;
+    </li>
+    <li>
+        Сделайте подкапсулу необязательной. &nbsp;
+    </li>
+    <li>
+        Создайте новый контроллер и нить. &nbsp;
+    </li>
+    <li>
+        Воссоздайте капсулу в новом контроллере. &nbsp;
+    </li>
+</ol>
+<p>
+    <img height="16" alt="значок книги" src="./../../../core.base_rup/resources/book.gif" width="16" /> Дополнительные сведения о
+    проектировании структуры с помощью Java приведены в руководстве <i>Справочник по Rational Rose RealTime Java</i>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

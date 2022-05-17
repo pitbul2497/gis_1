@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Разработка решений на основании компонентов</title>
+<meta content="Concept" name="uma.type">
+<meta content="developing_component_solutions" name="uma.name">
+<meta content="Разработка решений на основании компонентов" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:3.2329841703462285E-305", path: ["3.2329841703462285E-305", "1.8262162566452063E-305", "1.8809435842664573E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "3.2329841703462285E-305", "1.8262162566452063E-305", "1.8809435842664573E-305"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.8809435842664573E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.8809435842664573E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "1.8262162566452063E-305", "1.8809435842664573E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.8809435842664573E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Разработка решений на основании компонентов</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../core.base_rup/guidances/concepts/resources/road_lg_dgm32.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Разработка на основании компонентов представляет собой разновидность общей разработки приложений. В данной рекомендации термин &quot;компонент&quot; используется для обозначения независимо разрабатываемого и размещаемого компонента.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h6>
+    <b><font size="2">Деятельность в течение жизненного цикла</font></b>
+</h6>
+<ol>
+    <li>
+        <a href="#Introduction">Введение</a>
+    </li>
+    <li>
+        <a href="#Inception Phase Activities">Деятельность на начальном этапе</a>
+    </li>
+    <li>
+        <a href="#Elaboration Phase Activities">Деятельность на этапе уточнения</a>
+    </li>
+    <li>
+        <a href="#Construction Phase Activities">Деятельность на этапе построения</a>
+    </li>
+    <li>
+        <a href="#Transition Phase Activities">Деятельность на этапе внедрения</a>
+    </li>
+</ol>
+<table>
+    <tbody>
+        <tr>
+            <td width="284" height="102">
+                <h6>
+                    <b><font size="2">Дополнительные разделы:</font></b>
+                </h6>
+                <ul>
+                    <li>
+                        <b>Концепции</b> 
+                        <ul>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/distribution_patterns_5A01CAF5.html" guid="6.137181182978733E-305">Шаблоны Распределения</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Рекомендации</b> 
+                        <ul>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/concurrency_3E796647.html" guid="1.5676516174458592E-304">Параллелизм</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/data_model_80FB2539.html" guid="3.4196799396281445E-306">Моделирование данных</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/analysis_class_7E97273E.html" guid="2.2738948033145062E-306">Раздел функциональности с помощью анализа классов</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/interface_18EF69A6.html" guid="3.6682388132488183E-305">интерфейсы</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/layering_FCCD1BDA.html" guid="4.458864982057142E-306">Уровни</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/software_architecture_document_F4C93435.html" guid="2.9494785550310917E-305">Архитектура программного обеспечения</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/unit_test_9A3F053.html" guid="9.315724622037552E-305">компоненты полнофункционального тестирования</a>
+                            </li>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/guidelines/design_subsystem_B26FD609.html" guid="1.2314266786534317E-305">использование подсистем проектирования для представления
+                                компонентов</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <b>Информационные бюллетени</b> 
+                        <ul>
+                            <li>
+                                <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/developing_large-scale_systems_with_the_rational_unified_process_7AA2AF65.html" guid="1.768223108034868E-305">разработка широкомасштабных систем, основанных на
+                                компонентах</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h1>
+    <font size="+0"><b><small><a id="Introduction" name="Introduction">Введение</a></small></b></font>
+</h1>
+<p class="node">
+    Разработка на основании компонентов представляет собой разновидность общей разработки приложений, в которой:
+</p>
+<blockquote>
+    <ul>
+        <li>
+            Приложение <b>строится из отдельных исполняемых компонентов</b>, которые <b>разрабатываются и размещаются
+            относительно независимо друг от друга</b>, возможно, различными коллективами.
+        </li>
+        <li>
+            Приложение может быть <b>обновлено малыми приращениями</b>, обновляя только некоторые из компонентов, которые
+            составляют приложение.
+        </li>
+        <li>
+            Компоненты могут быть общими для нескольких приложений, что создает возможности <b>повторного применения</b>,
+            но также и возможности <b>зависимостей между проектами</b>.
+        </li>
+        <li>
+            Основанные на компонентах приложения имеют тенденцию быть <b>распределенными</b>.
+        </li>
+    </ul>
+</blockquote>
+<p class="node">
+    На данной странице термин "компонент" используется для обозначения независимо разрабатываемого и размещаемого
+    компонента. Однако, в других документах RUP мы будем использовать термин "компонент" в более общем смысле, как описано
+    в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/component_A2E2B3B1.html" guid="3.524150980437479E-305">Концепции: Компонент</a> и при необходимости уточнять.
+</p>
+<p class="node">
+    Адаптация RUP к разработке на основании компонентов обсуждается ниже.
+</p>
+<h1>
+    <b><small><a id="Inception Phase Activities" name="Inception Phase Activities"><font size="+0">Деятельность на
+    начальном этапе</font></a></small></b>
+</h1>
+<p class="node">
+    Базовый поток операций для <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/inception_D506BCB4.html" guid="_vyZOwCVuEdqSZ9OimJ-AzA">начального этапа</a>
+    применим со следующими исключениями и уточнениями.
+</p>
+<h4>
+    <b>Управление проектами</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/conceive_new_project_E9B31C9F.html" guid="{76FD7B68-FC91-488D-BBF1-6FE58DBACB87}">Деятельность: Начало нового проекта</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/develop_business_case_F985B634.html" guid="{F7A5D34A-A8B1-466D-BE41-FFCD41B4430D}">Задача: Разработка экономическое обоснования проекта</a> уточнена
+            с учетом того, что использование компонентов изменяет стоимостную структуру разработки. В частности, стоимость
+            разработки компонентов снижается, но больше усилий затрачивается на идентификацию компонентов и проверку
+            выполнения требований к компонентам.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/evaluate_project_scope_and_risk_C777352.html" guid="{BADBA2C5-144D-482B-9B63-C95DA4DBD3E5}">Деятельность: Оценка рамок проекта и рисков</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            Компонентный подход меняет старые риски и добавляет новые, а именно:
+        </p>
+        <ul>
+            <li>
+                компоненты с исходным кодом вовне увеличивают риск, так как содержат важные элементы вне прямого контроля
+                коллектива проекта
+            </li>
+            <li>
+                компоненты с исходным кодом вовне снижают время разработки, и таким образом снижают риски, связанные с
+                ресурсами
+            </li>
+            <li>
+                компоненты с исходным кодом вовне могут изменять архитектуру системы, если они предполагают собственные
+                архитектурные требования
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/plan_the_project_DD2EE35.html" guid="{823EF41B-2BD1-464B-84DB-C7BD432636E2}">Деятельность: Планирование проекта</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            В <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/plan_phases_and_iterations_2AB1A5C9.html" guid="{43005DA9-D75E-464D-8AFC-AB9CACD92626}">Задаче: Планирование этапов и итераций</a> план может
+            предполагать разделение проекта на две параллельных задачи - разработка компонентов, связанных с приложением и
+            проблемной областью, расположенных в верхних уровнях архитектуры (обратитесь к разделу<a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/concepts/layering_59FD1CD4.html" guid="3.801315327549898E-305">Концепция: Уровни</a>) и разработка компонентов, не связанных с приложением и
+            проблемной областью, расположенных в нижних уровнях архитектуры. В некоторых случаях многоразовые компоненты
+            разрабатываются независимыми коллективами. Решение внедрить две параллельные задачи может быть обосновано
+            кадровыми и ресурсными соображениями и желанием управлять многоразовыми компонентами как активами, независимыми
+            от приложений, в которых они размещены.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Требования</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/refine_the_system_definition_E67B8011.html" guid="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">Деятельность: Уточнение определения системы</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            При уточнении требований к системе необходимо учитывать ограничения, связанные с выбранной структурой
+            компонентов. Структура компонентов частично улучшает производительность разработки, ограничивая степень
+            свободы, предлагаемую архитектором или проектировщиком программного обеспечения. <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/detail_software_requirements_A7F0A215.html" guid="{A1FA1E95-8028-42EB-9B92-0DA77380F3E1}">Задача: Требования к сведениям и программному обеспечению</a>
+            должны сосредоточиваться на документации этих ограничений.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Тестирование</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/define_evaluation_mission_611C79D9.html" guid="{10C2C34C-BF5E-4825-A7DC-5E106EFAA4C5}">Деятельность: Определение миссии оценки</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            Необходимо создать план тестирования, определяющий планируемое тестирование проекта, называемый "Главный план
+            тестирования"
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Среда</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/prepare_environment_for_project_5F602A4.html" guid="{37A50EF5-CC73-4E38-B851-997879548110}">Деятельность: Подготовка среды для проекта</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            При сборе и подготовке рекомендаций для проекта обратитесь к документу <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/prepare_project_specific_guidelines_A9AD00DB.html" guid="{1E706674-C1E7-4F8D-BF06-35FFE49C5E42}">Задача: Подготовка рекомендаций для проекта</a> за подробной
+            информацией; &nbsp;учитывайте специфику структуры компонентов и наложенные этим ограничения. Рекомендации
+            должны включать информацию, как проектировать и программировать с помощью структуры. Также они должны содержать
+            указания по проверке согласованности <b>одновременно</b> со структурой компонентов и интерфейсами,
+            определенными между компонентами.
+        </p>
+    </li>
+</ul>
+<h1>
+    <b><small><a id="Elaboration Phase Activities" name="Elaboration Phase Activities"><font size="+0">Деятельность на
+    этапе уточнения</font></a></small></b>
+</h1>
+<p class="node">
+    Базовый поток операций для <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/elaboration_6A203A50.html" guid="_-kFhcCVuEdqSZ9OimJ-AzA">этапа уточнения</a>
+    применим со следующими исключениями и уточнениями:
+</p>
+<h4>
+    <b>Требования</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/refine_the_system_definition_E67B8011.html" guid="{0FEE5795-6090-4D82-9BDB-925E5F0D9985}">Деятельность: Уточнение определения системы</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/detail_software_requirements_A7F0A215.html" guid="{A1FA1E95-8028-42EB-9B92-0DA77380F3E1}">Задача: Детализация программных требований</a> также уделяет
+            внимание техническим и не функциональным требованиям и ограничениям, наложенным на компоненты, которые
+            создаются или покупаются. Специальные не функциональные требования это - размер, быстродействие, занимаемое
+            место в памяти или на диске, аспекты лицензирования среды выполнения и подобные ограничения, которые влияют на
+            выбор и создание компонентов.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Анализ и проектирование</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/define_a_candidate_architecture_A3651DA3.html" guid="{71ADFE9A-34A0-41BD-8A17-BEA3210E2BBD}">Деятельность: Определение архитектуры кандидата</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/architectural_analysis_2B9BE03.html" guid="{8CB48402-D4C5-4E17-BB33-507315CB1BBF}">Задача: Архитектурный анализ</a> использует структуру компонентов
+            и технические и не функциональные требования для определения начальной архитектуры, включая начальную схему
+            уровней и набор по умолчанию компонентов и служб, представленный как механизм анализа и проектирования. <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/use_case_analysis_A6990185.html" guid="{28014615-A62F-452D-B821-30C7CAB0EC44}">Задача: Анализ вариантов использования</a> уделяет внимание
+            определению архитектурно важных компонентов из архитектурно важных вариантов использования.
+        </p>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/refine_the_architecture_F40FA195.html" guid="{F2160C54-F666-4736-9982-FC7F58F15FAD}">Деятельность: Уточнение архитектуры</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/structure_implementation_model_E0E0DEF9.html" guid="{35272424-8A0A-4DDD-BA74-C91B80A8D046}">Задача: Структурирование модели реализации</a> устанавливает
+            модель реализации, совместимую со структурой компонентов, а также структурой и функциями коллектива/ов
+            разработчиков.
+        </p>
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/identify_design_mechanisms_9A197FBC.html" guid="{C7A26BD7-3820-48D9-830F-684C3AF155F9}">Задача: Идентификация механизмов проектирования</a> уточняет
+            первичные механизмы проектирования для учета специальных структурных служб и компонентов.
+        </p>
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/identify_design_elements_E884AB82.html" guid="{97D7343A-6993-4AB7-8F86-4DAC8C9075C8}">Задача: Идентификация элементов проектирования</a> идентифицирует
+            наибольший, архитектурно важный компонент системы. Потенциально многоразовые полномочия должны быть
+            сгруппированы вместе для улучшения многоразовости; функциональность, связанная с приложением необходимо
+            отделить от функциональности, связанной с проблемной областью и функциональности, не связанной с приложением и
+            проблемной областью. Для целей проектирования компоненты могут быть представлены как <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_design_subsystem_1A8D169B.html" guid="{A3C60B25-9780-4BFA-81AF-C1AD40D8A833}">Рабочие продукты: Подсистемы проектирования</a>. <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_interface_9816B54F.html" guid="{C6938487-1DAA-4F6A-B3BC-CB99165F0680}">Рабочий продукт: Интерфейсы</a> должен быть идентифицирован для
+            этих компонентов/подсистем.
+        </p>
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/incorporate_design_elements_D3C582B5.html" guid="{5C647173-4E32-4594-96A9-2548B47722FA}">Задача: Объединение существующих элементов проектирования</a>
+            обеспечивает совместимость и согласованность идентифицированных компонентов с существующими компонентами,
+            идентифицированными на ранних итерациях в структуре или во внешних источниках.
+        </p>
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/describe_runtime_architecture_2F8E190.html" guid="{4D35C038-A2D0-48B8-9ECD-52717FEAE33A}">Задача: Описание архитектуры среды выполнения</a> описывает
+            базовые процессы и потоки архитектуры структуры компонентов, а <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/describe_distribution_9BA1477C.html" guid="{6A112808-0A90-427A-BAB9-E14F3FBF72B5}">Задача: Описание распределения</a> описывает распределенную среду
+            обработки, в которой будут выполнятся компоненты приложения.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/design_components_13B33BFC.html" guid="{9C683674-97C1-4AEE-8DB0-9514AEFF698E}">Деятельность: Компоненты проектирования</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/subsystem_design_5D1BCC0C.html" guid="{CAA385CA-2BA2-40F2-8FE3-E21089D02119}">Задача: Проектирование подсистемы</a> дополнительно уточняет
+            проекты компонентов, идентифицируя классы внутри компонентов, которые предоставляют реальное поведение
+            компонентов. На ранних стадиях этапа Уточнение возможно наличие одного класса, наподобие 'подсистемы/компонента
+            proxy', который служит заготовкой, стимулирующей поведение компонентов для целей архитектурного макетирования.
+            Позже поведение этого класса распределяется на кооперирование классов, содержащихся в подсистеме. Эти
+            содержащиеся классы уточняются в <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/class_design_98F20FF9.html" guid="{27AE0601-2E95-4A6A-8EB3-0A4BA8E5626B}">Задаче:
+            Проектирование классов</a>.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/design_the_database_2BE59DB0.html" guid="{FB3EB753-A979-4849-B57B-97F39271F82B}">Деятельность: Проектирование базы данных</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            Цель уточнения сводится к обеспечению расширяемости стратегии поддержки постоянных объектов и проектировании
+            механизма поддержки таким образом, чтобы его ресурсы были адекватны масштабу разрабатываемой системы.
+            Постоянные классы идентифицированы и отображены на механизмы хранения. Варианты использования, содержащие много
+            данных, анализируются для обеспечения достаточной расширяемости механизма. Совместно с тестированием
+            выполняются анализ и проверка механизма поддержки постоянных объектов и структуры базы данных.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Реализация</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/implement_components_AFD1799D.html" guid="{4DC6F53E-1FE1-44EE-812B-003D3BD1ACEA}">Деятельность: Реализация компонентов</a> 
+        <p class="node">
+            <a class="elementLinkWithUserText" href="./../../../core.base_rup/tasks/implement_component_AE366827.html" guid="{3293F4F7-EFCD-4476-BFF1-81AC3812B512}">Задача: Реализация элементов проектирования</a> должна
+            соответствовать ограничениям, наложенным структурой компонентов, как описано в рекомендациях по
+            программированию, являющихся частью документа <a class="elementLinkWithUserText" href="./../../../core.base_rup/workproducts/rup_project_specific_guidelines_8DC8DA32.html" guid="{E5501201-7EE6-4243-AE91-73880FF76FC1}">Рабочий продукт: Проектно-ориентированные рекомендации</a>. На
+            этапе уточнения большинство компонентов содержат программные заготовки, так как реализация уделяет внимание
+            проверке архитектуры, а не производству законченного исходный кода.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Тестирование</b>
+</h4>
+<ul>
+    <li>
+        Деятельность: <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/define_evaluation_mission_611C79D9.html" guid="{10C2C34C-BF5E-4825-A7DC-5E106EFAA4C5}">Определение миссии оценки</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/verify_test_approach_A743008A.html" guid="{7BD514AF-19F9-408F-8279-309BD153C157}">Проверка метода тестирования</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/test_and_evaluate_4D17BD6A.html" guid="{93B7D625-C83A-4EFB-9772-B88F2EB02CE2}">Тестирование и оценка</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/achieve_acceptable_mission_18DE9944.html" guid="{5DA9C9E9-1538-4433-8B57-B28667D67514}">Приемлемо выполнимая Задача</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/improve_test_assets_1C99FFB9.html" guid="{CD77CBDA-CC13-4593-BB81-41AF3FF7A84C}">Улучшение тестовых активов</a> 
+        <p class="node">
+            Тестирование при уточнении имеет дело с проверкой архитектуры. Для системы, основанной на компонентах, это
+            означает следующее:
+        </p>
+        <ul>
+            <li>
+                непрерывная диагностика интерфейса между компонентами для обеспечения адекватности границ компонентов
+            </li>
+            <li>
+                акцент на тестировании быстродействия, особенно, быстродействия масштабирования для того чтобы обеспечить
+                обработку больших объемов данных
+            </li>
+        </ul><br />
+         
+        <p class="node">
+            Любое предположение в структуре компонентов требует оценки. Обычно это включает расширяемость и пропускную
+            способность механизмов хранения и транзакций, в которых скрытые предположения, сделанные проектировщиком
+            механизма часто размывают архитектуру приложения, если предположение не понимается.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Управление проектами</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/plan_for_next_iteration_55840038.html" guid="{8040B743-6467-4067-8C0F-E62C3DE99414}">Деятельность: Планирование следующей итерации</a> 
+        <p class="node">
+            Используя подсистему реализации как 'логическую единицу ответственности', работа по созданию может быть
+            разделена на два или более параллельных "пути" - один, связанный с функциональностью, связанной с приложением и
+            другой (или другие), имеющий дело с общими многоразовыми компонентами. Конечно, это зависит от наличия ресурсов
+            для запуска параллельных разработок. Возможность разделить коллективы разработчиков и работать параллельно
+            зависит от стабильности архитектуры и качества интерфейсов между компонентами. Для такого разделения на этапе
+            уточнения потребуются значительные усилия.
+        </p>
+    </li>
+</ul>
+<h1>
+    <b><small><a id="Construction Phase Activities" name="Construction Phase Activities"><font size="+0">Деятельность на
+    этапе построения</font></a></small></b>
+</h1>
+<p class="node">
+    Базовый поток операций для <a class="elementLinkWithUserText" href="./../../../core.base_rup/customcategories/construction_102AF1EA.html" guid="_SkuIwCVwEdqSZ9OimJ-AzA">этапа построения</a>
+    применим со следующими исключениями и уточнениями.
+</p>
+<h4>
+    <b>Управление проектами</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/plan_for_next_iteration_55840038.html" guid="{8040B743-6467-4067-8C0F-E62C3DE99414}">Деятельность: Планирование следующей итерации</a> 
+        <p class="node">
+            Планирование первой итерации построения было объяснено ранее, т.к. оно начинается при завершении уточнения.
+            Планирование итераций и возможность разделить коллективы разработчиков и работать параллельно зависит от
+            стабильности архитектуры и качества интерфейсов между компонентами.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Анализ и проектирование</b>
+</h4>
+<ul>
+    <li>
+        <b><a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/refine_the_architecture_F40FA195.html" guid="{F2160C54-F666-4736-9982-FC7F58F15FAD}">Деятельность: Уточнение архитектуры</a> и <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/design_components_13B33BFC.html" guid="{9C683674-97C1-4AEE-8DB0-9514AEFF698E}">Деятельность: Проектирование компонентов</a></b> 
+        <p class="node">
+            Цель построения - анализ оставшихся вариантов использования и идентификации соответствующего кооперирования
+            компонентов, которое реализуют варианты использования. Существующая архитектура расширяется и дополняется и
+            'внутреннее поведение' компонентов проектируется и реализуется.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/design_the_database_2BE59DB0.html" guid="{FB3EB753-A979-4849-B57B-97F39271F82B}">Деятельность: Проектирование базы данных</a> 
+        <p class="node">
+            Цель построения - завершение проектирования базы данных, обеспечение того, что постоянные классы поддерживаются
+            как базой данных, так и механизмом поддержки постоянных объектов. Эта часть работы выполняется итерационно и
+            параллельно с <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/refine_the_architecture_F40FA195.html" guid="{F2160C54-F666-4736-9982-FC7F58F15FAD}">Деятельностью: Уточнение архитектуры</a> и <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/design_components_13B33BFC.html" guid="{9C683674-97C1-4AEE-8DB0-9514AEFF698E}">Деятельностью: Проектирование компонентов</a>. Для обеспечения
+            качественного проектирования базы данных необходимо иметь взаимодействие между коллективами, разрабатывающими
+            компоненты, по вопросу поддержки постоянных объектов.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Реализация</b>
+</h4>
+<ul>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/implement_components_AFD1799D.html" guid="{4DC6F53E-1FE1-44EE-812B-003D3BD1ACEA}">Деятельность: Реализация элементов проектирования</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            Данная работа подобна этапу уточнения, но детализация повышается с углублением этапа.
+        </p>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/integrate_each_subsystem_B9835A47.html" guid="{26723872-54F2-48C0-8384-0F595BD86EAD}">Деятельность: Объединение каждой подсистемы</a> и <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/integrate_the_system_255F6819.html" guid="{1EBA0F67-240A-4402-B830-4DB0FDFEEB9D}">Деятельность: Объединение системы</a>
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <p class="node">
+            Система постепенно строится с продвижением этапа.
+        </p>
+    </li>
+</ul>
+<h4>
+    <b>Тестирование</b>
+</h4>
+<ul>
+    <li>
+        Деятельность: <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/define_evaluation_mission_611C79D9.html" guid="{10C2C34C-BF5E-4825-A7DC-5E106EFAA4C5}">Определение цели оценки</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/verify_test_approach_A743008A.html" guid="{7BD514AF-19F9-408F-8279-309BD153C157}">Проверка метода тестирования</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/validate_build_stability_72BD9103.html" guid="{0AE0042B-034C-4296-9FA0-D9DCC61FC7B4}">Проверка стабильности компоновки</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/test_and_evaluate_4D17BD6A.html" guid="{93B7D625-C83A-4EFB-9772-B88F2EB02CE2}">Тестирование и оценка</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/achieve_acceptable_mission_18DE9944.html" guid="{5DA9C9E9-1538-4433-8B57-B28667D67514}">Приемлемо выполнимая задача</a>, <a class="elementLinkWithUserText" href="./../../../core.base_rup/capabilitypatterns/improve_test_assets_1C99FFB9.html" guid="{CD77CBDA-CC13-4593-BB81-41AF3FF7A84C}">Улучшение тестовых активов</a>.
+    </li>
+</ul>
+<div style="MARGIN-LEFT: 2em">
+    <p class="node">
+        Тестирование быстродействия важно, но акцент смещается в сторону функционального тестирования. Необходимо учитывать
+        полноту функциональности, регрессивное тестирование существующей функциональности, а также согласование с
+        ожиданиями по быстродействию.
+    </p>
+</div>
+<h1>
+    <b><small><a id="Transition Phase Activities" name="Transition Phase Activities"><font size="+0">Деятельность на этапе
+    внедрения</font></a></small></b>
+</h1>
+<ul>
+    <li>
+        <b>Выпуск продукта</b> в среде Web становится пошаговым и непрерывным, а также меньше зависит от традиционной
+        системы распределения и носителей. Планирование выпуска должно быть приведено в соответствие.
+    </li>
+    <li>
+        <b>Поддержка продукта</b> - это основное на данном этапе.
+    </li>
+    <li>
+        Выполняется <b>деятельность по преобразованию данных</b>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Заглушки</title>
+<meta content="Concept" name="uma.type">
+<meta content="stubs" name="uma.name">
+<meta content="Заглушки" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.347489919609074E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.347489919609074E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="6.347489919609074E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Заглушки</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом разделе обсуждается создание заглушек, которые применяются в качестве заменителей еще не разработанных компонентов. Заглушка - это компонент, который не делает ничего кроме того, что объявляет себя и набор принимаемых параметров. Заглушка содержит минимум кода, необходимого для ее компиляции и компоновки с остальными компонентами.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_stub_5B2BA807.html" guid="{6EF8936C-371E-4B2D-B172-0AF461980480}">Заготовка теста</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_stubs__concept_of" name="XE_stubs__concept_of"></a><a id="XE_test__stubs__concept_of" name="XE_test__stubs__concept_of"></a><a id="XE_test__developer_testing__stubs__concept_of" name="XE_test__developer_testing__stubs__concept_of"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    Тестирование компонента заключается в подаче входных данных в его интерфейс, ожидании ответа компонента и проверки
+    полученных результатов. В процессе работы компоненты часто пользуются другими компонентами, передают им данные и
+    используют полученную от них информацию:
+</p>
+<p align="center">
+    <img height="283" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/concepts/resources/co_stubs-img1.gif" width="356" />
+</p>
+<p class="picturetext">
+    Рисунок 1: Тестирование реализованного компонента
+</p>
+<p>
+    Эти другие компоненты могут вызывать сложности при тестировании:
+</p>
+<ol>
+    <li>
+        Они могут быть еще не реализованы.
+    </li>
+    <li>
+        В них могут быть ошибки, нарушающие работу тестов, причем на выяснение того, что ошибка была вызвана не
+        тестируемым, а зависимым компонентом, может уйти много времени и усилий.
+    </li>
+    <li>
+        Компоненты могут затруднять тестирование тогда, когда это действительно надо. Например, если компонент -
+        коммерческая база данных, у вас может оказаться недостаточно лицензий для всех пользователей. Другой пример:
+        компонент может представлять собой аппаратное обеспечение, доступное только в определенные промежутки времени в
+        определенной лаборатории.
+    </li>
+    <li>
+        Компоненты могут настолько замедлить тестирование, что станет невозможно выполнять тесты достаточно часто.
+        Например, инициализация базы данных может занимать пять минут.
+    </li>
+    <li>
+        Может быть сложно поставить компонент в условия, при которых он выдаст ожидаемый от него результат. Например, перед
+        вами может стоять задача протестировать обработку сообщения "диск переполнен" для всех методов, осуществляющих
+        запись на диск. Как гарантировать, что диск будет заполнен именно на момент вызова нужного метода?
+    </li>
+</ol>
+<p>
+    Во избежание возникновения таких сложностей можно пользоваться <b>заглушками</b> компонентов (другое название заглушек
+    - <b>имитаторы</b>). Заглушки должны вести себя так же, как вели ли бы себя реальные компоненты, на тех входных данных,
+    которые они могут получить в ходе тестирования. Однако это только задача-минимум: в качестве заглушек можно
+    использовать и полноценные <b>эмуляторы</b>, с максимальной точностью имитирующие поведение реального компонента.
+    Например, довольно часто имеет смысл создание программных заглушек для аппаратного обеспечения. Они будут вести себя
+    точно так же, как аппаратное обеспечение, только работать медленнее. Применение таких заглушек упрощает отладку,
+    снимает проблему недостатка единиц оборудования, и наконец, ими можно пользоваться еще до завершения разработки
+    оборудования.
+</p>
+<p align="center">
+    <img height="283" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/concepts/resources/co_stubs-img2.gif" width="356" />
+</p>
+<p class="picturetext">
+    Рисунок 2: Тестирование компонента с заглушкой вместо компонента, от которого он зависит
+</p>
+<p>
+    У заглушек есть два недостатка.
+</p>
+<ol>
+    <li>
+        Заглушки могут быть дорогостоящими (это особенно актуально для эмуляторов). Поскольку заглушки сами по себе
+        представляют программное обеспечение, они нуждаются в обслуживании.
+    </li>
+    <li>
+        Заглушки могут маскировать ошибки. Например, предположим, что ваш компонент пользуется тригонометрическими
+        функциями, но к настоящему моменту соответствующая библиотека еще не разработана. Вы пользуетесь тремя тестами для
+        вычисления синуса трех углов: 10 градусов, 45 градусов и 90 градусов. Вы находите нужные значения с помощью
+        калькулятора и строите заглушку функции синуса, которая возвращает на эти входные параметры значения 0,173648178,
+        0,707106781 и 1,0, соответственно. Все прекрасно работает до момента интеграции компонента в готовую библиотеку, в
+        которой функция синуса принимает на входе значения в <i>радианах</i> и возвращает значения -0,544021111,
+        0,850903525 и 0,893996664. В итоге вы обнаруживаете ошибку в коде позже и потратив больше усилий, чем хотелось бы.
+    </li>
+</ol>
+<h3>
+    <a id="SoftwareDesignwithStubs" name="SoftwareDesignwithStubs">Заглушки и практика разработки программного
+    обеспечения</a>
+</h3>
+<p>
+    Иногда заглушки создаются только потому, что реальный компонент еще не доступен на момент тестирования. Во всех
+    остальных случаях заглушки следует сохранять после завершения разработки. Скорее всего, тесты, поддерживаемые
+    заглушками, будут важны при обслуживании продукта. Поэтому качество заглушек должно быть выше, чем качество кода на
+    выброс. Хотя к качеству заглушек не предъявляются настолько жесткие требования, как к коду продукта (например,
+    большинство заглушек не нуждается в собственных тестах), в дальнейшем некоторые из них придется обслуживать в процессе
+    изменения продукта. Если обслуживание будет требовать слишком больших усилий, заглушки будут выброшены, и инвестиции в
+    них будут потеряны.
+</p>
+<p>
+    Заглушки влияют на структуру компонентов - особенно в случаях, когда они сохраняются на будущее. Например, предположим,
+    что компонент будет хранить пары из ключей и значений в базе данных. Сравним два сценария разработки:
+</p>
+<p>
+    <b>Сценарий 1: база данных используется как для тестирования, так и для работы.</b> . Существование базы данных не
+    нужно скрывать от компонента. Можно даже инициализировать компонент с именем базы данных:
+</p>
+<p>
+    <!--webbot bot="HTMLMarkup" startspan -->
+</p>
+<pre>
+ public Component(<b>
+<font color="#ff0000">
+String databaseURL</font></b>) 
+ {
+    try 
+    {  
+       databaseConnection = DriverManager.getConnection(databaseURL);
+       ... 
+    } catch (SQLException e) {...}     
+ }
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+И хотя вряд ли вы будете пользоваться операторами SQL для всех операций чтения и записи значений, почти наверняка операторы
+SQL будут, по крайней мере, в нескольких методах. Например, компонент, нуждающийся в значении, может вызывать следующий
+метод: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+ public String get(String key) 
+ { 
+    try 
+    {     
+       Statement stmt = databaseConnection.createStatement();
+       ResultSet rs = stmt.executeQuery(<b>
+<font color="#ff0000">
+"SELECT value FROM Table1 WHERE key=" + key</font></b>);           
+       ... 
+    } catch (SQLException e) {...} 
+ }
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+<b>Сценарий 2: в целях тестирования база данных заменена заглушкой.</b> Код компонента должен быть независим от того, с чем
+он работает: с реальной базой данных или с заглушкой. Поэтому в коде должны применяться методы абстрактного интерфейса:
+<br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+ <b>
+<font color="#ff0000">
+interface KeyValuePairs</font></b> 
+  { 
+     String <b>
+<font color="#ff0000">
+get</font></b>(String key);
+     void <b>
+<font color="#ff0000">
+put</font></b>(String key, String value);
+  }
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+В тестах пары из ключей и значений <b>KeyValuePairs</b> будут реализованы с помощью какой-нибудь простой конструкции,
+например таблицы:<br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+ <b>
+<font color="#ff0000">
+class FakeDatabase implements KeyValuePairs</font></b>  
+     { 
+        Hashtable table = new Hashtable(); 
+        public String <b>
+<font color="#ff0000">
+get</font></b>(String key) {return (String) table.get(key); } 
+        public void <b>
+<font color="#ff0000">
+put</font></b>(String key, String value) {table.put(key, value); }
+     }
+</pre>
+<!--webbot bot="HTMLMarkup" endspan -->За исключением периода тестирования, компонент будет пользоваться адаптером,
+преобразующим вызовы <font size="+0">KeyValuePairs</font> в операторы SQL: <br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+ <b>
+<font color="#ff0000">
+class DatabaseAdapter implements KeyValuePairs</font></b> 
+    { 
+      private Connection databaseConnection; 
+      public DatabaseAdapter(String databaseURL) 
+      {     
+        try 
+        {         
+          databaseConnection = DriverManager.getConnection(databaseURL);
+          ...     
+        } catch (SQLException e) {...} 
+      } 
+      public String <b>
+<font color="#ff0000">
+get</font></b>(String key) 
+      {     
+        try 
+        {         
+          Statement stmt = databaseConnection.createStatement();         
+          ResultSet rs = stmt.executeQuery("SELECT value FROM Table1 WHERE key=" + key);         
+          ...     
+        } catch (SQLException e) {...} 
+      } 
+      public void <b>
+<font color="#ff0000">
+put</font></b>(String key, String value) {... }     
+    }
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+У компонента может быть один и тот же конструктор для тестирования и реальной эксплуатации. Этот конструктор может
+принимать имя объекта, реализующего <font size="+0">KeyValuePairs</font>. Как вариант, конструктор может предоставлять
+данный интерфейс только для тестирования и требовать, чтобы реальные клиенты компонента передавали имя базы данных: \<br />
+<!--webbot bot="HTMLMarkup" startspan -->
+<pre>
+ class Component 
+ { 
+    <b>
+<font color="#ff0000">
+public</font></b> Component(String databaseURL) 
+    {     
+       this.valueStash = new DatabaseAdapter(databaseURL); 
+    } // For testing. <b>
+<font color="#ff0000">
+protected</font></b> 
+    Component(KeyValuePairs valueStash) 
+    {     
+       this.valueStash = valueStash; 
+    }     
+ }
+</pre>
+<!--webbot bot="HTMLMarkup" endspan --><br />
+Поэтому с точки зрения программиста получилось, что два сценария проекта порождают один и тот же API, но один из этих
+сценариев проще в тестировании. К тому же учтите, что некоторые тесты могут пользоваться реальной базой данных, а некоторые
+- заглушкой. 
+<h3>
+    <a id="FurtherInformation" name="FurtherInformation">Дополнительная информация</a>
+</h3><br />
+Дополнительную информацию о заглушках можно найти в следующих источниках: 
+<ul>
+    <li>
+        <a href="http://www.connextra.com/aboutUs/mockobjects.pdf" target="_blank"><i>Endo-Testing: Unit testing with Mock
+        Objects</i></a>, "eXtreme Programming and Flexible Processes in Software Engineering - XP2000". &copy; 2000 Tim
+        Mackinnon, Steve Freeman, Philip Craig.
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <br />
+         (<a href="http://www.adobe.com/products/acrobat/alternate.html" target="_blank">Загрузить Adobe Reader</a>)
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_quality_architect_3444CDC5.html" guid="{11A91795-5221-4C65-A9DE-EE431CEA6993}">Инструмент: Rational QualityArchitect</a>
+    </li>
+    <li>
+        <a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_test_realtime_861C5353.html" guid="{18E6764A-2366-4F59-A5F2-FDF4891EBCE9}">Инструмент: Rational Test RealTime</a><br />
+        <br />
+    </li>
+</ul><br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

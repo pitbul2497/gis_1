@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Анализ и наблюдение во время выполнения</title>
+<meta content="Concept" name="uma.type">
+<meta content="runtime_observation_analysis" name="uma.name">
+<meta content="Анализ и наблюдение во время выполнения" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.56167289202945E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.56167289202945E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="6.56167289202945E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Анализ и наблюдение во время выполнения</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом разделе приведены сведения об анализе программного обеспечения и наблюдении за ним во время выполнения. Речь идет о наблюдении выполняемого программного обеспечения и статистическом анализе трассировочных данных отдельных компонентов и системы в целом.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_implementer_D145E819.html" guid="{75501BAA-0CCE-4852-A7B2-B10CA71C002A}">Реализатор</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_runtime_observation_amp;_analysis__concept" name="XE_runtime_observation_&_analysis__concept"></a> 
+<h3>
+    <a id="Introduction" name="Introduction">Введение</a>
+</h3>
+<p>
+    Наблюдение за компонентами программного обеспечения во время выполнения и анализ их поведения играют важную роль в
+    отладке программного обеспечения. Понимание поведения программного обеспечения во время выполнения складывается из двух
+    ключевых компонентов:
+</p>
+<ul>
+    <li>
+        Наблюдение за программным обеспечением во время выполнения.
+    </li>
+    <li>
+        Анализ данных, собранных во время наблюдения.
+    </li>
+</ul>
+<p>
+    Методики анализа и наблюдения не зависят от тестирования в том смысле, что для наблюдения не нужны ни тестовые данные,
+    ни применение специализированных технологий тестирования. Однако элементы тестирования можно объединить с инструментами
+    и методиками наблюдения: например, можно пользоваться инструментами автоматизации наблюдения для улучшения видимости
+    поведения компонентов во время тестирования.
+</p>
+<h3>
+    <a id="RuntimeObservation" name="RuntimeObservation">Наблюдение за поведением системы во время выполнения</a>
+</h3>
+<p>
+    Хотя наблюдению подлежат все аспекты поведения выполняемого программного обеспечения, некоторые аспекты заслуживают
+    особенно пристального внимания. Как правило, это следующие аспекты:
+</p>
+<ul>
+    <li>
+        Точки принятия решений, в которых осуществляется ветвление внутренней логики программы.
+    </li>
+    <li>
+        Точки завершения, в которых заканчивается выполнение важных логических цепей и изменяется состояние среды
+        программного обеспечения.
+    </li>
+    <li>
+        Точки взаимодействия независимых компонентов приложения.
+    </li>
+    <li>
+        Точки взаимодействия программного обеспечения со средой выполнения, включая интерфейсы к аппаратному обеспечению.
+    </li>
+</ul>
+<p>
+    Эти точки наблюдения могут совпадать с точками управления, в которых желательны изменение состояния приложения или
+    передача управления по логическим путям. Такие точки часто называют точками управления и наблюдения (Points of Control
+    and Observation, PCO).
+</p>
+<p>
+    При наблюдении за выполнением программного обеспечения практически не используются методы статического наблюдения,
+    связанные с проверкой исходного кода программного обеспечения, взаимосвязей между компонентами программного обеспечения
+    в визуальных моделях и т.п. Вместо этого используются исполняемые файлы компонентов программного обеспечения, что
+    позволяет собирать ценную информацию о поведении компонента в среде тестирования или в рабочей среде, недоступную для
+    других технологий отладки. Информацию, полученную при наблюдении, можно использовать в совокупности с данными
+    статического анализа.
+</p>
+<h3>
+    <a id="RuntimeAnalysis" name="RuntimeAnalysis">Анализ данных наблюдения времени выполнения</a>
+</h3>
+<p>
+    Цель анализа программного обеспечения во время наблюдения заключается в понимании поведения компонентов программного
+    обеспечения путем анализа данных, собранных во время выполнения компонента. Наблюдение и анализ времени выполнения -
+    одни из важнейших составляющих отладки разрабатываемых компонентов.
+</p>
+<h3>
+    <a id="AutomatedToolSupport" name="AutomatedToolSupport">Поддержка инструментов автоматизации</a>
+</h3>
+<p>
+    Наблюдение времени выполнения сопряжено со сбором огромного объема низкоуровневых данных за короткие промежутки времени
+    и сложностями интерпретации этих данных. Поэтому поддержка средств автоматизации приобретает первоочередную важность.
+    Поддержка средств автоматизации может быть реализована различными способами, и в настоящее время на рынке доступно
+    много различных инструментов, экономящих время, упрощающих работу и избавляющих от необходимости создавать такие
+    инструменты с нуля.
+</p>
+<p>
+    Дополнительные сведения об инструментах наблюдения и анализа во время выполнения приведены в разделе <a class="elementLinkWithUserText" href="./../../../core.base_rup/tools/rup_purifyplus_CABB5CD4.html" guid="{F86573D5-C2E6-4E4F-9B29-23CC99B2BB8D}">PurifyPlus</a>.<br />
+    <br />
+</p><br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

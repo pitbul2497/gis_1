@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Дескриптор</title>
+<meta content="Concept" name="uma.type">
+<meta content="descriptor" name="uma.name">
+<meta content="Дескриптор" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:3.2329841703462285E-305", path: ["3.2329841703462285E-305", "_uDU1oASEEdq61bDkWg1SXw", "_AtM0gBTQEdqrUt4zetC1gg", "_5V9HEBUEEdqrUt4zetC1gg"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "3.2329841703462285E-305", "_uDU1oASEEdq61bDkWg1SXw", "_AtM0gBTQEdqrUt4zetC1gg", "_5V9HEBUEEdqrUt4zetC1gg"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_5V9HEBUEEdqrUt4zetC1gg"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "_5V9HEBUEEdqrUt4zetC1gg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_5V9HEBUEEdqrUt4zetC1gg"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Дескриптор</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Дескриптор - это элемент процесса, описывающий применение элемента наполнения метода в процессе. В дескрипторе можно переопределить или расширить исходный элемент наполнения метода. Предусмотрены дескрипторы ролей, задач и продуктов работы. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Дескриптор представляет собой экземпляр конкретного элемента наполнения (задачи, роли или продукта работы) в операции.
+    Дескрипторы выступают в роли промежуточных агентов этих элементов наполнения в структуре процесса. Дескрипторы
+    допускают переопределение структурных взаимосвязей элементов наполнения и формирование нестандартных связей.
+</p>
+<p>
+    Дескрипторы применяются для отделения процессов от наполнения метода. Дескриптор можно назвать ссылкой на конкретный
+    элемент наполнения, располагающей собственным комплектом свойств и взаимосвязей. Сразу после создания набор
+    взаимосвязей дескриптора совпадает с набором взаимосвязей элемента наполнения, на который ссылается этот дескриптор.
+    Однако набор взаимосвязей дескриптора можно изменить, если это требуется для процесса, в котором применяется
+    дескриптор. Механизм дескрипторов позволяет создавать новые взаимосвязи и свойства, привязанные к конкретным процессам.
+    Дескрипторы не являются элементами наполнения и не располагают собственными полными описаниями. Они представляют собой
+    ссылки на элементы наполнения, на основе которых они построены.
+</p>
+<h3>
+    Пример&nbsp;
+</h3>
+<p align="center">
+    <img alt="Пример использования наполнения метода с помощью дескриптора" src="./../../../core.base_concepts/guidances/concepts/resources/descriptors_uml.gif" />
+</p>
+<p align="center">
+    Пример использования наполнения метода с помощью дескриптора
+</p>
+<p>
+    <br />
+     На следующем рисунке показан пример представления профайла UML 2.0 в архитектуре UMA.&nbsp;В этом примере дескрипторы
+    созданы для задачи, связанных с ней ролей, а также входных и выходных продуктов работы. В Задача "Prioritize Use Cases"
+    по-разному выполняется на начальном этапе и на этапе уточнения (то есть, основное внимание уделяется разным шагам,
+    используются разные входные данные и т.п.). . В частности, можно отметить следующее:
+</p>
+<ul>
+    <li>
+        На этапе развертывания в задаче есть дополнительная роль (Customer.Project Manager) и нет связи с продуктом работы
+        Список рисков, который был указан в качестве необязательного ввода в наполнении метода (таким образом, не
+        выполняются шаги, связанные с обработкой списка рисков).
+    </li>
+    <li>
+        Применяются два типа продуктов работы Модели вариантов: обычная модель с кратким описанием вариантов на начальном
+        этапе и подробная модель вариантов на этапе уточнения.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2005&nbsp;Все права защищены
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Описание архитектуры выполнения с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="describing_run_time_architecture" name="uma.name">
+<meta content="Описание архитектуры выполнения с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{C58782ED-003F-4E87-9A50-D01DDBE4A5AF}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Описание архитектуры выполнения с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается выполнение описания архитектуры выполнения с помощью Rational XDE Developer.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/describe_runtime_architecture_2F8E190.html" guid="{4D35C038-A2D0-48B8-9ECD-52717FEAE33A}">Создание описания архитектуры среды выполнения</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Эта памятка поддерживает выполнение описания&nbsp;архитектуры выполнения&nbsp;с помощью Rational XDE Developer - Java
+    Platform Edition.
+</p>
+<ul>
+    <li>
+        Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения определенных задач.
+    </li>
+    <li>
+        Ссылки на разделы электронной справки XDE помечены с помощью значка <img alt="справочника"         src="./../../../core.base_rup/resources/helpbook.gif" />.
+    </li>
+    <li>
+        В этой памятке по инструменту выполняются следующие шаги:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                <a href="#Analyze Concurrency Requirements">Анализ требований параллелизма</a>
+            </li>
+            <li>
+                <a href="#IdentifyProcessesAndThreads">Идентификация процессов и нитей</a>
+            </li>
+            <li>
+                <a href="#Identify Process Lifecycles">Идентификация жизненных циклов процессов</a>
+            </li>
+            <li>
+                <a href="#Identify Inter-Process Communication Mechanisms">Идентификация механизмов взаимодействия
+                между процессами</a>
+            </li>
+            <li>
+                <a href="#Allocate Inter-Process Coordination Resources">Выделение ресурсов координации между
+                процессами</a>
+            </li>
+            <li>
+                <a href="#Map Processes onto the Implementation Environment">Привязка процессов к среде
+                реализации</a>
+            </li>
+            <li>
+                <a href="#Map Design Elements To Threads of Control">Привязка элементов разработки к нитям
+                управления</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    <a id="Analyze Concurrency Requirements" name="Analyze Concurrency Requirements">Анализ требований параллелизма</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="IdentifyProcessesAndThreads" name="IdentifyProcessesAndThreads">Идентификация процессов и нитей</a>
+</h3>
+<p>
+    При наличии параллелизма приложений следует идентифицировать нити управления, отображаемые в виде активных классов.
+</p>
+<ol>
+    <li>
+        Идентифицируйте пакеты, к которым принадлежат активные классы. Перейдите к этому пакету.
+    </li>
+    <li>
+        Добавьте активный класс к диаграмме классов. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление форм к диаграммам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.
+    </li>
+    <li>
+        Пометьте класс как активный. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Активация
+        классов или объектов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_mak_obj_act"); -->.
+    </li>
+    <li>
+        Перейдите к реализации прецедентов , для которой нужен данный активный класс.
+    </li>
+    <li>
+        Отобразите сложную связь между процессами и нитями с помощью диаграммы последовательностей. Рекомендации по
+        созданию диаграмм последовательностей в виде части реализации прецедентов приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/designing_use_cases_11581AAA.html" guid="{89CA76CF-37A6-4590-B9B5-90942D2B50E8}">Памятке по инструменту: разработка прецедентов с помощью Rational
+        XDE</a>.
+    </li>
+    <li>
+        Укажите тип параллелизма для операций. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение типа параллелизма для операций</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_type_cncrrncy_op"); -->Сведения
+        об управляемых сообщениями EJB приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/identifying_design_elements_F8D68BA1.html" guid="{E6727D13-BE7B-4025-AD39-ECD6FA074D73}">Памятке по инструменту: определение элементов разработки с помощью
+        Rational XDE</a>.
+    </li>
+</ol>
+<h3>
+    <a id="Identify Process Lifecycles" name="Identify Process Lifecycles">Идентификация жизненных циклов процесса</a>
+</h3>
+<p>
+    Добавьте диаграмму последовательностей для представления жизненных циклов процессов и нитей. Каждый процесс или нить
+    должен отображаться на диаграммах последовательностей, создающих и уничтожающих их. Сведения о создании диаграмм
+    последовательностей приведены в <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/toolmentors/designing_use_cases_11581AAA.html" guid="{89CA76CF-37A6-4590-B9B5-90942D2B50E8}">Памятке по инструменту: разработка прецедентов с помощью Rational
+    XDE</a>.
+</p>
+<h3>
+    <a id="Identify Inter-Process Communication Mechanisms" name="Identify Inter-Process Communication Mechanisms">Идентификация механизмов взаимодействия между процессами</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="Allocate Inter-Process Coordination Resources" name="Allocate Inter-Process Coordination Resources">Выделение
+    ресурсов координации между процессами</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="Map Processes onto the Implementation Environment" name="Map Processes onto the Implementation Environment">Привязка процессов к среде реализации</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="Map Design Elements To Threads of Control" name="Map Design Elements To Threads of Control">Привязка элементов
+    разработки к нитям управления</a>
+</h3>
+<p>
+    С помощью взаимосвязей агрегирования можно показать состав активных классов и отобразить неактивные классы, выполняемые
+    под управлением активных классов.
+</p>
+<ol>
+    <li>
+        Перейдите к пакету модель разработки, содержащему панель процессов. См. <a class="elementLinkWithUserText" href="./../../../core.base_rup/guidances/whitepapers/model_structure_guidelines_for_rational_xde_developer_6D2FD64A.html" guid="2.67081400527339E-306">Рекомендации по структуре модели Rational XDE</a>.
+    </li>
+    <li>
+        Добавьте диаграмму классов к этому пакету. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление диаграмм</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_dgm"); -->.
+    </li>
+    <li>
+        Переместите активные классы вместе с значимыми классами разработки, находящимися под управлением этих активных
+        классов, на диаграмму классов. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление
+        форм к диаграммам</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_shp_dgm"); -->.
+    </li>
+    <li>
+        Добавьте взаимосвязи ассоциаций. См. <img alt="значок справочника"         src="./../../../core.base_rup/resources/helpbook.gif" /><i>Добавление взаимосвязей ассоциаций</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_add_assoc_rels"); -->.
+    </li>
+    <li>
+        Задайте агрегирование. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Определение типов
+        взаимосвязей ассоциаций</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_t_spec_kinds_assoc"); -->Справочник:
+        <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /><i>Работа с диаграммами классов</i> 
+        <!--  Temporarily removed Javascript - ReferenceHelpTopic(topicTitle,"rs","rs_o_work_w_class_dgms"); -->
+    </li>
+</ol>
+<p>
+    <br />
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

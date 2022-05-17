@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Анализ поведения выполнения с помощью Rational XDE Developer</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="analyzing_runtime_behaviour" name="uma.name">
+<meta content="Анализ поведения выполнения с помощью Rational XDE Developer" name="uma.presentationName">
+<meta content="Tool:rup_xde:Rational XDE Developer" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational XDE Developer" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{303A82D2-E3AB-4501-8563-0D4D43782AF9}", "{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{A332EA83-E8A5-4C58-AC64-2D7DEBBF36CE}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Анализ поведения выполнения с помощью Rational XDE Developer</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается применение Rational XDE Developer для анализа поведения выполнения.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_xde_D81FFA70.html" guid="{303A82D2-E3AB-4501-8563-0D4D43782AF9}">Rational XDE Developer</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/analyze_runtime_behavior_B2DD7652.html" guid="{5131A5BB-5B95-499E-A68B-788A2F0957C3}">Анализ поведения среды выполнения</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    Шаги, описанные в этой памятке по инструменту, соответствуют этапам выполнения задачи. Ссылки на разделы электронной
+    справки Rational XDE&trade; помечены <img height="16" alt="значками справочников" src="./../../../core.base_rup/resources/helpbook.gif"     width="16" />.
+</p>
+<p>
+    Данная памятка по инструменту в настоящее время касается только применения функции визуальной трассировки,
+    интегрированной в Rational XDE, для анализа поведения выполнения. Обратите внимание, что визуальная трассировка
+    доступна не во всех конфигурациях Rational XDE.
+</p>
+<p>
+    Визуальная трассировка автоматически записывает выполнение приложения в диаграмме последовательностей трассировки.
+    Диаграмма последовательностей трассировки отображает поток управления приложением в формате диаграммы
+    последовательностей. Диаграмма трассировки также предоставляет сведения о времени, нитях, прогоне кода и использовании
+    памяти трассируемого приложения.
+</p>
+<p>
+    В этой памятке по инструменту выполняются следующие шаги:
+</p>
+<ul>
+    <li>
+        <a href="#DetermineScenario">Определение необходимого сценария выполнения</a>
+    </li>
+    <li>
+        <a href="#PrepareComponent">Подготовка компонента реализации для наблюдения за выполнением</a>
+    </li>
+    <li>
+        <a href="#PrepareEnvironment">Подготовка среды к выполнению</a>
+    </li>
+    <li>
+        <a href="#ObserveBehavior">Выполнение компонента и захват наблюдений за поведением</a>
+    </li>
+    <li>
+        <a href="#ReviewObservations">Просмотр наблюдений за поведением и вычленение первичных результатов</a>
+    </li>
+    <li>
+        <a href="#AnalyzeFindings">Анализ результатов для уяснения причин</a>
+    </li>
+    <li>
+        <a href="#CommunicateActions">Идентификация и выполнение дальнейших действий</a>
+    </li>
+    <li>
+        <a href="#EvaluateResults">Анализ результатов</a>
+    </li>
+</ul>
+<h3>
+    <a id="DetermineScenario" name="DetermineScenario">Определение необходимого сценария</a>
+</h3>
+<p>
+    Для данного шага определенные руководства Rational XDE отсутствуют.
+</p>
+<h3>
+    <a id="PrepareComponent" name="PrepareComponent">Подготовка компонента реализации для наблюдения за выполнением</a>
+</h3>
+<p>
+    Приложение для трассировки должно быть скомпоновано и доступно для выполнения
+</p>
+<div align="left">
+    <ul>
+        <li>
+            Запустите мастер настройки визуальной трассировки. &nbsp;См. <img alt="значок справочника"             src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Трассировка приложения</i>. 
+            <!--ReferenceHelpTopic(topicTitle,"tr","tr_o_tracing_an_app");   -->
+        </li>
+        <li>
+            Выберите классы приложения, которые следует добавить в трассировку
+        </li>
+        <li>
+            Укажите, следует ли вести запись с начала приложения или управлять записью вручную при выполнении.
+        </li>
+    </ul>
+</div>
+<h3>
+    <a id="PrepareEnvironment" name="PrepareEnvironment">Подготовьте среду для выполнения</a>
+</h3>
+<div align="left">
+    <p>
+        Для данного шага определенные руководства Rational XDE отсутствуют.
+    </p>
+</div>
+<h3>
+    <a id="ObserveBehavior" name="ObserveBehavior">Выполнение компонента и захват наблюдений за поведением</a>
+</h3>
+<div align="left">
+    <p>
+        Запустите приложение в режиме выполнения или отладки. &nbsp;
+    </p>
+</div>
+<div align="left">
+    <ul>
+        <li>
+            <p>
+                Если вы выбрали запись с начала приложения, будет создана диаграмма последовательностей трассировки и
+                начнется трассировка приложения.
+            </p>
+        </li>
+        <li>
+            <p>
+                Если вы выбрали ручное управление записью, выполните приложение до определенной точки (например, до паузы
+                из-за ожидания пользовательского ввода или заранее заданной точки прерывания), запустите запись визуальной
+                трассировки&nbsp; и диаграмма последовательностей трассировки будет записана начиная с этого момента.
+            </p>
+        </li>
+    </ul>
+</div>
+<h3>
+    <a id="ReviewObservations" name="ReviewObservations">Просмотр наблюдений за поведением и вычленение первичных
+    результатов</a>
+</h3>
+<div align="left">
+    <p>
+        Диаграмма последовательностей трассировки записывает сведения о поведении выполнения, с помощью которых вы сможете
+        лучше понять и отладить приложения.
+    </p>
+</div>
+<div align="left">
+    <ul>
+        <li>
+            <p>
+                Диаграмма последовательностей трассировки захватывает поток управления и позволяет вам лучше разобраться в
+                приложении и определить потенциальные неполадки.
+            </p>
+        </li>
+        <li>
+            <p>
+                Для дальнейшей помощи в отладке приложения в строке состояния нити в ходе выполнения показаны активные
+                нити, на диаграмме указывается время, прогон кода на уровне функций и при необходимости - информация об
+                использовании памяти.
+            </p>
+        </li>
+    </ul>
+</div>
+<ul>
+    <li>
+        Диаграмму последовательностей трассировки можно отфильтровать и свернуть, чтобы она содержала только нужную
+        информацию. См. <img alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Перемещение по диаграммам
+        последовательностей трассировки</i>. <!--ReferenceHelpTopic(topicTitle,"tr","tr_t_nav_trace_tsd");  -->
+    </li>
+</ul>
+<h3>
+    <a id="AnalyzeFindings" name="AnalyzeFindings">Анализ результатов для уяснения причин</a>
+</h3>
+<div align="left">
+    <p>
+        Для данного шага определенные руководства Rational XDE отсутствуют.
+    </p>
+</div>
+<h3>
+    <a id="CommunicateActions" name="CommunicateActions">Идентификация и выполнение дальнейших действий</a>
+</h3>
+<div align="left">
+    <p>
+        Для данного шага определенные руководства Rational XDE отсутствуют.
+    </p>
+</div>
+<h3>
+    <a id="EvaluateResults" name="EvaluateResults">Анализ результатов</a>
+</h3>
+<p>
+    Диаграммы трассировки можно преобразовать в диаграммы последовательностей XDE и хранить в моделях XDE. См. <img     alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" /> <i>Повторное применение диаграмм последовательностей
+    трассировки</i>. <!--ReferenceHelpTopic(topicTitle,"tr","tr_t_reusing_tsd");   -->Диаграммы в моделях XDE можно
+    опубликовать &nbsp; в формате html. Также обратите внимание, что диаграммы можно скопировать из инструмента Rational
+    XDE в Microsoft Word и прочие программы.
+</p></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

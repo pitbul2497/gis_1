@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Рабочие области разработки и интеграции</title>
+<meta content="Concept" name="uma.type">
+<meta content="development_and_integration_workspaces" name="uma.name">
+<meta content="Рабочие области разработки и интеграции" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.2252946942508563E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "1.2252946942508563E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="1.2252946942508563E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Рабочие области разработки и интеграции</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этом разделе обсуждаются рабочие области отдельных разработчиков, а также рабочие области коллективов, применяемые для интеграции результатов труда отдельных разработчиков.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/roles/rup_integrator_284A604C.html" guid="{502B4138-0772-4A4E-A183-C647497AFCB8}">Интегратор</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/workproducts/rup_workspace_C8AE02BF.html" guid="{227398F1-D995-4527-8C4F-292024EFDD96}">Рабочая область</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<p>
+    Как правило, в создании системы принимают участие несколько одновременно работающих коллективов разработчиков. Для
+    такой организации труда нужны несколько рабочих областей:
+</p>
+<ul>
+    <li>
+        <a href="#Development_Workspace">рабочая область разработки</a> - индивидуальная для каждого разработчика
+    </li>
+    <li>
+        <a href="#Integration_Workspace_for_the_Team">рабочая область интеграции подсистем</a> для коллектива
+    </li>
+    <li>
+        <a href="#Integration_Workspace_for_Integrators_at_the_System_Level">рабочая область интеграции интеграторов</a> на
+        уровне системы
+    </li>
+</ul>
+<h3>
+    <a id="XE_development_area" name="XE_development_area"></a><a id="XE_configuration_management__development_area" name="XE_configuration_management__development_area"></a><a id="Development_Workspace" name="Development_Workspace"></a>Рабочая область разработки
+</h3>
+<p>
+    Отдельные разработчики пользуются рабочими областями разработки, в которых они реализуют подсистемы и другие элементы,
+    находящиеся под их ответственностью. Для компиляции, компоновки, выполнения и тестирования кода подсистемы нужны другие
+    компоненты системы. Как правило, разработчикам не нужна система целиком для разработки своих подсистем. Обычно бывает
+    достаточно подсистем, необходимых для компиляции, компоновки и выполнения подсистемы в рабочей области разработки. Эти
+    дополнительные подсистемы не обязательно должны находиться в виде физических копий в индивидуальной рабочей области
+    разработчика. Вместо этого они могут находиться в общем внутреннем хранилище выпущенных подсистем. Точное расположение
+    подсистем указывается при компоновке продукта в специальном файле, например makefile.
+</p>
+<p class="exampleheading">
+    Пример:
+</p>
+<p class="example">
+    Подсистема Monthly Account Telephone (в банковской системе) нуждается в подсистемах, которые явно или неявно
+    импортируются в нее при компиляции, компоновке и выполнении ее внутренних элементов. В данном случае разработчикам
+    подсистемы Monthly Account Telephone нужны шесть из десяти подсистем.
+</p>
+<p class="picturecenter" align="center">
+    <img height="444" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/concepts/resources/co_dvin1.gif" width="611" />
+</p>
+<p class="picturetext">
+    Рабочая область разработки, которой пользуются разработчики подсистемы Monthly Account Telephone
+</p>
+<h3>
+    <a id="XE_integration_area" name="XE_integration_area"></a><a id="XE_configuration_management__integration_area" name="XE_configuration_management__integration_area"></a><a id="Integration_Workspace_for_the_Team" name="Integration_Workspace_for_the_Team"></a>Рабочая область интеграции для коллектива
+</h3>
+<p>
+    Иногда над одной подсистемой работают несколько разработчиков. В такой ситуации элементы, разработанные отдельными
+    разработчиками, необходимо интегрировать в подсистему перед тем, как передать подсистему на интеграцию в систему.
+    Интеграция элементов, разработанных членами группы, осуществляется в <b>рабочей области интеграции подсистемы</b>,
+    предназначенной специально для этого. Один из разработчиков выступает в роли интегратора и отвечает за функционирование
+    и производительность рабочей области интеграции.
+</p>
+<h3>
+    <a id="XE_integration_workspace_integrators" name="XE_integration_workspace_integrators"></a><a id="Integration_Workspace_for_Integrators_at_the_System_Level" name="Integration_Workspace_for_Integrators_at_the_System_Level"></a>Рабочая область интеграции для интеграторов на
+    уровне системы
+</h3>
+<p>
+    Интеграторы системы пользуются рабочей областью, в которой они могут компоновать элементы и подсистемы и создавать
+    компиляции для тестирования интеграции.
+</p>
+<p class="picturecenter" align="center">
+    <img height="171" alt="Диаграмма, описанная в тексте." src="./../../../core.base_rup/guidances/concepts/resources/co_dvin2.gif" width="501" />
+</p>
+<p class="picturetext">
+    Рабочая область интеграции на уровне системы, в которой интеграция осуществляется на уровне подсистем
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

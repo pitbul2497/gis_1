@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Руководство по инструменту: Создание рабочей области разработки с помощью Rational ClearCase</title>
+<meta content="ToolMentor" name="uma.type">
+<meta content="create_private_workspace" name="uma.name">
+<meta content="Создание рабочей области разработки с помощью Rational ClearCase" name="uma.presentationName">
+<meta content="Tool:rup_clearcase:Rational ClearCase" name="uma.category">
+<meta name="element_type" content="tool_mentor">
+<meta content="Rational ClearCase" name="tool">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_LVCagP5WEdmAzesbYywanQ", path: ["_LVCagP5WEdmAzesbYywanQ", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_F1OgYAIbEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_LWLSQDIEEdqwaNnSEheSAg", "_85i-sDIFEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_4U33kAILEdq-_NKqZM1EhA", "_XxCC0AIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_gpYSoAILEdq-_NKqZM1EhA", "_qS-iwAIOEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_zRigkAILEdq-_NKqZM1EhA", "_U5tiUAISEdqTna4sZVFRow", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_mp7z0DIDEdqwaNnSEheSAg", "_9U7IkDIEEdqwaNnSEheSAg", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_AUv4MAIMEdq-_NKqZM1EhA", "_5ZuQsAIUEdqEutyfYo0quQ", "{B2D1373B-A826-4169-A38A-B53B2122DC7C}", "{46A461EE-F00E-4E39-B5E5-855815F621FF}"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="{46A461EE-F00E-4E39-B5E5-855815F621FF}"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Руководство по инструменту: Создание рабочей области разработки с помощью Rational ClearCase</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/toolmentor.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">В этой памятке по инструменту описывается процесс создания частной рабочей области с помощью Rational ClearCase для личной работы.</td>
+</tr>
+<tr>
+<td>Инструмент: <a href="./../../../core.base_rup/tools/rup_clearcase_9665C.html" guid="{B2D1373B-A826-4169-A38A-B53B2122DC7C}">Rational ClearCase</a> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/create_development_workspace_25C973CF.html" guid="{99C2684A-E22A-4DF3-9A66-A204F67F868B}">Создание рабочей области разработки</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a> 
+<h3>
+    Обзор
+</h3>
+<p>
+    В этой памятке по инструменту описывается процесс создания частной рабочей области для личной работы. "Частная рабочая
+    область" отделана от рабочих областей других участников команды. Она является местом, где разработчик вносит изменения
+    в систему не видя ил не влияя на изменения, вносимые другими разработчиками.
+</p>
+<p>
+    В модели UCM ClearCase частные рабочие области, называемые рабочими областями разработки, позволяют работать с
+    операциями UCM в изоляции от остальных частей &nbsp;проекта. Обычно каждый участник проекта создает собственную рабочую
+    область разработки при подключении к работе над проектом UCM. Частные рабочие области также можно создать в любое время
+    при разработке проекта UCM.
+</p>
+<p>
+    Рабочие области разработки UCM состоят из потоков связанных панелей. Потоки UCM определяют какие версии элементов
+    отображаются в панелях, настроенных этим потоком. Потоки также поддерживают список контрольных версий и операций UCM.
+    Панели предоставляют рабочие области для таких задач, как изменение и компиляция исходных файлов, форматирование
+    документов и т.д.
+</p>
+<p>
+    Эта памятка по инструменту применима к Microsoft Windows.
+</p>
+<h3>
+    <a id="ToolSteps" name="ToolSteps">Этапы работы с инструментом</a>
+</h3>
+<p>
+    Описанные ниже действия касаются создания рабочей области разработки при подключении к проекту UCM. Общими шагами
+    являются:
+</p>
+<ol>
+    <li>
+        <a href="#JoinProjectWizard">Запуск мастера подключения к проекту</a>
+    </li>
+    <li>
+        <a href="#SpecifyAndViewStreamInfo">Определение сведений для потока и панели</a>
+    </li>
+    <li>
+        <a href="#AttachViewToStream">Присоединение панели к потоку</a>
+    </li>
+</ol>
+<p>
+    &nbsp;<img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;См. раздел
+    <i>Мастер подключения к проекту</i> электронной справки ClearCase для обзора мастера. Подробная справка по каждому шагу
+    мастера приведена в справке в каждом соответствующем окне.
+</p>
+<p>
+    Дополнительные сведения о панелях и потоках UCM приведены в следующих разделах электронной справки ClearCase.
+</p>
+<ul>
+    <li>
+        &nbsp;<i>О потоках</i>&nbsp;
+    </li>
+    <li>
+        &nbsp;<i>О панелях</i>
+    </li>
+</ul>
+<h3>
+    1.&nbsp;<a id="JoinProjectWizard" name="JoinProjectWizard">Запустите мастер подключения к проекту</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам работы с инструментом" src="./../../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h3>
+<ol>
+    <li>
+        На панели задач Windows выберите кнопку <b>Пуск</b> &gt; <b>Программы</b> &gt; <b>Rational Software &gt; Rational
+        ClearCase</b> &gt; <b>Project Explorer</b>.
+    </li>
+    <li>
+        В ClearCase Project Explorer перейдите на вкладку <b>Панель инструментов</b> <b>&gt; UCM &gt; Подключиться к
+        проекту</b>. Откроется мастер подключения к проекту.
+    </li>
+    <li>
+        Выберите проект, к которому вы хотите подключиться, и нажмите кнопку <b>Далее</b> для перехода к следующему этапу
+        выполнения мастера.
+    </li>
+</ol>
+<h3>
+    2.&nbsp;<a id="SpecifyAndViewStreamInfo" name="SpecifyAndViewStreamInfo">Задайте сведения о потоке и панели</a> <a href="#ToolSteps"><img height="20" alt="Перейти к этапам выполнения инструмента" src="./../../../core.base_rup/resources/top.gif"     width="26" border="0" /></a>
+</h3>
+<p>
+    Укажите имя потока, имя панели, место хранения панели и тип панели (моментальная копия) для рабочей области разработки.
+    Мастер подключения к проекту ClearCase предоставит сведения по умолчанию для этих значений.
+</p>
+<p>
+    <b>Примечание</b>: мастер подключения к проекту также предложит ввести информацию, требуемую для создания панели для
+    рабочей области интеграции проекта.
+</p>
+<p>
+    &nbsp;<img height="16" alt="значок справочника" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Дополнительные
+    сведения о хранении панелей приведены в разделе <i>Выбор расположения каталога панели моментальной копии</i>
+    электронной справки ClearCase.
+</p>
+<h3>
+    3.&nbsp;<a id="AttachViewToStream" name="AttachViewToStream">Присоединение панели к потоку</a> <a href="#ToolSteps"><img height="20" alt="Перейти к началу страницы" src="./../../../core.base_rup/resources/top.gif" width="26"     border="0" /></a>
+</h3>
+<p>
+    Мастер подключения к проекту попросит вас подтвердить введенные значения и присоединит указанные панель и поток
+    разработки. Нажмите <b>OK</b> для подтверждения.
+</p>
+<p>
+    &nbsp;<img height="16" alt="значок справочник" src="./../../../core.base_rup/resources/helpbook.gif" width="16" />&nbsp;Дополнительные
+    сведения о взаимосвязи панелей и потоков приведены в электронной справке ClearCase в разделе <b>&gt;</b>
+    <i>Присоединение новой панели к существующему потоку</i>.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>

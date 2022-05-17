@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Концепция: Шаблоны распределения</title>
+<meta content="Concept" name="uma.type">
+<meta content="distribution_patterns" name="uma.name">
+<meta content="Шаблоны распределения" name="uma.presentationName">
+<meta name="element_type" content="concept">
+<meta content="description" name="filetype">
+<meta name="role" content="">
+<link type="text/css" href="./../../../css/default.css" rel="StyleSheet">
+<script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageResource.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageSubSection.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/ContentPageToolbar.js"></script><script language="JavaScript" type="text/javascript" src="./../../../scripts/contentPage.js"></script><script language="JavaScript" type="text/javascript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_FCx1oN7CEdmsEI4YDGX2ag", path: ["_FCx1oN7CEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.137181182978733E-305"]}, {view: "view:_bbrmwN7BEdmsEI4YDGX2ag", path: ["_bbrmwN7BEdmsEI4YDGX2ag", "_jD8dUAIbEdqEutyfYo0quQ", "_vzRNgDIcEdqDs_9ORT1Rig", "6.137181182978733E-305"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="6.137181182978733E-305"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td nowrap="true" class="pageTitle">Концепция: Шаблоны распределения</td><td width="100%">
+<div id="contentPageToolbar" align="right"></div>
+</td>
+</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td class="pageTitleSeparator"><img height="1" title="" alt="" src="./../../../images/shim.gif"></td>
+</tr>
+</table>
+<div class="overview">
+<table cellpadding="0" cellspacing="0" border="0" width="97%">
+<tr>
+<td width="50"><img title="" alt="" src="./../../../images/concept.gif"></td><td>
+<table cellpadding="0" cellspacing="0" border="0" class="overviewTable">
+<tr>
+<td valign="top">Шаблоны распределения подчеркивают важность вопросов, связанных с распределением решения, и степень влияния этих вопросов на архитектурные решения.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Взаимосвязи</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<th scope="row" class="sectionTableHeading">Связанные элементы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.base_rup/tasks/architectural_analysis_2B9BE03.html" guid="{8CB48402-D4C5-4E17-BB33-507315CB1BBF}">Архитектурный анализ</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/roles/rup_software_architect_DB0BF177.html" guid="{4AC346F0-E6FC-4D2C-8410-2EDF8DDDC91D}">Разработчик архитектуры</a>
+</li>
+<li>
+<a href="./../../../core.base_rup/tasks/describe_distribution_9BA1477C.html" guid="{6A112808-0A90-427A-BAB9-E14F3FBF72B5}">Создание описания варианта</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Основное описание</div>
+<div class="sectionContent">
+<table cellpadding="0" cellspacing="0" border="0" class="sectionTable">
+<tr valign="top">
+<td class="sectionTableSingleCell"><a id="Top" name="Top"></a><a id="XE_architecture__distribution_patterns" name="XE_architecture__distribution_patterns"></a><a id="XE_distribution_patterns__introduction_to" name="XE_distribution_patterns__introduction_to"></a> 
+<h3>
+    <a id="Nodes, Processors and Devices" name="Nodes, Processors and Devices">Узлы, процессоры и устройства</a>
+</h3>
+<p>
+    Процессоры и устройства представляют собой общие стереотипы узла. Разница между ними на первый взгляд неочевидна,
+    поскольку у многих устройств могут быть собственные процессоры. Однако различие между процессорами и устройствами
+    заключается в том, какое программное обеспечение выполняется в них. Процессоры выполняют программы и программное
+    обеспечение, специально созданные для разрабатываемой системы. Процессы - это вычислительные устройства общего
+    назначения, наделенные определенной вычислительной мощностью, памятью и способностью выполнять инструкции.
+</p>
+<p>
+    Устройства выполняют программное обеспечение, написанное для управления выполнением функций устройства. Устройства
+    обычно подключены к процессорам, контролирующим их работу. В большинстве случаев устройства выполняют встроенное
+    программное обеспечение и непригодны для выполнения программ общего назначения. Набор функций устройств зависит от их
+    программных драйверов.
+</p>
+<h3>
+    <a id="Distribution Patterns" name="Distribution Patterns">Шаблоны распределения</a>
+</h3>
+<p>
+    Существует несколько типичных шаблонов распределения, зависящих от набора функций системы и типа приложения. Довольно
+    часто шаблонами распределения неформально пользуются для описания "архитектуры" системы, хотя в полную архитектуру
+    помимо шаблонов распределения входит масса других составляющих. Например, системы часто описывают как "построенные на
+    архитектуре клиент-сервер", хотя "клиент-сервер" - это только характеристика шаблона распределения, применяемого в
+    архитектуре. Поэтому вопросы, связанные с распределением системы, очень важны, равно как велика степень влияния этих
+    вопросов на архитектурные решения.
+</p>
+<p>
+    В примерах шаблонов распределения, приведенных ниже, используются определенные предположения относительно ряда
+    характеристик системы, ее производительности, особенностей и архитектуры процесса. Эти шаблоны применяются для решения
+    разных задач, и их реализация сопряжена с разными сложностями.
+</p>
+<h3>
+    <a id="Client/Server Architectures" name="Client/Server Architectures">Архитектуры клиент-сервер</a><a id="XE_architecture__client/server" name="XE_architecture__client/server"></a><a id="XE_distribution_patterns__client/server_architectures" name="XE_distribution_patterns__client/server_architectures"></a>
+</h3>
+<p>
+    В так называемых "архитектурах клиент-сервер" предусмотрены специализированные сетевые узлы, называемые
+    <b>клиентами</b>, и узлы, называемые <b>серверами</b>. Клиенты выступают в роли потребителей услуг, предоставляемых
+    серверами. Клиент обычно обслуживает только одного пользователя и зачастую отвечает за предоставление графического
+    интерфейса (GUI), тогда как сервер обычно обслуживает нескольких клиентов одновременно, а примерами типичных служб
+    могут служить базы данных, защита и печать. "Логика приложения", или логика бизнеса, в таких системах обычно
+    распределена между клиентами и серверами. Распределение логики бизнеса называют <b>структурой разделов приложения</b>.
+</p>
+<p>
+    На следующем рисунке клиент A представляет собой пример двухуровневой архитектуры, в которой большинство логики
+    приложения находится на сервере. Клиент B представляет собой характерный пример трехуровневой архитектуры, в которой
+    службы реализованы на базе сервера бизнес-объектов. Клиент C - пример типичного Web-приложения.
+</p>
+<p align="center">
+    <img src="./../../../core.base_rup/guidances/concepts/resources/dpatt01.gif" alt="Диаграмма, описанная в тексте." width="546" height="287" />
+</p>
+<p class="picturetext">
+    Разновидности архитектур клиент-сервер
+</p>
+<p>
+    В традиционных системах "клиент-сервер" основная часть логики бизнеса реализована на стороне клиентов, хотя некоторые
+    функции отведены серверам - например, функции, связанные с частым обращением к данным, хранящимся на сервере. Такая
+    реализация позволяет снизить интенсивность передачи данных по сети, которая в большинстве случаев является
+    дорогостоящим мероприятием (поскольку на порядок или два порядка уступает в скорости обмену данными между процессами).
+</p>
+<p>
+    Некоторые характеристики:
+</p>
+<ul>
+    <li>
+        Система может содержать клиенты разных типов, примерами которых могут служить: 
+        <ul>
+            <li>
+                Пользовательские рабочие станции
+            </li>
+            <li>
+                Сетевые компьютеры
+            </li>
+        </ul>
+    </li>
+    <li>
+        Клиенты и серверы могут пользоваться различными технологиями обмена данными, например CORBA/IDL или RPC.
+    </li>
+    <li>
+        Система может содержать серверы разных типов, например: 
+        <ul>
+            <li>
+                <b>Серверы баз данных</b>, обслуживающие СУБД: Sybase, Ingres, Oracle, Informix и т.п.
+            </li>
+            <li>
+                <b>Серверы печати</b>, выступающие в роли драйверов, - например, управляющие очередями печати отдельных
+                принтеров.
+            </li>
+            <li>
+                <b>Серверы связи</b> (TCP/IP, ISDN, X.25)
+            </li>
+            <li>
+                <b>Серверы администраторов окон</b> (X)
+            </li>
+            <li>
+                <b>Файловые серверы</b> (NFS в UNIX)
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    <a id="The 3-Tier Architecture" name="The 3-Tier Architecture">Трехуровневая архитектура</a><a id="XE_architecture__3-tier" name="XE_architecture__3-tier"></a><a id="XE_distribution_patterns__3-tier_architecture" name="XE_distribution_patterns__3-tier_architecture"></a>
+</h4>
+<p>
+    Трехуровневая архитектура - это особая разновидность архитектуры "клиент-сервер", в которой функции разнесены на три
+    логических раздела: службы приложений, бизнес-службы и службы данных. Логические разделы могут соответствовать трем или
+    большему количеству физических узлов.
+</p>
+<p align="center">
+    <img src="./../../../core.base_rup/guidances/concepts/resources/3-tier.gif" alt="Диаграмма, описанная в тексте." width="175" height="268" />
+</p>
+<p class="picturetext">
+    Пример трехуровневой архитектуры
+</p>
+<p>
+    Распределение функций по трем группам осуществляется в соответствии с типичным распределением приложений на практике.
+    Службы приложений, как правило, снабжаются графическими интерфейсами и выполняются на выделенных настольных рабочих
+    станциях с графическими оконными операционными средами. Изменение набора функций чаще всего бывает продиктовано
+    соображениями эстетики и в первую очередь обстоятельствами <b>человеческого фактора</b>.
+</p>
+<p>
+    Службы данных, как правило, реализуются на основе сервера базы данных, работающего на одной или нескольких
+    высокопроизводительных системах, объединенных в сеть и обслуживающих сотни или тысячи пользователей. Необходимость
+    изменения служб данных обычно бывает продиктована изменением представления или структуры информации в базе данных.
+</p>
+<p>
+    Бизнес-службы обычно обеспечивают выполнение бизнес-процессов. Они обрабатывают и синтезируют информацию, полученную от
+    служб данных, и передают ее в службы приложений. Как правило, бизнес-службами пользуется большое количество
+    сотрудников, и поэтому службы размещаются также на специализированных серверах, хотя в принципе могут находиться на
+    одних серверах со службами данных.
+</p>
+<p>
+    Разделение служб на группы позволяет организовать довольно надежную структуру расширения системы: возможность
+    добавления серверов и регулировки баланса между серверами данных и серверами бизнес-служб дает дополнительную свободу
+    масштабирования.
+</p>
+<h4>
+    <a id="The 'Fat Client Architecture'" name="The 'Fat Client Architecture'">Архитектура "тяжелых клиентов"</a><a id="XE_architecture__fat-client" name="XE_architecture__fat-client"></a><a id="XE_distribution_patterns__fat-client_architecture" name="XE_distribution_patterns__fat-client_architecture"></a>
+</h4>
+<p>
+    Тяжелыми называются клиенты, на которых выполняются почти все приложения (за исключением так называемой двухуровневой
+    архитектуры, в которой службы данных выносятся на отдельный узел). Службы приложений, бизнес-службы и службы данных
+    работают в системе клиента, а сервер базы данных, как правило, работает в отдельной системе.
+</p>
+<p align="center">
+    <img src="./../../../core.base_rup/guidances/concepts/resources/2-tier.gif" alt="Диаграмма, описанная в тексте." width="166" height="174" />
+</p>
+<p class="picturetext">
+    Классическая двухуровневая архитектура и архитектура тяжелых клиентов
+</p>
+<p>
+    Тяжелые клиенты отличаются сравнительной простотой проектирования и компоновки в сочетании со сложностью
+    транспортировки (обычно это большие и массивные системы) и обслуживания. Поскольку для повышения производительности
+    данные клиентов кэшируются в локальных системах, возникают серьезные сложности с синхронизацией локального кэша и
+    обеспечением целостности данных. Изменение общих объектов, хранящихся в нескольких экземплярах локального кэша, требует
+    больших усилий по координации и синхронизации, а также приводит к повышению интенсивности обмена данными по сети.
+</p>
+<h4>
+    <a id="Web Application" name="Web Application">Архитектура "тяжелых серверов"</a><a id="XE_architecture__fat-server" name="XE_architecture__fat-server"></a><a id="XE_distribution_patterns__fat-server_architecture" name="XE_distribution_patterns__fat-server_architecture"></a>
+</h4>
+<p>
+    На противоположном по отношению к тяжелым клиентам конце спектра находится архитектура "тяжелых серверов" или
+    "аскетичных клиентов". Типичным примером может служить приложение браузера, показывающего набор страниц в формате HTML
+    - в данном случае можно говорить о практически полном отсутствии приложений на клиенте. Почти вся работа выполняется на
+    одном или нескольких Web-серверах и серверах данных.
+</p>
+<p align="center">
+    <img src="./../../../core.base_rup/guidances/concepts/resources/dpatt04.gif" alt="Диаграмма, описанная в тексте." width="166" height="174" />
+</p>
+<p class="picturetext">
+    Web-приложение
+</p>
+<p>
+    Web-приложения очень просто распространять и изменять. Они сравнительно недороги в разработке и поддержке (поскольку
+    почти всю инфраструктуру приложений предоставляют браузер и Web-сервер). В то же время эти приложения могут не
+    обеспечивать достаточного контроля над приложением и склонны служить источником основной нагрузки на сеть, если они
+    недостаточно хорошо спроектированы (а иногда - даже если спроектированы хорошо).
+</p>
+<h4>
+    <a id="Distributed Client/Server" name="Distributed Client/Server">Распределенная архитектура "клиент-сервер"</a><a id="XE_architecture__distributed_client/server" name="XE_architecture__distributed_client/server"></a><a id="XE_distribution_patterns__distributed_client/server_architecture" name="XE_distribution_patterns__distributed_client/server_architecture"></a>
+</h4>
+<p>
+    В этой архитектуре службы приложений, бизнес-службы и службы данных находятся на разных узлах, причем для бизнес-служб
+    и служб данных зачастую используются специализированные серверы. Это полный вариант реализации трехуровневой
+    архитектуры.
+</p>
+<h3>
+    <a id="The Peer-to-Peer Architecture" name="The Peer-to-Peer Architecture">Одноранговая архитектура</a><a id="XE_architecture__peer-to-peer" name="XE_architecture__peer-to-peer"></a><a id="XE_distribution_patterns__peer-to-peer_architecture" name="XE_distribution_patterns__peer-to-peer_architecture"></a>
+</h3>
+<p>
+    В одноранговой архитектуре каждый процесс или узел системы может быть клиентом <b>и</b> сервером одновременно. Функции
+    распределяются и группируются таким образом, чтобы минимизировать нагрузку на сеть и добиться максимальной пропускной
+    способности и утилизации систем. Эти системы обычно довольно сложны, и при их разработке нужно уделять особое внимание
+    предотвращению тупиковых ситуаций и взаимной блокировки процессов, а также обработке ошибок.
+</p><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="copyright">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2006. &nbsp;Все права защищены..
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
